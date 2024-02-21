@@ -61,6 +61,11 @@ payOptions = ["Dining Dollars",
               "Card",
               "Cash"]
 
+foodTypes = ["Burger", 
+             "Baskets", 
+             "Desert", 
+             "Sides"]
+
 with open("fill.sql", "w") as fd:
     # fd.write("CREATE TABLE db("
     #          "Name TEXT PRIMARY KEY,"
