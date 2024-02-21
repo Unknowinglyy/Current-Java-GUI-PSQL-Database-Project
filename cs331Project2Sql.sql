@@ -1,10 +1,24 @@
-SET check_function_bodies = false;
 CREATE TABLE food(
   "foodID" integer NOT NULL,
   "name" text NOT NULL,
   price float4 NOT NULL,
   "foodType" text NOT NULL,
   PRIMARY KEY("foodID")
+);
+
+CREATE TABLE ingredient(
+  "ingredientID" integer NOT NULL,
+  "name"  TEXT NOT NULL,
+  stock integer,
+  PRIMARY KEY("ingredientID")
+);
+
+CREATE TABLE ticket(
+  "ticketID" integer NOT NULL,
+  "timeOrdered" timestamp NOT NULL,
+  "totalCost" float,
+  payment text,
+  PRIMARY KEY("ticketID")
 );
 
 CREATE TABLE ingredient(
