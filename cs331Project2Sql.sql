@@ -6,6 +6,21 @@ CREATE TABLE food(
   PRIMARY KEY("foodID")
 );
 
+CREATE TABLE ingredient(
+  "ingredientID" integer NOT NULL,
+  "name"  TEXT NOT NULL,
+  stock integer,
+  PRIMARY KEY("ingredientID")
+);
+
+CREATE TABLE ticket(
+  "ticketID" integer NOT NULL,
+  "timeOrdered" timestamp NOT NULL,
+  "totalCost" float,
+  payment text,
+  PRIMARY KEY("ticketID")
+);
+
 CREATE TABLE foodTicket(
   amount integer NOT NULL,
   "ticketID" integer NOT NULL,
@@ -21,19 +36,4 @@ CREATE TABLE foodIngredient(
   FOREIGN KEY ("foodID") REFERENCES food("foodID"),
   FOREIGN KEY ("ingredientID") REFERENCES ingredient("ingredientID")
   
-);
-
-CREATE TABLE ingredient(
-  "ingredientID" integer NOT NULL,
-  "name"  TEXT NOT NULL,
-  stock integer,
-  PRIMARY KEY("ingredientID")
-);
-
-CREATE TABLE ticket(
-  "ticketID" integer NOT NULL,
-  "timeOrdered" timestamp NOT NULL,
-  "totalCost" float,
-  payment text,
-  PRIMARY KEY("ticketID")
 );
