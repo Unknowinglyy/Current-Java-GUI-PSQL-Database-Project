@@ -56,6 +56,11 @@ menuFooditems = ["Hamburger",
                  "Onion Rings",
                  "Fries"]
 
+payOptions = ["Dining Dollars",
+              "Meal Swipes",
+              "Card",
+              "Cash"]
+
 with open("fill.sql", "w") as fd:
     # fd.write("CREATE TABLE db("
     #          "Name TEXT PRIMARY KEY,"
@@ -67,7 +72,7 @@ with open("fill.sql", "w") as fd:
     # filling tickets for 104 weeks
     orderID = 1
     for day in range(728):
-        daysOrders = random.randint(50, 100)
+        daysOrders = random.randint(30, 50)
         
         for orderNum in range(daysOrders):
             # hours 10am - 8pm or 10 hours
