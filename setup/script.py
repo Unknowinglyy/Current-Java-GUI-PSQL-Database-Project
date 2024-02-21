@@ -68,7 +68,7 @@ foodTypes = ["Burger",
 
 foodIngredients = {
     "Hamburger": {"Bun": 2, "Patties": 1, "Lettuce": 1, "Tomato": 1, "Onion": 1}
-    
+    "Cheeseburger": {"Bun": 2, "Patties": 1, "Lettuce": 1, "Tomato": 1, "Onion": 1, "Cheese": 1}
     # ingredients for other food items to be added later
 }
 
