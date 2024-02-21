@@ -1,4 +1,3 @@
-SET check_function_bodies = false;
 CREATE TABLE food(
   "foodID" integer NOT NULL,
   "name" text NOT NULL,
@@ -11,7 +10,7 @@ CREATE TABLE "foodTicket"(
   amount integer NOT NULL,
   "ticketID" integer NOT NULL,
   "foodID" integer,
-  FOREIGN KEY ("foodID") REFERENCES food("foodID")
+  FOREIGN KEY ("foodID") REFERENCES food("foodID"),
   FOREIGN KEY ("ticketID") REFERENCES ticket("ticketID")
 );
 
@@ -19,7 +18,7 @@ CREATE TABLE "foodIngredient"(
   "foodID" integer NOT NULL,
   "ingredientID" integer NOT NULL,
   amount integer NOT NULL,
-  FOREIGN KEY ("foodID") REFERENCES food("foodID")
+  FOREIGN KEY ("foodID") REFERENCES food("foodID"),
   FOREIGN KEY ("ingredientID") REFERENCES ingredient("ingredientID")
   
 );
@@ -38,4 +37,3 @@ CREATE TABLE ticket(
   payment text,
   PRIMARY KEY("ticketID")
 );
-
