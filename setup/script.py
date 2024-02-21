@@ -69,7 +69,7 @@ with open("fill.sql", "w") as fd:
         
         fd.write(f"INSERT INTO ingredient (\"ingredientID\", \"name\", stock)\nVALUES ({i+1}, '{itemList[i]}', {random.randint(0, 150)});\n")
 
-    # filling tickets for 104 weeks
+    # filling tickets for 104 weeks (2 years)
     orderID = 1
     for day in range(728):
         daysOrders = random.randint(30, 50)
