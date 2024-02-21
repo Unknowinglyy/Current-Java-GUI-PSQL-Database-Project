@@ -1,4 +1,4 @@
-SELECT DATE_PART('week', t."timeOrdered") AS week_number, COUNT(t.id) AS order_count
-FROM ticket t
+SELECT DATE_PART('week', "timeOrdered") AS week_number, COUNT(*) AS order_count
+FROM ticket
 GROUP BY week_number
 ORDER BY week_number;
