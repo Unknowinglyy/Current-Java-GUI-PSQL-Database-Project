@@ -3,7 +3,7 @@ import random
 itemList = ["Ketchup",
             "Mayo",
             "Ranch",
-            "Gig’ em Sauce",
+            "Gig em Sauce",
             "Buffalo Sauce",
             "Honey Mustard",
             "Spicy Ranch",
@@ -32,8 +32,9 @@ itemList = ["Ketchup",
             ]
 
 with open("fill.sql", "w") as fd:
-    fd.write("CREATE TABLE db("
-             "Name TEXT PRIMARY KEY,"
-             "Stock INT);\n")
-    for item in itemList:
-        fd.write(f"INSERT INTO db (Name, Stock)\nVALUES ('{item}', {random.randrange(0,100)});")
+    # fd.write("CREATE TABLE db("
+    #          "Name TEXT PRIMARY KEY,"
+    #          "Stock INT);\n")
+    for i in range(len(itemList)):
+        
+        fd.write(f"INSERT INTO ingredient (\"ingredientID\", \"name\", stock)\nVALUES ({i+1}, '{itemList[i]}', {random.randint(0, 150)});\n")
