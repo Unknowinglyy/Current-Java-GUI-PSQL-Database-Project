@@ -66,6 +66,10 @@ foodTypes = ["Burger",
              "Desert", 
              "Sides"]
 
+foodIngredients = {
+    "Hamburger": ["Bun", "Patties", "Lettuce", "Tomato", "Onion"]
+}
+
 with open("fill.sql", "w") as fd:
     # fd.write("CREATE TABLE db("
     #          "Name TEXT PRIMARY KEY,"
