@@ -67,7 +67,7 @@ foodTypes = ["Burger",
              "Sides"]
 
 foodIngredients = {
-    "Hamburger": ["Bun", "Patties", "Lettuce", "Tomato", "Onion"]
+    "Hamburger": {"Bun": 2, "Patties": 1, "Lettuce": 1, "Tomato": 1, "Onion": 1}
 }
 
 with open("fill.sql", "w") as fd:
@@ -94,9 +94,13 @@ with open("fill.sql", "w") as fd:
 
                 fd.write(f"INSERT INTO food (\"foodID\", name, price, \"foodType\")\nVALUES ({foodID}, 'Hamburger', 11.99, 'Burger');\n")
                 fd.write(f"INSERT INTO foodticket (amount, \"ticketID\", \"foodID\")\nVALUES (1, {orderID}, {foodID});\n")
+                
+                
                 foodID += 1
             
             orderID += 1
+
+
 
     # fd.write(f"INSERT INTO food (\"foodID\", name, price, \"foodType\")\nVALUES (69, 'Hamburger', 11.99, 'Burger');\n")
     
