@@ -61,7 +61,7 @@ payOptions = ["Dining Dollars",
               "Card",
               "Cash"]
 
-with open("fill.sql", "w") as fd:
+with open(".\\setup\\fill.sql", "w") as fd:
     # fd.write("CREATE TABLE db("
     #          "Name TEXT PRIMARY KEY,"
     #          "Stock INT);\n")
@@ -71,14 +71,23 @@ with open("fill.sql", "w") as fd:
 
     # filling tickets for 104 weeks
     orderID = 1
+    foodID = 1
     for day in range(728):
         daysOrders = random.randint(30, 50)
         
         for orderNum in range(daysOrders):
             # hours 10am - 8pm or 10 hours
             interval = 10 + (10/daysOrders)*orderNum
-            fd.write(f"INSERT INTO ticket (\"ticketID\", \"timeOrdered\", \"totalCost\", payment)\n VALUES ({orderID}, date (LOCALTIMESTAMP) - {728 - day} + interval '{interval} hour', 20, 'dining dollars');")
-            orderID = orderID+1
+            fd.write(f"INSERT INTO ticket (\"ticketID\", \"timeOrdered\", \"totalCost\", payment)\nVALUES ({orderID}, date (LOCALTIMESTAMP) - {728 - day} + interval '{interval} hour', 20, '{payOptions[random.randint(0,3)]}');")
+            numItems = random.randint(1, 12)
+            
+            for item in range(numItems):
 
-    fd.write(f"INSERT INTO food (\"foodID\", name, price, \"foodType\")\nVALUES (69, 'Hamburger', 11.99, 'Burger');\n")
+                fd.write(f"INSERT INTO food (\"foodID\", name, price, \"foodType\")\nVALUES ({foodID}, 'Hamburger', 11.99, 'Burger');\n")
+                fd.write(f"INSERT INTO foodticket (amount, \"ticketID\", \"foodID\")\nVALUES (1, {orderID}, {foodID});\n")
+                foodID += 1
+            
+            orderID += 1
+
+    # fd.write(f"INSERT INTO food (\"foodID\", name, price, \"foodType\")\nVALUES (69, 'Hamburger', 11.99, 'Burger');\n")
     
