@@ -1,5 +1,4 @@
-SET check_function_bodies = false
-;
+SET check_function_bodies = false;
 
 CREATE TABLE food(
   "foodID" integer NOT NULL,
@@ -26,7 +25,7 @@ CREATE TABLE "foodIngredient"(
 
 CREATE TABLE ingredient(
   "ingredientID" integer NOT NULL,
-  "name" table_am_handler NOT NULL,
+  "name"  TEXT NOT NULL,
   stock integer,
   CONSTRAINT ingredient_pkey PRIMARY KEY("ingredientID")
 );
@@ -34,10 +33,9 @@ CREATE TABLE ingredient(
 CREATE TABLE ticket(
   id integer NOT NULL,
   "timeOrdered" timestamp NOT NULL,
-  "totalCost" float4,
+  "totalCost" float,
   payment text,
-  CONSTRAINT ticket_pkey PRIMARY KEY(id),
-  CONSTRAINT "orders_Fkey" UNIQUE
+  CONSTRAINT ticket_pkey PRIMARY KEY(id)
 );
 
 ALTER TABLE "foodIngredient"
