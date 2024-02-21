@@ -46,10 +46,10 @@ ALTER TABLE ingredient
   ADD CONSTRAINT "ingredient_ingredientID_fkey"
     FOREIGN KEY ("ingredientID") REFERENCES "foodIngredient" ("ingredientID");
 
-ALTER TABLE ticket
+/*ALTER TABLE ticket
   ADD CONSTRAINT ticket_id_fkey
     FOREIGN KEY (id) REFERENCES "foodTicket" ("ticketID");
 
 ALTER TABLE food
   ADD CONSTRAINT "food_foodID_fkey"
-    FOREIGN KEY ("foodID") REFERENCES "foodTicket" ("foodID");
+    FOREIGN KEY ("foodID") REFERENCES "foodTicket" ("foodID");*/
