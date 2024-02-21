@@ -69,6 +69,10 @@ foodTypes = ["Burger",
 foodIngredients = {
     "Hamburger": {"Bun": 2, "Patties": 1, "Lettuce": 1, "Tomato": 1, "Onion": 1}
     "Cheeseburger": {"Bun": 2, "Patties": 1, "Lettuce": 1, "Tomato": 1, "Onion": 1, "Cheese": 1}
+    "5 Chicken Tenders Box": {"Chicken Tenders": 5, "Fries": 1}
+    "3 Chicken Tenders Box": {"Chicken Tenders": 3, "Fries": 1}
+    "Onion Rings": {"Onion Rings": 1}
+    "Fries": {"Fries": 1}
     # ingredients for other food items to be added later
 }
 
