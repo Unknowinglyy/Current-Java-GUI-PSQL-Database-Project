@@ -21,21 +21,6 @@ CREATE TABLE ticket(
   PRIMARY KEY("ticketID")
 );
 
-CREATE TABLE ingredient(
-  "ingredientID" integer NOT NULL,
-  "name"  TEXT NOT NULL,
-  stock integer,
-  PRIMARY KEY("ingredientID")
-);
-
-CREATE TABLE ticket(
-  "ticketID" integer NOT NULL,
-  "timeOrdered" timestamp NOT NULL,
-  "totalCost" float,
-  payment text,
-  PRIMARY KEY("ticketID")
-);
-
 CREATE TABLE foodTicket(
   amount integer NOT NULL,
   "ticketID" integer NOT NULL,
