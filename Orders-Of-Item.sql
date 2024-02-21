@@ -1,6 +1,7 @@
-SELECT i."name" AS ingredient_name
-FROM foodingredient fi
-JOIN ingredient i ON fi."ingredientID" = i."ingredientID"
-JOIN food f ON fi."foodID" = f."foodID"
+SELECT t."ticketID", t."timeOrdered", t."totalCost", t.payment
+FROM ticket t
+JOIN foodTicket ft ON t."ticketID" = ft."ticketID"
+JOIN food f ON ft."foodID" = f."foodID"
 WHERE f."name" = 'Hamburger';
--- lists all the ingredients involved in an food item
+
+-- lists all the orders that have a certain item
