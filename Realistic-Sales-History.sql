@@ -2,3 +2,4 @@ SELECT DATE_PART('hour', "timeOrdered") AS hour_of_day, COUNT(*) AS order_count,
 FROM ticket
 GROUP BY hour_of_day
 ORDER BY hour_of_day;
+--groups orders by hour of day and also total sales during that time
