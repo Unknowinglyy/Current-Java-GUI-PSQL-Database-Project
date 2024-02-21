@@ -64,5 +64,16 @@ with open("fill.sql", "w") as fd:
         
         fd.write(f"INSERT INTO ingredient (\"ingredientID\", \"name\", stock)\nVALUES ({i+1}, '{itemList[i]}', {random.randint(0, 150)});\n")
 
+    # filling tickets for 104 weeks
+    orderID = 1
+    for day in range(728):
+        daysOrders = random.randint(50, 100)
+        
+        for orderNum in range(daysOrders):
+            # hours 10am - 8pm or 10 hours
+            interval = 10 + (10/daysOrders)*orderNum
+            fd.write(f"INSERT INTO ticket (\"ticketID\", \"timeOrdered\", \"totalCost\", payment)\n VALUES ({orderID}, date (LOCALTIMESTAMP) - {728 - day} + interval '{interval} hour', 20, 'dining dollars');")
+            orderID = orderID+1
+
     fd.write(f"INSERT INTO food (\"foodID\", name, price, \"foodType\")\nVALUES (69, 'Hamburger', 11.99, 'Burger');\n")
     
