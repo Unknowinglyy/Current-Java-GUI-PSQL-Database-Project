@@ -6,7 +6,7 @@ CREATE TABLE food(
   PRIMARY KEY("foodID")
 );
 
-CREATE TABLE "foodTicket"(
+CREATE TABLE foodTicket(
   amount integer NOT NULL,
   "ticketID" integer NOT NULL,
   "foodID" integer,
@@ -14,7 +14,7 @@ CREATE TABLE "foodTicket"(
   FOREIGN KEY ("ticketID") REFERENCES ticket("ticketID")
 );
 
-CREATE TABLE "foodIngredient"(
+CREATE TABLE foodIngredient(
   "foodID" integer NOT NULL,
   "ingredientID" integer NOT NULL,
   amount integer NOT NULL,
