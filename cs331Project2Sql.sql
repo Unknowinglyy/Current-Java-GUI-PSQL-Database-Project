@@ -38,4 +38,23 @@ CREATE TABLE ticket(
   payment text,
   PRIMARY KEY("ticketID")
 );
+<<<<<<< HEAD
    
+=======
+
+ALTER TABLE "foodIngredient"
+  ADD CONSTRAINT "foodIngredient_foodID_fkey"
+    FOREIGN KEY ("foodID") REFERENCES food ("foodID");
+
+ALTER TABLE ingredient
+  ADD CONSTRAINT "ingredient_ingredientID_fkey"
+    FOREIGN KEY ("ingredientID") REFERENCES "foodIngredient" ("ingredientID");
+
+/*ALTER TABLE ticket
+  ADD CONSTRAINT ticket_id_fkey
+    FOREIGN KEY (id) REFERENCES "foodTicket" ("ticketID");
+
+ALTER TABLE food
+  ADD CONSTRAINT "food_foodID_fkey"
+    FOREIGN KEY ("foodID") REFERENCES "foodTicket" ("foodID");*/
+>>>>>>> 14403fef1ff3da5eb1f7bb735917e50189458d68
