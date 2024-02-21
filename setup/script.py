@@ -68,6 +68,8 @@ foodTypes = ["Burger",
 
 foodIngredients = {
     "Hamburger": {"Bun": 2, "Patties": 1, "Lettuce": 1, "Tomato": 1, "Onion": 1}
+    
+    # ingredients for other food items to be added later
 }
 
 with open("fill.sql", "w") as fd:
