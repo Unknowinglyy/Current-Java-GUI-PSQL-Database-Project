@@ -85,8 +85,16 @@ with open("fill.sql", "w") as fd:
     orderID = 1
     foodID = 1
     ingredientIDMap = {item: i+1 for i, item in enumerate(itemList)}
+    for item in range(40):
+                fd.write(f"INSERT INTO food (\"foodID\", name, price, \"foodType\")\nVALUES ({foodID}, 'Hamburger', 11.99, 'Burger');\n")
+
+                for ingredient, amountRequired in foodIngredients['Hamburger'].items():
+                    ingredientID = ingredientIDMap[ingredient]
+                    fd.write(f"INSERT INTO foodIngredient (\"foodID\", \"ingredientID\", amount)\nVALUES ({foodID}, {ingredientID}, {amountRequired});\n")
+                
+                foodID += 1
     for day in range(728):
-        daysOrders = random.randint(30, 50)
+        daysOrders = random.randint(1, 15)
         
         for orderNum in range(daysOrders):
             # hours 10am - 8pm or 10 hours
@@ -95,15 +103,8 @@ with open("fill.sql", "w") as fd:
             numItems = random.randint(1, 12)
             
             for item in range(numItems):
-
-                fd.write(f"INSERT INTO food (\"foodID\", name, price, \"foodType\")\nVALUES ({foodID}, 'Hamburger', 11.99, 'Burger');\n")
+                foodID = random.randint(0,40)
                 fd.write(f"INSERT INTO foodticket (amount, \"ticketID\", \"foodID\")\nVALUES (1, {orderID}, {foodID});\n")
-
-                for ingredient, amountRequired in foodIngredients['Hamburger'].items():
-                    ingredientID = ingredientIDMap[ingredient]
-                    fd.write(f"INSERT INTO foodIngredient (\"foodID\", \"ingredientID\", amount)\nVALUES ({foodID}, {ingredientID}, {amountRequired});\n")
-                
-                foodID += 1
             
             orderID += 1
 
