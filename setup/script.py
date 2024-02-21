@@ -74,6 +74,7 @@ with open("fill.sql", "w") as fd:
     # fd.write("CREATE TABLE db("
     #          "Name TEXT PRIMARY KEY,"
     #          "Stock INT);\n")
+
     for i in range(len(itemList)):
         
         fd.write(f"INSERT INTO ingredient (\"ingredientID\", \"name\", stock)\nVALUES ({i+1}, '{itemList[i]}', {random.randint(0, 150)});\n")
@@ -81,6 +82,7 @@ with open("fill.sql", "w") as fd:
     # filling tickets for 104 weeks (2 years)
     orderID = 1
     foodID = 1
+    ingredientIDMap = {item: i+1 for i, item in enumerate(itemList)}
     for day in range(728):
         daysOrders = random.randint(30, 50)
         
@@ -94,7 +96,10 @@ with open("fill.sql", "w") as fd:
 
                 fd.write(f"INSERT INTO food (\"foodID\", name, price, \"foodType\")\nVALUES ({foodID}, 'Hamburger', 11.99, 'Burger');\n")
                 fd.write(f"INSERT INTO foodticket (amount, \"ticketID\", \"foodID\")\nVALUES (1, {orderID}, {foodID});\n")
-                
+
+                for ingredient, amountRequired in foodIngredients['Hamburger'].items():
+                    ingredientID = ingredientIDMap[ingredient]
+                    fd.write(f"INSERT INTO foodIngredient (\"foodID\", \"ingredientID\", amount)\nVALUES ({foodID}, {ingredientID}, {amountRequired});\n")
                 
                 foodID += 1
             
