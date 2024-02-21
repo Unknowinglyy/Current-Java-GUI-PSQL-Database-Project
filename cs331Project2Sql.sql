@@ -31,7 +31,7 @@ CREATE TABLE ingredient(
 );
 
 CREATE TABLE ticket(
-  id integer NOT NULL,
+  "ticketID" integer NOT NULL,
   "timeOrdered" timestamp NOT NULL,
   "totalCost" float,
   payment text,
