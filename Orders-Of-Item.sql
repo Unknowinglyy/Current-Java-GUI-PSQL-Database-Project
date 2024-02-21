@@ -1,6 +1,6 @@
-SELECT f.name AS food_item, COUNT(t.id) AS order_count, SUM(t."totalCost") AS total_amount
-FROM food f
-JOIN "foodTicket" ft ON f."foodID" = ft."foodID"
-JOIN ticket t ON ft."ticketID" = t.id
-WHERE f.name = 'specific_food_item'
-GROUP BY f.name;
+SELECT i."name" AS ingredient_name
+FROM foodingredient fi
+JOIN ingredient i ON fi."ingredientID" = i."ingredientID"
+JOIN food f ON fi."foodID" = f."foodID"
+WHERE f."name" = 'Hamburger';
+-- lists all the ingredients involved in an food item
