@@ -61,7 +61,12 @@ payOptions = ["Dining Dollars",
               "Card",
               "Cash"]
 
-with open(".\\setup\\fill.sql", "w") as fd:
+foodTypes = ["Burger", 
+             "Baskets", 
+             "Desert", 
+             "Sides"]
+
+with open("fill.sql", "w") as fd:
     # fd.write("CREATE TABLE db("
     #          "Name TEXT PRIMARY KEY,"
     #          "Stock INT);\n")
@@ -69,7 +74,7 @@ with open(".\\setup\\fill.sql", "w") as fd:
         
         fd.write(f"INSERT INTO ingredient (\"ingredientID\", \"name\", stock)\nVALUES ({i+1}, '{itemList[i]}', {random.randint(0, 150)});\n")
 
-    # filling tickets for 104 weeks
+    # filling tickets for 104 weeks (2 years)
     orderID = 1
     foodID = 1
     for day in range(728):
