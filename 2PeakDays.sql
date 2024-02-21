@@ -4,3 +4,4 @@ FROM ticket
 GROUP BY day_timestamp
 ORDER BY total_sales DESC
 LIMIT 2;
+--shows the top two days in terms of total sales

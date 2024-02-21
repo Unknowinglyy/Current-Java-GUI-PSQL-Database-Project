@@ -3,3 +3,4 @@ FROM ticket t
 GROUP BY order_date
 ORDER BY total_amount DESC
 LIMIT 10;
+--shows the days with the top 10 most  expensive orders in terms of cost per day.

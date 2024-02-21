@@ -3,3 +3,4 @@ FROM food f
 JOIN "foodticket" ft ON f."foodID" = ft."foodID"
 JOIN ticket t ON ft."ticketID" = t."ticketID"
 GROUP BY f."foodType";
+--shows the total_revenue from each menu item
