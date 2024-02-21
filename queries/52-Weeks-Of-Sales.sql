@@ -1,8 +1,5 @@
-SELECT 
-  DATE_PART('year', "timeOrdered") AS year, 
-  DATE_PART('week', "timeOrdered") AS week_number, 
-  COUNT(*) AS order_count
+SELECT DATE_PART('week', "timeOrdered") AS week_number, COUNT(*) AS order_count
 FROM ticket
-GROUP BY year, week_number
-ORDER BY year, week_number;
+GROUP BY week_number
+ORDER BY week_number;
 --lists orders per week
