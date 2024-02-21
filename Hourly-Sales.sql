@@ -4,3 +4,4 @@ SELECT DATE_TRUNC('hour', "timeOrdered") AS hour_timestamp,
 FROM ticket
 GROUP BY hour_timestamp
 ORDER BY hour_timestamp;
+--lists sales per hour
