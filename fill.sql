@@ -1,31 +1,58 @@
-CREATE TABLE db(Name TEXT PRIMARY KEY,Stock INT);
-INSERT INTO db (Name, Stock)
-VALUES ('Ketchup', 95);INSERT INTO db (Name, Stock)
-VALUES ('Mayo', 91);INSERT INTO db (Name, Stock)
-VALUES ('Ranch', 42);INSERT INTO db (Name, Stock)
-VALUES ('Gig’ em Sauce', 99);INSERT INTO db (Name, Stock)
-VALUES ('Buffalo Sauce', 83);INSERT INTO db (Name, Stock)
-VALUES ('Honey Mustard', 31);INSERT INTO db (Name, Stock)
-VALUES ('Spicy Ranch', 65);INSERT INTO db (Name, Stock)
-VALUES ('Pickles', 63);INSERT INTO db (Name, Stock)
-VALUES ('Patties', 96);INSERT INTO db (Name, Stock)
-VALUES ('Chicken Tenders', 93);INSERT INTO db (Name, Stock)
-VALUES ('Fries', 9);INSERT INTO db (Name, Stock)
-VALUES ('Bun', 67);INSERT INTO db (Name, Stock)
-VALUES ('Lettuce', 64);INSERT INTO db (Name, Stock)
-VALUES ('Tomato', 39);INSERT INTO db (Name, Stock)
-VALUES ('Onion', 58);INSERT INTO db (Name, Stock)
-VALUES ('Vanilla Ice Cream', 61);INSERT INTO db (Name, Stock)
-VALUES ('Chocolate Ice Cream', 34);INSERT INTO db (Name, Stock)
-VALUES ('Strawberry Ice Cream', 47);INSERT INTO db (Name, Stock)
-VALUES ('Brownie', 63);INSERT INTO db (Name, Stock)
-VALUES ('Bacon', 81);INSERT INTO db (Name, Stock)
-VALUES ('Pepper Jack Cheese', 93);INSERT INTO db (Name, Stock)
-VALUES ('Texas Toast', 86);INSERT INTO db (Name, Stock)
-VALUES ('Black Bean Patty', 48);INSERT INTO db (Name, Stock)
-VALUES ('Kettle Chips', 93);INSERT INTO db (Name, Stock)
-VALUES ('Gravy', 30);INSERT INTO db (Name, Stock)
-VALUES ('Onion Rings', 58);INSERT INTO db (Name, Stock)
-VALUES ('Tater Tots', 6);INSERT INTO db (Name, Stock)
-VALUES ('Cold Brew', 85);INSERT INTO db (Name, Stock)
-VALUES ('Coffee Grounds', 25);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (1, 'Ketchup', 46);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (2, 'Mayo', 62);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (3, 'Ranch', 54);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (4, 'Gig em Sauce', 127);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (5, 'Buffalo Sauce', 51);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (6, 'Honey Mustard', 50);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (7, 'Spicy Ranch', 53);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (8, 'Pickles', 88);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (9, 'Patties', 117);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (10, 'Chicken Tenders', 150);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (11, 'Fries', 75);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (12, 'Bun', 54);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (13, 'Lettuce', 39);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (14, 'Tomato', 17);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (15, 'Onion', 21);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (16, 'Vanilla Ice Cream', 36);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (17, 'Chocolate Ice Cream', 102);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (18, 'Strawberry Ice Cream', 134);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (19, 'Brownie', 32);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (20, 'Bacon', 122);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (21, 'Pepper Jack Cheese', 75);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (22, 'Texas Toast', 7);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (23, 'Black Bean Patty', 33);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (24, 'Kettle Chips', 137);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (25, 'Gravy', 77);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (26, 'Onion Rings', 47);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (27, 'Tater Tots', 129);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (28, 'Cold Brew', 52);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (29, 'Coffee Grounds', 130);
