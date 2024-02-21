@@ -5,7 +5,7 @@ CREATE TABLE food(
   "name" text NOT NULL,
   price float4 NOT NULL,
   "foodType" text NOT NULL,
-  CONSTRAINT food_pkey PRIMARY KEY("foodID")
+  PRIMARY KEY("foodID")
 );
 
 CREATE TABLE "foodTicket"(
@@ -27,7 +27,7 @@ CREATE TABLE ingredient(
   "ingredientID" integer NOT NULL,
   "name"  TEXT NOT NULL,
   stock integer,
-  CONSTRAINT ingredient_pkey PRIMARY KEY("ingredientID")
+  PRIMARY KEY("ingredientID")
 );
 
 CREATE TABLE ticket(
@@ -35,7 +35,7 @@ CREATE TABLE ticket(
   "timeOrdered" timestamp NOT NULL,
   "totalCost" float,
   payment text,
-  CONSTRAINT ticket_pkey PRIMARY KEY(id)
+  PRIMARY KEY("ticketID")
 );
 
 ALTER TABLE "foodIngredient"
