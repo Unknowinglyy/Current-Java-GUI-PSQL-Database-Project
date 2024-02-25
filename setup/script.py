@@ -53,6 +53,8 @@ menuFooditems = ["Hamburger",
                  "Spicy Chicken Sandwich",
                  "Texas Toast Patty Melt",
                  "",
+                 "Cheeseburger",
+                 "Chicken Sandwich",
                  "5 Chicken Tenders Box",
                  "3 Chicken Tenders Box",
                  "Salad",
@@ -75,7 +77,11 @@ foodTypes = ["Burger",
 
 foodIngredients = {
     "Hamburger": {"Bun": 2, "Patties": 1, "Lettuce": 1, "Tomato": 1, "Onion": 1}
-    
+    "Cheeseburger": {"Bun": 2, "Patties": 1, "Lettuce": 1, "Tomato": 1, "Onion": 1, "Cheese": 1}
+    "5 Chicken Tenders Box": {"Chicken Tenders": 5, "Fries": 1}
+    "3 Chicken Tenders Box": {"Chicken Tenders": 3, "Fries": 1}
+    "Onion Rings": {"Onion Rings": 1}
+    "Fries": {"Fries": 1}
     # ingredients for other food items to be added later
 }
 
@@ -110,7 +116,7 @@ with open("fill.sql", "w") as fd:
             numItems = random.randint(1, 12)
             
             for item in range(numItems):
-                foodID = random.randint(1,40)
+                foodID = random.randint(0,40)
                 fd.write(f"INSERT INTO foodticket (amount, \"ticketID\", \"foodID\")\nVALUES (1, {orderID}, {foodID});\n")
             
             orderID += 1

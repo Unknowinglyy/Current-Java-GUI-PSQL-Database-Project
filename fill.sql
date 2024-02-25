@@ -1,4 +1,14424 @@
+<<<<<<< HEAD
 
+=======
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (1, 'Ketchup', 36);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (2, 'Mayo', 78);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (3, 'Ranch', 50);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (4, 'Gig em Sauce', 147);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (5, 'Buffalo Sauce', 104);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (6, 'Honey Mustard', 89);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (7, 'Spicy Ranch', 61);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (8, 'Pickles', 29);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (9, 'Patties', 9);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (10, 'Chicken Tenders', 33);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (11, 'Fries', 18);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (12, 'Bun', 14);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (13, 'Lettuce', 130);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (14, 'Tomato', 64);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (15, 'Onion', 112);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (16, 'Vanilla Ice Cream', 105);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (17, 'Chocolate Ice Cream', 73);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (18, 'Strawberry Ice Cream', 93);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (19, 'Brownie', 47);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (20, 'Bacon', 84);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (21, 'Pepper Jack Cheese', 97);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (22, 'Texas Toast', 82);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (23, 'Black Bean Patty', 6);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (24, 'Kettle Chips', 25);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (25, 'Gravy', 52);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (26, 'Onion Rings', 137);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (27, 'Tater Tots', 134);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (28, 'Cold Brew', 112);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (29, 'Coffee Grounds', 145);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (30, 'Cheese', 43);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (31, 'Sesame Buns', 127);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (32, 'Cookie Dough', 132);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (33, 'Flour', 55);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (34, 'Jalapenos', 38);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (35, 'Pepsi Syrup', 121);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (36, 'Starry Syrup', 120);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (37, 'Gatorade Syrup', 30);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (38, 'Dr Pepper Syrup', 145);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (39, 'Diet Pepsi Syrup', 144);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (40, 'Chicken Patty', 4);
+INSERT INTO ingredient ("ingredientID", "name", stock)
+VALUES (41, 'Potatoes', 109);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (1, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (1, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (1, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (1, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (1, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (1, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (2, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (2, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (2, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (2, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (2, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (2, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (3, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (3, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (3, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (3, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (3, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (3, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (4, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (4, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (4, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (4, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (4, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (4, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (5, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (5, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (5, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (5, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (5, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (5, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (6, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (6, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (6, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (6, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (6, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (6, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (7, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (7, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (7, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (7, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (7, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (7, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (8, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (8, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (8, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (8, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (8, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (8, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (9, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (9, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (9, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (9, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (9, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (9, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (10, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (10, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (10, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (10, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (10, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (10, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (11, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (11, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (11, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (11, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (11, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (11, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (12, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (12, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (12, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (12, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (12, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (12, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (13, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (13, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (13, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (13, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (13, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (13, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (14, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (14, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (14, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (14, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (14, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (14, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (15, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (15, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (15, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (15, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (15, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (15, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (16, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (16, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (16, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (16, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (16, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (16, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (17, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (17, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (17, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (17, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (17, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (17, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (18, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (18, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (18, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (18, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (18, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (18, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (19, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (19, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (19, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (19, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (19, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (19, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (20, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (20, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (20, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (20, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (20, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (20, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (21, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (21, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (21, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (21, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (21, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (21, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (22, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (22, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (22, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (22, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (22, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (22, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (23, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (23, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (23, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (23, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (23, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (23, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (24, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (24, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (24, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (24, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (24, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (24, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (25, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (25, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (25, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (25, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (25, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (25, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (26, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (26, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (26, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (26, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (26, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (26, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (27, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (27, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (27, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (27, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (27, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (27, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (28, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (28, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (28, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (28, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (28, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (28, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (29, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (29, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (29, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (29, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (29, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (29, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (30, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (30, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (30, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (30, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (30, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (30, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (31, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (31, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (31, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (31, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (31, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (31, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (32, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (32, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (32, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (32, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (32, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (32, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (33, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (33, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (33, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (33, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (33, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (33, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (34, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (34, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (34, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (34, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (34, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (34, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (35, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (35, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (35, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (35, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (35, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (35, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (36, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (36, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (36, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (36, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (36, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (36, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (37, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (37, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (37, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (37, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (37, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (37, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (38, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (38, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (38, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (38, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (38, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (38, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (39, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (39, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (39, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (39, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (39, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (39, 15, 1);
+INSERT INTO food ("foodID", name, price, "foodType")
+VALUES (40, 'Hamburger', 11.99, 'Burger');
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (40, 12, 2);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (40, 9, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (40, 13, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (40, 14, 1);
+INSERT INTO foodIngredient ("foodID", "ingredientID", amount)
+VALUES (40, 15, 1);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (1, date (LOCALTIMESTAMP) - 728 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 1, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 1, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 1, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 1, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 1, 39);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (2, date (LOCALTIMESTAMP) - 728 + interval '10.666666666666666 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 2, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 2, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 2, 34);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (3, date (LOCALTIMESTAMP) - 728 + interval '11.333333333333334 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 3, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 3, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 3, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 3, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 3, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 3, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 3, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 3, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 3, 30);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (4, date (LOCALTIMESTAMP) - 728 + interval '12.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 4, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 4, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 4, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 4, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 4, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 4, 0);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (5, date (LOCALTIMESTAMP) - 728 + interval '12.666666666666666 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 5, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 5, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 5, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 5, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 5, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 5, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 5, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 5, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 5, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 5, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 5, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (6, date (LOCALTIMESTAMP) - 728 + interval '13.333333333333332 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 6, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 6, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 6, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 6, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 6, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 6, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 6, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 6, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 6, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 6, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 6, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 6, 20);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (7, date (LOCALTIMESTAMP) - 728 + interval '14.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 7, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 7, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 7, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 7, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 7, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 7, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (8, date (LOCALTIMESTAMP) - 728 + interval '14.666666666666666 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 8, 2);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (9, date (LOCALTIMESTAMP) - 728 + interval '15.333333333333332 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 9, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 9, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 9, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 9, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 9, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 9, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 9, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 9, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 9, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 9, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 9, 23);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (10, date (LOCALTIMESTAMP) - 728 + interval '16.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 10, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 10, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 10, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 10, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 10, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 10, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 10, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 10, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 10, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 10, 40);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (11, date (LOCALTIMESTAMP) - 728 + interval '16.666666666666664 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 11, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 11, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 11, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 11, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 11, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 11, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 11, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 11, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 11, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 11, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 11, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (12, date (LOCALTIMESTAMP) - 728 + interval '17.333333333333332 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 12, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 12, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 12, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 12, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 12, 14);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (13, date (LOCALTIMESTAMP) - 728 + interval '18.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 13, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 13, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 13, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 13, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 13, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 13, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 13, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 13, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 13, 10);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (14, date (LOCALTIMESTAMP) - 728 + interval '18.666666666666664 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 14, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 14, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 14, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 14, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 14, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 14, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 14, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 14, 17);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (15, date (LOCALTIMESTAMP) - 728 + interval '19.333333333333332 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 15, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 15, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 15, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 15, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 15, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 15, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 15, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 15, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 15, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 15, 16);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (16, date (LOCALTIMESTAMP) - 727 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 16, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 16, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 16, 39);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (17, date (LOCALTIMESTAMP) - 726 + interval '10.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 17, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 17, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 17, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (18, date (LOCALTIMESTAMP) - 726 + interval '11.428571428571429 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 18, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 18, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 18, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 18, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 18, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 18, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 18, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 18, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 18, 11);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (19, date (LOCALTIMESTAMP) - 726 + interval '12.857142857142858 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 19, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 19, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 19, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 19, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 19, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 19, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 19, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 19, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 19, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 19, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 19, 4);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (20, date (LOCALTIMESTAMP) - 726 + interval '14.285714285714285 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 20, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 20, 20);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (21, date (LOCALTIMESTAMP) - 726 + interval '15.714285714285715 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 21, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 21, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 21, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 21, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 21, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 21, 32);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (22, date (LOCALTIMESTAMP) - 726 + interval '17.142857142857142 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 22, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 22, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 22, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 22, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 22, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 22, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 22, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 22, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 22, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 22, 0);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (23, date (LOCALTIMESTAMP) - 726 + interval '18.57142857142857 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 23, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 23, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 23, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 23, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 23, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 23, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 23, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 23, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 23, 18);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (24, date (LOCALTIMESTAMP) - 725 + interval '10.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 24, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 24, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 24, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 24, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 24, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 24, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 24, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 24, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 24, 35);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (25, date (LOCALTIMESTAMP) - 725 + interval '12.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 25, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 25, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 25, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 25, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 25, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 25, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 25, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 25, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 25, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 25, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 25, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 25, 27);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (26, date (LOCALTIMESTAMP) - 725 + interval '14.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 26, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 26, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 26, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 26, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 26, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 26, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 26, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 26, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 26, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 26, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 26, 6);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (27, date (LOCALTIMESTAMP) - 725 + interval '16.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 27, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 27, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 27, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 27, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 27, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 27, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 27, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 27, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 27, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 27, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 27, 16);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (28, date (LOCALTIMESTAMP) - 725 + interval '18.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 28, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 28, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 28, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 28, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 28, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 28, 14);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (29, date (LOCALTIMESTAMP) - 724 + interval '10.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 29, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 29, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 29, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 29, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 29, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 29, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 29, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 29, 39);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (30, date (LOCALTIMESTAMP) - 724 + interval '10.666666666666666 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 30, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (31, date (LOCALTIMESTAMP) - 724 + interval '11.333333333333334 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 31, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 31, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 31, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 31, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 31, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 31, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 31, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 31, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 31, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 31, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (32, date (LOCALTIMESTAMP) - 724 + interval '12.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 32, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 32, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 32, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 32, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 32, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 32, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 32, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 32, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 32, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 32, 5);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (33, date (LOCALTIMESTAMP) - 724 + interval '12.666666666666666 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 33, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 33, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 33, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 33, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 33, 7);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (34, date (LOCALTIMESTAMP) - 724 + interval '13.333333333333332 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 34, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 34, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 34, 10);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (35, date (LOCALTIMESTAMP) - 724 + interval '14.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 35, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 35, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 35, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 35, 38);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (36, date (LOCALTIMESTAMP) - 724 + interval '14.666666666666666 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 36, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 36, 17);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (37, date (LOCALTIMESTAMP) - 724 + interval '15.333333333333332 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 37, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 37, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 37, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 37, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 37, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 37, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 37, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 37, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 37, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 37, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 37, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 37, 9);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (38, date (LOCALTIMESTAMP) - 724 + interval '16.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 38, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 38, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 38, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 38, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 38, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 38, 4);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (39, date (LOCALTIMESTAMP) - 724 + interval '16.666666666666664 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 39, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 39, 21);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (40, date (LOCALTIMESTAMP) - 724 + interval '17.333333333333332 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 40, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 40, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 40, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 40, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 40, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 40, 22);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (41, date (LOCALTIMESTAMP) - 724 + interval '18.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 41, 12);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (42, date (LOCALTIMESTAMP) - 724 + interval '18.666666666666664 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 42, 19);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (43, date (LOCALTIMESTAMP) - 724 + interval '19.333333333333332 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 43, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 43, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 43, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 43, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 43, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 43, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 43, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 43, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 43, 39);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (44, date (LOCALTIMESTAMP) - 723 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 44, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 44, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 44, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 44, 29);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (45, date (LOCALTIMESTAMP) - 723 + interval '12.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 45, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 45, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 45, 11);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (46, date (LOCALTIMESTAMP) - 723 + interval '14.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 46, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 46, 16);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (47, date (LOCALTIMESTAMP) - 723 + interval '16.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 47, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 47, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 47, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 47, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 47, 38);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (48, date (LOCALTIMESTAMP) - 723 + interval '18.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 48, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 48, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 48, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 48, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 48, 40);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (49, date (LOCALTIMESTAMP) - 722 + interval '10.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 49, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 49, 14);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (50, date (LOCALTIMESTAMP) - 722 + interval '11.666666666666666 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 50, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 50, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 50, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 50, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 50, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 50, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 50, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 50, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 50, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 50, 7);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (51, date (LOCALTIMESTAMP) - 722 + interval '13.333333333333334 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 51, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 51, 8);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (52, date (LOCALTIMESTAMP) - 722 + interval '15.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 52, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 52, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 52, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 52, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 52, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 52, 7);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (53, date (LOCALTIMESTAMP) - 722 + interval '16.666666666666668 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 53, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 53, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 53, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 53, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 53, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (54, date (LOCALTIMESTAMP) - 722 + interval '18.333333333333336 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 54, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 54, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 54, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 54, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 54, 32);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (55, date (LOCALTIMESTAMP) - 721 + interval '10.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 55, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 55, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 55, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 55, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 55, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 55, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 55, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 55, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 55, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 55, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 55, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 55, 28);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (56, date (LOCALTIMESTAMP) - 721 + interval '10.909090909090908 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 56, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 56, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 56, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 56, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 56, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 56, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 56, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 56, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 56, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 56, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 56, 11);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (57, date (LOCALTIMESTAMP) - 721 + interval '11.818181818181818 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 57, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 57, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 57, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 57, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 57, 39);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (58, date (LOCALTIMESTAMP) - 721 + interval '12.727272727272727 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 58, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 58, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 58, 17);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (59, date (LOCALTIMESTAMP) - 721 + interval '13.636363636363637 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 59, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 59, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 59, 27);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (60, date (LOCALTIMESTAMP) - 721 + interval '14.545454545454545 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 60, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 60, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 60, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 60, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 60, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 60, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 60, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 60, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 60, 14);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (61, date (LOCALTIMESTAMP) - 721 + interval '15.454545454545453 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 61, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 61, 29);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (62, date (LOCALTIMESTAMP) - 721 + interval '16.363636363636363 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 62, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 62, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 62, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 62, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 62, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 62, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 62, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 62, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 62, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 62, 18);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (63, date (LOCALTIMESTAMP) - 721 + interval '17.272727272727273 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 63, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 63, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 63, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 63, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 63, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 63, 35);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (64, date (LOCALTIMESTAMP) - 721 + interval '18.18181818181818 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 64, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 64, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 64, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 64, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 64, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 64, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 64, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 64, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 64, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 64, 16);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (65, date (LOCALTIMESTAMP) - 721 + interval '19.09090909090909 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 65, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 65, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 65, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 65, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 65, 26);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (66, date (LOCALTIMESTAMP) - 720 + interval '10.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 66, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 66, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 66, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 66, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 66, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 66, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 66, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 66, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 66, 7);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (67, date (LOCALTIMESTAMP) - 720 + interval '12.5 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 67, 40);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (68, date (LOCALTIMESTAMP) - 720 + interval '15.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 68, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 68, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 68, 26);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (69, date (LOCALTIMESTAMP) - 720 + interval '17.5 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 69, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 69, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 69, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 69, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 69, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 69, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 69, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 69, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 69, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 69, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 69, 28);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (70, date (LOCALTIMESTAMP) - 719 + interval '10.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 70, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 70, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 70, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 70, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 70, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 70, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 70, 9);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (71, date (LOCALTIMESTAMP) - 719 + interval '10.666666666666666 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 71, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 71, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 71, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 71, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 71, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 71, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 71, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 71, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 71, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 71, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 71, 0);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (72, date (LOCALTIMESTAMP) - 719 + interval '11.333333333333334 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 72, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 72, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 72, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 72, 6);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (73, date (LOCALTIMESTAMP) - 719 + interval '12.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 73, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 73, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 73, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 73, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 73, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 73, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 73, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 73, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 73, 31);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (74, date (LOCALTIMESTAMP) - 719 + interval '12.666666666666666 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 74, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 74, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 74, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 74, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 74, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 74, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 74, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 74, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 74, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 74, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (75, date (LOCALTIMESTAMP) - 719 + interval '13.333333333333332 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 75, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 75, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 75, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 75, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 75, 25);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (76, date (LOCALTIMESTAMP) - 719 + interval '14.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 76, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 76, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 76, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 76, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 76, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 76, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 76, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 76, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 76, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 76, 22);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (77, date (LOCALTIMESTAMP) - 719 + interval '14.666666666666666 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 77, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 77, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 77, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 77, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 77, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 77, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 77, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 77, 39);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (78, date (LOCALTIMESTAMP) - 719 + interval '15.333333333333332 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 78, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 78, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 78, 6);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (79, date (LOCALTIMESTAMP) - 719 + interval '16.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 79, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 79, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 79, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 79, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 79, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 79, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 79, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 79, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 79, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 79, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 79, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 79, 19);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (80, date (LOCALTIMESTAMP) - 719 + interval '16.666666666666664 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 80, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 80, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 80, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 80, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 80, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 80, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 80, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 80, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 80, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (81, date (LOCALTIMESTAMP) - 719 + interval '17.333333333333332 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 81, 14);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (82, date (LOCALTIMESTAMP) - 719 + interval '18.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 82, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 82, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 82, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 82, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 82, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 82, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 82, 35);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (83, date (LOCALTIMESTAMP) - 719 + interval '18.666666666666664 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 83, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 83, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 83, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 83, 27);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (84, date (LOCALTIMESTAMP) - 719 + interval '19.333333333333332 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 84, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 84, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 84, 18);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (85, date (LOCALTIMESTAMP) - 718 + interval '10.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 85, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 85, 12);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (86, date (LOCALTIMESTAMP) - 718 + interval '10.909090909090908 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 86, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 86, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 86, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 86, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 86, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 86, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 86, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 86, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 86, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 86, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 86, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (87, date (LOCALTIMESTAMP) - 718 + interval '11.818181818181818 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 87, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 87, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 87, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 87, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 87, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 87, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 87, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 87, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 87, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 87, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 87, 9);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (88, date (LOCALTIMESTAMP) - 718 + interval '12.727272727272727 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 88, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 88, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 88, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 88, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 88, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 88, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 88, 34);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (89, date (LOCALTIMESTAMP) - 718 + interval '13.636363636363637 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 89, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 89, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 89, 34);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (90, date (LOCALTIMESTAMP) - 718 + interval '14.545454545454545 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 90, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 90, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (91, date (LOCALTIMESTAMP) - 718 + interval '15.454545454545453 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 91, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 91, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 91, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 91, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 91, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 91, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 91, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 91, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 91, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 91, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (92, date (LOCALTIMESTAMP) - 718 + interval '16.363636363636363 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 92, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 92, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 92, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 92, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 92, 40);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (93, date (LOCALTIMESTAMP) - 718 + interval '17.272727272727273 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 93, 28);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (94, date (LOCALTIMESTAMP) - 718 + interval '18.18181818181818 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 94, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 94, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 94, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 94, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 94, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (95, date (LOCALTIMESTAMP) - 718 + interval '19.09090909090909 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 95, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 95, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 95, 23);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (96, date (LOCALTIMESTAMP) - 717 + interval '10.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 96, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 96, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 96, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 96, 38);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (97, date (LOCALTIMESTAMP) - 716 + interval '10.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 97, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 97, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 97, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 97, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 97, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 97, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 97, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 97, 8);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (98, date (LOCALTIMESTAMP) - 716 + interval '10.76923076923077 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 98, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 98, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 98, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 98, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 98, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 98, 12);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (99, date (LOCALTIMESTAMP) - 716 + interval '11.538461538461538 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 99, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 99, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 99, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 99, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 99, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 99, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 99, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 99, 32);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (100, date (LOCALTIMESTAMP) - 716 + interval '12.307692307692308 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 100, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 100, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 100, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 100, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 100, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 100, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 100, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 100, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 100, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 100, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 100, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 100, 14);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (101, date (LOCALTIMESTAMP) - 716 + interval '13.076923076923077 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 101, 0);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (102, date (LOCALTIMESTAMP) - 716 + interval '13.846153846153847 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 102, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 102, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 102, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 102, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 102, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 102, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 102, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 102, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 102, 39);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (103, date (LOCALTIMESTAMP) - 716 + interval '14.615384615384617 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 103, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 103, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 103, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 103, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 103, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 103, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 103, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 103, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 103, 5);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (104, date (LOCALTIMESTAMP) - 716 + interval '15.384615384615385 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 104, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 104, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 104, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 104, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 104, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 104, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 104, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 104, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 104, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 104, 0);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (105, date (LOCALTIMESTAMP) - 716 + interval '16.153846153846153 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 105, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 105, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 105, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 105, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 105, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 105, 25);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (106, date (LOCALTIMESTAMP) - 716 + interval '16.923076923076923 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 106, 32);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (107, date (LOCALTIMESTAMP) - 716 + interval '17.692307692307693 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 107, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 107, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 107, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 107, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 107, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 107, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 107, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 107, 40);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (108, date (LOCALTIMESTAMP) - 716 + interval '18.46153846153846 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 108, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 108, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 108, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 108, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 108, 30);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (109, date (LOCALTIMESTAMP) - 716 + interval '19.230769230769234 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 109, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 109, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 109, 1);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (110, date (LOCALTIMESTAMP) - 715 + interval '10.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 110, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 110, 34);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (111, date (LOCALTIMESTAMP) - 715 + interval '11.11111111111111 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 111, 29);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (112, date (LOCALTIMESTAMP) - 715 + interval '12.222222222222221 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 112, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 112, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 112, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 112, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 112, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 112, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 112, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 112, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 112, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 112, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 112, 23);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (113, date (LOCALTIMESTAMP) - 715 + interval '13.333333333333334 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 113, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 113, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 113, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 113, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 113, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 113, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 113, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 113, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 113, 9);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (114, date (LOCALTIMESTAMP) - 715 + interval '14.444444444444445 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 114, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 114, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 114, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 114, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 114, 21);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (115, date (LOCALTIMESTAMP) - 715 + interval '15.555555555555555 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 115, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 115, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 115, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 115, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 115, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 115, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 115, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 115, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 115, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 115, 0);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (116, date (LOCALTIMESTAMP) - 715 + interval '16.666666666666668 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 116, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 116, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 116, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 116, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 116, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 116, 18);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (117, date (LOCALTIMESTAMP) - 715 + interval '17.77777777777778 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 117, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 117, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 117, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 117, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 117, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 117, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 117, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (118, date (LOCALTIMESTAMP) - 715 + interval '18.88888888888889 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 118, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 118, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 118, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 118, 7);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (119, date (LOCALTIMESTAMP) - 714 + interval '10.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 119, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 119, 25);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (120, date (LOCALTIMESTAMP) - 714 + interval '12.5 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 120, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 120, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 120, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 120, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 120, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 120, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 120, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 120, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 120, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (121, date (LOCALTIMESTAMP) - 714 + interval '15.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 121, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 121, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 121, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 121, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 121, 35);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (122, date (LOCALTIMESTAMP) - 714 + interval '17.5 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 122, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 122, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 122, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 122, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 122, 33);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (123, date (LOCALTIMESTAMP) - 713 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 123, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 123, 6);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (124, date (LOCALTIMESTAMP) - 713 + interval '10.714285714285714 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 124, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 124, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 124, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 124, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 124, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 124, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 124, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 124, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 124, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 124, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 124, 18);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (125, date (LOCALTIMESTAMP) - 713 + interval '11.428571428571429 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 125, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 125, 18);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (126, date (LOCALTIMESTAMP) - 713 + interval '12.142857142857142 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 126, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 126, 26);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (127, date (LOCALTIMESTAMP) - 713 + interval '12.857142857142858 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 127, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 127, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 127, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 127, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 127, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 127, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 127, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 127, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 127, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 127, 3);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (128, date (LOCALTIMESTAMP) - 713 + interval '13.571428571428571 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 128, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 128, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 128, 29);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (129, date (LOCALTIMESTAMP) - 713 + interval '14.285714285714285 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 129, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 129, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 129, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 129, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 129, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 129, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 129, 33);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (130, date (LOCALTIMESTAMP) - 713 + interval '15.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 130, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 130, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 130, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 130, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 130, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 130, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 130, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 130, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 130, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 130, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 130, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 130, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (131, date (LOCALTIMESTAMP) - 713 + interval '15.714285714285715 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 131, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 131, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 131, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 131, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 131, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 131, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 131, 5);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (132, date (LOCALTIMESTAMP) - 713 + interval '16.42857142857143 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 132, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 132, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 132, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 132, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 132, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 132, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 132, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 132, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 132, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 132, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 132, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 132, 5);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (133, date (LOCALTIMESTAMP) - 713 + interval '17.142857142857142 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 133, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 133, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 133, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 133, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 133, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 133, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 133, 33);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (134, date (LOCALTIMESTAMP) - 713 + interval '17.857142857142858 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 134, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 134, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 134, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 134, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 134, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 134, 26);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (135, date (LOCALTIMESTAMP) - 713 + interval '18.57142857142857 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 135, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 135, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 135, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 135, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 135, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 135, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 135, 26);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (136, date (LOCALTIMESTAMP) - 713 + interval '19.285714285714285 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 136, 4);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (137, date (LOCALTIMESTAMP) - 712 + interval '10.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 137, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 137, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 137, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 137, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 137, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 137, 23);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (138, date (LOCALTIMESTAMP) - 712 + interval '11.428571428571429 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 138, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 138, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 138, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 138, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 138, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 138, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 138, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 138, 12);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (139, date (LOCALTIMESTAMP) - 712 + interval '12.857142857142858 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 139, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 139, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 139, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 139, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 139, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 139, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 139, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 139, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 139, 5);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (140, date (LOCALTIMESTAMP) - 712 + interval '14.285714285714285 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 140, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 140, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 140, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 140, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 140, 31);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (141, date (LOCALTIMESTAMP) - 712 + interval '15.714285714285715 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 141, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 141, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 141, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 141, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 141, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 141, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 141, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 141, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 141, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 141, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 141, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 141, 5);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (142, date (LOCALTIMESTAMP) - 712 + interval '17.142857142857142 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 142, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 142, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 142, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 142, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 142, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 142, 33);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (143, date (LOCALTIMESTAMP) - 712 + interval '18.57142857142857 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 143, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 143, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 143, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 143, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 143, 2);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (144, date (LOCALTIMESTAMP) - 711 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 144, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 144, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 144, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 144, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 144, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 144, 30);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (145, date (LOCALTIMESTAMP) - 711 + interval '11.25 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 145, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 145, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 145, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 145, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 145, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 145, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 145, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 145, 40);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (146, date (LOCALTIMESTAMP) - 711 + interval '12.5 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 146, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 146, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 146, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 146, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 146, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 146, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 146, 8);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (147, date (LOCALTIMESTAMP) - 711 + interval '13.75 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 147, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 147, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 147, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 147, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 147, 38);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (148, date (LOCALTIMESTAMP) - 711 + interval '15.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 148, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 148, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 148, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 148, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 148, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 148, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 148, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 148, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 148, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (149, date (LOCALTIMESTAMP) - 711 + interval '16.25 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 149, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 149, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 149, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 149, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 149, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 149, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 149, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 149, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 149, 38);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (150, date (LOCALTIMESTAMP) - 711 + interval '17.5 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 150, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 150, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 150, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 150, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 150, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 150, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 150, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 150, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 150, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 150, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 150, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 150, 27);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (151, date (LOCALTIMESTAMP) - 711 + interval '18.75 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 151, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 151, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 151, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 151, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 151, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 151, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 151, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 151, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 151, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (152, date (LOCALTIMESTAMP) - 710 + interval '10.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 152, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 152, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 152, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 152, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 152, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 152, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 152, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 152, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 152, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 152, 20);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (153, date (LOCALTIMESTAMP) - 710 + interval '10.909090909090908 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 153, 23);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (154, date (LOCALTIMESTAMP) - 710 + interval '11.818181818181818 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 154, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 154, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 154, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 154, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 154, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (155, date (LOCALTIMESTAMP) - 710 + interval '12.727272727272727 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 155, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 155, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 155, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 155, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 155, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 155, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 155, 29);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (156, date (LOCALTIMESTAMP) - 710 + interval '13.636363636363637 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 156, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 156, 40);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (157, date (LOCALTIMESTAMP) - 710 + interval '14.545454545454545 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 157, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 157, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 157, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (158, date (LOCALTIMESTAMP) - 710 + interval '15.454545454545453 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 158, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 158, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 158, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 158, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 158, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 158, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 158, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 158, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 158, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 158, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (159, date (LOCALTIMESTAMP) - 710 + interval '16.363636363636363 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 159, 19);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (160, date (LOCALTIMESTAMP) - 710 + interval '17.272727272727273 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 160, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 160, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 160, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 160, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 160, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 160, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 160, 14);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (161, date (LOCALTIMESTAMP) - 710 + interval '18.18181818181818 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 161, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 161, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 161, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 161, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 161, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 161, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 161, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 161, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 161, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 161, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 161, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 161, 28);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (162, date (LOCALTIMESTAMP) - 710 + interval '19.09090909090909 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 162, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 162, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 162, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 162, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 162, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 162, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 162, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 162, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (163, date (LOCALTIMESTAMP) - 709 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 163, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 163, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 163, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 163, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 163, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 163, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 163, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 163, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 163, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 163, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 163, 29);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (164, date (LOCALTIMESTAMP) - 709 + interval '10.909090909090908 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 164, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 164, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 164, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 164, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 164, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (165, date (LOCALTIMESTAMP) - 709 + interval '11.818181818181818 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 165, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 165, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 165, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 165, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 165, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 165, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 165, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 165, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 165, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 165, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 165, 34);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (166, date (LOCALTIMESTAMP) - 709 + interval '12.727272727272727 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 166, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 166, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 166, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 166, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 166, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 166, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 166, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 166, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 166, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 166, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 166, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 166, 7);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (167, date (LOCALTIMESTAMP) - 709 + interval '13.636363636363637 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 167, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 167, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 167, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 167, 11);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (168, date (LOCALTIMESTAMP) - 709 + interval '14.545454545454545 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 168, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 168, 6);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (169, date (LOCALTIMESTAMP) - 709 + interval '15.454545454545453 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 169, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 169, 20);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (170, date (LOCALTIMESTAMP) - 709 + interval '16.363636363636363 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 170, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 170, 21);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (171, date (LOCALTIMESTAMP) - 709 + interval '17.272727272727273 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 171, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 171, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 171, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 171, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 171, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 171, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 171, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 171, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 171, 21);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (172, date (LOCALTIMESTAMP) - 709 + interval '18.18181818181818 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 172, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 172, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 172, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 172, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 172, 7);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (173, date (LOCALTIMESTAMP) - 709 + interval '19.09090909090909 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 173, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 173, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 173, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 173, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 173, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 173, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 173, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 173, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 173, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 173, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 173, 21);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (174, date (LOCALTIMESTAMP) - 708 + interval '10.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 174, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 174, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 174, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 174, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 174, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 174, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 174, 32);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (175, date (LOCALTIMESTAMP) - 708 + interval '10.76923076923077 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 175, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 175, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 175, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (176, date (LOCALTIMESTAMP) - 708 + interval '11.538461538461538 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 176, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 176, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 176, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 176, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 176, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 176, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 176, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 176, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 176, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 176, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 176, 31);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (177, date (LOCALTIMESTAMP) - 708 + interval '12.307692307692308 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 177, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 177, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 177, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 177, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 177, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 177, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 177, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 177, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 177, 28);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (178, date (LOCALTIMESTAMP) - 708 + interval '13.076923076923077 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 178, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 178, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 178, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 178, 6);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (179, date (LOCALTIMESTAMP) - 708 + interval '13.846153846153847 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 179, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 179, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 179, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 179, 0);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (180, date (LOCALTIMESTAMP) - 708 + interval '14.615384615384617 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 180, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 180, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 180, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 180, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 180, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 180, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 180, 38);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (181, date (LOCALTIMESTAMP) - 708 + interval '15.384615384615385 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 181, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 181, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 181, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 181, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 181, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 181, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 181, 21);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (182, date (LOCALTIMESTAMP) - 708 + interval '16.153846153846153 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 182, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 182, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 182, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 182, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 182, 11);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (183, date (LOCALTIMESTAMP) - 708 + interval '16.923076923076923 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 183, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 183, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 183, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 183, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 183, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 183, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 183, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 183, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 183, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 183, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 183, 14);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (184, date (LOCALTIMESTAMP) - 708 + interval '17.692307692307693 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 184, 12);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (185, date (LOCALTIMESTAMP) - 708 + interval '18.46153846153846 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 185, 7);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (186, date (LOCALTIMESTAMP) - 708 + interval '19.230769230769234 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 186, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (187, date (LOCALTIMESTAMP) - 707 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 187, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 187, 32);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (188, date (LOCALTIMESTAMP) - 707 + interval '15.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 188, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 188, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 188, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 188, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (189, date (LOCALTIMESTAMP) - 706 + interval '10.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 189, 29);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (190, date (LOCALTIMESTAMP) - 706 + interval '11.428571428571429 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 190, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 190, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 190, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 190, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 190, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 190, 9);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (191, date (LOCALTIMESTAMP) - 706 + interval '12.857142857142858 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 191, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 191, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 191, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 191, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 191, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 191, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 191, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 191, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 191, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 191, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 191, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 191, 21);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (192, date (LOCALTIMESTAMP) - 706 + interval '14.285714285714285 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 192, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 192, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 192, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 192, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 192, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 192, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 192, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 192, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 192, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 192, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 192, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 192, 18);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (193, date (LOCALTIMESTAMP) - 706 + interval '15.714285714285715 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 193, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 193, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 193, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 193, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 193, 32);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (194, date (LOCALTIMESTAMP) - 706 + interval '17.142857142857142 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 194, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 194, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 194, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 194, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 194, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 194, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 194, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 194, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 194, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 194, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 194, 19);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (195, date (LOCALTIMESTAMP) - 706 + interval '18.57142857142857 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 195, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 195, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 195, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 195, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 195, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 195, 16);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (196, date (LOCALTIMESTAMP) - 705 + interval '10.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 196, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 196, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 196, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 196, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 196, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 196, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 196, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 196, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 196, 30);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (197, date (LOCALTIMESTAMP) - 705 + interval '11.666666666666666 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 197, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 197, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 197, 11);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (198, date (LOCALTIMESTAMP) - 705 + interval '13.333333333333334 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 198, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 198, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 198, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 198, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 198, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 198, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 198, 29);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (199, date (LOCALTIMESTAMP) - 705 + interval '15.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 199, 17);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (200, date (LOCALTIMESTAMP) - 705 + interval '16.666666666666668 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 200, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 200, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 200, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 200, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 200, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 200, 22);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (201, date (LOCALTIMESTAMP) - 705 + interval '18.333333333333336 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 201, 22);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (202, date (LOCALTIMESTAMP) - 704 + interval '10.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 202, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 202, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 202, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 202, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 202, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 202, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 202, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 202, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 202, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 202, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 202, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 202, 38);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (203, date (LOCALTIMESTAMP) - 704 + interval '10.714285714285714 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 203, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 203, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 203, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 203, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 203, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 203, 21);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (204, date (LOCALTIMESTAMP) - 704 + interval '11.428571428571429 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 204, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 204, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 204, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 204, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 204, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 204, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 204, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 204, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 204, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 204, 26);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (205, date (LOCALTIMESTAMP) - 704 + interval '12.142857142857142 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 205, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 205, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 205, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 205, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 205, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 205, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 205, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 205, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 205, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 205, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 205, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 205, 26);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (206, date (LOCALTIMESTAMP) - 704 + interval '12.857142857142858 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 206, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 206, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 206, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 206, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 206, 27);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (207, date (LOCALTIMESTAMP) - 704 + interval '13.571428571428571 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 207, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 207, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 207, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 207, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 207, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 207, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 207, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 207, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 207, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 207, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 207, 40);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (208, date (LOCALTIMESTAMP) - 704 + interval '14.285714285714285 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 208, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 208, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 208, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 208, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 208, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 208, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 208, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 208, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 208, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 208, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 208, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 208, 11);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (209, date (LOCALTIMESTAMP) - 704 + interval '15.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 209, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 209, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 209, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 209, 10);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (210, date (LOCALTIMESTAMP) - 704 + interval '15.714285714285715 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 210, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 210, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 210, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 210, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 210, 22);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (211, date (LOCALTIMESTAMP) - 704 + interval '16.42857142857143 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 211, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 211, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 211, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 211, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 211, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 211, 39);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (212, date (LOCALTIMESTAMP) - 704 + interval '17.142857142857142 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 212, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 212, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 212, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 212, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 212, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 212, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 212, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 212, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 212, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 212, 25);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (213, date (LOCALTIMESTAMP) - 704 + interval '17.857142857142858 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 213, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 213, 28);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (214, date (LOCALTIMESTAMP) - 704 + interval '18.57142857142857 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 214, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 214, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 214, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 214, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 214, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 214, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 214, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (215, date (LOCALTIMESTAMP) - 704 + interval '19.285714285714285 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 215, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 215, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 215, 1);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (216, date (LOCALTIMESTAMP) - 703 + interval '10.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 216, 21);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (217, date (LOCALTIMESTAMP) - 703 + interval '12.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 217, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 217, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 217, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 217, 21);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (218, date (LOCALTIMESTAMP) - 703 + interval '14.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 218, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 218, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 218, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 218, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 218, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 218, 15);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (219, date (LOCALTIMESTAMP) - 703 + interval '16.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 219, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 219, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 219, 6);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (220, date (LOCALTIMESTAMP) - 703 + interval '18.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 220, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 220, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 220, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 220, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 220, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 220, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 220, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 220, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 220, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 220, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 220, 3);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (221, date (LOCALTIMESTAMP) - 702 + interval '10.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 221, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 221, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 221, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 221, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 221, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 221, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 221, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 221, 29);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (222, date (LOCALTIMESTAMP) - 702 + interval '11.428571428571429 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 222, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 222, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 222, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 222, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 222, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 222, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 222, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 222, 8);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (223, date (LOCALTIMESTAMP) - 702 + interval '12.857142857142858 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 223, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 223, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 223, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 223, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 223, 7);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (224, date (LOCALTIMESTAMP) - 702 + interval '14.285714285714285 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 224, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 224, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 224, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 224, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 224, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 224, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 224, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 224, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 224, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 224, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 224, 19);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (225, date (LOCALTIMESTAMP) - 702 + interval '15.714285714285715 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 225, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 225, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 225, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (226, date (LOCALTIMESTAMP) - 702 + interval '17.142857142857142 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 226, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 226, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 226, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 226, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 226, 33);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (227, date (LOCALTIMESTAMP) - 702 + interval '18.57142857142857 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 227, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 227, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 227, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 227, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 227, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 227, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 227, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 227, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 227, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 227, 29);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (228, date (LOCALTIMESTAMP) - 701 + interval '10.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 228, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 228, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 228, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 228, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 228, 38);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (229, date (LOCALTIMESTAMP) - 701 + interval '10.909090909090908 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 229, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 229, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 229, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 229, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 229, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 229, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 229, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 229, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 229, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 229, 5);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (230, date (LOCALTIMESTAMP) - 701 + interval '11.818181818181818 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 230, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 230, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 230, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 230, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 230, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 230, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 230, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (231, date (LOCALTIMESTAMP) - 701 + interval '12.727272727272727 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 231, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 231, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 231, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 231, 9);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (232, date (LOCALTIMESTAMP) - 701 + interval '13.636363636363637 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 232, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 232, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 232, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 232, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 232, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 232, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 232, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 232, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 232, 2);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (233, date (LOCALTIMESTAMP) - 701 + interval '14.545454545454545 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 233, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 233, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 233, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 233, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 233, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 233, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 233, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (234, date (LOCALTIMESTAMP) - 701 + interval '15.454545454545453 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 234, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 234, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 234, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 234, 33);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (235, date (LOCALTIMESTAMP) - 701 + interval '16.363636363636363 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 235, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 235, 23);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (236, date (LOCALTIMESTAMP) - 701 + interval '17.272727272727273 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 236, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 236, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 236, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 236, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 236, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 236, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 236, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 236, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 236, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 236, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 236, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 236, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (237, date (LOCALTIMESTAMP) - 701 + interval '18.18181818181818 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 237, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 237, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 237, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 237, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 237, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 237, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 237, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 237, 5);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (238, date (LOCALTIMESTAMP) - 701 + interval '19.09090909090909 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 238, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 238, 35);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (239, date (LOCALTIMESTAMP) - 700 + interval '10.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 239, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 239, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 239, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 239, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 239, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 239, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 239, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 239, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 239, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 239, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 239, 38);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (240, date (LOCALTIMESTAMP) - 699 + interval '10.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 240, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 240, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 240, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 240, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 240, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 240, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 240, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 240, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 240, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 240, 0);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (241, date (LOCALTIMESTAMP) - 699 + interval '10.666666666666666 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 241, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 241, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 241, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 241, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 241, 10);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (242, date (LOCALTIMESTAMP) - 699 + interval '11.333333333333334 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 242, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 242, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 242, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 242, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 242, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 242, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 242, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 242, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 242, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 242, 7);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (243, date (LOCALTIMESTAMP) - 699 + interval '12.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 243, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 243, 4);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (244, date (LOCALTIMESTAMP) - 699 + interval '12.666666666666666 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 244, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 244, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 244, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 244, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 244, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 244, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 244, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 244, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 244, 0);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (245, date (LOCALTIMESTAMP) - 699 + interval '13.333333333333332 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 245, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 245, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 245, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 245, 40);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (246, date (LOCALTIMESTAMP) - 699 + interval '14.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 246, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 246, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 246, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 246, 29);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (247, date (LOCALTIMESTAMP) - 699 + interval '14.666666666666666 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 247, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 247, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 247, 40);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (248, date (LOCALTIMESTAMP) - 699 + interval '15.333333333333332 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 248, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 248, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 248, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 248, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 248, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 248, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 248, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 248, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 248, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 248, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 248, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 248, 20);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (249, date (LOCALTIMESTAMP) - 699 + interval '16.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 249, 16);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (250, date (LOCALTIMESTAMP) - 699 + interval '16.666666666666664 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 250, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 250, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 250, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 250, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 250, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 250, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 250, 26);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (251, date (LOCALTIMESTAMP) - 699 + interval '17.333333333333332 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 251, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 251, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 251, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 251, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 251, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 251, 38);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (252, date (LOCALTIMESTAMP) - 699 + interval '18.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 252, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 252, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 252, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 252, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 252, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 252, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 252, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 252, 10);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (253, date (LOCALTIMESTAMP) - 699 + interval '18.666666666666664 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 253, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 253, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 253, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 253, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 253, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 253, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 253, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 253, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 253, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 253, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 253, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 253, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (254, date (LOCALTIMESTAMP) - 699 + interval '19.333333333333332 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 254, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 254, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 254, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 254, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 254, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 254, 7);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (255, date (LOCALTIMESTAMP) - 698 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 255, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 255, 31);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (256, date (LOCALTIMESTAMP) - 697 + interval '10.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 256, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 256, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 256, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 256, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 256, 19);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (257, date (LOCALTIMESTAMP) - 696 + interval '10.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 257, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 257, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 257, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 257, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 257, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 257, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 257, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 257, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 257, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 257, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 257, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (258, date (LOCALTIMESTAMP) - 696 + interval '11.666666666666666 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 258, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 258, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 258, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 258, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 258, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 258, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 258, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 258, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 258, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 258, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 258, 19);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (259, date (LOCALTIMESTAMP) - 696 + interval '13.333333333333334 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 259, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 259, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 259, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 259, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 259, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 259, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 259, 25);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (260, date (LOCALTIMESTAMP) - 696 + interval '15.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 260, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 260, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 260, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 260, 31);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (261, date (LOCALTIMESTAMP) - 696 + interval '16.666666666666668 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 261, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 261, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 261, 25);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (262, date (LOCALTIMESTAMP) - 696 + interval '18.333333333333336 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 262, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 262, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 262, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 262, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 262, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 262, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 262, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 262, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 262, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 262, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 262, 9);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (263, date (LOCALTIMESTAMP) - 695 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 263, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 263, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 263, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 263, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 263, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 263, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 263, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 263, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 263, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 263, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 263, 2);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (264, date (LOCALTIMESTAMP) - 695 + interval '11.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 264, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 264, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 264, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 264, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 264, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 264, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 264, 14);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (265, date (LOCALTIMESTAMP) - 695 + interval '12.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 265, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 265, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 265, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 265, 23);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (266, date (LOCALTIMESTAMP) - 695 + interval '13.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 266, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 266, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 266, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 266, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 266, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 266, 19);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (267, date (LOCALTIMESTAMP) - 695 + interval '14.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 267, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 267, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 267, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 267, 9);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (268, date (LOCALTIMESTAMP) - 695 + interval '15.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 268, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 268, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 268, 7);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (269, date (LOCALTIMESTAMP) - 695 + interval '16.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 269, 16);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (270, date (LOCALTIMESTAMP) - 695 + interval '17.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 270, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 270, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 270, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 270, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 270, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 270, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 270, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 270, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 270, 39);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (271, date (LOCALTIMESTAMP) - 695 + interval '18.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 271, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 271, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 271, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 271, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 271, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 271, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 271, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 271, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 271, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 271, 1);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (272, date (LOCALTIMESTAMP) - 695 + interval '19.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 272, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 272, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 272, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 272, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 272, 0);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (273, date (LOCALTIMESTAMP) - 694 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 273, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 273, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 273, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 273, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 273, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 273, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 273, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 273, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 273, 20);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (274, date (LOCALTIMESTAMP) - 694 + interval '10.666666666666666 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 274, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 274, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 274, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 274, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 274, 39);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (275, date (LOCALTIMESTAMP) - 694 + interval '11.333333333333334 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 275, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 275, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 275, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 275, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 275, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 275, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 275, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 275, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 275, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 275, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 275, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (276, date (LOCALTIMESTAMP) - 694 + interval '12.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 276, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 276, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 276, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 276, 15);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (277, date (LOCALTIMESTAMP) - 694 + interval '12.666666666666666 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 277, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 277, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 277, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 277, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 277, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (278, date (LOCALTIMESTAMP) - 694 + interval '13.333333333333332 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 278, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 278, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 278, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 278, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 278, 16);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (279, date (LOCALTIMESTAMP) - 694 + interval '14.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 279, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 279, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 279, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 279, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 279, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 279, 40);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (280, date (LOCALTIMESTAMP) - 694 + interval '14.666666666666666 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 280, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 280, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 280, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 280, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 280, 31);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (281, date (LOCALTIMESTAMP) - 694 + interval '15.333333333333332 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 281, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 281, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 281, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 281, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 281, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 281, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 281, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 281, 18);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (282, date (LOCALTIMESTAMP) - 694 + interval '16.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 282, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 282, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 282, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 282, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 282, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 282, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 282, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 282, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 282, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 282, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 282, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 282, 40);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (283, date (LOCALTIMESTAMP) - 694 + interval '16.666666666666664 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 283, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 283, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 283, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 283, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 283, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 283, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 283, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 283, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 283, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 283, 35);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (284, date (LOCALTIMESTAMP) - 694 + interval '17.333333333333332 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 284, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 284, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 284, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 284, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 284, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 284, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 284, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 284, 23);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (285, date (LOCALTIMESTAMP) - 694 + interval '18.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 285, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 285, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 285, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 285, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 285, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 285, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 285, 17);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (286, date (LOCALTIMESTAMP) - 694 + interval '18.666666666666664 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 286, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 286, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 286, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 286, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 286, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 286, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 286, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 286, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 286, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 286, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 286, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (287, date (LOCALTIMESTAMP) - 694 + interval '19.333333333333332 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 287, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 287, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 287, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 287, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 287, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 287, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 287, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 287, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 287, 38);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (288, date (LOCALTIMESTAMP) - 693 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 288, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 288, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 288, 27);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (289, date (LOCALTIMESTAMP) - 693 + interval '11.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 289, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 289, 11);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (290, date (LOCALTIMESTAMP) - 693 + interval '12.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 290, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 290, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 290, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 290, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 290, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 290, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 290, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (291, date (LOCALTIMESTAMP) - 693 + interval '13.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 291, 3);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (292, date (LOCALTIMESTAMP) - 693 + interval '14.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 292, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 292, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 292, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 292, 19);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (293, date (LOCALTIMESTAMP) - 693 + interval '15.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 293, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 293, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 293, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 293, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 293, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 293, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 293, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 293, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 293, 19);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (294, date (LOCALTIMESTAMP) - 693 + interval '16.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 294, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 294, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 294, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 294, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 294, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 294, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 294, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 294, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 294, 26);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (295, date (LOCALTIMESTAMP) - 693 + interval '17.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 295, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 295, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 295, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 295, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 295, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 295, 3);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (296, date (LOCALTIMESTAMP) - 693 + interval '18.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 296, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 296, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 296, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 296, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 296, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 296, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 296, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 296, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 296, 15);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (297, date (LOCALTIMESTAMP) - 693 + interval '19.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 297, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 297, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 297, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 297, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 297, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 297, 16);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (298, date (LOCALTIMESTAMP) - 692 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 298, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 298, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 298, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 298, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 298, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 298, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 298, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 298, 34);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (299, date (LOCALTIMESTAMP) - 692 + interval '10.76923076923077 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 299, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 299, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 299, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 299, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 299, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 299, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 299, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 299, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 299, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 299, 29);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (300, date (LOCALTIMESTAMP) - 692 + interval '11.538461538461538 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 300, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 300, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 300, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 300, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 300, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 300, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 300, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 300, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 300, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 300, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 300, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 300, 29);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (301, date (LOCALTIMESTAMP) - 692 + interval '12.307692307692308 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 301, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 301, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 301, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 301, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 301, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 301, 17);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (302, date (LOCALTIMESTAMP) - 692 + interval '13.076923076923077 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 302, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 302, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 302, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 302, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 302, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 302, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 302, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 302, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 302, 17);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (303, date (LOCALTIMESTAMP) - 692 + interval '13.846153846153847 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 303, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 303, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 303, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 303, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 303, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 303, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 303, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 303, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 303, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (304, date (LOCALTIMESTAMP) - 692 + interval '14.615384615384617 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 304, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 304, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 304, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 304, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 304, 2);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (305, date (LOCALTIMESTAMP) - 692 + interval '15.384615384615385 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 305, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 305, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 305, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 305, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 305, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 305, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 305, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 305, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 305, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 305, 9);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (306, date (LOCALTIMESTAMP) - 692 + interval '16.153846153846153 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 306, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 306, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 306, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 306, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 306, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 306, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 306, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 306, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 306, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 306, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 306, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 306, 21);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (307, date (LOCALTIMESTAMP) - 692 + interval '16.923076923076923 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 307, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 307, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 307, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 307, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 307, 38);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (308, date (LOCALTIMESTAMP) - 692 + interval '17.692307692307693 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 308, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 308, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 308, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 308, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 308, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 308, 18);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (309, date (LOCALTIMESTAMP) - 692 + interval '18.46153846153846 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 309, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 309, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 309, 30);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (310, date (LOCALTIMESTAMP) - 692 + interval '19.230769230769234 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 310, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 310, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 310, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 310, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 310, 40);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (311, date (LOCALTIMESTAMP) - 691 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 311, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 311, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 311, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 311, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 311, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 311, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 311, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 311, 33);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (312, date (LOCALTIMESTAMP) - 691 + interval '12.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 312, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 312, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 312, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 312, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 312, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 312, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 312, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 312, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 312, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 312, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 312, 20);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (313, date (LOCALTIMESTAMP) - 691 + interval '14.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 313, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 313, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 313, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 313, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 313, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 313, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 313, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 313, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 313, 6);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (314, date (LOCALTIMESTAMP) - 691 + interval '16.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 314, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 314, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 314, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 314, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (315, date (LOCALTIMESTAMP) - 691 + interval '18.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 315, 6);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (316, date (LOCALTIMESTAMP) - 690 + interval '10.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 316, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 316, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 316, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 316, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 316, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 316, 29);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (317, date (LOCALTIMESTAMP) - 690 + interval '11.428571428571429 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 317, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 317, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 317, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 317, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 317, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 317, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 317, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 317, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 317, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 317, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 317, 28);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (318, date (LOCALTIMESTAMP) - 690 + interval '12.857142857142858 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 318, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 318, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 318, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 318, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 318, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 318, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 318, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 318, 0);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (319, date (LOCALTIMESTAMP) - 690 + interval '14.285714285714285 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 319, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 319, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 319, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 319, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 319, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 319, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 319, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 319, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 319, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (320, date (LOCALTIMESTAMP) - 690 + interval '15.714285714285715 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 320, 29);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (321, date (LOCALTIMESTAMP) - 690 + interval '17.142857142857142 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 321, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 321, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 321, 7);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (322, date (LOCALTIMESTAMP) - 690 + interval '18.57142857142857 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 322, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 322, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 322, 32);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (323, date (LOCALTIMESTAMP) - 689 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 323, 0);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (324, date (LOCALTIMESTAMP) - 689 + interval '11.25 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 324, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 324, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 324, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 324, 4);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (325, date (LOCALTIMESTAMP) - 689 + interval '12.5 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 325, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 325, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 325, 29);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (326, date (LOCALTIMESTAMP) - 689 + interval '13.75 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 326, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 326, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 326, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 326, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 326, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 326, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 326, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 326, 22);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (327, date (LOCALTIMESTAMP) - 689 + interval '15.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 327, 40);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (328, date (LOCALTIMESTAMP) - 689 + interval '16.25 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 328, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 328, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 328, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 328, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 328, 2);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (329, date (LOCALTIMESTAMP) - 689 + interval '17.5 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 329, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 329, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 329, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 329, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 329, 25);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (330, date (LOCALTIMESTAMP) - 689 + interval '18.75 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 330, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 330, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 330, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 330, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 330, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 330, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 330, 6);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (331, date (LOCALTIMESTAMP) - 688 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 331, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 331, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 331, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 331, 1);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (332, date (LOCALTIMESTAMP) - 688 + interval '12.5 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 332, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 332, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 332, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 332, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 332, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 332, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 332, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 332, 38);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (333, date (LOCALTIMESTAMP) - 688 + interval '15.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 333, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 333, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 333, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 333, 3);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (334, date (LOCALTIMESTAMP) - 688 + interval '17.5 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 334, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 334, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 334, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 334, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 334, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 334, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 334, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 334, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 334, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 334, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (335, date (LOCALTIMESTAMP) - 687 + interval '10.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 335, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 335, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 335, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 335, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 335, 38);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (336, date (LOCALTIMESTAMP) - 687 + interval '13.333333333333334 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 336, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 336, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 336, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 336, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 336, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 336, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 336, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 336, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 336, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 336, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 336, 35);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (337, date (LOCALTIMESTAMP) - 687 + interval '16.666666666666668 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 337, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 337, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 337, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 337, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 337, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 337, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 337, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 337, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 337, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 337, 7);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (338, date (LOCALTIMESTAMP) - 686 + interval '10.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 338, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 338, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 338, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 338, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 338, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 338, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 338, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 338, 26);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (339, date (LOCALTIMESTAMP) - 686 + interval '12.5 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 339, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 339, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 339, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 339, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 339, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 339, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 339, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 339, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 339, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 339, 22);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (340, date (LOCALTIMESTAMP) - 686 + interval '15.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 340, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 340, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 340, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 340, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 340, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 340, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 340, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 340, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (341, date (LOCALTIMESTAMP) - 686 + interval '17.5 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 341, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 341, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 341, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 341, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 341, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 341, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 341, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 341, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 341, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 341, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 341, 29);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (342, date (LOCALTIMESTAMP) - 685 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 342, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 342, 11);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (343, date (LOCALTIMESTAMP) - 685 + interval '10.833333333333334 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 343, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 343, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 343, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 343, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 343, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 343, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 343, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 343, 31);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (344, date (LOCALTIMESTAMP) - 685 + interval '11.666666666666666 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 344, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 344, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 344, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 344, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 344, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 344, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 344, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 344, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 344, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 344, 3);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (345, date (LOCALTIMESTAMP) - 685 + interval '12.5 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 345, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 345, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 345, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (346, date (LOCALTIMESTAMP) - 685 + interval '13.333333333333334 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 346, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 346, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 346, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 346, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 346, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 346, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 346, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 346, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 346, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 346, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 346, 33);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (347, date (LOCALTIMESTAMP) - 685 + interval '14.166666666666668 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 347, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 347, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 347, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 347, 40);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (348, date (LOCALTIMESTAMP) - 685 + interval '15.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 348, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 348, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 348, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 348, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 348, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 348, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 348, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 348, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 348, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 348, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 348, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 348, 8);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (349, date (LOCALTIMESTAMP) - 685 + interval '15.833333333333334 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 349, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 349, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 349, 31);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (350, date (LOCALTIMESTAMP) - 685 + interval '16.666666666666668 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 350, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 350, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 350, 22);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (351, date (LOCALTIMESTAMP) - 685 + interval '17.5 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 351, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 351, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 351, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 351, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 351, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 351, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 351, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 351, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 351, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 351, 9);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (352, date (LOCALTIMESTAMP) - 685 + interval '18.333333333333336 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 352, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 352, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 352, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 352, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 352, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 352, 25);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (353, date (LOCALTIMESTAMP) - 685 + interval '19.166666666666668 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 353, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 353, 40);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (354, date (LOCALTIMESTAMP) - 684 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 354, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 354, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 354, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 354, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 354, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 354, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 354, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 354, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 354, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 354, 28);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (355, date (LOCALTIMESTAMP) - 684 + interval '12.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 355, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 355, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 355, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 355, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 355, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 355, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 355, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 355, 34);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (356, date (LOCALTIMESTAMP) - 684 + interval '14.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 356, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 356, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 356, 34);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (357, date (LOCALTIMESTAMP) - 684 + interval '16.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 357, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 357, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 357, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 357, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 357, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 357, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 357, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 357, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 357, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 357, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 357, 25);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (358, date (LOCALTIMESTAMP) - 684 + interval '18.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 358, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 358, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 358, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 358, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 358, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 358, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 358, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (359, date (LOCALTIMESTAMP) - 683 + interval '10.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 359, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 359, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 359, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 359, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 359, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 359, 18);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (360, date (LOCALTIMESTAMP) - 683 + interval '11.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 360, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 360, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 360, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 360, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 360, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 360, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 360, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 360, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 360, 12);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (361, date (LOCALTIMESTAMP) - 683 + interval '12.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 361, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 361, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 361, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 361, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 361, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 361, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 361, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 361, 22);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (362, date (LOCALTIMESTAMP) - 683 + interval '13.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 362, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 362, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 362, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 362, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 362, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 362, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 362, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 362, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 362, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 362, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 362, 1);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (363, date (LOCALTIMESTAMP) - 683 + interval '14.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 363, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 363, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 363, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 363, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 363, 5);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (364, date (LOCALTIMESTAMP) - 683 + interval '15.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 364, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 364, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 364, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 364, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 364, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 364, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 364, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 364, 29);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (365, date (LOCALTIMESTAMP) - 683 + interval '16.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 365, 29);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (366, date (LOCALTIMESTAMP) - 683 + interval '17.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 366, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 366, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 366, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 366, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 366, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 366, 6);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (367, date (LOCALTIMESTAMP) - 683 + interval '18.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 367, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 367, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 367, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 367, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 367, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 367, 6);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (368, date (LOCALTIMESTAMP) - 683 + interval '19.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 368, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 368, 17);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (369, date (LOCALTIMESTAMP) - 682 + interval '10.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 369, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 369, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 369, 30);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (370, date (LOCALTIMESTAMP) - 682 + interval '12.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 370, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 370, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 370, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 370, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (371, date (LOCALTIMESTAMP) - 682 + interval '14.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 371, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 371, 39);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (372, date (LOCALTIMESTAMP) - 682 + interval '16.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 372, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 372, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 372, 28);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (373, date (LOCALTIMESTAMP) - 682 + interval '18.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 373, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 373, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 373, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 373, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (374, date (LOCALTIMESTAMP) - 681 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 374, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 374, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (375, date (LOCALTIMESTAMP) - 681 + interval '10.714285714285714 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 375, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 375, 27);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (376, date (LOCALTIMESTAMP) - 681 + interval '11.428571428571429 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 376, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 376, 4);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (377, date (LOCALTIMESTAMP) - 681 + interval '12.142857142857142 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 377, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 377, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 377, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (378, date (LOCALTIMESTAMP) - 681 + interval '12.857142857142858 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 378, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 378, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 378, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 378, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 378, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 378, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 378, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 378, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 378, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 378, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 378, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 378, 33);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (379, date (LOCALTIMESTAMP) - 681 + interval '13.571428571428571 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 379, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 379, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 379, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 379, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 379, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 379, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 379, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 379, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 379, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 379, 26);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (380, date (LOCALTIMESTAMP) - 681 + interval '14.285714285714285 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 380, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 380, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 380, 0);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (381, date (LOCALTIMESTAMP) - 681 + interval '15.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 381, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 381, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (382, date (LOCALTIMESTAMP) - 681 + interval '15.714285714285715 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 382, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 382, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 382, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 382, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 382, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 382, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 382, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 382, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (383, date (LOCALTIMESTAMP) - 681 + interval '16.42857142857143 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 383, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 383, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 383, 20);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (384, date (LOCALTIMESTAMP) - 681 + interval '17.142857142857142 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 384, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 384, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 384, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 384, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 384, 27);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (385, date (LOCALTIMESTAMP) - 681 + interval '17.857142857142858 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 385, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 385, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 385, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 385, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 385, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 385, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 385, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 385, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 385, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 385, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 385, 8);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (386, date (LOCALTIMESTAMP) - 681 + interval '18.57142857142857 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 386, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 386, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 386, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 386, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 386, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 386, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 386, 15);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (387, date (LOCALTIMESTAMP) - 681 + interval '19.285714285714285 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 387, 27);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (388, date (LOCALTIMESTAMP) - 680 + interval '10.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 388, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 388, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 388, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 388, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 388, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 388, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 388, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 388, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 388, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (389, date (LOCALTIMESTAMP) - 680 + interval '11.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 389, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 389, 18);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (390, date (LOCALTIMESTAMP) - 680 + interval '12.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 390, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 390, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 390, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 390, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 390, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 390, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 390, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 390, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 390, 30);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (391, date (LOCALTIMESTAMP) - 680 + interval '13.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 391, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 391, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 391, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 391, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 391, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 391, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 391, 33);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (392, date (LOCALTIMESTAMP) - 680 + interval '14.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 392, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 392, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 392, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 392, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 392, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 392, 27);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (393, date (LOCALTIMESTAMP) - 680 + interval '15.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 393, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 393, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 393, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 393, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 393, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 393, 15);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (394, date (LOCALTIMESTAMP) - 680 + interval '16.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 394, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 394, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 394, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 394, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (395, date (LOCALTIMESTAMP) - 680 + interval '17.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 395, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 395, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 395, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 395, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 395, 33);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (396, date (LOCALTIMESTAMP) - 680 + interval '18.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 396, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 396, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 396, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 396, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 396, 8);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (397, date (LOCALTIMESTAMP) - 680 + interval '19.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 397, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 397, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 397, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 397, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 397, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 397, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 397, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 397, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 397, 4);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (398, date (LOCALTIMESTAMP) - 679 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 398, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 398, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 398, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 398, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 398, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 398, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 398, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 398, 0);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (399, date (LOCALTIMESTAMP) - 678 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 399, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 399, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 399, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 399, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 399, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 399, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 399, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 399, 32);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (400, date (LOCALTIMESTAMP) - 678 + interval '11.11111111111111 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 400, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 400, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 400, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 400, 9);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (401, date (LOCALTIMESTAMP) - 678 + interval '12.222222222222221 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 401, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 401, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 401, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 401, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 401, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 401, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 401, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 401, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 401, 12);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (402, date (LOCALTIMESTAMP) - 678 + interval '13.333333333333334 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 402, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 402, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 402, 17);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (403, date (LOCALTIMESTAMP) - 678 + interval '14.444444444444445 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 403, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 403, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 403, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 403, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 403, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 403, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 403, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 403, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 403, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 403, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 403, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 403, 21);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (404, date (LOCALTIMESTAMP) - 678 + interval '15.555555555555555 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 404, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 404, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 404, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (405, date (LOCALTIMESTAMP) - 678 + interval '16.666666666666668 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 405, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 405, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 405, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 405, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 405, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 405, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 405, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 405, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 405, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 405, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 405, 12);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (406, date (LOCALTIMESTAMP) - 678 + interval '17.77777777777778 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 406, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 406, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 406, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 406, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 406, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 406, 5);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (407, date (LOCALTIMESTAMP) - 678 + interval '18.88888888888889 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 407, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (408, date (LOCALTIMESTAMP) - 677 + interval '10.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 408, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 408, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 408, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 408, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 408, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 408, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 408, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 408, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 408, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 408, 1);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (409, date (LOCALTIMESTAMP) - 677 + interval '11.666666666666666 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 409, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 409, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 409, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 409, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 409, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 409, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 409, 0);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (410, date (LOCALTIMESTAMP) - 677 + interval '13.333333333333334 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 410, 4);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (411, date (LOCALTIMESTAMP) - 677 + interval '15.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 411, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 411, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 411, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 411, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 411, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 411, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 411, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 411, 6);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (412, date (LOCALTIMESTAMP) - 677 + interval '16.666666666666668 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 412, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 412, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 412, 26);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (413, date (LOCALTIMESTAMP) - 677 + interval '18.333333333333336 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 413, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 413, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 413, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 413, 40);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (414, date (LOCALTIMESTAMP) - 676 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 414, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (415, date (LOCALTIMESTAMP) - 676 + interval '12.5 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 415, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 415, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 415, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 415, 10);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (416, date (LOCALTIMESTAMP) - 676 + interval '15.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 416, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 416, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 416, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 416, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 416, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 416, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 416, 12);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (417, date (LOCALTIMESTAMP) - 676 + interval '17.5 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 417, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 417, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 417, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 417, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 417, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 417, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 417, 19);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (418, date (LOCALTIMESTAMP) - 675 + interval '10.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 418, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 418, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 418, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 418, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 418, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 418, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 418, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 418, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 418, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 418, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 418, 12);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (419, date (LOCALTIMESTAMP) - 674 + interval '10.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 419, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 419, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 419, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 419, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 419, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 419, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 419, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 419, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 419, 34);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (420, date (LOCALTIMESTAMP) - 673 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 420, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 420, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 420, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 420, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (421, date (LOCALTIMESTAMP) - 673 + interval '15.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 421, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 421, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 421, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 421, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 421, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 421, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 421, 22);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (422, date (LOCALTIMESTAMP) - 672 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 422, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 422, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 422, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 422, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 422, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 422, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 422, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 422, 28);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (423, date (LOCALTIMESTAMP) - 672 + interval '10.76923076923077 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 423, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 423, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 423, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 423, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 423, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 423, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 423, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 423, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (424, date (LOCALTIMESTAMP) - 672 + interval '11.538461538461538 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 424, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 424, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 424, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 424, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 424, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 424, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 424, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 424, 14);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (425, date (LOCALTIMESTAMP) - 672 + interval '12.307692307692308 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 425, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 425, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 425, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 425, 3);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (426, date (LOCALTIMESTAMP) - 672 + interval '13.076923076923077 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 426, 4);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (427, date (LOCALTIMESTAMP) - 672 + interval '13.846153846153847 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 427, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 427, 12);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (428, date (LOCALTIMESTAMP) - 672 + interval '14.615384615384617 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 428, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 428, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 428, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 428, 23);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (429, date (LOCALTIMESTAMP) - 672 + interval '15.384615384615385 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 429, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 429, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 429, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 429, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 429, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 429, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 429, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 429, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 429, 3);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (430, date (LOCALTIMESTAMP) - 672 + interval '16.153846153846153 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 430, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 430, 38);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (431, date (LOCALTIMESTAMP) - 672 + interval '16.923076923076923 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 431, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 431, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 431, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 431, 18);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (432, date (LOCALTIMESTAMP) - 672 + interval '17.692307692307693 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 432, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 432, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 432, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 432, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 432, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 432, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 432, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 432, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 432, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 432, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 432, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 432, 38);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (433, date (LOCALTIMESTAMP) - 672 + interval '18.46153846153846 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 433, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 433, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 433, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 433, 40);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (434, date (LOCALTIMESTAMP) - 672 + interval '19.230769230769234 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 434, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 434, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 434, 26);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (435, date (LOCALTIMESTAMP) - 671 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 435, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 435, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 435, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 435, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 435, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 435, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 435, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 435, 10);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (436, date (LOCALTIMESTAMP) - 670 + interval '10.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 436, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 436, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 436, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (437, date (LOCALTIMESTAMP) - 670 + interval '10.833333333333334 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 437, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 437, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 437, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 437, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 437, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 437, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 437, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 437, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 437, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 437, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 437, 16);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (438, date (LOCALTIMESTAMP) - 670 + interval '11.666666666666666 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 438, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 438, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 438, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 438, 32);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (439, date (LOCALTIMESTAMP) - 670 + interval '12.5 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 439, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 439, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 439, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 439, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 439, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 439, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 439, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 439, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 439, 28);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (440, date (LOCALTIMESTAMP) - 670 + interval '13.333333333333334 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 440, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 440, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 440, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 440, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 440, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 440, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 440, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 440, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 440, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 440, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 440, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 440, 10);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (441, date (LOCALTIMESTAMP) - 670 + interval '14.166666666666668 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 441, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 441, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 441, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 441, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 441, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 441, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 441, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 441, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 441, 34);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (442, date (LOCALTIMESTAMP) - 670 + interval '15.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 442, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 442, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 442, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 442, 21);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (443, date (LOCALTIMESTAMP) - 670 + interval '15.833333333333334 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 443, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 443, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 443, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 443, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 443, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 443, 33);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (444, date (LOCALTIMESTAMP) - 670 + interval '16.666666666666668 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 444, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 444, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 444, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 444, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (445, date (LOCALTIMESTAMP) - 670 + interval '17.5 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 445, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 445, 6);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (446, date (LOCALTIMESTAMP) - 670 + interval '18.333333333333336 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 446, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 446, 3);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (447, date (LOCALTIMESTAMP) - 670 + interval '19.166666666666668 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 447, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 447, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 447, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 447, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 447, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (448, date (LOCALTIMESTAMP) - 669 + interval '10.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 448, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 448, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 448, 25);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (449, date (LOCALTIMESTAMP) - 669 + interval '11.666666666666666 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 449, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 449, 34);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (450, date (LOCALTIMESTAMP) - 669 + interval '13.333333333333334 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 450, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 450, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 450, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 450, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 450, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 450, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 450, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 450, 3);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (451, date (LOCALTIMESTAMP) - 669 + interval '15.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 451, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 451, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 451, 14);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (452, date (LOCALTIMESTAMP) - 669 + interval '16.666666666666668 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 452, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 452, 7);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (453, date (LOCALTIMESTAMP) - 669 + interval '18.333333333333336 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 453, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 453, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 453, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 453, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 453, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 453, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 453, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 453, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 453, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (454, date (LOCALTIMESTAMP) - 668 + interval '10.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 454, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 454, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 454, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 454, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 454, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 454, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 454, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 454, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 454, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 454, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 454, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 454, 38);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (455, date (LOCALTIMESTAMP) - 668 + interval '15.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 455, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 455, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 455, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 455, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 455, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 455, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 455, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 455, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 455, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 455, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 455, 18);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (456, date (LOCALTIMESTAMP) - 667 + interval '10.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 456, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 456, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 456, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 456, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 456, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 456, 26);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (457, date (LOCALTIMESTAMP) - 667 + interval '13.333333333333334 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 457, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 457, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 457, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 457, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 457, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 457, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 457, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 457, 19);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (458, date (LOCALTIMESTAMP) - 667 + interval '16.666666666666668 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 458, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 458, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 458, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 458, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 458, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 458, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 458, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 458, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 458, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 458, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 458, 22);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (459, date (LOCALTIMESTAMP) - 666 + interval '10.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 459, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 459, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 459, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 459, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 459, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 459, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 459, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 459, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 459, 28);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (460, date (LOCALTIMESTAMP) - 666 + interval '10.833333333333334 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 460, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 460, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 460, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 460, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 460, 15);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (461, date (LOCALTIMESTAMP) - 666 + interval '11.666666666666666 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 461, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 461, 23);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (462, date (LOCALTIMESTAMP) - 666 + interval '12.5 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 462, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 462, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 462, 15);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (463, date (LOCALTIMESTAMP) - 666 + interval '13.333333333333334 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 463, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 463, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 463, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 463, 27);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (464, date (LOCALTIMESTAMP) - 666 + interval '14.166666666666668 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 464, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 464, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 464, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 464, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 464, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 464, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 464, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 464, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 464, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 464, 16);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (465, date (LOCALTIMESTAMP) - 666 + interval '15.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 465, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 465, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 465, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 465, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 465, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 465, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 465, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 465, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 465, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 465, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (466, date (LOCALTIMESTAMP) - 666 + interval '15.833333333333334 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 466, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 466, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 466, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 466, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 466, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 466, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 466, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 466, 10);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (467, date (LOCALTIMESTAMP) - 666 + interval '16.666666666666668 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 467, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 467, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 467, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 467, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 467, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 467, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 467, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 467, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 467, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 467, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 467, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 467, 14);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (468, date (LOCALTIMESTAMP) - 666 + interval '17.5 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 468, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 468, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 468, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 468, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 468, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 468, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 468, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 468, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 468, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 468, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 468, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 468, 21);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (469, date (LOCALTIMESTAMP) - 666 + interval '18.333333333333336 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 469, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 469, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 469, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 469, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 469, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 469, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 469, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 469, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 469, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 469, 40);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (470, date (LOCALTIMESTAMP) - 666 + interval '19.166666666666668 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 470, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 470, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 470, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 470, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 470, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 470, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 470, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 470, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 470, 6);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (471, date (LOCALTIMESTAMP) - 665 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 471, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 471, 0);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (472, date (LOCALTIMESTAMP) - 665 + interval '10.909090909090908 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 472, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 472, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 472, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 472, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 472, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 472, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 472, 12);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (473, date (LOCALTIMESTAMP) - 665 + interval '11.818181818181818 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 473, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 473, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 473, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 473, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 473, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 473, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 473, 14);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (474, date (LOCALTIMESTAMP) - 665 + interval '12.727272727272727 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 474, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 474, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 474, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 474, 39);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (475, date (LOCALTIMESTAMP) - 665 + interval '13.636363636363637 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 475, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 475, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 475, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 475, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 475, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 475, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 475, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 475, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 475, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 475, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 475, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (476, date (LOCALTIMESTAMP) - 665 + interval '14.545454545454545 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 476, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 476, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 476, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 476, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 476, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 476, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 476, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 476, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 476, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 476, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 476, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 476, 2);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (477, date (LOCALTIMESTAMP) - 665 + interval '15.454545454545453 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 477, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 477, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 477, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 477, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 477, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 477, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 477, 31);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (478, date (LOCALTIMESTAMP) - 665 + interval '16.363636363636363 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 478, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 478, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 478, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 478, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 478, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 478, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 478, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 478, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 478, 33);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (479, date (LOCALTIMESTAMP) - 665 + interval '17.272727272727273 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 479, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 479, 25);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (480, date (LOCALTIMESTAMP) - 665 + interval '18.18181818181818 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 480, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 480, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 480, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 480, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 480, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 480, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 480, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 480, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 480, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 480, 31);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (481, date (LOCALTIMESTAMP) - 665 + interval '19.09090909090909 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 481, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 481, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 481, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 481, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 481, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 481, 21);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (482, date (LOCALTIMESTAMP) - 664 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 482, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 482, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 482, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (483, date (LOCALTIMESTAMP) - 664 + interval '11.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 483, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 483, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 483, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 483, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 483, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 483, 18);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (484, date (LOCALTIMESTAMP) - 664 + interval '12.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 484, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 484, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 484, 19);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (485, date (LOCALTIMESTAMP) - 664 + interval '13.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 485, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 485, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 485, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 485, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 485, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 485, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 485, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 485, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 485, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 485, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 485, 21);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (486, date (LOCALTIMESTAMP) - 664 + interval '14.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 486, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 486, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 486, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 486, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 486, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 486, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 486, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 486, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 486, 12);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (487, date (LOCALTIMESTAMP) - 664 + interval '15.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 487, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 487, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 487, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 487, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 487, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 487, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 487, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 487, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 487, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 487, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 487, 16);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (488, date (LOCALTIMESTAMP) - 664 + interval '16.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 488, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 488, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 488, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 488, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 488, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 488, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 488, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 488, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 488, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 488, 9);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (489, date (LOCALTIMESTAMP) - 664 + interval '17.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 489, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 489, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 489, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 489, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 489, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 489, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 489, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 489, 19);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (490, date (LOCALTIMESTAMP) - 664 + interval '18.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 490, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 490, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 490, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 490, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 490, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 490, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 490, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 490, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 490, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 490, 23);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (491, date (LOCALTIMESTAMP) - 664 + interval '19.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 491, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 491, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 491, 19);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (492, date (LOCALTIMESTAMP) - 663 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 492, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 492, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 492, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 492, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 492, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 492, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 492, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 492, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 492, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 492, 8);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (493, date (LOCALTIMESTAMP) - 663 + interval '11.428571428571429 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 493, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 493, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 493, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 493, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 493, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 493, 30);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (494, date (LOCALTIMESTAMP) - 663 + interval '12.857142857142858 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 494, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 494, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 494, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 494, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 494, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 494, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 494, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 494, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 494, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 494, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 494, 15);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (495, date (LOCALTIMESTAMP) - 663 + interval '14.285714285714285 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 495, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 495, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 495, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 495, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 495, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 495, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 495, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (496, date (LOCALTIMESTAMP) - 663 + interval '15.714285714285715 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 496, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 496, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 496, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 496, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 496, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 496, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 496, 34);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (497, date (LOCALTIMESTAMP) - 663 + interval '17.142857142857142 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 497, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 497, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 497, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 497, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 497, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 497, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 497, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 497, 33);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (498, date (LOCALTIMESTAMP) - 663 + interval '18.57142857142857 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 498, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 498, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 498, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 498, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 498, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 498, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 498, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 498, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 498, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 498, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 498, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (499, date (LOCALTIMESTAMP) - 662 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 499, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 499, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 499, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 499, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 499, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 499, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 499, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 499, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 499, 12);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (500, date (LOCALTIMESTAMP) - 662 + interval '12.5 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 500, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 500, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 500, 11);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (501, date (LOCALTIMESTAMP) - 662 + interval '15.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 501, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 501, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 501, 11);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (502, date (LOCALTIMESTAMP) - 662 + interval '17.5 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 502, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 502, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 502, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 502, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 502, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 502, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 502, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 502, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 502, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 502, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 502, 25);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (503, date (LOCALTIMESTAMP) - 661 + interval '10.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 503, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 503, 0);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (504, date (LOCALTIMESTAMP) - 661 + interval '10.666666666666666 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 504, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 504, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 504, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 504, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 504, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 504, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 504, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 504, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 504, 9);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (505, date (LOCALTIMESTAMP) - 661 + interval '11.333333333333334 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 505, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 505, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 505, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 505, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 505, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 505, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 505, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 505, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 505, 14);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (506, date (LOCALTIMESTAMP) - 661 + interval '12.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 506, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 506, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 506, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 506, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 506, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 506, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 506, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 506, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 506, 9);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (507, date (LOCALTIMESTAMP) - 661 + interval '12.666666666666666 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 507, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 507, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 507, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 507, 3);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (508, date (LOCALTIMESTAMP) - 661 + interval '13.333333333333332 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 508, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 508, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 508, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 508, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 508, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 508, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 508, 21);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (509, date (LOCALTIMESTAMP) - 661 + interval '14.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 509, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 509, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 509, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 509, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 509, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 509, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 509, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 509, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (510, date (LOCALTIMESTAMP) - 661 + interval '14.666666666666666 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 510, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 510, 10);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (511, date (LOCALTIMESTAMP) - 661 + interval '15.333333333333332 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 511, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 511, 20);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (512, date (LOCALTIMESTAMP) - 661 + interval '16.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 512, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 512, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 512, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 512, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 512, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 512, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 512, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 512, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 512, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 512, 18);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (513, date (LOCALTIMESTAMP) - 661 + interval '16.666666666666664 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 513, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 513, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 513, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 513, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 513, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 513, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 513, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 513, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 513, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 513, 17);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (514, date (LOCALTIMESTAMP) - 661 + interval '17.333333333333332 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 514, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 514, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 514, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 514, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 514, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 514, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 514, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 514, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 514, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 514, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 514, 12);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (515, date (LOCALTIMESTAMP) - 661 + interval '18.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 515, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 515, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 515, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 515, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 515, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 515, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 515, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 515, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 515, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 515, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (516, date (LOCALTIMESTAMP) - 661 + interval '18.666666666666664 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 516, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 516, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 516, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 516, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 516, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 516, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 516, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 516, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 516, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 516, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 516, 7);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (517, date (LOCALTIMESTAMP) - 661 + interval '19.333333333333332 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 517, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 517, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 517, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 517, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 517, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 517, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 517, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 517, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 517, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 517, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 517, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 517, 40);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (518, date (LOCALTIMESTAMP) - 660 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 518, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 518, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 518, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 518, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 518, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 518, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 518, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 518, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 518, 38);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (519, date (LOCALTIMESTAMP) - 660 + interval '10.714285714285714 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 519, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 519, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 519, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 519, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 519, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 519, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 519, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 519, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 519, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 519, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 519, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 519, 16);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (520, date (LOCALTIMESTAMP) - 660 + interval '11.428571428571429 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 520, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 520, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 520, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 520, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 520, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 520, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 520, 18);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (521, date (LOCALTIMESTAMP) - 660 + interval '12.142857142857142 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 521, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 521, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 521, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 521, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 521, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 521, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 521, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 521, 19);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (522, date (LOCALTIMESTAMP) - 660 + interval '12.857142857142858 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 522, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 522, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 522, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 522, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 522, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 522, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 522, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 522, 14);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (523, date (LOCALTIMESTAMP) - 660 + interval '13.571428571428571 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 523, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 523, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 523, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 523, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 523, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 523, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 523, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 523, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 523, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 523, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 523, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 523, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (524, date (LOCALTIMESTAMP) - 660 + interval '14.285714285714285 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 524, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 524, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 524, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 524, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 524, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 524, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 524, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 524, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 524, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 524, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 524, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (525, date (LOCALTIMESTAMP) - 660 + interval '15.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 525, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 525, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 525, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 525, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 525, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 525, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 525, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 525, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 525, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 525, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 525, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 525, 33);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (526, date (LOCALTIMESTAMP) - 660 + interval '15.714285714285715 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 526, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 526, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 526, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 526, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 526, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 526, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 526, 5);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (527, date (LOCALTIMESTAMP) - 660 + interval '16.42857142857143 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 527, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 527, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 527, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 527, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 527, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 527, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 527, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 527, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 527, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 527, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (528, date (LOCALTIMESTAMP) - 660 + interval '17.142857142857142 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 528, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 528, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 528, 33);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (529, date (LOCALTIMESTAMP) - 660 + interval '17.857142857142858 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 529, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 529, 25);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (530, date (LOCALTIMESTAMP) - 660 + interval '18.57142857142857 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 530, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 530, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 530, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 530, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 530, 3);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (531, date (LOCALTIMESTAMP) - 660 + interval '19.285714285714285 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 531, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 531, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 531, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 531, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 531, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 531, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 531, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 531, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 531, 11);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (532, date (LOCALTIMESTAMP) - 659 + interval '10.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 532, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 532, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 532, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 532, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 532, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 532, 25);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (533, date (LOCALTIMESTAMP) - 659 + interval '11.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 533, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 533, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 533, 3);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (534, date (LOCALTIMESTAMP) - 659 + interval '12.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 534, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 534, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 534, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 534, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 534, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 534, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 534, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 534, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 534, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 534, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 534, 17);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (535, date (LOCALTIMESTAMP) - 659 + interval '13.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 535, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 535, 10);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (536, date (LOCALTIMESTAMP) - 659 + interval '14.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 536, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 536, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 536, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 536, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 536, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 536, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 536, 9);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (537, date (LOCALTIMESTAMP) - 659 + interval '15.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 537, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 537, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 537, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 537, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 537, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 537, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 537, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 537, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 537, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 537, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 537, 16);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (538, date (LOCALTIMESTAMP) - 659 + interval '16.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 538, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 538, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 538, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 538, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 538, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 538, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 538, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 538, 25);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (539, date (LOCALTIMESTAMP) - 659 + interval '17.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 539, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 539, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 539, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 539, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 539, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 539, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 539, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 539, 29);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (540, date (LOCALTIMESTAMP) - 659 + interval '18.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 540, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 540, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 540, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 540, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 540, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 540, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 540, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 540, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 540, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 540, 25);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (541, date (LOCALTIMESTAMP) - 659 + interval '19.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 541, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 541, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 541, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 541, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 541, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 541, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (542, date (LOCALTIMESTAMP) - 658 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 542, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 542, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 542, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (543, date (LOCALTIMESTAMP) - 658 + interval '15.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 543, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 543, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 543, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 543, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 543, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 543, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 543, 27);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (544, date (LOCALTIMESTAMP) - 657 + interval '10.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 544, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 544, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 544, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 544, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 544, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 544, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 544, 14);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (545, date (LOCALTIMESTAMP) - 657 + interval '11.666666666666666 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 545, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 545, 17);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (546, date (LOCALTIMESTAMP) - 657 + interval '13.333333333333334 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 546, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 546, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 546, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 546, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 546, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 546, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 546, 30);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (547, date (LOCALTIMESTAMP) - 657 + interval '15.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 547, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 547, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 547, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 547, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 547, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 547, 39);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (548, date (LOCALTIMESTAMP) - 657 + interval '16.666666666666668 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 548, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 548, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (549, date (LOCALTIMESTAMP) - 657 + interval '18.333333333333336 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 549, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 549, 6);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (550, date (LOCALTIMESTAMP) - 656 + interval '10.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 550, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 550, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 550, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 550, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 550, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 550, 20);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (551, date (LOCALTIMESTAMP) - 656 + interval '10.666666666666666 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 551, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 551, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 551, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 551, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 551, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 551, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 551, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 551, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 551, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 551, 8);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (552, date (LOCALTIMESTAMP) - 656 + interval '11.333333333333334 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 552, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 552, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 552, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 552, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 552, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 552, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 552, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 552, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 552, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (553, date (LOCALTIMESTAMP) - 656 + interval '12.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 553, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 553, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 553, 28);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (554, date (LOCALTIMESTAMP) - 656 + interval '12.666666666666666 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 554, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 554, 25);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (555, date (LOCALTIMESTAMP) - 656 + interval '13.333333333333332 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 555, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 555, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 555, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 555, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 555, 39);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (556, date (LOCALTIMESTAMP) - 656 + interval '14.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 556, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (557, date (LOCALTIMESTAMP) - 656 + interval '14.666666666666666 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 557, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 557, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 557, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 557, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 557, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 557, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 557, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 557, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 557, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 557, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 557, 32);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (558, date (LOCALTIMESTAMP) - 656 + interval '15.333333333333332 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 558, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 558, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 558, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 558, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 558, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 558, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 558, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 558, 5);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (559, date (LOCALTIMESTAMP) - 656 + interval '16.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 559, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 559, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 559, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 559, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 559, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 559, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 559, 12);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (560, date (LOCALTIMESTAMP) - 656 + interval '16.666666666666664 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 560, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 560, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 560, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 560, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 560, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 560, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 560, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 560, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 560, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 560, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 560, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 560, 29);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (561, date (LOCALTIMESTAMP) - 656 + interval '17.333333333333332 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 561, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 561, 6);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (562, date (LOCALTIMESTAMP) - 656 + interval '18.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 562, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 562, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 562, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 562, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 562, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 562, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 562, 27);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (563, date (LOCALTIMESTAMP) - 656 + interval '18.666666666666664 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 563, 40);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (564, date (LOCALTIMESTAMP) - 656 + interval '19.333333333333332 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 564, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 564, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 564, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 564, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 564, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 564, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 564, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 564, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 564, 1);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (565, date (LOCALTIMESTAMP) - 655 + interval '10.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 565, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 565, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 565, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 565, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 565, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 565, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 565, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 565, 22);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (566, date (LOCALTIMESTAMP) - 655 + interval '11.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 566, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 566, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 566, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 566, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 566, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 566, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 566, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 566, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 566, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 566, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 566, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (567, date (LOCALTIMESTAMP) - 655 + interval '12.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 567, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 567, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 567, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 567, 2);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (568, date (LOCALTIMESTAMP) - 655 + interval '13.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 568, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 568, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 568, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 568, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 568, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 568, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 568, 8);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (569, date (LOCALTIMESTAMP) - 655 + interval '14.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 569, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 569, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 569, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 569, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 569, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 569, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 569, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 569, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 569, 38);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (570, date (LOCALTIMESTAMP) - 655 + interval '15.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 570, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 570, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 570, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 570, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 570, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 570, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 570, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 570, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 570, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 570, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 570, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 570, 30);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (571, date (LOCALTIMESTAMP) - 655 + interval '16.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 571, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 571, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 571, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 571, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 571, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 571, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 571, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 571, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 571, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 571, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 571, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (572, date (LOCALTIMESTAMP) - 655 + interval '17.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 572, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 572, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 572, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 572, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 572, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 572, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 572, 2);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (573, date (LOCALTIMESTAMP) - 655 + interval '18.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 573, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 573, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 573, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 573, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 573, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 573, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 573, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 573, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 573, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (574, date (LOCALTIMESTAMP) - 655 + interval '19.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 574, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 574, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 574, 35);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (575, date (LOCALTIMESTAMP) - 654 + interval '10.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 575, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 575, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 575, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 575, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 575, 34);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (576, date (LOCALTIMESTAMP) - 654 + interval '10.76923076923077 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 576, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 576, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 576, 0);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (577, date (LOCALTIMESTAMP) - 654 + interval '11.538461538461538 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 577, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (578, date (LOCALTIMESTAMP) - 654 + interval '12.307692307692308 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 578, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 578, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 578, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 578, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 578, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 578, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 578, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (579, date (LOCALTIMESTAMP) - 654 + interval '13.076923076923077 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 579, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 579, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 579, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 579, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 579, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 579, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 579, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 579, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 579, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 579, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 579, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 579, 4);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (580, date (LOCALTIMESTAMP) - 654 + interval '13.846153846153847 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 580, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 580, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 580, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 580, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 580, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 580, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 580, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 580, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 580, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 580, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 580, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 580, 15);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (581, date (LOCALTIMESTAMP) - 654 + interval '14.615384615384617 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 581, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 581, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 581, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 581, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 581, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 581, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 581, 0);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (582, date (LOCALTIMESTAMP) - 654 + interval '15.384615384615385 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 582, 22);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (583, date (LOCALTIMESTAMP) - 654 + interval '16.153846153846153 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 583, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 583, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 583, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 583, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 583, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 583, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 583, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 583, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 583, 20);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (584, date (LOCALTIMESTAMP) - 654 + interval '16.923076923076923 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 584, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 584, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 584, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 584, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 584, 3);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (585, date (LOCALTIMESTAMP) - 654 + interval '17.692307692307693 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 585, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 585, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 585, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 585, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 585, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 585, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 585, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 585, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 585, 22);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (586, date (LOCALTIMESTAMP) - 654 + interval '18.46153846153846 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 586, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 586, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 586, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 586, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 586, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 586, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 586, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 586, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 586, 35);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (587, date (LOCALTIMESTAMP) - 654 + interval '19.230769230769234 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 587, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 587, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 587, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 587, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 587, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 587, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 587, 27);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (588, date (LOCALTIMESTAMP) - 653 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 588, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 588, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 588, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 588, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 588, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 588, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 588, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 588, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (589, date (LOCALTIMESTAMP) - 653 + interval '10.714285714285714 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 589, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 589, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 589, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 589, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 589, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 589, 15);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (590, date (LOCALTIMESTAMP) - 653 + interval '11.428571428571429 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 590, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 590, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 590, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 590, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 590, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 590, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 590, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 590, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 590, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 590, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 590, 11);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (591, date (LOCALTIMESTAMP) - 653 + interval '12.142857142857142 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 591, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 591, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 591, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 591, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 591, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 591, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 591, 8);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (592, date (LOCALTIMESTAMP) - 653 + interval '12.857142857142858 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 592, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 592, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 592, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 592, 20);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (593, date (LOCALTIMESTAMP) - 653 + interval '13.571428571428571 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 593, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 593, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 593, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 593, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 593, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 593, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 593, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 593, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 593, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 593, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 593, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 593, 9);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (594, date (LOCALTIMESTAMP) - 653 + interval '14.285714285714285 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 594, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 594, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 594, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 594, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 594, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 594, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 594, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 594, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 594, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 594, 14);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (595, date (LOCALTIMESTAMP) - 653 + interval '15.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 595, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 595, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 595, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 595, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 595, 20);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (596, date (LOCALTIMESTAMP) - 653 + interval '15.714285714285715 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 596, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 596, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 596, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 596, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 596, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 596, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 596, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 596, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 596, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 596, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 596, 12);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (597, date (LOCALTIMESTAMP) - 653 + interval '16.42857142857143 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 597, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 597, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 597, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 597, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 597, 31);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (598, date (LOCALTIMESTAMP) - 653 + interval '17.142857142857142 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 598, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 598, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 598, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 598, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 598, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 598, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 598, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 598, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 598, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 598, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 598, 6);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (599, date (LOCALTIMESTAMP) - 653 + interval '17.857142857142858 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 599, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 599, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (600, date (LOCALTIMESTAMP) - 653 + interval '18.57142857142857 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 600, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (601, date (LOCALTIMESTAMP) - 653 + interval '19.285714285714285 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 601, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 601, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 601, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 601, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 601, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 601, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 601, 16);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (602, date (LOCALTIMESTAMP) - 652 + interval '10.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 602, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 602, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 602, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 602, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 602, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 602, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 602, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 602, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 602, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 602, 3);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (603, date (LOCALTIMESTAMP) - 652 + interval '13.333333333333334 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 603, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 603, 21);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (604, date (LOCALTIMESTAMP) - 652 + interval '16.666666666666668 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 604, 34);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (605, date (LOCALTIMESTAMP) - 651 + interval '10.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 605, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 605, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 605, 25);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (606, date (LOCALTIMESTAMP) - 651 + interval '13.333333333333334 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 606, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 606, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 606, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 606, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 606, 27);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (607, date (LOCALTIMESTAMP) - 651 + interval '16.666666666666668 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 607, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 607, 26);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (608, date (LOCALTIMESTAMP) - 650 + interval '10.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 608, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 608, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 608, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 608, 20);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (609, date (LOCALTIMESTAMP) - 650 + interval '11.25 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 609, 16);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (610, date (LOCALTIMESTAMP) - 650 + interval '12.5 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 610, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 610, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 610, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 610, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 610, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 610, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 610, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 610, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 610, 35);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (611, date (LOCALTIMESTAMP) - 650 + interval '13.75 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 611, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 611, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 611, 25);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (612, date (LOCALTIMESTAMP) - 650 + interval '15.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 612, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 612, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 612, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 612, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 612, 40);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (613, date (LOCALTIMESTAMP) - 650 + interval '16.25 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 613, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 613, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 613, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 613, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 613, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 613, 1);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (614, date (LOCALTIMESTAMP) - 650 + interval '17.5 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 614, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 614, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 614, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 614, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 614, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 614, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 614, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 614, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 614, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 614, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 614, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 614, 3);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (615, date (LOCALTIMESTAMP) - 650 + interval '18.75 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 615, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 615, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 615, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 615, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 615, 9);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (616, date (LOCALTIMESTAMP) - 649 + interval '10.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 616, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 616, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 616, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 616, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 616, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 616, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 616, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 616, 15);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (617, date (LOCALTIMESTAMP) - 649 + interval '10.909090909090908 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 617, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 617, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 617, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 617, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 617, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 617, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 617, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 617, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 617, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 617, 39);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (618, date (LOCALTIMESTAMP) - 649 + interval '11.818181818181818 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 618, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 618, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 618, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 618, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 618, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 618, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 618, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 618, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 618, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 618, 31);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (619, date (LOCALTIMESTAMP) - 649 + interval '12.727272727272727 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 619, 5);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (620, date (LOCALTIMESTAMP) - 649 + interval '13.636363636363637 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 620, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 620, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 620, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 620, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 620, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (621, date (LOCALTIMESTAMP) - 649 + interval '14.545454545454545 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 621, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 621, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 621, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 621, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 621, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 621, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 621, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 621, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 621, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 621, 19);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (622, date (LOCALTIMESTAMP) - 649 + interval '15.454545454545453 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 622, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 622, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 622, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 622, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 622, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 622, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 622, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 622, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 622, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 622, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 622, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 622, 14);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (623, date (LOCALTIMESTAMP) - 649 + interval '16.363636363636363 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 623, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 623, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (624, date (LOCALTIMESTAMP) - 649 + interval '17.272727272727273 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 624, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 624, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 624, 8);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (625, date (LOCALTIMESTAMP) - 649 + interval '18.18181818181818 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 625, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 625, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 625, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 625, 16);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (626, date (LOCALTIMESTAMP) - 649 + interval '19.09090909090909 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 626, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 626, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 626, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 626, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 626, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 626, 29);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (627, date (LOCALTIMESTAMP) - 648 + interval '10.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 627, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (628, date (LOCALTIMESTAMP) - 648 + interval '11.25 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 628, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 628, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 628, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 628, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 628, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 628, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 628, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 628, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 628, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 628, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 628, 17);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (629, date (LOCALTIMESTAMP) - 648 + interval '12.5 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 629, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 629, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 629, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 629, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 629, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 629, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 629, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 629, 32);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (630, date (LOCALTIMESTAMP) - 648 + interval '13.75 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 630, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 630, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 630, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 630, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 630, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 630, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 630, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 630, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 630, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 630, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 630, 5);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (631, date (LOCALTIMESTAMP) - 648 + interval '15.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 631, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 631, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 631, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 631, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 631, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 631, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 631, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 631, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 631, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 631, 14);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (632, date (LOCALTIMESTAMP) - 648 + interval '16.25 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 632, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 632, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 632, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 632, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 632, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 632, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 632, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 632, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 632, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (633, date (LOCALTIMESTAMP) - 648 + interval '17.5 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 633, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 633, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 633, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 633, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 633, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 633, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 633, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 633, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 633, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (634, date (LOCALTIMESTAMP) - 648 + interval '18.75 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 634, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 634, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 634, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 634, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 634, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (635, date (LOCALTIMESTAMP) - 647 + interval '10.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 635, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 635, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 635, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 635, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 635, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 635, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 635, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 635, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 635, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 635, 12);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (636, date (LOCALTIMESTAMP) - 647 + interval '11.25 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 636, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 636, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 636, 26);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (637, date (LOCALTIMESTAMP) - 647 + interval '12.5 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 637, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 637, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 637, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 637, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 637, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 637, 4);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (638, date (LOCALTIMESTAMP) - 647 + interval '13.75 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 638, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 638, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 638, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 638, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 638, 38);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (639, date (LOCALTIMESTAMP) - 647 + interval '15.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 639, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 639, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 639, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 639, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 639, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 639, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 639, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 639, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (640, date (LOCALTIMESTAMP) - 647 + interval '16.25 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 640, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 640, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 640, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 640, 35);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (641, date (LOCALTIMESTAMP) - 647 + interval '17.5 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 641, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 641, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 641, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 641, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 641, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 641, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 641, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 641, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 641, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 641, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 641, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 641, 30);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (642, date (LOCALTIMESTAMP) - 647 + interval '18.75 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 642, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 642, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 642, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 642, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 642, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 642, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 642, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 642, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 642, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 642, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 642, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 642, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (643, date (LOCALTIMESTAMP) - 646 + interval '10.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 643, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 643, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 643, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 643, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 643, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 643, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 643, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 643, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (644, date (LOCALTIMESTAMP) - 646 + interval '12.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 644, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 644, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 644, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 644, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 644, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 644, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 644, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 644, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 644, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 644, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (645, date (LOCALTIMESTAMP) - 646 + interval '14.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 645, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 645, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 645, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 645, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 645, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 645, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 645, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 645, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 645, 27);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (646, date (LOCALTIMESTAMP) - 646 + interval '16.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 646, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 646, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 646, 10);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (647, date (LOCALTIMESTAMP) - 646 + interval '18.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 647, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 647, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 647, 4);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (648, date (LOCALTIMESTAMP) - 645 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 648, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 648, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 648, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 648, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 648, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 648, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 648, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 648, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 648, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 648, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 648, 10);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (649, date (LOCALTIMESTAMP) - 645 + interval '10.833333333333334 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 649, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 649, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 649, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 649, 10);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (650, date (LOCALTIMESTAMP) - 645 + interval '11.666666666666666 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 650, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 650, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 650, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 650, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 650, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 650, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 650, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 650, 12);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (651, date (LOCALTIMESTAMP) - 645 + interval '12.5 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 651, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 651, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 651, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 651, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 651, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 651, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 651, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 651, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 651, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 651, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 651, 25);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (652, date (LOCALTIMESTAMP) - 645 + interval '13.333333333333334 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 652, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 652, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 652, 40);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (653, date (LOCALTIMESTAMP) - 645 + interval '14.166666666666668 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 653, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 653, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 653, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 653, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 653, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 653, 31);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (654, date (LOCALTIMESTAMP) - 645 + interval '15.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 654, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 654, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 654, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 654, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 654, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 654, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 654, 12);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (655, date (LOCALTIMESTAMP) - 645 + interval '15.833333333333334 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 655, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (656, date (LOCALTIMESTAMP) - 645 + interval '16.666666666666668 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 656, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 656, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 656, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 656, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 656, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 656, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 656, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 656, 17);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (657, date (LOCALTIMESTAMP) - 645 + interval '17.5 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 657, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 657, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 657, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 657, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 657, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 657, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 657, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 657, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 657, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 657, 25);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (658, date (LOCALTIMESTAMP) - 645 + interval '18.333333333333336 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 658, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 658, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 658, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 658, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 658, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 658, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 658, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 658, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 658, 25);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (659, date (LOCALTIMESTAMP) - 645 + interval '19.166666666666668 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 659, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 659, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 659, 39);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (660, date (LOCALTIMESTAMP) - 644 + interval '10.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 660, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 660, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 660, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 660, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 660, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 660, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 660, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 660, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 660, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 660, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 660, 0);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (661, date (LOCALTIMESTAMP) - 644 + interval '10.714285714285714 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 661, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 661, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 661, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 661, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 661, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (662, date (LOCALTIMESTAMP) - 644 + interval '11.428571428571429 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 662, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 662, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 662, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 662, 30);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (663, date (LOCALTIMESTAMP) - 644 + interval '12.142857142857142 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 663, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 663, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 663, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 663, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 663, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 663, 26);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (664, date (LOCALTIMESTAMP) - 644 + interval '12.857142857142858 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 664, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 664, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 664, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 664, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 664, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 664, 34);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (665, date (LOCALTIMESTAMP) - 644 + interval '13.571428571428571 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 665, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 665, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 665, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 665, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 665, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 665, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 665, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 665, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 665, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 665, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 665, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 665, 26);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (666, date (LOCALTIMESTAMP) - 644 + interval '14.285714285714285 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 666, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 666, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 666, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 666, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 666, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 666, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 666, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 666, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 666, 17);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (667, date (LOCALTIMESTAMP) - 644 + interval '15.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 667, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 667, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 667, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 667, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 667, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 667, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 667, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 667, 14);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (668, date (LOCALTIMESTAMP) - 644 + interval '15.714285714285715 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 668, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (669, date (LOCALTIMESTAMP) - 644 + interval '16.42857142857143 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 669, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 669, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 669, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 669, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 669, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 669, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 669, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 669, 33);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (670, date (LOCALTIMESTAMP) - 644 + interval '17.142857142857142 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 670, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 670, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 670, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 670, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 670, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 670, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 670, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 670, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 670, 17);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (671, date (LOCALTIMESTAMP) - 644 + interval '17.857142857142858 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 671, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 671, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 671, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 671, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 671, 32);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (672, date (LOCALTIMESTAMP) - 644 + interval '18.57142857142857 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 672, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 672, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 672, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 672, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 672, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 672, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 672, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 672, 1);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (673, date (LOCALTIMESTAMP) - 644 + interval '19.285714285714285 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 673, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 673, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 673, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 673, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 673, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 673, 4);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (674, date (LOCALTIMESTAMP) - 643 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 674, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 674, 10);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (675, date (LOCALTIMESTAMP) - 643 + interval '10.666666666666666 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 675, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 675, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 675, 34);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (676, date (LOCALTIMESTAMP) - 643 + interval '11.333333333333334 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 676, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 676, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 676, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 676, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 676, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 676, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 676, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 676, 40);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (677, date (LOCALTIMESTAMP) - 643 + interval '12.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 677, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 677, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 677, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 677, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 677, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 677, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 677, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 677, 18);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (678, date (LOCALTIMESTAMP) - 643 + interval '12.666666666666666 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 678, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 678, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 678, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 678, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 678, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 678, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 678, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 678, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 678, 10);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (679, date (LOCALTIMESTAMP) - 643 + interval '13.333333333333332 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 679, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 679, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 679, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 679, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 679, 4);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (680, date (LOCALTIMESTAMP) - 643 + interval '14.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 680, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 680, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 680, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 680, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 680, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 680, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 680, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 680, 33);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (681, date (LOCALTIMESTAMP) - 643 + interval '14.666666666666666 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 681, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 681, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 681, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 681, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 681, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 681, 4);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (682, date (LOCALTIMESTAMP) - 643 + interval '15.333333333333332 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 682, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 682, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 682, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 682, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (683, date (LOCALTIMESTAMP) - 643 + interval '16.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 683, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 683, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 683, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 683, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 683, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 683, 20);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (684, date (LOCALTIMESTAMP) - 643 + interval '16.666666666666664 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 684, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 684, 15);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (685, date (LOCALTIMESTAMP) - 643 + interval '17.333333333333332 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 685, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 685, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 685, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 685, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 685, 9);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (686, date (LOCALTIMESTAMP) - 643 + interval '18.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 686, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 686, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 686, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 686, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 686, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 686, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 686, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 686, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 686, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 686, 31);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (687, date (LOCALTIMESTAMP) - 643 + interval '18.666666666666664 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 687, 32);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (688, date (LOCALTIMESTAMP) - 643 + interval '19.333333333333332 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 688, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 688, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 688, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 688, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 688, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 688, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 688, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 688, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 688, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 688, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (689, date (LOCALTIMESTAMP) - 642 + interval '10.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 689, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 689, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 689, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 689, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 689, 11);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (690, date (LOCALTIMESTAMP) - 642 + interval '11.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 690, 15);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (691, date (LOCALTIMESTAMP) - 642 + interval '12.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 691, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 691, 4);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (692, date (LOCALTIMESTAMP) - 642 + interval '13.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 692, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 692, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 692, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 692, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 692, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 692, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 692, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 692, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 692, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 692, 11);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (693, date (LOCALTIMESTAMP) - 642 + interval '14.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 693, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 693, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 693, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (694, date (LOCALTIMESTAMP) - 642 + interval '15.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 694, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 694, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 694, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 694, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 694, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 694, 14);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (695, date (LOCALTIMESTAMP) - 642 + interval '16.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 695, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 695, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 695, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 695, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 695, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 695, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 695, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 695, 32);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (696, date (LOCALTIMESTAMP) - 642 + interval '17.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 696, 22);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (697, date (LOCALTIMESTAMP) - 642 + interval '18.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 697, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 697, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 697, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 697, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 697, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 697, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 697, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 697, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 697, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 697, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 697, 28);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (698, date (LOCALTIMESTAMP) - 642 + interval '19.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 698, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 698, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 698, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 698, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 698, 12);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (699, date (LOCALTIMESTAMP) - 641 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 699, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 699, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 699, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 699, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 699, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 699, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 699, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 699, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 699, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 699, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 699, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 699, 35);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (700, date (LOCALTIMESTAMP) - 641 + interval '11.25 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 700, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 700, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 700, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 700, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 700, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 700, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 700, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 700, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 700, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 700, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 700, 10);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (701, date (LOCALTIMESTAMP) - 641 + interval '12.5 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 701, 9);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (702, date (LOCALTIMESTAMP) - 641 + interval '13.75 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 702, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 702, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 702, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 702, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 702, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 702, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 702, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 702, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 702, 22);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (703, date (LOCALTIMESTAMP) - 641 + interval '15.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 703, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 703, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 703, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 703, 23);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (704, date (LOCALTIMESTAMP) - 641 + interval '16.25 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 704, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 704, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 704, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 704, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 704, 30);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (705, date (LOCALTIMESTAMP) - 641 + interval '17.5 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 705, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 705, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 705, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 705, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 705, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 705, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 705, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 705, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 705, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 705, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 705, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 705, 28);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (706, date (LOCALTIMESTAMP) - 641 + interval '18.75 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 706, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 706, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 706, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 706, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 706, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 706, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 706, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 706, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 706, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 706, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 706, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 706, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (707, date (LOCALTIMESTAMP) - 640 + interval '10.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 707, 21);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (708, date (LOCALTIMESTAMP) - 640 + interval '11.25 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 708, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 708, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 708, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 708, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 708, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 708, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 708, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 708, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 708, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 708, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 708, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 708, 10);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (709, date (LOCALTIMESTAMP) - 640 + interval '12.5 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 709, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 709, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 709, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 709, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 709, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 709, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 709, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 709, 26);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (710, date (LOCALTIMESTAMP) - 640 + interval '13.75 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 710, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 710, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 710, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 710, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 710, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 710, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 710, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 710, 34);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (711, date (LOCALTIMESTAMP) - 640 + interval '15.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 711, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 711, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 711, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 711, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 711, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 711, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 711, 38);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (712, date (LOCALTIMESTAMP) - 640 + interval '16.25 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 712, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 712, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 712, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 712, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 712, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 712, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 712, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 712, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 712, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 712, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 712, 28);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (713, date (LOCALTIMESTAMP) - 640 + interval '17.5 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 713, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 713, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 713, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 713, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 713, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 713, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 713, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 713, 29);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (714, date (LOCALTIMESTAMP) - 640 + interval '18.75 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 714, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 714, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 714, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 714, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 714, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 714, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 714, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 714, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 714, 2);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (715, date (LOCALTIMESTAMP) - 639 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 715, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 715, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 715, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 715, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 715, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 715, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 715, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 715, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 715, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 715, 21);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (716, date (LOCALTIMESTAMP) - 639 + interval '11.25 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 716, 20);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (717, date (LOCALTIMESTAMP) - 639 + interval '12.5 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 717, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 717, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (718, date (LOCALTIMESTAMP) - 639 + interval '13.75 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 718, 15);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (719, date (LOCALTIMESTAMP) - 639 + interval '15.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 719, 21);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (720, date (LOCALTIMESTAMP) - 639 + interval '16.25 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 720, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 720, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 720, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 720, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 720, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 720, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 720, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 720, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 720, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 720, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 720, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 720, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (721, date (LOCALTIMESTAMP) - 639 + interval '17.5 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 721, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 721, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 721, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 721, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 721, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 721, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 721, 17);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (722, date (LOCALTIMESTAMP) - 639 + interval '18.75 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 722, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 722, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 722, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 722, 8);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (723, date (LOCALTIMESTAMP) - 638 + interval '10.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 723, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 723, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 723, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 723, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 723, 30);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (724, date (LOCALTIMESTAMP) - 638 + interval '12.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 724, 27);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (725, date (LOCALTIMESTAMP) - 638 + interval '14.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 725, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 725, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 725, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 725, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 725, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 725, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 725, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 725, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 725, 28);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (726, date (LOCALTIMESTAMP) - 638 + interval '16.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 726, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 726, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 726, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 726, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 726, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 726, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 726, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 726, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 726, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 726, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 726, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 726, 39);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (727, date (LOCALTIMESTAMP) - 638 + interval '18.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 727, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 727, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 727, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 727, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 727, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 727, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 727, 22);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (728, date (LOCALTIMESTAMP) - 637 + interval '10.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 728, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 728, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 728, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 728, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 728, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 728, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 728, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 728, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 728, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 728, 5);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (729, date (LOCALTIMESTAMP) - 637 + interval '10.833333333333334 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 729, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 729, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 729, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 729, 20);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (730, date (LOCALTIMESTAMP) - 637 + interval '11.666666666666666 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 730, 40);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (731, date (LOCALTIMESTAMP) - 637 + interval '12.5 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 731, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 731, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 731, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 731, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 731, 32);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (732, date (LOCALTIMESTAMP) - 637 + interval '13.333333333333334 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 732, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 732, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 732, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 732, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 732, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 732, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 732, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 732, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 732, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 732, 22);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (733, date (LOCALTIMESTAMP) - 637 + interval '14.166666666666668 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 733, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 733, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 733, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 733, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 733, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 733, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 733, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 733, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 733, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 733, 7);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (734, date (LOCALTIMESTAMP) - 637 + interval '15.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 734, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 734, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 734, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 734, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 734, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 734, 28);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (735, date (LOCALTIMESTAMP) - 637 + interval '15.833333333333334 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 735, 7);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (736, date (LOCALTIMESTAMP) - 637 + interval '16.666666666666668 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 736, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 736, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 736, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 736, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 736, 29);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (737, date (LOCALTIMESTAMP) - 637 + interval '17.5 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 737, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 737, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 737, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 737, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 737, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (738, date (LOCALTIMESTAMP) - 637 + interval '18.333333333333336 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 738, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 738, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 738, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 738, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 738, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 738, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 738, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 738, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (739, date (LOCALTIMESTAMP) - 637 + interval '19.166666666666668 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 739, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 739, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 739, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 739, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 739, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 739, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 739, 34);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (740, date (LOCALTIMESTAMP) - 636 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 740, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 740, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 740, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 740, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 740, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 740, 25);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (741, date (LOCALTIMESTAMP) - 636 + interval '12.5 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 741, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 741, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 741, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 741, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 741, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 741, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 741, 3);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (742, date (LOCALTIMESTAMP) - 636 + interval '15.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 742, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 742, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 742, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 742, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 742, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 742, 25);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (743, date (LOCALTIMESTAMP) - 636 + interval '17.5 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 743, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 743, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 743, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 743, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 743, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 743, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 743, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 743, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 743, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 743, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 743, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 743, 9);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (744, date (LOCALTIMESTAMP) - 635 + interval '10.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 744, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 744, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 744, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 744, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 744, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 744, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 744, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 744, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 744, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 744, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (745, date (LOCALTIMESTAMP) - 635 + interval '11.428571428571429 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 745, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 745, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 745, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 745, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 745, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 745, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 745, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 745, 0);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (746, date (LOCALTIMESTAMP) - 635 + interval '12.857142857142858 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 746, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 746, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 746, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 746, 7);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (747, date (LOCALTIMESTAMP) - 635 + interval '14.285714285714285 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 747, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 747, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 747, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 747, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 747, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 747, 30);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (748, date (LOCALTIMESTAMP) - 635 + interval '15.714285714285715 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 748, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 748, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 748, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 748, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 748, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 748, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 748, 8);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (749, date (LOCALTIMESTAMP) - 635 + interval '17.142857142857142 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 749, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 749, 3);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (750, date (LOCALTIMESTAMP) - 635 + interval '18.57142857142857 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 750, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 750, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 750, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 750, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 750, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 750, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 750, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 750, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 750, 8);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (751, date (LOCALTIMESTAMP) - 634 + interval '10.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 751, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 751, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 751, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 751, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 751, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 751, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 751, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 751, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 751, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 751, 25);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (752, date (LOCALTIMESTAMP) - 634 + interval '13.333333333333334 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 752, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 752, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 752, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 752, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 752, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 752, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 752, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 752, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 752, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 752, 32);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (753, date (LOCALTIMESTAMP) - 634 + interval '16.666666666666668 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 753, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 753, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 753, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 753, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 753, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 753, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 753, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 753, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 753, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 753, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 753, 15);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (754, date (LOCALTIMESTAMP) - 633 + interval '10.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 754, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 754, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 754, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 754, 33);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (755, date (LOCALTIMESTAMP) - 633 + interval '11.11111111111111 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 755, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 755, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 755, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 755, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 755, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 755, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 755, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 755, 25);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (756, date (LOCALTIMESTAMP) - 633 + interval '12.222222222222221 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 756, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 756, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 756, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 756, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 756, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 756, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 756, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 756, 39);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (757, date (LOCALTIMESTAMP) - 633 + interval '13.333333333333334 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 757, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 757, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 757, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 757, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 757, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 757, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 757, 27);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (758, date (LOCALTIMESTAMP) - 633 + interval '14.444444444444445 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 758, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 758, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 758, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 758, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (759, date (LOCALTIMESTAMP) - 633 + interval '15.555555555555555 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 759, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 759, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 759, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 759, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 759, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 759, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 759, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 759, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 759, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 759, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 759, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 759, 39);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (760, date (LOCALTIMESTAMP) - 633 + interval '16.666666666666668 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 760, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 760, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 760, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 760, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 760, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 760, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 760, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 760, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (761, date (LOCALTIMESTAMP) - 633 + interval '17.77777777777778 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 761, 35);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (762, date (LOCALTIMESTAMP) - 633 + interval '18.88888888888889 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 762, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 762, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 762, 10);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (763, date (LOCALTIMESTAMP) - 632 + interval '10.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 763, 31);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (764, date (LOCALTIMESTAMP) - 632 + interval '10.833333333333334 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 764, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 764, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 764, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 764, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 764, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 764, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 764, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 764, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 764, 20);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (765, date (LOCALTIMESTAMP) - 632 + interval '11.666666666666666 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 765, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 765, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 765, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 765, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 765, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 765, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 765, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 765, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 765, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 765, 31);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (766, date (LOCALTIMESTAMP) - 632 + interval '12.5 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 766, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 766, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 766, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 766, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 766, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 766, 32);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (767, date (LOCALTIMESTAMP) - 632 + interval '13.333333333333334 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 767, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 767, 33);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (768, date (LOCALTIMESTAMP) - 632 + interval '14.166666666666668 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 768, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 768, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 768, 32);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (769, date (LOCALTIMESTAMP) - 632 + interval '15.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 769, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 769, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 769, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 769, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 769, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 769, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 769, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 769, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 769, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 769, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 769, 19);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (770, date (LOCALTIMESTAMP) - 632 + interval '15.833333333333334 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 770, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 770, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 770, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 770, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 770, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 770, 17);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (771, date (LOCALTIMESTAMP) - 632 + interval '16.666666666666668 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 771, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 771, 34);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (772, date (LOCALTIMESTAMP) - 632 + interval '17.5 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 772, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 772, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 772, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 772, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 772, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 772, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (773, date (LOCALTIMESTAMP) - 632 + interval '18.333333333333336 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 773, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 773, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 773, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 773, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 773, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 773, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 773, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 773, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 773, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 773, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 773, 29);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (774, date (LOCALTIMESTAMP) - 632 + interval '19.166666666666668 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 774, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 774, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 774, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 774, 6);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (775, date (LOCALTIMESTAMP) - 631 + interval '10.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 775, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 775, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 775, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 775, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 775, 30);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (776, date (LOCALTIMESTAMP) - 631 + interval '10.909090909090908 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 776, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 776, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 776, 23);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (777, date (LOCALTIMESTAMP) - 631 + interval '11.818181818181818 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 777, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 777, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 777, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 777, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 777, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 777, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 777, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 777, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 777, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 777, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 777, 12);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (778, date (LOCALTIMESTAMP) - 631 + interval '12.727272727272727 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 778, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 778, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 778, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 778, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 778, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 778, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 778, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 778, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 778, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 778, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 778, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (779, date (LOCALTIMESTAMP) - 631 + interval '13.636363636363637 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 779, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 779, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 779, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 779, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 779, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 779, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 779, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 779, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 779, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 779, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 779, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 779, 22);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (780, date (LOCALTIMESTAMP) - 631 + interval '14.545454545454545 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 780, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 780, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 780, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 780, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 780, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 780, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 780, 28);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (781, date (LOCALTIMESTAMP) - 631 + interval '15.454545454545453 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 781, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 781, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 781, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 781, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 781, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 781, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 781, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 781, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 781, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 781, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 781, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 781, 15);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (782, date (LOCALTIMESTAMP) - 631 + interval '16.363636363636363 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 782, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 782, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 782, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 782, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 782, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 782, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 782, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 782, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 782, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 782, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 782, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 782, 30);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (783, date (LOCALTIMESTAMP) - 631 + interval '17.272727272727273 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 783, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 783, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 783, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 783, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 783, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 783, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 783, 20);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (784, date (LOCALTIMESTAMP) - 631 + interval '18.18181818181818 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 784, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 784, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 784, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 784, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 784, 15);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (785, date (LOCALTIMESTAMP) - 631 + interval '19.09090909090909 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 785, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 785, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 785, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 785, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 785, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 785, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 785, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 785, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (786, date (LOCALTIMESTAMP) - 630 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 786, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 786, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 786, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 786, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 786, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 786, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 786, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 786, 11);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (787, date (LOCALTIMESTAMP) - 630 + interval '10.76923076923077 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 787, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 787, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 787, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 787, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 787, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 787, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 787, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 787, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 787, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 787, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 787, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 787, 20);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (788, date (LOCALTIMESTAMP) - 630 + interval '11.538461538461538 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 788, 12);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (789, date (LOCALTIMESTAMP) - 630 + interval '12.307692307692308 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 789, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 789, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 789, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 789, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 789, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 789, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 789, 18);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (790, date (LOCALTIMESTAMP) - 630 + interval '13.076923076923077 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 790, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 790, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 790, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 790, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 790, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 790, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 790, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 790, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 790, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 790, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 790, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 790, 30);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (791, date (LOCALTIMESTAMP) - 630 + interval '13.846153846153847 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 791, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 791, 15);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (792, date (LOCALTIMESTAMP) - 630 + interval '14.615384615384617 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 792, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 792, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 792, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 792, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 792, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 792, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 792, 0);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (793, date (LOCALTIMESTAMP) - 630 + interval '15.384615384615385 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 793, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 793, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 793, 23);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (794, date (LOCALTIMESTAMP) - 630 + interval '16.153846153846153 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 794, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 794, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 794, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 794, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 794, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 794, 16);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (795, date (LOCALTIMESTAMP) - 630 + interval '16.923076923076923 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 795, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 795, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 795, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 795, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 795, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 795, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (796, date (LOCALTIMESTAMP) - 630 + interval '17.692307692307693 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 796, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 796, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 796, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 796, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 796, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 796, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 796, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 796, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 796, 18);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (797, date (LOCALTIMESTAMP) - 630 + interval '18.46153846153846 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 797, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 797, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 797, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 797, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 797, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 797, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 797, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 797, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 797, 0);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (798, date (LOCALTIMESTAMP) - 630 + interval '19.230769230769234 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 798, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 798, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 798, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 798, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 798, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 798, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 798, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 798, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 798, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 798, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 798, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (799, date (LOCALTIMESTAMP) - 629 + interval '10.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 799, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 799, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 799, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (800, date (LOCALTIMESTAMP) - 629 + interval '12.5 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 800, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 800, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 800, 35);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (801, date (LOCALTIMESTAMP) - 629 + interval '15.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 801, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 801, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 801, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 801, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 801, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 801, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 801, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 801, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 801, 21);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (802, date (LOCALTIMESTAMP) - 629 + interval '17.5 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 802, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 802, 9);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (803, date (LOCALTIMESTAMP) - 628 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 803, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 803, 18);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (804, date (LOCALTIMESTAMP) - 628 + interval '10.909090909090908 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 804, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 804, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 804, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 804, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 804, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 804, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 804, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 804, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 804, 26);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (805, date (LOCALTIMESTAMP) - 628 + interval '11.818181818181818 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 805, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 805, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 805, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 805, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 805, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 805, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 805, 31);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (806, date (LOCALTIMESTAMP) - 628 + interval '12.727272727272727 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 806, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 806, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 806, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 806, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 806, 18);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (807, date (LOCALTIMESTAMP) - 628 + interval '13.636363636363637 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 807, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 807, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 807, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 807, 4);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (808, date (LOCALTIMESTAMP) - 628 + interval '14.545454545454545 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 808, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 808, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 808, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 808, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 808, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 808, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 808, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 808, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 808, 31);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (809, date (LOCALTIMESTAMP) - 628 + interval '15.454545454545453 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 809, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 809, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 809, 17);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (810, date (LOCALTIMESTAMP) - 628 + interval '16.363636363636363 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 810, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 810, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 810, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 810, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 810, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 810, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 810, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 810, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 810, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 810, 7);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (811, date (LOCALTIMESTAMP) - 628 + interval '17.272727272727273 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 811, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 811, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 811, 34);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (812, date (LOCALTIMESTAMP) - 628 + interval '18.18181818181818 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 812, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 812, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (813, date (LOCALTIMESTAMP) - 628 + interval '19.09090909090909 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 813, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 813, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 813, 0);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (814, date (LOCALTIMESTAMP) - 627 + interval '10.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 814, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 814, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 814, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 814, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 814, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 814, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 814, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 814, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 814, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 814, 10);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (815, date (LOCALTIMESTAMP) - 627 + interval '13.333333333333334 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 815, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 815, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 815, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 815, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 815, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 815, 3);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (816, date (LOCALTIMESTAMP) - 627 + interval '16.666666666666668 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 816, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 816, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (817, date (LOCALTIMESTAMP) - 626 + interval '10.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 817, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 817, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 817, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 817, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 817, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 817, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 817, 21);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (818, date (LOCALTIMESTAMP) - 626 + interval '10.833333333333334 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 818, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 818, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 818, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 818, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 818, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 818, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 818, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 818, 2);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (819, date (LOCALTIMESTAMP) - 626 + interval '11.666666666666666 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 819, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 819, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 819, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 819, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 819, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 819, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 819, 8);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (820, date (LOCALTIMESTAMP) - 626 + interval '12.5 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 820, 29);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (821, date (LOCALTIMESTAMP) - 626 + interval '13.333333333333334 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 821, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 821, 29);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (822, date (LOCALTIMESTAMP) - 626 + interval '14.166666666666668 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 822, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 822, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 822, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 822, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 822, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 822, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 822, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 822, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 822, 35);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (823, date (LOCALTIMESTAMP) - 626 + interval '15.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 823, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 823, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 823, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 823, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 823, 21);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (824, date (LOCALTIMESTAMP) - 626 + interval '15.833333333333334 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 824, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (825, date (LOCALTIMESTAMP) - 626 + interval '16.666666666666668 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 825, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 825, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 825, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 825, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 825, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 825, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 825, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 825, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 825, 35);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (826, date (LOCALTIMESTAMP) - 626 + interval '17.5 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 826, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 826, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 826, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 826, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 826, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 826, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 826, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 826, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 826, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 826, 35);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (827, date (LOCALTIMESTAMP) - 626 + interval '18.333333333333336 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 827, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 827, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 827, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 827, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 827, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 827, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 827, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 827, 22);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (828, date (LOCALTIMESTAMP) - 626 + interval '19.166666666666668 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 828, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 828, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 828, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 828, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 828, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 828, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 828, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 828, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 828, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 828, 19);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (829, date (LOCALTIMESTAMP) - 625 + interval '10.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 829, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 829, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 829, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 829, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 829, 19);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (830, date (LOCALTIMESTAMP) - 625 + interval '11.428571428571429 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 830, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 830, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 830, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 830, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 830, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 830, 4);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (831, date (LOCALTIMESTAMP) - 625 + interval '12.857142857142858 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 831, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 831, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 831, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 831, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 831, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 831, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 831, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 831, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 831, 18);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (832, date (LOCALTIMESTAMP) - 625 + interval '14.285714285714285 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 832, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 832, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 832, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 832, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 832, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 832, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 832, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 832, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 832, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 832, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 832, 19);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (833, date (LOCALTIMESTAMP) - 625 + interval '15.714285714285715 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 833, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 833, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 833, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 833, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 833, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 833, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 833, 35);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (834, date (LOCALTIMESTAMP) - 625 + interval '17.142857142857142 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 834, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 834, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 834, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 834, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 834, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 834, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 834, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 834, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 834, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 834, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 834, 5);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (835, date (LOCALTIMESTAMP) - 625 + interval '18.57142857142857 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 835, 1);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (836, date (LOCALTIMESTAMP) - 624 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 836, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 836, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 836, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 836, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (837, date (LOCALTIMESTAMP) - 623 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 837, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 837, 12);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (838, date (LOCALTIMESTAMP) - 623 + interval '10.714285714285714 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 838, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 838, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 838, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 838, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 838, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 838, 2);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (839, date (LOCALTIMESTAMP) - 623 + interval '11.428571428571429 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 839, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 839, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 839, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 839, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 839, 12);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (840, date (LOCALTIMESTAMP) - 623 + interval '12.142857142857142 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 840, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 840, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 840, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 840, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 840, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 840, 21);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (841, date (LOCALTIMESTAMP) - 623 + interval '12.857142857142858 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 841, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 841, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 841, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 841, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 841, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 841, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 841, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 841, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 841, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 841, 11);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (842, date (LOCALTIMESTAMP) - 623 + interval '13.571428571428571 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 842, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 842, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 842, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 842, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 842, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 842, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 842, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 842, 31);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (843, date (LOCALTIMESTAMP) - 623 + interval '14.285714285714285 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 843, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 843, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 843, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 843, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 843, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 843, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 843, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 843, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 843, 6);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (844, date (LOCALTIMESTAMP) - 623 + interval '15.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 844, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 844, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 844, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 844, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 844, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 844, 11);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (845, date (LOCALTIMESTAMP) - 623 + interval '15.714285714285715 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 845, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 845, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 845, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 845, 22);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (846, date (LOCALTIMESTAMP) - 623 + interval '16.42857142857143 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 846, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 846, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 846, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 846, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 846, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 846, 28);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (847, date (LOCALTIMESTAMP) - 623 + interval '17.142857142857142 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 847, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 847, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 847, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 847, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 847, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 847, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 847, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 847, 38);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (848, date (LOCALTIMESTAMP) - 623 + interval '17.857142857142858 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 848, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 848, 38);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (849, date (LOCALTIMESTAMP) - 623 + interval '18.57142857142857 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 849, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 849, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 849, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 849, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 849, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 849, 17);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (850, date (LOCALTIMESTAMP) - 623 + interval '19.285714285714285 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 850, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 850, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 850, 33);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (851, date (LOCALTIMESTAMP) - 622 + interval '10.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 851, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 851, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 851, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 851, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 851, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 851, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 851, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 851, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 851, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 851, 15);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (852, date (LOCALTIMESTAMP) - 622 + interval '12.5 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 852, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (853, date (LOCALTIMESTAMP) - 622 + interval '15.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 853, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 853, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 853, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 853, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 853, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 853, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 853, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 853, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (854, date (LOCALTIMESTAMP) - 622 + interval '17.5 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 854, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 854, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 854, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 854, 1);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (855, date (LOCALTIMESTAMP) - 621 + interval '10.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 855, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 855, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 855, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 855, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 855, 2);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (856, date (LOCALTIMESTAMP) - 621 + interval '12.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 856, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 856, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 856, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 856, 15);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (857, date (LOCALTIMESTAMP) - 621 + interval '14.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 857, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 857, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 857, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 857, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 857, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 857, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 857, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 857, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 857, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (858, date (LOCALTIMESTAMP) - 621 + interval '16.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 858, 33);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (859, date (LOCALTIMESTAMP) - 621 + interval '18.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 859, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 859, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 859, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 859, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 859, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 859, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 859, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 859, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 859, 20);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (860, date (LOCALTIMESTAMP) - 620 + interval '10.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 860, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 860, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 860, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 860, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 860, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 860, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 860, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 860, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 860, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 860, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 860, 14);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (861, date (LOCALTIMESTAMP) - 620 + interval '11.666666666666666 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 861, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 861, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 861, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 861, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 861, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 861, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 861, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 861, 34);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (862, date (LOCALTIMESTAMP) - 620 + interval '13.333333333333334 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 862, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 862, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 862, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 862, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 862, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 862, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 862, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 862, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 862, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 862, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 862, 17);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (863, date (LOCALTIMESTAMP) - 620 + interval '15.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 863, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 863, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 863, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 863, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 863, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 863, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 863, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 863, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 863, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 863, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 863, 14);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (864, date (LOCALTIMESTAMP) - 620 + interval '16.666666666666668 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 864, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 864, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 864, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 864, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 864, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 864, 6);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (865, date (LOCALTIMESTAMP) - 620 + interval '18.333333333333336 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 865, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 865, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 865, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 865, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 865, 20);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (866, date (LOCALTIMESTAMP) - 619 + interval '10.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 866, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 866, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 866, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 866, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 866, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 866, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 866, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 866, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 866, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 866, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 866, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 866, 7);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (867, date (LOCALTIMESTAMP) - 619 + interval '10.909090909090908 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 867, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (868, date (LOCALTIMESTAMP) - 619 + interval '11.818181818181818 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 868, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 868, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 868, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 868, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 868, 38);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (869, date (LOCALTIMESTAMP) - 619 + interval '12.727272727272727 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 869, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 869, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 869, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 869, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 869, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 869, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 869, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 869, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 869, 16);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (870, date (LOCALTIMESTAMP) - 619 + interval '13.636363636363637 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 870, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 870, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 870, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 870, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 870, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 870, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 870, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 870, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 870, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 870, 3);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (871, date (LOCALTIMESTAMP) - 619 + interval '14.545454545454545 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 871, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 871, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 871, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 871, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 871, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 871, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 871, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 871, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 871, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 871, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 871, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (872, date (LOCALTIMESTAMP) - 619 + interval '15.454545454545453 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 872, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 872, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 872, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 872, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 872, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 872, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 872, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 872, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 872, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 872, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 872, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 872, 39);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (873, date (LOCALTIMESTAMP) - 619 + interval '16.363636363636363 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 873, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 873, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 873, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 873, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 873, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 873, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 873, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 873, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 873, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 873, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 873, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (874, date (LOCALTIMESTAMP) - 619 + interval '17.272727272727273 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 874, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 874, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 874, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 874, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 874, 19);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (875, date (LOCALTIMESTAMP) - 619 + interval '18.18181818181818 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 875, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 875, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 875, 28);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (876, date (LOCALTIMESTAMP) - 619 + interval '19.09090909090909 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 876, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 876, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 876, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 876, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 876, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 876, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 876, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 876, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 876, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 876, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 876, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (877, date (LOCALTIMESTAMP) - 618 + interval '10.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 877, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 877, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 877, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 877, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 877, 35);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (878, date (LOCALTIMESTAMP) - 618 + interval '10.909090909090908 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 878, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 878, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 878, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 878, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 878, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 878, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 878, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 878, 18);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (879, date (LOCALTIMESTAMP) - 618 + interval '11.818181818181818 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 879, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 879, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 879, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 879, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 879, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 879, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 879, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 879, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 879, 9);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (880, date (LOCALTIMESTAMP) - 618 + interval '12.727272727272727 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 880, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 880, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 880, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 880, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 880, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 880, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 880, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 880, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 880, 28);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (881, date (LOCALTIMESTAMP) - 618 + interval '13.636363636363637 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 881, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 881, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 881, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 881, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 881, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 881, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 881, 12);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (882, date (LOCALTIMESTAMP) - 618 + interval '14.545454545454545 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 882, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 882, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 882, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 882, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 882, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 882, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 882, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 882, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 882, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 882, 1);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (883, date (LOCALTIMESTAMP) - 618 + interval '15.454545454545453 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 883, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 883, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 883, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 883, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 883, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 883, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 883, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 883, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 883, 23);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (884, date (LOCALTIMESTAMP) - 618 + interval '16.363636363636363 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 884, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 884, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 884, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 884, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 884, 19);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (885, date (LOCALTIMESTAMP) - 618 + interval '17.272727272727273 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 885, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 885, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 885, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 885, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 885, 7);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (886, date (LOCALTIMESTAMP) - 618 + interval '18.18181818181818 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 886, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 886, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 886, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 886, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 886, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 886, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 886, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 886, 15);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (887, date (LOCALTIMESTAMP) - 618 + interval '19.09090909090909 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 887, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 887, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 887, 18);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (888, date (LOCALTIMESTAMP) - 617 + interval '10.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 888, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 888, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 888, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 888, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 888, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 888, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 888, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 888, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 888, 14);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (889, date (LOCALTIMESTAMP) - 617 + interval '11.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 889, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 889, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 889, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 889, 39);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (890, date (LOCALTIMESTAMP) - 617 + interval '12.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 890, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 890, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 890, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 890, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 890, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 890, 23);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (891, date (LOCALTIMESTAMP) - 617 + interval '13.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 891, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 891, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 891, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 891, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 891, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 891, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 891, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 891, 7);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (892, date (LOCALTIMESTAMP) - 617 + interval '14.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 892, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 892, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 892, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 892, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 892, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 892, 10);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (893, date (LOCALTIMESTAMP) - 617 + interval '15.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 893, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 893, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 893, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 893, 39);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (894, date (LOCALTIMESTAMP) - 617 + interval '16.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 894, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 894, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 894, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 894, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 894, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 894, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 894, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 894, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 894, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 894, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 894, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 894, 0);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (895, date (LOCALTIMESTAMP) - 617 + interval '17.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 895, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 895, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 895, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 895, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 895, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 895, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 895, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 895, 28);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (896, date (LOCALTIMESTAMP) - 617 + interval '18.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 896, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 896, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 896, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 896, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 896, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (897, date (LOCALTIMESTAMP) - 617 + interval '19.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 897, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 897, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 897, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 897, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 897, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 897, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 897, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (898, date (LOCALTIMESTAMP) - 616 + interval '10.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 898, 29);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (899, date (LOCALTIMESTAMP) - 616 + interval '12.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 899, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 899, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 899, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 899, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 899, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 899, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 899, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 899, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 899, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 899, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 899, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 899, 5);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (900, date (LOCALTIMESTAMP) - 616 + interval '14.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 900, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 900, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 900, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 900, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 900, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 900, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 900, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 900, 6);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (901, date (LOCALTIMESTAMP) - 616 + interval '16.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 901, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 901, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 901, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 901, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 901, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 901, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 901, 10);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (902, date (LOCALTIMESTAMP) - 616 + interval '18.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 902, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 902, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 902, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 902, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 902, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 902, 38);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (903, date (LOCALTIMESTAMP) - 615 + interval '10.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 903, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 903, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 903, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 903, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 903, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 903, 17);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (904, date (LOCALTIMESTAMP) - 615 + interval '12.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 904, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 904, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 904, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 904, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 904, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 904, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 904, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 904, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 904, 7);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (905, date (LOCALTIMESTAMP) - 615 + interval '14.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 905, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 905, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 905, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 905, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 905, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 905, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 905, 31);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (906, date (LOCALTIMESTAMP) - 615 + interval '16.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 906, 2);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (907, date (LOCALTIMESTAMP) - 615 + interval '18.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 907, 33);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (908, date (LOCALTIMESTAMP) - 614 + interval '10.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 908, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 908, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 908, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 908, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 908, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 908, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 908, 25);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (909, date (LOCALTIMESTAMP) - 614 + interval '11.666666666666666 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 909, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 909, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 909, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 909, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 909, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 909, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 909, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 909, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 909, 3);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (910, date (LOCALTIMESTAMP) - 614 + interval '13.333333333333334 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 910, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 910, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 910, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 910, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 910, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 910, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 910, 10);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (911, date (LOCALTIMESTAMP) - 614 + interval '15.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 911, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 911, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 911, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 911, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 911, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 911, 30);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (912, date (LOCALTIMESTAMP) - 614 + interval '16.666666666666668 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 912, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 912, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 912, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 912, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 912, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 912, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 912, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 912, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 912, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 912, 5);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (913, date (LOCALTIMESTAMP) - 614 + interval '18.333333333333336 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 913, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 913, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 913, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 913, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 913, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 913, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 913, 29);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (914, date (LOCALTIMESTAMP) - 613 + interval '10.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 914, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 914, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 914, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 914, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 914, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 914, 9);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (915, date (LOCALTIMESTAMP) - 613 + interval '11.666666666666666 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 915, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 915, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 915, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 915, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 915, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 915, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 915, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 915, 5);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (916, date (LOCALTIMESTAMP) - 613 + interval '13.333333333333334 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 916, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 916, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 916, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 916, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 916, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 916, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 916, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 916, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 916, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 916, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 916, 32);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (917, date (LOCALTIMESTAMP) - 613 + interval '15.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 917, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 917, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 917, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 917, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 917, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 917, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 917, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 917, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 917, 15);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (918, date (LOCALTIMESTAMP) - 613 + interval '16.666666666666668 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 918, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 918, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 918, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 918, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 918, 9);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (919, date (LOCALTIMESTAMP) - 613 + interval '18.333333333333336 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 919, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 919, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 919, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 919, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 919, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 919, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 919, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 919, 26);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (920, date (LOCALTIMESTAMP) - 612 + interval '10.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 920, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 920, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 920, 30);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (921, date (LOCALTIMESTAMP) - 612 + interval '10.909090909090908 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 921, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 921, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 921, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 921, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 921, 5);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (922, date (LOCALTIMESTAMP) - 612 + interval '11.818181818181818 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 922, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 922, 20);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (923, date (LOCALTIMESTAMP) - 612 + interval '12.727272727272727 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 923, 22);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (924, date (LOCALTIMESTAMP) - 612 + interval '13.636363636363637 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 924, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 924, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 924, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 924, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 924, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 924, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 924, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 924, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 924, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 924, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 924, 34);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (925, date (LOCALTIMESTAMP) - 612 + interval '14.545454545454545 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 925, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 925, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 925, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 925, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 925, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 925, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 925, 36);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (926, date (LOCALTIMESTAMP) - 612 + interval '15.454545454545453 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 926, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 926, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 926, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 926, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 926, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 926, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 926, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 926, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 926, 7);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (927, date (LOCALTIMESTAMP) - 612 + interval '16.363636363636363 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 927, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 927, 27);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (928, date (LOCALTIMESTAMP) - 612 + interval '17.272727272727273 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 928, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 928, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 928, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 928, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 928, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 928, 40);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (929, date (LOCALTIMESTAMP) - 612 + interval '18.18181818181818 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 929, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 929, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 929, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 929, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 929, 25);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (930, date (LOCALTIMESTAMP) - 612 + interval '19.09090909090909 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 930, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 930, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 930, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 930, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 930, 8);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (931, date (LOCALTIMESTAMP) - 611 + interval '10.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 931, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 931, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 931, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 931, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 931, 18);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (932, date (LOCALTIMESTAMP) - 611 + interval '10.909090909090908 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 932, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 932, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 932, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 932, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 932, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 932, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 932, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 932, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 932, 14);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (933, date (LOCALTIMESTAMP) - 611 + interval '11.818181818181818 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 933, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 933, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 933, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 933, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 933, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 933, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 933, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 933, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (934, date (LOCALTIMESTAMP) - 611 + interval '12.727272727272727 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 934, 20);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (935, date (LOCALTIMESTAMP) - 611 + interval '13.636363636363637 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 935, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 935, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 935, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 935, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 935, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 935, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 935, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 935, 13);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (936, date (LOCALTIMESTAMP) - 611 + interval '14.545454545454545 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 936, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 936, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 936, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 936, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 936, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 936, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 936, 28);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (937, date (LOCALTIMESTAMP) - 611 + interval '15.454545454545453 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 937, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 937, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 937, 30);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (938, date (LOCALTIMESTAMP) - 611 + interval '16.363636363636363 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 938, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 938, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 938, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 938, 2);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (939, date (LOCALTIMESTAMP) - 611 + interval '17.272727272727273 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 939, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 939, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 939, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 939, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 939, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 939, 40);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (940, date (LOCALTIMESTAMP) - 611 + interval '18.18181818181818 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 940, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 940, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 940, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 940, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 940, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 940, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 940, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 940, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 940, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 940, 31);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (941, date (LOCALTIMESTAMP) - 611 + interval '19.09090909090909 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 941, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 941, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 941, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 941, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 941, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 941, 17);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (942, date (LOCALTIMESTAMP) - 610 + interval '10.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 942, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 942, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 942, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 942, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 942, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 942, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 942, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 942, 33);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (943, date (LOCALTIMESTAMP) - 610 + interval '11.428571428571429 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 943, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 943, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 943, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 943, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 943, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 943, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 943, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 943, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 943, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 943, 28);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (944, date (LOCALTIMESTAMP) - 610 + interval '12.857142857142858 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 944, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 944, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 944, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 944, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 944, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 944, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 944, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 944, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 944, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 944, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 944, 4);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (945, date (LOCALTIMESTAMP) - 610 + interval '14.285714285714285 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 945, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 945, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 945, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 945, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 945, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 945, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 945, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 945, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 945, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 945, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 945, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 945, 30);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (946, date (LOCALTIMESTAMP) - 610 + interval '15.714285714285715 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 946, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 946, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 946, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 946, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 946, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 946, 8);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (947, date (LOCALTIMESTAMP) - 610 + interval '17.142857142857142 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 947, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 947, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 947, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 947, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 947, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 947, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 947, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 947, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 947, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 947, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 947, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 947, 22);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (948, date (LOCALTIMESTAMP) - 610 + interval '18.57142857142857 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 948, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 948, 25);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (949, date (LOCALTIMESTAMP) - 609 + interval '10.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 949, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 949, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 949, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 949, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 949, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 949, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 949, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 949, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 949, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 949, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 949, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 949, 29);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (950, date (LOCALTIMESTAMP) - 609 + interval '11.666666666666666 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 950, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 950, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 950, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 950, 2);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 950, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 950, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 950, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 950, 31);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (951, date (LOCALTIMESTAMP) - 609 + interval '13.333333333333334 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 951, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 951, 24);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 951, 39);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (952, date (LOCALTIMESTAMP) - 609 + interval '15.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 952, 16);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 952, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 952, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 952, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 952, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 952, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 952, 5);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 952, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 952, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 952, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 952, 26);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (953, date (LOCALTIMESTAMP) - 609 + interval '16.666666666666668 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 953, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 953, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 953, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 953, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 953, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 953, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 953, 23);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (954, date (LOCALTIMESTAMP) - 609 + interval '18.333333333333336 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 954, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (955, date (LOCALTIMESTAMP) - 608 + interval '10.0 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 955, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 955, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 955, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 955, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 955, 9);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (956, date (LOCALTIMESTAMP) - 608 + interval '11.25 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 956, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 956, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 956, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 956, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 956, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 956, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 956, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 956, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 956, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 956, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 956, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 956, 9);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (957, date (LOCALTIMESTAMP) - 608 + interval '12.5 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 957, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 957, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 957, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 957, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 957, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 957, 3);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (958, date (LOCALTIMESTAMP) - 608 + interval '13.75 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 958, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 958, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 958, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 958, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 958, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 958, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 958, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 958, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 958, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 958, 30);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (959, date (LOCALTIMESTAMP) - 608 + interval '15.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 959, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 959, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 959, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 959, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 959, 36);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 959, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 959, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 959, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 959, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 959, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 959, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 959, 35);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (960, date (LOCALTIMESTAMP) - 608 + interval '16.25 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 960, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 960, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 960, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 960, 39);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (961, date (LOCALTIMESTAMP) - 608 + interval '17.5 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 961, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 961, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 961, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 961, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 961, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (962, date (LOCALTIMESTAMP) - 608 + interval '18.75 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 962, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 962, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 962, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 962, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 962, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 962, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 962, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 962, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 962, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 962, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 962, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 962, 5);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (963, date (LOCALTIMESTAMP) - 607 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 963, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 963, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 963, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 963, 22);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (964, date (LOCALTIMESTAMP) - 607 + interval '10.76923076923077 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 964, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 964, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 964, 34);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (965, date (LOCALTIMESTAMP) - 607 + interval '11.538461538461538 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 965, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 965, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 965, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 965, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 965, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 965, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 965, 18);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (966, date (LOCALTIMESTAMP) - 607 + interval '12.307692307692308 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 966, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 966, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 966, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 966, 31);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 966, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 966, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 966, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 966, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 966, 35);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (967, date (LOCALTIMESTAMP) - 607 + interval '13.076923076923077 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 967, 14);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 967, 17);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 967, 9);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 967, 1);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 967, 10);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (968, date (LOCALTIMESTAMP) - 607 + interval '13.846153846153847 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 968, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 968, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 968, 9);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (969, date (LOCALTIMESTAMP) - 607 + interval '14.615384615384617 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 969, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 969, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 969, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 969, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 969, 11);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (970, date (LOCALTIMESTAMP) - 607 + interval '15.384615384615385 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 970, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 970, 24);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (971, date (LOCALTIMESTAMP) - 607 + interval '16.153846153846153 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 971, 8);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (972, date (LOCALTIMESTAMP) - 607 + interval '16.923076923076923 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 972, 8);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 972, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 972, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 972, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 972, 29);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 972, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 972, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 972, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 972, 0);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 972, 12);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (973, date (LOCALTIMESTAMP) - 607 + interval '17.692307692307693 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 973, 39);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 973, 7);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 973, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 973, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 973, 38);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 973, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 973, 27);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (974, date (LOCALTIMESTAMP) - 607 + interval '18.46153846153846 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 974, 6);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 974, 11);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 974, 32);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (975, date (LOCALTIMESTAMP) - 607 + interval '19.230769230769234 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 975, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 975, 37);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 975, 18);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 975, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 975, 12);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 975, 37);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (976, date (LOCALTIMESTAMP) - 606 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 976, 32);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 976, 14);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (977, date (LOCALTIMESTAMP) - 606 + interval '13.333333333333334 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 977, 3);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (978, date (LOCALTIMESTAMP) - 606 + interval '16.666666666666668 hour', 20, 'Meal Swipes');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 978, 26);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 978, 27);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (979, date (LOCALTIMESTAMP) - 605 + interval '10.0 hour', 20, 'Card');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 979, 4);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 979, 13);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 979, 28);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 979, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 979, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 979, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 979, 21);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 979, 19);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (980, date (LOCALTIMESTAMP) - 605 + interval '15.0 hour', 20, 'Cash');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 980, 30);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 980, 27);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 980, 23);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 980, 10);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 980, 2);
+INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
+VALUES (981, date (LOCALTIMESTAMP) - 604 + interval '10.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 981, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 981, 40);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 981, 34);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 981, 33);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 981, 22);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 981, 25);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 981, 35);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 981, 3);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 981, 19);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 981, 20);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 981, 15);
+INSERT INTO foodticket (amount, "ticketID", "foodID")
+VALUES (1, 981, 32);
+>>>>>>> 274593bbb79d5cd125a9ff074415e1a5deea22cb
 INSERT INTO ticket ("ticketID", "timeOrdered", "totalCost", payment)
 VALUES (982, date (LOCALTIMESTAMP) - 604 + interval '15.0 hour', 20, 'Dining Dollars');INSERT INTO foodticket (amount, "ticketID", "foodID")
 VALUES (1, 982, 14);
