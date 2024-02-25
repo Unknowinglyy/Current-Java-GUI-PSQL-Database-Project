@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*; //module for getting user display size
 
 class mainMenu {
     mainMenu() {
@@ -68,7 +69,12 @@ class mainMenu {
         b13.setBounds(1400, 1050, 200, 200);
         f.add(b13);
 
-        f.setSize(3000, 3000);
+        //get user display size and makes that the frame display size
+        Dimension displaySize = Toolkit.getDefaultToolkit().getScreenSize();
+        int width = (int)displaySize.getWidth();
+        int height = (int)displaySize.getHeight();
+
+        f.setSize(width, height);
         f.setLayout(null);
         f.setVisible(true);
     }
