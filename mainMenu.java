@@ -1,85 +1,99 @@
 import javax.swing.*;
-import java.awt.*; //module for getting user display size
+import java.awt.*;
 
 class mainMenu {
     mainMenu() {
         JFrame f = new JFrame();
 
+        JPanel panel = new JPanel();
+        panel.setLayout(new GridBagLayout());
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.gridx = 0;
+        gbc.gridy = 0;
+        gbc.anchor = GridBagConstraints.WEST;
+        gbc.insets = new Insets(30, 10, 0, 10);
+
         JLabel currentOrder = new JLabel("Current Order");
-        currentOrder.setBounds(100, 50, 400, 20);
-        f.add(currentOrder);
+        panel.add(currentOrder, gbc);
 
-        JLabel foodItems = new JLabel("Select Food");
-        foodItems.setBounds(1000, 50, 400, 20);
-        f.add(foodItems);
+        JLabel selectFood = new JLabel("Select Food");
+        gbc.gridx++;
+        gbc.insets = new Insets(30, 500, 0, 10);
+        panel.add(selectFood, gbc);
 
-        JButton b1 = new JButton("Hamburger");
-        b1.setBounds(1000, 100, 200, 200);
-        f.add(b1);
+        JButton b1 = createButton("Hamburger");
+        JButton b2 = createButton("Rev Burger");
+        JButton b3 = createButton("Bacon Burger");
+        JButton b4 = createButton("Cheeseburger");
+        JButton b5 = createButton("Deluxe Burger");
+        JButton b6 = createButton("Chicken Sandwich");
+        JButton b7 = createButton("Grilled Chicken Sandwich");
+        JButton b8 = createButton("Spicy Chicken Sandwich");
+        JButton b9 = createButton("Texas Toast Patty Melt");
+        JButton b10 = createButton("5 Chicken Tenders Box");
+        JButton b11 = createButton("3 Chicken Tenders Box");
+        JButton b12 = createButton("3 Chicken Tenders Box");
+        JButton b13 = createButton("3 Chicken Tenders Box");
+        JButton b14 = createButton("3 Chicken Tenders Box");
+        JButton b15 = createButton("3 Chicken Tenders Box");
 
-        JButton b2 = new JButton("Rev Burger");
-        b2.setBounds(1200, 100, 200, 200);
-        f.add(b2);
 
-        JButton b3 = new JButton("Bacon Burger");
-        b3.setBounds(1400, 100, 200, 200);
-        f.add(b3);
+        JPanel foodItems = new JPanel(new GridLayout(3, 5, 10, 10));
+        foodItems.add(b1);
+        foodItems.add(b2);
+        foodItems.add(b3);
+        foodItems.add(b4);
+        foodItems.add(b5);
+        foodItems.add(b6);
+        foodItems.add(b7);
+        foodItems.add(b8);
+        foodItems.add(b9);
+        foodItems.add(b10);
+        foodItems.add(b11);
+        foodItems.add(b12);
+        foodItems.add(b13);
+        foodItems.add(b14);
+        foodItems.add(b15);
 
-        JButton b4 = new JButton("Cheeseburger");
-        b4.setBounds(1600, 100, 200, 200);
-        f.add(b4);
-
-        JButton b5 = new JButton("Deluxe Burger");
-        b5.setBounds(1800, 100, 200, 200);
-        f.add(b5);
-
-        JButton b6 = new JButton("Chicken Sandwich");
-        b6.setBounds(2000, 100, 200, 200);
-        f.add(b6);
-
-        JButton b7 = new JButton("Grilled Chicken Sandwich");
-        b7.setBounds(2200, 100, 200, 200);
-        f.add(b7);
-
-        JButton b8 = new JButton("Spicy Chicken Sandwich");
-        b8.setBounds(1000, 300, 200, 200);
-        f.add(b8);
-
-        JButton b9 = new JButton("Texas Toast Patty Melt");
-        b9.setBounds(1200, 300, 200, 200);
-        f.add(b9);
-
-        JButton b10 = new JButton("5 Chicken Tenders Box");
-        b10.setBounds(1400, 300, 200, 200);
-        f.add(b10);
+        gbc.gridy = 1;
+        gbc.insets = new Insets(30, 500, 50, 10);
+        panel.add(foodItems, gbc);
 
         JLabel drinksAndCondiments = new JLabel("Drinks & Condiments");
-        drinksAndCondiments.setBounds(1000, 1000, 400, 20);
-        f.add(drinksAndCondiments);
+        gbc.gridy = 2;
+        gbc.insets = new Insets(30, 500, 0, 10);
+        panel.add(drinksAndCondiments, gbc);
 
-        JButton b11 = new JButton("Drink 1");
-        b11.setBounds(1000, 1050, 200, 200);
-        f.add(b11);
+        JButton b16 = createButton("Drink 1");
+        JButton b17 = createButton("Drink 2");
+        JButton b18 = createButton("Drink 3");
 
-        JButton b12 = new JButton("Drink 2");
-        b12.setBounds(1200, 1050, 200, 200);
-        f.add(b12);
+        JPanel dandcItems = new JPanel(new GridLayout(1, 5, 10, 10));
+        gbc.gridy = 3;
+        gbc.insets = new Insets(30, 500, 30, 10);
+        dandcItems.add(b16);
+        dandcItems.add(b17);
+        dandcItems.add(b18);
 
-        JButton b13 = new JButton("Drink 3");
-        b13.setBounds(1400, 1050, 200, 200);
-        f.add(b13);
+        gbc.gridy++;
+        panel.add(dandcItems, gbc);
 
-        //get user display size and makes that the frame display size
-        Dimension displaySize = Toolkit.getDefaultToolkit().getScreenSize();
-        int width = (int)displaySize.getWidth();
-        int height = (int)displaySize.getHeight();
+        f.add(panel);
 
-        f.setSize(width, height);
-        f.setLayout(null);
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        f.pack();
+        f.setLocationRelativeTo(null);
         f.setVisible(true);
     }
 
+    private JButton createButton(String text) {
+        JButton button = new JButton(text);
+        Dimension buttonSize = new Dimension(200, 200);
+        button.setPreferredSize(buttonSize);
+        return button;
+    }
+
     public static void main(String a[]) {
-        new mainMenu();
+        SwingUtilities.invokeLater(() -> new mainMenu());
     }
 }
