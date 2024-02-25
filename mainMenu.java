@@ -4,10 +4,14 @@ class mainMenu {
     mainMenu()
     {
         Frame f = new Frame();
+
+        Label currentOrder = new Label("Current Order");
+        currentOrder.setBounds(100, 50, 400, 20); 
+        f.add(currentOrder);
  
-        Label headerLabel = new Label("Select Food:");
-        headerLabel.setBounds(1000, 50, 400, 20); 
-        f.add(headerLabel);
+        Label foodItems = new Label("Select Food:");
+        foodItems.setBounds(1000, 50, 400, 20); 
+        f.add(foodItems);
 
         Button b1 = new Button("Hamburger");
         b1.setBounds(1000, 90, 200, 200);
