@@ -14,11 +14,12 @@ class mainMenu {
         gbc.insets = new Insets(30, 10, 0, 10);
 
         JLabel currentOrder = new JLabel("Current Order");
+        gbc.insets = new Insets(30, 10, 0, 10);
         panel.add(currentOrder, gbc);
 
         JLabel selectFood = new JLabel("Select Food");
         gbc.gridx++;
-        gbc.insets = new Insets(30, 500, 0, 10);
+        gbc.insets = new Insets(30, 400, 0, 10);
         panel.add(selectFood, gbc);
 
         JButton b1 = createButton("Hamburger");
@@ -56,24 +57,28 @@ class mainMenu {
         foodItems.add(b15);
 
         gbc.gridy = 1;
-        gbc.insets = new Insets(30, 500, 50, 10);
+        gbc.insets = new Insets(30, 400, 50, 10);
         panel.add(foodItems, gbc);
 
         JLabel drinksAndCondiments = new JLabel("Drinks & Condiments");
         gbc.gridy = 2;
-        gbc.insets = new Insets(30, 500, 0, 10);
+        gbc.insets = new Insets(30, 400, 0, 10);
         panel.add(drinksAndCondiments, gbc);
 
-        JButton b16 = createButton("Drink 1");
-        JButton b17 = createButton("Drink 2");
-        JButton b18 = createButton("Drink 3");
+        JButton b16 = createButton("Fountain Drink");
+        JButton b17 = createButton("Milkshake");
+        JButton b18 = createButton("Condiment 1");
+        JButton b19 = createButton("Condiment 2");
+        JButton b20 = createButton("Condiment 3");
 
         JPanel dandcItems = new JPanel(new GridLayout(1, 5, 10, 10));
         gbc.gridy = 3;
-        gbc.insets = new Insets(30, 500, 30, 10);
+        gbc.insets = new Insets(30, 400, 30, 10);
         dandcItems.add(b16);
         dandcItems.add(b17);
         dandcItems.add(b18);
+        dandcItems.add(b19);
+        dandcItems.add(b20);
 
         gbc.gridy++;
         panel.add(dandcItems, gbc);
@@ -88,7 +93,7 @@ class mainMenu {
 
     private JButton createButton(String text) {
         JButton button = new JButton(text);
-        Dimension buttonSize = new Dimension(200, 200);
+        Dimension buttonSize = new Dimension(175, 175);
         button.setPreferredSize(buttonSize);
         return button;
     }
