@@ -17,6 +17,8 @@ class mainMenu {
         gbc.gridy = 0;
         gbc.anchor = GridBagConstraints.WEST;
         gbc.insets = new Insets(30, 10, 0, 10);
+        gbc.weightx = 0;
+        gbc.weighty = 0;
 
         JLabel currentOrder = new JLabel("Current Order");
         gbc.insets = new Insets(30, 10, 0, 10);
@@ -30,7 +32,6 @@ class mainMenu {
         scrollPane.setPreferredSize(new Dimension(300, 500));
 
         gbc.gridy = 1;
-        gbc.weighty = 1.0;
         gbc.fill = GridBagConstraints.BOTH;
         gbc.insets = new Insets(30, 10, 0, 10);
         panel.add(scrollPane, gbc);
