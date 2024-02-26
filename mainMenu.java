@@ -29,7 +29,7 @@ class mainMenu {
 
         JScrollPane scrollPane = new JScrollPane(currentOrdersList);
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
-        scrollPane.setPreferredSize(new Dimension(300, 500));
+        scrollPane.setPreferredSize(new Dimension(300, 600));
 
         gbc.gridy = 1;
         gbc.fill = GridBagConstraints.BOTH;
@@ -39,24 +39,24 @@ class mainMenu {
         JLabel selectFood = new JLabel("Select Food");
         gbc.gridx++;
         gbc.gridy = 0;
-        gbc.insets = new Insets(30, 300, 0, 10);
+        gbc.insets = new Insets(30, 200, 0, 10);
         panel.add(selectFood, gbc);
 
-        JButton b1 = createButton("Hamburger", "Hamburger");
-        JButton b2 = createButton("Rev Burger", "Hamburger");
-        JButton b3 = createButton("Bacon Burger", "Hamburger");
-        JButton b4 = createButton("Cheeseburger", "Hamburger");
-        JButton b5 = createButton("Deluxe Burger", "Hamburger");
-        JButton b6 = createButton("Chicken Sandwich", "Hamburger");
-        JButton b7 = createButton("Grilled Chicken Sandwich", "Hamburger");
-        JButton b8 = createButton("Spicy Chicken Sandwich", "Hamburger");
-        JButton b9 = createButton("Texas Toast Patty Melt", "Hamburger");
-        JButton b10 = createButton("5 Chicken Tenders Box", "Hamburger");
-        JButton b11 = createButton("3 Chicken Tenders Box", "Hamburger");
-        JButton b12 = createButton("3 Chicken Tenders Box", "Hamburger");
-        JButton b13 = createButton("3 Chicken Tenders Box", "Hamburger");
-        JButton b14 = createButton("3 Chicken Tenders Box", "Hamburger");
-        JButton b15 = createButton("3 Chicken Tenders Box", "Hamburger");
+        JButton b1 = createButton("Hamburger");
+        JButton b2 = createButton("Rev Burger");
+        JButton b3 = createButton("Bacon Burger");
+        JButton b4 = createButton("Cheeseburger");
+        JButton b5 = createButton("Deluxe Burger");
+        JButton b6 = createButton("Chicken Sandwich");
+        JButton b7 = createButton("Grilled Chicken Sandwich");
+        JButton b8 = createButton("Spicy Chicken Sandwich");
+        JButton b9 = createButton("Texas Toast Patty Melt");
+        JButton b10 = createButton("5 Chicken Tenders Box");
+        JButton b11 = createButton("3 Chicken Tenders Box");
+        JButton b12 = createButton("3 Chicken Tenders Box");
+        JButton b13 = createButton("3 Chicken Tenders Box");
+        JButton b14 = createButton("3 Chicken Tenders Box");
+        JButton b15 = createButton("3 Chicken Tenders Box");
 
 
         JPanel foodItems = new JPanel(new GridLayout(3, 5, 10, 10));
@@ -77,23 +77,23 @@ class mainMenu {
         foodItems.add(b15);
 
         gbc.gridy = 1;
-        gbc.insets = new Insets(30, 300, 50, 10);
+        gbc.insets = new Insets(30, 200, 50, 10);
         panel.add(foodItems, gbc);
 
         JLabel drinksAndCondiments = new JLabel("Drinks & Condiments");
         gbc.gridy = 2;
-        gbc.insets = new Insets(30, 300, 0, 10);
+        gbc.insets = new Insets(30, 200, 0, 10);
         panel.add(drinksAndCondiments, gbc);
 
-        JButton b16 = createButton("Fountain Drink", "Hamburger");
-        JButton b17 = createButton("Milkshake", "Hamburger");
-        JButton b18 = createButton("Condiment 1", "Hamburger");
-        JButton b19 = createButton("Condiment 2", "Hamburger");
-        JButton b20 = createButton("Condiment 3", "Hamburger");
+        JButton b16 = createButton("Fountain Drink");
+        JButton b17 = createButton("Milkshake");
+        JButton b18 = createButton("Condiment 1");
+        JButton b19 = createButton("Condiment 2");
+        JButton b20 = createButton("Condiment 3");
 
         JPanel dandcItems = new JPanel(new GridLayout(1, 5, 10, 10));
         gbc.gridy = 3;
-        gbc.insets = new Insets(30, 300, 30, 10);
+        gbc.insets = new Insets(30, 200, 30, 10);
         dandcItems.add(b16);
         dandcItems.add(b17);
         dandcItems.add(b18);
@@ -108,7 +108,7 @@ class mainMenu {
         gbc.gridx++;
         gbc.gridy = 0;
         gbc.anchor = GridBagConstraints.NORTHEAST;
-        gbc.insets = new Insets(10, 10, 0, 10);
+        gbc.insets = new Insets(10, 50, 0, 10);
         panel.add(managerView, gbc);
 
         f.add(panel);
@@ -119,14 +119,14 @@ class mainMenu {
         f.setVisible(true);
     }
 
-    private JButton createButton(String itemName, String orderName) {
+    private JButton createButton(String itemName) {
         JButton button = new JButton(itemName);
         Dimension buttonSize = new Dimension(175, 175);
         button.setPreferredSize(buttonSize);
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JLabel orderLabel = new JLabel(orderName);
+                JLabel orderLabel = new JLabel(itemName);
                 currentOrdersList.add(orderLabel);
                 currentOrdersList.revalidate();
                 currentOrdersList.repaint();
