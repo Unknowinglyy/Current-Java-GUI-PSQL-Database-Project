@@ -58,4 +58,13 @@ public class Menu {
         Double Price = Double.parseDouble(Recipe.getFirst());
         return(Price);
     }
+
+    public void ChangePrice(String FoodName, Double Price){
+        //finds the food
+        String Catagory = GetFoodCatagory(FoodName);
+        int CatIndex = FoodTypes.indexOf(Catagory);
+        int foodIndex = FoodItems.get(CatIndex).indexOf(FoodName);
+        //changes the food price to the new Price
+        Ingredients.get(CatIndex).get(foodIndex).set(0,Double.toString(Price));
+    }
 }
