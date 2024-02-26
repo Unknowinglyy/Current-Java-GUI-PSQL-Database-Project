@@ -47,7 +47,18 @@ public class Menu {
         Recipe.removeFirst();
         return(Recipe);
     }
+
+    //all foods of a food type
+    public Vector<String> GetFoodFromFoodType(String Catagory){
+        //finds the food in ingredients
+        int CatIndex = FoodTypes.indexOf(Catagory);
+        return(FoodItems.get(CatIndex));
+    }
     
+    //gives all food types
+    public Vector<String> GetFoodTypes(){
+        return(FoodTypes);
+    }
     public Double GetPrice(String FoodName){
         //finds the food
         String Catagory = GetFoodCatagory(FoodName);
