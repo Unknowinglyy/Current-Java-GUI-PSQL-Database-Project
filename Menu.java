@@ -47,4 +47,15 @@ public class Menu {
         Recipe.removeFirst();
         return(Recipe);
     }
+    
+    public Double GetPrice(String FoodName){
+        //finds the food
+        String Catagory = GetFoodCatagory(FoodName);
+        int CatIndex = FoodTypes.indexOf(Catagory);
+        int foodIndex = FoodItems.get(CatIndex).indexOf(FoodName);
+        Vector<String> Recipe = Ingredients.get(CatIndex).get(foodIndex);
+        //gets the price
+        Double Price = Double.parseDouble(Recipe.getFirst());
+        return(Price);
+    }
 }
