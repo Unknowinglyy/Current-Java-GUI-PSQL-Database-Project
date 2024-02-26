@@ -83,6 +83,14 @@ class mainMenu {
         gbc.gridy++;
         panel.add(dandcItems, gbc);
 
+        JButton managerView = new JButton("Manager View");
+        managerView.setPreferredSize(new Dimension(150, 40));
+        gbc.gridx++;
+        gbc.gridy = 0;
+        gbc.anchor = GridBagConstraints.NORTHEAST;
+        gbc.insets = new Insets(10, 10, 0, 10);
+        panel.add(managerView, gbc);
+
         f.add(panel);
 
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
