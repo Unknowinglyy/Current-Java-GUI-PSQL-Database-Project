@@ -86,8 +86,8 @@ class mainMenu {
         f.add(panel);
 
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        f.setExtendedState(JFrame.MAXIMIZED_BOTH);
-        f.setUndecorated(true); 
+        f.pack();
+        f.setLocationRelativeTo(null);
         f.setVisible(true);
     }
 
