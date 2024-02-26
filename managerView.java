@@ -1,8 +1,40 @@
+
 import javax.swing.*;
 import java.awt.*;
 import java.sql.*;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent; 
+import java.util.ArrayList;
 
 public class managerView {
+    public class Ingredient {
+        private String name;
+        private int stock;
+    
+        // Constructor
+        public Ingredient(String name, int stock) {
+            this.name = name;
+            this.stock = stock;
+        }
+    
+        // Getters
+        public String getName() {
+            return name;
+        }
+    
+        public int getStock() {
+            return stock;
+        }
+    
+        // Setters
+        public void setName(String name) {
+            this.name = name;
+        }
+    
+        public void setStock(int stock) {
+            this.stock = stock;
+        }
+    }
     managerView(){
         Connection conn = null;
         String database_name = "csce331_902_01_db";
@@ -19,6 +51,8 @@ public class managerView {
          JOptionPane.showMessageDialog(null, "Opened database successfully");
 
         String ingredients = "";
+        ArrayList<Ingredient> ingredientList = new ArrayList<Ingredient>(); // Create a list to hold ingredients
+
         try {
         // create a statement object
         Statement stmt = conn.createStatement();
@@ -30,6 +64,10 @@ public class managerView {
         while (result.next()) {
             ingredients += result.getString("name") + "   ";
             ingredients += result.getString("stock") + "\n";
+            String name = result.getString("name");
+            int stock = result.getInt("stock"); // Assuming stock is an integer in your database
+            Ingredient ingredient = new Ingredient(name, stock); 
+            ingredientList.add(ingredient);
         }
         } catch (Exception e) {
         JOptionPane.showMessageDialog(null, "Error accessing Database.");
@@ -41,7 +79,8 @@ public class managerView {
         JPanel inventoryPanel = new JPanel();
         inventoryPanel.add(textArea);
         inventoryPanel.setLayout(new BoxLayout(inventoryPanel, BoxLayout.Y_AXIS));
-
+        JButton restockButton = new JButton("Restock");
+        inventoryPanel.add(restockButton);
         // Set preferred height to limit size 
         inventoryPanel.setPreferredSize(new Dimension(300, 300)); 
 
@@ -66,7 +105,44 @@ public class managerView {
         f.setLocationRelativeTo(null);
         f.setVisible(true);
     
-    }
+    
+    restockButton.addActionListener(new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            // Create a new JDialog for ingredient adjustments
+            JDialog restockDialog = new JDialog(f, "Restock Ingredients"); // Associate with main frame 'f'
+            restockDialog.setModal(true); // Block interaction with the main window
+    
+            // Panel to hold the list of ingredients
+            JPanel restockPanel = new JPanel();
+            restockPanel.setLayout(new GridLayout(0, 3)); // Adjust rows as needed
+    
+            // Fetch ingredients and stock data (you likely already have this logic)
+            // ...
+    
+            // Dynamically create labels and buttons
+            // for (Ingredient ingredient : ingredients) { // Assuming you have an Ingredient class
+            //     restockPanel.add(new JLabel(ingredient.getName()));
+    
+            //     JButton minusButton = new JButton("-");
+            //     minusButton.addActionListener(createUpdateListener(ingredient, -1));
+            //     restockPanel.add(minusButton); 
+    
+            //     JButton plusButton = new JButton("+");
+            //     plusButton.addActionListener(createUpdateListener(ingredient, 1));
+            //     restockPanel.add(plusButton);
+            // }
+    
+            restockDialog.add(restockPanel);
+            restockDialog.pack();
+            restockDialog.setLocationRelativeTo(f); // Center relative to the main frame
+            restockDialog.setVisible(true);
+        }
+    });
+}
+    
+    
+    
     public static void main(String args[]) {
         SwingUtilities.invokeLater(() -> new managerView());
     }
