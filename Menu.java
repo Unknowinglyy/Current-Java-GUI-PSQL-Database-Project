@@ -98,4 +98,122 @@ public class Menu {
         FoodItems.remove(CatIndex);
         Ingredients.remove(CatIndex);
     }
+
+    //adds a the basic rev menu
+    public void GenerateBasicMenu(){
+        addBurgers();
+        addBaskets();
+        addSandwiches();
+        addSides();
+        addSauces();
+        addBeverages();
+    }
+
+    // Helper methods to add different categories of items to the menu
+    public void addBurgers() {
+        AddFood("Rev's Burger", "Burgers", 5.59, new Vector<>(Arrays.asList(
+            "Burger Patty",
+            "Cheese",
+            "Gig-em sauce",
+            "Buns"
+        )));
+
+        AddFood("Double stack cheeseburger", "Burgers", 8.79, new Vector<>(Arrays.asList(
+                "Burger Patty",
+                "Burger Patty",
+                "Cheese",
+                "Cheese",
+                "Gigem sauce",
+                "Pickles",
+                "Buns"
+        )));
+
+        AddFood("Classic Burger", "Burgers", 5.47, new Vector<>(Arrays.asList(
+                "Buns",
+                "Burger Patty",
+                "Lettuce",
+                "Tomato",
+                "Pickle",
+                "Onions"
+        )));
+
+        AddFood("Bacon Cheese Burger", "Burgers", 6.99, new Vector<>(Arrays.asList(
+                "Burger Patty",
+                "Cheese",
+                "Bacon",
+                "Buns"
+        )));
+    }
+
+    public  void addBaskets() {
+        AddFood("Three Tender Basket", "Baskets", 6.79, new Vector<>(Arrays.asList(
+                "Chicken tender",
+                "Chicken tender",
+                "Chicken tender",
+                "French fries",
+                "Texas toast",
+                "Gravy"
+        )));
+
+        AddFood("Four Steak Finger Basket", "Baskets", 6.99, new Vector<>(Arrays.asList(
+            "4x Steak finger",
+            "French Fries",
+            "Texas Toast",
+            "Gravy"
+        )));
+    }
+
+    public void addSandwiches() {
+        AddFood("Gig 'Em Patty Melt", "Sandwiches", 6.29, new Vector<>(Arrays.asList(
+                "Burger patty",
+                "Texas toast",
+                "Gigem sauce",
+                "Onions",
+                "Cheese"
+        )));
+
+        AddFood("Spicy ranch chicken sandwich", "Sandwiches", 6.99, new Vector<>(Arrays.asList(
+            "Chicken tender",
+            "Chicken tender",
+            "Bun",
+            "Spicy ranch sauce",
+            "Cheese"
+        )));
+
+        AddFood("Classic Chicken Sandwich", "Sandwiches", 5.79, new Vector<>(Arrays.asList(
+            "Chicken tender",
+            "Chicken tender",
+            "Bun",
+            "Lettuce",
+            "Tomato",
+            "Pickle",
+            "Onion"
+        )));
+
+        AddFood("Grilled Cheese", "Sandwiches", 3.49, new Vector<>(Arrays.asList(
+                "Cheese",
+                "Texas toast"
+        )));
+    }
+
+    public void addSides() {
+        AddFood("Tater tots", "Sides", 1.00, new Vector<>());
+        AddFood("Onion Rings", "Sides", 1.00, new Vector<>());
+        AddFood("Kettle Chips", "Sides", 1.00, new Vector<>());
+        AddFood("Fries", "Sides", 1.00, new Vector<>());
+    }
+
+    public void addSauces() {
+       AddFood("Gigem sauce", "Sauces", 0.50, new Vector<>());
+        AddFood("Buffalo", "Sauces", 0.50, new Vector<>());
+        AddFood("Ranch", "Sauces", 0.50, new Vector<>());
+        AddFood("Spicy ranch", "Sauces", 0.50, new Vector<>());
+        AddFood("BBQ", "Sauces", 0.50, new Vector<>());
+        AddFood("Honey Mustard", "Sauces", 0.50, new Vector<>());
+    }
+
+    public void addBeverages() {
+        AddFood("Fountain Drink", "Beverages", 1.50, new Vector<>());
+        AddFood("Shake", "Beverages", 3.00, new Vector<>());
+    }
 }
