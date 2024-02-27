@@ -263,7 +263,7 @@ class mainMenu {
             @Override
             public void actionPerformed(ActionEvent e) {
                 managerView currentManager = new managerView();
-                currentManager.main(null);
+                //currentManager.main(null);
                 // currentOrdersList.add(orderLabel);
                 // currentOrdersList.revalidate();
                 // currentOrdersList.repaint();

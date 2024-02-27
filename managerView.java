@@ -68,7 +68,7 @@ public class managerView {
         System.err.println(e.getClass().getName() + ": " + e.getMessage());
         System.exit(0);
         }
-         JOptionPane.showMessageDialog(null, "Opened database successfully");
+         //JOptionPane.showMessageDialog(null, "Opened database successfully");
 
         String ingredients = "";
         ArrayList<Ingredient> ingredientList = new ArrayList<Ingredient>(); // Create a list to hold ingredients
@@ -139,7 +139,7 @@ public class managerView {
         JFrame f = new JFrame();
         f.setSize(1920, 1080); 
         f.add(mainPanel); // Add the main panel to the frame
-        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setLocationRelativeTo(null);
         f.setVisible(true);
     
