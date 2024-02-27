@@ -8,11 +8,13 @@ import java.util.ArrayList;
 
 public class managerView {
     public class Ingredient {
+        private final int id;
         private String name;
         private int stock;
     
         // Constructor
-        public Ingredient(String name, int stock) {
+        public Ingredient(String name, int stock, int id) {
+            this.id = id;
             this.name = name;
             this.stock = stock;
         }
@@ -25,7 +27,9 @@ public class managerView {
         public int getStock() {
             return stock;
         }
-    
+        public int getId(){
+            return this.id;
+        }
         // Setters
         public void setName(String name) {
             this.name = name;
@@ -37,6 +41,7 @@ public class managerView {
         public void adjustStock(int adjustment){
             this.stock = this.stock + adjustment;
         }
+       
     }
     private ActionListener createUpdateListener(Ingredient ingredient, int adjustment) {
         return new ActionListener() {
@@ -81,18 +86,36 @@ public class managerView {
             ingredients += result.getString("stock") + "\n";
             String name = result.getString("name");
             int stock = result.getInt("stock"); // Assuming stock is an integer in your database
-            Ingredient ingredient = new Ingredient(name, stock); 
+            int id = result.getInt("ingredientID");
+            Ingredient ingredient = new Ingredient(name, stock,id); 
             ingredientList.add(ingredient);
         }
         } catch (Exception e) {
         JOptionPane.showMessageDialog(null, "Error accessing Database.");
         }
-        JTextArea textArea = new JTextArea(ingredients);
-        textArea.setEditable(false);
-
-        // Inventory Panel (remains mostly the same)
+        int lowStockThreshold = 15;
+        int mediumStockThreshold = 40;
         JPanel inventoryPanel = new JPanel();
-        inventoryPanel.add(textArea);
+        
+        for (Ingredient ingredient : ingredientList) {
+            String displayLine = ingredient.getName() + " " + ingredient.getStock();
+            JLabel displayLabel = new JLabel(displayLine); // Create a JLabel
+        
+            if (ingredient.getStock() <= lowStockThreshold) {
+                displayLabel.setForeground(Color.RED); // Set text color to red
+            }
+            else if(ingredient.getStock()<=mediumStockThreshold){
+                displayLabel.setForeground(Color.ORANGE);
+            }
+        
+            // Add the displayLabel to your textArea or restockPanel
+            inventoryPanel.add(displayLabel); // Or: restockPanel.add(displayLabel);
+        }
+        // textArea.setEditable(false);
+       
+        
+        
+        // inventoryPanel.add(textArea);
         inventoryPanel.setLayout(new BoxLayout(inventoryPanel, BoxLayout.Y_AXIS));
         JButton restockButton = new JButton("Restock");
         inventoryPanel.add(restockButton);
@@ -130,19 +153,21 @@ public class managerView {
     
             // Panel to hold the list of ingredients
             JPanel restockPanel = new JPanel();
-            restockPanel.setLayout(new GridLayout(0, 3)); // Adjust rows as needed
+            restockPanel.setLayout(new GridLayout(0, 4)); // Adjust rows as needed
     
             // Fetch ingredients and stock data (you likely already have this logic)
             // ...
     
             // Dynamically create labels and buttons
             for (int i = 0; i < ingredientList.size();i++) { // Assuming you have an Ingredient class
-                restockPanel.add(new JLabel(ingredientList.get(i).getName()));
+                String restockLabel = ingredientList.get(i).getId()+" "+ ingredientList.get(i).getName();
+                restockPanel.add(new JLabel(restockLabel));
     
                 JButton minusButton = new JButton("-");
                 minusButton.addActionListener(createUpdateListener(ingredientList.get(i), -1));
                 restockPanel.add(minusButton); 
-    
+                String stockLabel = " "+ingredientList.get(i).getStock()+" ";
+                restockPanel.add(new JLabel(stockLabel));
                 JButton plusButton = new JButton("+");
                 plusButton.addActionListener(createUpdateListener(ingredientList.get(i), 1));
                 restockPanel.add(plusButton);
