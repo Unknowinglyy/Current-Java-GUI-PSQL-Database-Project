@@ -16,6 +16,8 @@ class mainMenu {
     JPanel foodCatagories = new JPanel(new GridLayout(3, 5, 10, 10));
     java.util.List<String> orderLabelList;
     String currItemLabel;
+    int currOrderIndex;
+    int itemNum = 0;
 
     mainMenu() {
         panel.setLayout(new GridBagLayout());
@@ -170,7 +172,7 @@ class mainMenu {
         //foodCatagories = new JPanel(new GridLayout(3, 5, 10, 10));
         gbc.gridy = 1;
         gbc.insets = new Insets(30, 200, 50, 10);
-        for(int i = 0; i < Recipe.size();i++){
+        for(int i = 1; i < Recipe.size();i++){
             JToggleButton b1 = createIngredientButton(Recipe.get(i));
             foodCatagories.add(b1,gbc);
         }
@@ -197,14 +199,17 @@ class mainMenu {
         return button;
     }
 
-    private JButton createFoodButton(String itemName, Double price){
+    private JButton createFoodButton(String itemName , Double price){
         JButton button = new JButton(itemName);
         Dimension buttonSize = new Dimension(175, 175);
         button.setPreferredSize(buttonSize);
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                currItemLabel = "+ " + itemName + ", $" + Double.toString(price);
+                // make new label
+                itemNum++;
+                currItemLabel = "#" + itemNum + ": " + itemName + ", $" + Double.toString(price);
+                // add to list
                 orderLabelList.add(currItemLabel);
                 CreateIngredientsPanel(itemName);
 
@@ -229,19 +234,21 @@ class mainMenu {
         Tbutton.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
-                // JLabel orderLabel = new JLabel(itemName);
-                // currentOrdersList.add(orderLabel);
-                // currentOrdersList.revalidate();
-                // currentOrdersList.repaint();
-                if (e.getStateChange() == ItemEvent.SELECTED) {
-                    Tbutton.setBackground(Color.RED);
-                    currItemLabel = "  - No: " + itemName;
-                    orderLabelList.add(currItemLabel);
-                } else {
-                    Tbutton.setBackground(Color.GREEN);
-                    
-                }
                 
+                if (e.getStateChange() == ItemEvent.SELECTED) {
+                    
+                    Tbutton.setBackground(Color.RED); // this actually just turns it gray
+                    // // list ingredients to be removed from order
+                    currItemLabel = "  - No: " + itemName + " in item: #" + itemNum;
+                    // // add to list
+                    orderLabelList.add(currItemLabel);
+
+                }
+                if (e.getStateChange() == ItemEvent.DESELECTED) {
+                    currItemLabel = "  - No: " + itemName + " in item: #" + itemNum;
+                    Tbutton.setBackground(Color.GREEN);
+                    orderLabelList.remove(currItemLabel);
+                }
             }
         });
         return Tbutton;
@@ -254,12 +261,9 @@ class mainMenu {
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                // only update order side bar when the add order button is pressed
                 UpdateOrderLabels();
                 CreateFoodCatagoriesPanel();
-                // JLabel orderLabel = new JLabel(itemName);
-                // currentOrdersList.add(orderLabel);
-                // currentOrdersList.revalidate();
-                // currentOrdersList.repaint();
             }
         });
         return button;
@@ -273,7 +277,7 @@ class mainMenu {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JLabel orderLabel = new JLabel(itemName);
-                currentOrdersList.add(orderLabel);
+                // currentOrdersList.add(orderLabel);
                 currentOrdersList.revalidate();
                 currentOrdersList.repaint();
             }
@@ -298,6 +302,7 @@ class mainMenu {
         return button;
     }
 
+    // made into a function for better readability, creates the order display panel
     private JPanel CreateCurrentOrderPanel(String theOrder) {
         JLabel currentOrder = new JLabel("Current Order");
         gbc.insets = new Insets(30, 10, 0, 10);
@@ -309,7 +314,7 @@ class mainMenu {
 
         JScrollPane scrollPane = new JScrollPane(currentOrdersList);
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
-        scrollPane.setPreferredSize(new Dimension(300, 600));
+        scrollPane.setPreferredSize(new Dimension(400, 600));
 
         gbc.gridy = 1;
         gbc.fill = GridBagConstraints.BOTH;
@@ -319,13 +324,55 @@ class mainMenu {
         return panel;
     }
 
+    // this function updates all of the orders in the side panel based on the order list
+    // any entry starting with a '+' is the full food item, anything right after until the next '+' will be ingredients to remove from that food item
     private void UpdateOrderLabels() {
-        // orderLabelList.add(currItemLabel);
-        currentOrdersList.removeAll(); // Clear existing labels
+        
+        // // Clear existing labels
+        currentOrdersList.removeAll(); 
 
-        for (String text : orderLabelList) {
-            JLabel label = new JLabel(text);
-            currentOrdersList.add(label);
+        // // loop to fill list
+        // for (String text : orderLabelList) {
+        //     JLabel label = new JLabel(text);
+        //     currentOrdersList.add(label);
+        // }
+
+        // currentOrdersList.revalidate();
+        // currentOrdersList.repaint();
+
+        for (String text : new ArrayList<>(orderLabelList)) { // Use a copy to avoid concurrent modification
+            
+            JPanel labelWithButtonPanel = new JPanel();
+            labelWithButtonPanel.setLayout(new FlowLayout(FlowLayout.LEFT, 5, 0));
+            
+            
+            
+
+            if (text.charAt(0) == '#') {
+           
+                JLabel label = new JLabel(text);
+                JButton removeButton = new JButton("X");
+                removeButton.setForeground(Color.WHITE);
+                removeButton.setBackground(Color.RED);
+                removeButton.addActionListener((ActionEvent e) -> {
+                    int index = orderLabelList.indexOf(label.getText());
+                    orderLabelList.remove(index);
+                    // remove all from start
+                    while ((orderLabelList.size() > index) && (orderLabelList.get(index).charAt(0) != '#')) {
+                        orderLabelList.remove(orderLabelList.get(index));
+                    }
+
+                    UpdateOrderLabels();
+                });
+                labelWithButtonPanel.add(label);
+                labelWithButtonPanel.add(removeButton);
+            }
+            else {
+                
+                JLabel label = new JLabel(text);
+                labelWithButtonPanel.add(label);
+            }
+            currentOrdersList.add(labelWithButtonPanel);
         }
 
         currentOrdersList.revalidate();

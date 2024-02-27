@@ -48,7 +48,7 @@ public class Menu {
         int foodIndex = FoodItems.get(CatIndex).indexOf(FoodName);
         Vector<String> Recipe = Ingredients.get(CatIndex).get(foodIndex);
         //gets rid of the price
-        Recipe.remove(0);
+        // Recipe.remove(0);
         return(Recipe);
     }
 
@@ -58,11 +58,14 @@ public class Menu {
         int CatIndex = FoodTypes.indexOf(Catagory);
         return(FoodItems.get(CatIndex));
     }
+
+
     
     //gives all food types
     public Vector<String> GetFoodTypes(){
         return(FoodTypes);
     }
+
     public Double GetPrice(String FoodName){
         //finds the food
         String Catagory = GetFoodCatagory(FoodName);
@@ -221,5 +224,5 @@ public class Menu {
         AddFood("Shake", "Beverages", 3.00, new Vector<>());
     }
 
-    
+
 }
