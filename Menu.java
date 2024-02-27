@@ -70,6 +70,7 @@ public class Menu {
         return(Price);
     }
 
+    //changes the price of a food
     public void ChangePrice(String FoodName, Double Price){
         //finds the food
         String Catagory = GetFoodCatagory(FoodName);
@@ -77,5 +78,24 @@ public class Menu {
         int foodIndex = FoodItems.get(CatIndex).indexOf(FoodName);
         //changes the food price to the new Price
         Ingredients.get(CatIndex).get(foodIndex).set(0,Double.toString(Price));
+    }
+
+    //removes a food
+    public void RemoveFood(String FoodName){
+        //finds teh food
+        String Catagory = GetFoodCatagory(FoodName);
+        int CatIndex = FoodTypes.indexOf(Catagory);
+        int foodIndex = FoodItems.get(CatIndex).indexOf(FoodName);
+        //removes the food
+        Ingredients.get(CatIndex).remove(foodIndex);
+        FoodItems.remove(foodIndex);
+    }
+
+    //removes a food type
+    public void RemoveFoodType(String Catagory){
+        int CatIndex = FoodTypes.indexOf(Catagory);
+        FoodTypes.remove(CatIndex);
+        FoodItems.remove(CatIndex);
+        Ingredients.remove(CatIndex);
     }
 }
