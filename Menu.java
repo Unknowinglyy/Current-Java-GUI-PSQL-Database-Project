@@ -12,6 +12,10 @@ public class Menu {
         //checks if Food type already exists
         if(FoodTypes.indexOf(FoodCatagory) == -1){
             FoodTypes.addElement(FoodCatagory);
+            Vector<String> blank = new Vector<String>();
+            FoodItems.addElement(blank);
+            Vector<Vector<String>> blanker = new Vector<Vector<String>>();
+            Ingredients.addElement(blanker);
         }
 
         //finds the location
