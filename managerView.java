@@ -34,6 +34,21 @@ public class managerView {
         public void setStock(int stock) {
             this.stock = stock;
         }
+        public void adjustStock(int adjustment){
+            this.stock = this.stock + adjustment;
+        }
+    }
+    private ActionListener createUpdateListener(Ingredient ingredient, int adjustment) {
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // Implement the logic to update the ingredient stock based on 'ingredient' and 'adjustment'
+                // Example:
+                ingredient.adjustStock(adjustment); 
+    
+                // ... (Update the UI, if needed)
+            }
+        };
     }
     managerView(){
         Connection conn = null;
@@ -121,17 +136,17 @@ public class managerView {
             // ...
     
             // Dynamically create labels and buttons
-            // for (Ingredient ingredient : ingredients) { // Assuming you have an Ingredient class
-            //     restockPanel.add(new JLabel(ingredient.getName()));
+            for (int i = 0; i < ingredientList.size();i++) { // Assuming you have an Ingredient class
+                restockPanel.add(new JLabel(ingredientList.get(i).getName()));
     
-            //     JButton minusButton = new JButton("-");
-            //     minusButton.addActionListener(createUpdateListener(ingredient, -1));
-            //     restockPanel.add(minusButton); 
+                JButton minusButton = new JButton("-");
+                minusButton.addActionListener(createUpdateListener(ingredientList.get(i), -1));
+                restockPanel.add(minusButton); 
     
-            //     JButton plusButton = new JButton("+");
-            //     plusButton.addActionListener(createUpdateListener(ingredient, 1));
-            //     restockPanel.add(plusButton);
-            // }
+                JButton plusButton = new JButton("+");
+                plusButton.addActionListener(createUpdateListener(ingredientList.get(i), 1));
+                restockPanel.add(plusButton);
+            }
     
             restockDialog.add(restockPanel);
             restockDialog.pack();
