@@ -23,7 +23,7 @@ public class Menu {
         //adds the food to the list of foods under the catagory
         FoodItems.get(typeIndex).addElement(FoodName);
         //adds the price to the ingredients
-        Recipe.addFirst(Double.toString(Price));
+        Recipe.add(0,Double.toString(Price));
         //adds the ingredients for the food
         Ingredients.get(typeIndex).addElement(Recipe);
     }
@@ -48,7 +48,7 @@ public class Menu {
         int foodIndex = FoodItems.get(CatIndex).indexOf(FoodName);
         Vector<String> Recipe = Ingredients.get(CatIndex).get(foodIndex);
         //gets rid of the price
-        Recipe.removeFirst();
+        Recipe.remove(0);
         return(Recipe);
     }
 
@@ -70,7 +70,7 @@ public class Menu {
         int foodIndex = FoodItems.get(CatIndex).indexOf(FoodName);
         Vector<String> Recipe = Ingredients.get(CatIndex).get(foodIndex);
         //gets the price
-        Double Price = Double.parseDouble(Recipe.getFirst());
+        Double Price = Double.parseDouble(Recipe.get(0));
         return(Price);
     }
 
