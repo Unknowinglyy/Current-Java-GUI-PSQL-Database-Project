@@ -7,6 +7,7 @@ import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 
 public class managerView {
+    private ArrayList<Ingredient> ingredientList;
     public class Ingredient {
         private final int id;
         private String name;
@@ -42,6 +43,27 @@ public class managerView {
         }
 
         public void adjustStock(int adjustment) {
+            Connection conn = null;
+            String database_name = "csce331_902_01_db";
+            String database_user = "csce331_902_01_user";
+            String database_password = "EPICCSCEPROJECT";
+            String database_url = String.format("jdbc:postgresql://csce-315-db.engr.tamu.edu/%s", database_name);
+            try {
+                conn = DriverManager.getConnection(database_url, database_user, database_password);
+                String updateQuery = "UPDATE ingredient SET stock = stock + ? WHERE \"ingredientID\" = ?";
+                // UPDATE ingredient SET stock = stock + 1 WHERE "ingredientID" = 1;
+                PreparedStatement stmt = conn.prepareStatement(updateQuery);
+                stmt.setInt(1, adjustment);
+                stmt.setInt(2, this.getId());
+                stmt.executeUpdate();
+            } catch (Exception e) {
+                e.printStackTrace();
+                System.err.println(e.getClass().getName() + ": " + e.getMessage());
+                System.exit(0);
+            }
+
+            // Handle the exception appropriately (logging, error message, etc.)
+
             this.stock = this.stock + adjustment;
         }
 
@@ -55,13 +77,13 @@ public class managerView {
                 // 'adjustment'
                 // Example:
                 ingredient.adjustStock(adjustment);
+                fetchData();
 
                 // ... (Update the UI, if needed)
             }
         };
     }
-
-    managerView() {
+    private void fetchData(){
         Connection conn = null;
         String database_name = "csce331_902_01_db";
         String database_user = "csce331_902_01_user";
@@ -74,31 +96,54 @@ public class managerView {
             System.err.println(e.getClass().getName() + ": " + e.getMessage());
             System.exit(0);
         }
-        // JOptionPane.showMessageDialog(null, "Opened database successfully");
-
-        String ingredients = "";
-        ArrayList<Ingredient> ingredientList = new ArrayList<Ingredient>(); // Create a list to hold ingredients
-
-        try {
-            // create a statement object
+        ArrayList<Ingredient> ingredientListTemp = new ArrayList<Ingredient>();
+        try{
             Statement stmt = conn.createStatement();
             // create a SQL statement
             // TODO Step 2 (see line 8)
-            String sqlStatement = "SELECT * FROM ingredient;";
+            String sqlStatement = "SELECT * FROM ingredient ORDER BY \"ingredient\" ASC;";
             // send statement to DBMS
             ResultSet result = stmt.executeQuery(sqlStatement);
             while (result.next()) {
-                ingredients += result.getString("name") + "   ";
-                ingredients += result.getString("stock") + "\n";
                 String name = result.getString("name");
                 int stock = result.getInt("stock"); // Assuming stock is an integer in your database
                 int id = result.getInt("ingredientID");
                 Ingredient ingredient = new Ingredient(name, stock, id);
-                ingredientList.add(ingredient);
+                ingredientListTemp.add(ingredient);
             }
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "Error accessing Database.");
         }
+        catch(Exception e){
+            JOptionPane.showMessageDialog(null, "Error accessing Database.");
+
+        }
+           
+           ingredientList=ingredientListTemp;
+            
+        
+    }
+    // private JPanel updateInventory(){
+    //         //todo
+    // }
+    managerView() {
+        // Connection conn = null;
+        // String database_name = "csce331_902_01_db";
+        // String database_user = "csce331_902_01_user";
+        // String database_password = "EPICCSCEPROJECT";
+        // String database_url = String.format("jdbc:postgresql://csce-315-db.engr.tamu.edu/%s", database_name);
+        // try {
+        //     conn = DriverManager.getConnection(database_url, database_user, database_password);
+        // } catch (Exception e) {
+        //     e.printStackTrace();
+        //     System.err.println(e.getClass().getName() + ": " + e.getMessage());
+        //     System.exit(0);
+        // }
+        // JOptionPane.showMessageDialog(null, "Opened database successfully");
+
+        
+        // ArrayList<Ingredient> ingredientList = new ArrayList<Ingredient>(); // Create a list to hold ingredients
+        fetchData();
+
+        
         int lowStockThreshold = 15;
         int mediumStockThreshold = 40;
         JPanel inventoryPanel = new JPanel();
@@ -158,26 +203,30 @@ public class managerView {
                 // Create a new JDialog for ingredient adjustments
                 JDialog restockDialog = new JDialog(f, "Restock Ingredients"); // Associate with main frame 'f'
                 restockDialog.setModal(true); // Block interaction with the main window
-
                 // Panel to hold the list of ingredients
                 JPanel restockPanel = new JPanel();
                 restockPanel.setLayout(new GridLayout(0, 4)); // Adjust rows as needed
-
-                // Fetch ingredients and stock data (you likely already have this logic)
-                // ...
-
                 // Dynamically create labels and buttons
                 for (int i = 0; i < ingredientList.size(); i++) { // Assuming you have an Ingredient class
-                    String restockLabel = ingredientList.get(i).getId() + " " + ingredientList.get(i).getName();
-                    restockPanel.add(new JLabel(restockLabel));
-
+                    JLabel restockLabel = new JLabel(ingredientList.get(i).getId() + " " + ingredientList.get(i).getName());
                     JButton minusButton = new JButton("-");
-                    minusButton.addActionListener(createUpdateListener(ingredientList.get(i), -1));
-                    restockPanel.add(minusButton);
-                    String stockLabel = " " + ingredientList.get(i).getStock() + " ";
-                    restockPanel.add(new JLabel(stockLabel));
                     JButton plusButton = new JButton("+");
+                    JLabel stockLabel = new JLabel(" " + ingredientList.get(i).getStock() + " ");
+                    minusButton.addActionListener(createUpdateListener(ingredientList.get(i), -1));
                     plusButton.addActionListener(createUpdateListener(ingredientList.get(i), 1));
+
+                    if (ingredientList.get(i).getStock() <= lowStockThreshold) {
+                        stockLabel.setForeground(Color.RED); // Set text color to red
+                        restockLabel.setForeground(Color.RED);
+                    } else if (ingredientList.get(i).getStock() <= mediumStockThreshold) {
+                        stockLabel.setForeground(Color.ORANGE);
+                        restockLabel.setForeground(Color.ORANGE);
+                    }
+                    
+
+                    restockPanel.add(restockLabel);
+                    restockPanel.add(minusButton);
+                    restockPanel.add(stockLabel);
                     restockPanel.add(plusButton);
                 }
 
