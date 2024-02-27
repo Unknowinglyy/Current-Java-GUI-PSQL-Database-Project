@@ -149,7 +149,7 @@ public class Menu {
         )));
     }
 
-    public  void addBaskets() {
+    public void addBaskets() {
         AddFood("Three Tender Basket", "Baskets", 6.79, new Vector<>(Arrays.asList(
                 "Chicken tender",
                 "Chicken tender",
