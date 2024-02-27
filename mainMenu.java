@@ -112,7 +112,7 @@ class mainMenu {
         gbc.gridy++;
         panel.add(dandcItems, gbc);
 
-        JButton managerView = new JButton("Manager View");
+        JButton managerView = createManagerButton("Manager View");
         managerView.setPreferredSize(new Dimension(150, 40));
         gbc.gridx++;
         gbc.gridy = 0;
@@ -140,6 +140,7 @@ class mainMenu {
         panel.revalidate();
         panel.repaint();
     }
+
 
     private void CreateFoodPanel(String Catagory){
         Vector<String> Foods = currentMenu.GetFoodFromFoodType(Catagory);
@@ -249,6 +250,23 @@ class mainMenu {
                 currentOrdersList.add(orderLabel);
                 currentOrdersList.revalidate();
                 currentOrdersList.repaint();
+            }
+        });
+        return button;
+    }
+
+    private JButton createManagerButton(String itemName) {
+        JButton button = new JButton(itemName);
+        Dimension buttonSize = new Dimension(175, 175);
+        button.setPreferredSize(buttonSize);
+        button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                managerView currentManager = new managerView();
+                currentManager.main(null);
+                // currentOrdersList.add(orderLabel);
+                // currentOrdersList.revalidate();
+                // currentOrdersList.repaint();
             }
         });
         return button;
