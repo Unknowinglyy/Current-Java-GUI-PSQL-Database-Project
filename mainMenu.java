@@ -3,6 +3,9 @@ import java.awt.*;
 import java.util.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
+
 
 class mainMenu {
     Menu currentMenu = new Menu();
@@ -11,7 +14,8 @@ class mainMenu {
     JFrame f = new JFrame();
     JPanel panel = new JPanel();
     JPanel foodCatagories = new JPanel(new GridLayout(3, 5, 10, 10));
-    
+    java.util.List<String> orderLabelList;
+    String currItemLabel;
 
     mainMenu() {
         panel.setLayout(new GridBagLayout());
@@ -21,22 +25,26 @@ class mainMenu {
         gbc.insets = new Insets(30, 10, 0, 10);
         gbc.weightx = 0;
         gbc.weighty = 0;
+        orderLabelList = new ArrayList<>();
+        String order = "";
+        CreateCurrentOrderPanel(order);
+        
+        // JLabel currentOrder = new JLabel("Current Order");
+        // gbc.insets = new Insets(30, 10, 0, 10);
+        // panel.add(currentOrder, gbc);
 
-        JLabel currentOrder = new JLabel("Current Order");
-        gbc.insets = new Insets(30, 10, 0, 10);
-        panel.add(currentOrder, gbc);
+        // currentOrdersList = new JPanel();
+        // currentOrdersList.setLayout(new BoxLayout(currentOrdersList, BoxLayout.Y_AXIS));
+        
 
-        currentOrdersList = new JPanel();
-        currentOrdersList.setLayout(new BoxLayout(currentOrdersList, BoxLayout.Y_AXIS));
+        // JScrollPane scrollPane = new JScrollPane(currentOrdersList);
+        // scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+        // scrollPane.setPreferredSize(new Dimension(300, 600));
 
-        JScrollPane scrollPane = new JScrollPane(currentOrdersList);
-        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
-        scrollPane.setPreferredSize(new Dimension(300, 600));
-
-        gbc.gridy = 1;
-        gbc.fill = GridBagConstraints.BOTH;
-        gbc.insets = new Insets(30, 10, 0, 10);
-        panel.add(scrollPane, gbc);
+        // gbc.gridy = 1;
+        // gbc.fill = GridBagConstraints.BOTH;
+        // gbc.insets = new Insets(30, 10, 0, 10);
+        // panel.add(scrollPane, gbc);
 
         //makes the menu to add and subtract items
         JLabel selectFood = new JLabel("Select Food");
@@ -149,7 +157,7 @@ class mainMenu {
         gbc.gridy = 1;
         gbc.insets = new Insets(30, 200, 50, 10);
         for(int i = 0; i < Foods.size();i++){
-            JButton b1 = createFoodButton(Foods.get(i));
+            JButton b1 = createFoodButton(Foods.get(i), currentMenu.GetPrice(Foods.get(i)));
             foodCatagories.add(b1,gbc);
         }
         panel.revalidate();
@@ -163,7 +171,7 @@ class mainMenu {
         gbc.gridy = 1;
         gbc.insets = new Insets(30, 200, 50, 10);
         for(int i = 0; i < Recipe.size();i++){
-            JButton b1 = createIngredientButton(Recipe.get(i));
+            JToggleButton b1 = createIngredientButton(Recipe.get(i));
             foodCatagories.add(b1,gbc);
         }
         JButton b2 = AddToOrderButton();
@@ -189,14 +197,17 @@ class mainMenu {
         return button;
     }
 
-    private JButton createFoodButton(String itemName){
+    private JButton createFoodButton(String itemName, Double price){
         JButton button = new JButton(itemName);
         Dimension buttonSize = new Dimension(175, 175);
         button.setPreferredSize(buttonSize);
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                currItemLabel = "+ " + itemName + ", $" + Double.toString(price);
+                orderLabelList.add(currItemLabel);
                 CreateIngredientsPanel(itemName);
+
                 // JLabel orderLabel = new JLabel(itemName);
                 // currentOrdersList.add(orderLabel);
                 // currentOrdersList.revalidate();
@@ -206,20 +217,34 @@ class mainMenu {
         return button;
     }
 
-    private JButton createIngredientButton(String itemName){
-        JButton button = new JButton(itemName);
+    private JToggleButton createIngredientButton(String itemName){
+        JToggleButton Tbutton = new JToggleButton(itemName);
+        Tbutton.setBackground(Color.GREEN);
+        Tbutton.setOpaque(true);
+        Tbutton.setBorderPainted(false);
+        Tbutton.setFocusPainted(false);
         Dimension buttonSize = new Dimension(175, 175);
-        button.setPreferredSize(buttonSize);
-        button.addActionListener(new ActionListener() {
+        Tbutton.setPreferredSize(buttonSize);
+        
+        Tbutton.addItemListener(new ItemListener() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void itemStateChanged(ItemEvent e) {
                 // JLabel orderLabel = new JLabel(itemName);
                 // currentOrdersList.add(orderLabel);
                 // currentOrdersList.revalidate();
                 // currentOrdersList.repaint();
+                if (e.getStateChange() == ItemEvent.SELECTED) {
+                    Tbutton.setBackground(Color.RED);
+                    currItemLabel = "  - No: " + itemName;
+                    orderLabelList.add(currItemLabel);
+                } else {
+                    Tbutton.setBackground(Color.GREEN);
+                    
+                }
+                
             }
         });
-        return button;
+        return Tbutton;
     }
 
     private JButton AddToOrderButton(){
@@ -229,6 +254,7 @@ class mainMenu {
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                UpdateOrderLabels();
                 CreateFoodCatagoriesPanel();
                 // JLabel orderLabel = new JLabel(itemName);
                 // currentOrdersList.add(orderLabel);
@@ -270,6 +296,40 @@ class mainMenu {
             }
         });
         return button;
+    }
+
+    private JPanel CreateCurrentOrderPanel(String theOrder) {
+        JLabel currentOrder = new JLabel("Current Order");
+        gbc.insets = new Insets(30, 10, 0, 10);
+        panel.add(currentOrder, gbc);
+
+        currentOrdersList = new JPanel();
+        currentOrdersList.setLayout(new BoxLayout(currentOrdersList, BoxLayout.Y_AXIS));
+        
+
+        JScrollPane scrollPane = new JScrollPane(currentOrdersList);
+        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+        scrollPane.setPreferredSize(new Dimension(300, 600));
+
+        gbc.gridy = 1;
+        gbc.fill = GridBagConstraints.BOTH;
+        gbc.insets = new Insets(30, 10, 0, 10);
+        panel.add(scrollPane, gbc);
+        UpdateOrderLabels();
+        return panel;
+    }
+
+    private void UpdateOrderLabels() {
+        // orderLabelList.add(currItemLabel);
+        currentOrdersList.removeAll(); // Clear existing labels
+
+        for (String text : orderLabelList) {
+            JLabel label = new JLabel(text);
+            currentOrdersList.add(label);
+        }
+
+        currentOrdersList.revalidate();
+        currentOrdersList.repaint();
     }
 
     public static void main(String a[]) {
