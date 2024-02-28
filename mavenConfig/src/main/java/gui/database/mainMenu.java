@@ -297,6 +297,7 @@ class mainMenu {
             public void actionPerformed(ActionEvent e) {
                 double price = GetTotalPrice();
                 paymentMenu newPay = new paymentMenu(price);
+                newPay.setVisible(true);
                 confirmOrderWithPayment(newPay.outPay);
             }
         });
