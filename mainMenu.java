@@ -439,15 +439,14 @@ class mainMenu {
             if (((index+1) != itemPositions.size())) {
                 int diffPos = itemPositions.get(index+1) - itemPositions.get(index);
                 // for unmodified food
+                String foodName = orderLabelList.get(index).split(",")[0].substring(orderLabelList.get(index).indexOf(':') + 2);
                 if (diffPos == 0) {
-                    String foodName = orderLabelList.get(index).split(",")[0].substring(orderLabelList.get(index).indexOf(':') + 2);
                     int foodID = currentMenu.findFoodId(foodName);
                     sqlStatements += "INSERT INTO foodticket(amount, \"ticketID\", \"foodID\") VALUES(1, " + currTicketID + ", " + foodID + ");";
                 }
                 // for modified
                 else {
                     // step 1 get og id
-                    String foodName = orderLabelList.get(index).split(",")[0].substring(orderLabelList.get(index).indexOf(':') + 2);
                     int foodID = currentMenu.findFoodId(foodName);
                     // step 2 get og recipe
                     Vector<String> Recipe = new Vector<>(currentMenu.GetRecipe(foodName));
@@ -460,31 +459,25 @@ class mainMenu {
                     // step 5 add the now modified food id to foodticket
 
                 }
+                // call update stock line
+                // Vector<String> Recipe = new Vector<>(currentMenu.GetRecipe(foodName));
+                // try {
+                //     // create a statement object
+                //     Statement stmt = conn.createStatement();
+                //     // create a SQL statement
+                //     // TODO Step 2 (see line 8)
+                //     String sqlStatement = "SELECT * FROM ingredient;";
+                //     // send statement to DBMS
+                //     ResultSet result = stmt.executeQuery(sqlStatement);
+                //     while (result.next()) {
+
+                //     }
+                //     } catch (Exception e) {
+                //     JOptionPane.showMessageDialog(null, "Error accessing Database.");
+                //     }
             }
         }
-        // // call update stock line
-        // // for(int i = )
 
-        // try {
-        //     // create a statement object
-        //     Statement stmt = conn.createStatement();
-        //     // create a SQL statement
-        //     // TODO Step 2 (see line 8)
-        //     String sqlStatement = "SELECT * FROM ingredient;";
-        //     // send statement to DBMS
-        //     ResultSet result = stmt.executeQuery(sqlStatement);
-        //     while (result.next()) {
-        //         ingredients += result.getString("name") + "   ";
-        //         ingredients += result.getString("stock") + "\n";
-        //         String name = result.getString("name");
-        //         int stock = result.getInt("stock"); // Assuming stock is an integer in your database
-        //         int id = result.getInt("ingredientID");
-        //         Ingredient ingredient = new Ingredient(name, stock,id); 
-        //         ingredientList.add(ingredient);
-        //     }
-        //     } catch (Exception e) {
-        //     JOptionPane.showMessageDialog(null, "Error accessing Database.");
-        //     }
     }
 
     // calculate the total price for the order
