@@ -1,3 +1,5 @@
+package gui.database;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.*;

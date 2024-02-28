@@ -1,1 +1,6 @@
+#ignore the temporary target file
+target/
+#ignore the maven wrapper things
+.mvn/wrapper/maven-wrapper.jar
+#ignore any class files
 *.class

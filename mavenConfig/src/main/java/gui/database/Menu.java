@@ -1,6 +1,4 @@
-// package gui.database;
-
-// package gui.database;
+package gui.database;
 
 import java.util.*;
 import java.sql.*;
@@ -137,7 +135,7 @@ public class Menu {
         return foodName;
     }
 
-    public int findOrCreateIngredient(String ingredientName){
+    private int findOrCreateIngredient(String ingredientName){
         // Check if the ingredient already exists
         int ingredientId = findIngredientId(ingredientName);
         try {
