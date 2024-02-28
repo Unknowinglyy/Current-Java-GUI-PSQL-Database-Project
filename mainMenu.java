@@ -206,7 +206,7 @@ class mainMenu {
             public void actionPerformed(ActionEvent e) {
                 // make new label
                 itemNum++;
-                currItemLabel = "#" + itemNum + ": " + itemName + ", $" + Double.toString(price);
+                currItemLabel = "#" + itemNum + ": " + itemName + " $" + Double.toString(price);
                 // add to list
                 orderLabelList.add(currItemLabel);
                 CreateIngredientsPanel(itemName);
@@ -412,9 +412,8 @@ class mainMenu {
         currentOrdersList.repaint();
     }
 
-    public void confirmOrderWithPayment() {
+    public void confirmOrderWithPayment(String paymentMethod) {
         Double theCost = GetTotalPrice();
-        String paymentMethod = "yes";
         String sqlStatements = "INSERT INTO ticket(\"ticketID\", \"timeOrdered\", \"totalCost\", payment) VALUES(" + currTicketID + ", date (LOCALTIMESTAMP), " + Double.toString(theCost) + ", " + paymentMethod + ");";
         
         java.util.List<Integer> itemPositions = new ArrayList<>();
@@ -427,10 +426,16 @@ class mainMenu {
         for (int index=0; index < itemPositions.size(); index++) {
             if (((index+1) != itemPositions.size())) {
                 int diffPos = itemPositions.get(index+1) - itemPositions.get(index);
+                // for unmodified food
                 if (diffPos == 0) {
-                    int foodID = currentMenu.findFoodId(orderLabelList.get(index).split("\\s+")[1]);
-                    sqlStatements += "";
+                    
+                    
+                    String foodName = orderLabelList.get(index).split(",")[0].substring(4);
+                    int foodID = currentMenu.findFoodId(); // need to fix this split to remove first and last item
+                    sqlStatements += "INSERT INTO foodticket(amount, \"ticketID\", \"foodID\") VALUES(1, " + currTicketID + ", " + foodID + ");";
                 }
+                // for modified
+
             }
         }
     }
