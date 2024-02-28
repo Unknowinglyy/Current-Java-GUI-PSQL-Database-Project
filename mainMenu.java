@@ -466,6 +466,26 @@ class mainMenu {
                         Statement stmt3 = conn.createStatement();
                         stmt3.executeQuery(sqlStatements);
                     }
+                    // call update stock line
+                    Vector<String> Recipe = new Vector<>(currentMenu.GetRecipe(foodName));
+                    try {
+                        // create a statement object
+                        Statement statementBegin = conn.createStatement();
+                        // create a SQL statement
+                        // TODO Step 2 (see line 8)
+                        String sqlStatement = "SELECT * FROM ingredient;";
+                        // send statement to DBMS
+                        ResultSet result = statementBegin.executeQuery(sqlStatement);
+                        while (result.next()) {
+                            if(Recipe.elementAt(index) == result.getString("name") && result.getInt("stock") != 0){
+                                Statement StatementEnd = conn.createStatement();
+                                String decreaseStock = "UPDATE ingredient SET \"stock\" = " + (result.getInt("stock") - 1) + "WHERE \"ingredientID\" = " + (result.getInt("ingredientID"));
+                                StatementEnd.executeQuery(decreaseStock);
+                            }
+                        }
+                        } catch (Exception e) {
+                        JOptionPane.showMessageDialog(null, "Error accessing Database.");
+                        }
                 }
             }
         } catch (Exception e) {
@@ -473,7 +493,6 @@ class mainMenu {
             System.err.println(e.getClass().getName() + ": " + e.getMessage());
             System.exit(0);
         }
-        // call update stock line
     }
 
     // calculate the total price for the order
