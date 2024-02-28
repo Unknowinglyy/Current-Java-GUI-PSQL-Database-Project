@@ -206,7 +206,7 @@ class mainMenu {
             public void actionPerformed(ActionEvent e) {
                 // make new label
                 itemNum++;
-                currItemLabel = "#" + itemNum + ": " + itemName + " $" + Double.toString(price);
+                currItemLabel = "#" + itemNum + ": " + itemName + ", $" + Double.toString(price);
                 // add to list
                 orderLabelList.add(currItemLabel);
                 CreateIngredientsPanel(itemName);
@@ -429,16 +429,20 @@ class mainMenu {
                 int diffPos = itemPositions.get(index+1) - itemPositions.get(index);
                 // for unmodified food
                 if (diffPos == 0) {
-                    
-                    
                     String foodName = orderLabelList.get(index).split(",")[0].substring(4);
-                    int foodID = currentMenu.findFoodId(); // need to fix this split to remove first and last item
+                    int foodID = currentMenu.findFoodId(foodName); // need to fix this split to remove first and last item
                     sqlStatements += "INSERT INTO foodticket(amount, \"ticketID\", \"foodID\") VALUES(1, " + currTicketID + ", " + foodID + ");";
                 }
                 // for modified
+                // step 1 get og id
+                // step 2 get og recipe
+                // step 3 remove recipe items set by modifiers
+                // step 4 add to food table with new id
+                // step 5 add the now modified food id to foodticket
 
             }
         }
+        // call update stock line
     }
 
     // calculate the total price for the order
