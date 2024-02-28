@@ -27,4 +27,4 @@ jobs:
         distribution: 'oracle'
         cache: maven
     - name: Build with Maven using Github Actions
-      run: mvn -B package --file pom.xml
+      run: mvn -B package --file ./mavenConfig/pom.xml
