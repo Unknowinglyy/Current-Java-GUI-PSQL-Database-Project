@@ -9,11 +9,12 @@ import java.util.ArrayList;
 
 public class managerView {
     private ArrayList<Ingredient> ingredientList;
+    //lists of JLabels for ease of updating frontend
     private ArrayList<JLabel> displayLabels = new ArrayList<>();
     private ArrayList<JLabel> stockLabels = new ArrayList<>();
     private ArrayList<JLabel> restockLabels = new ArrayList<>();
-    private final int lowStockThreshold = 15;
-    private final int mediumStockThreshold = 40;
+    private final int lowStockThreshold = 20;
+    private final int mediumStockThreshold = 50;
 
     public class Ingredient {
         private final int id;
@@ -55,7 +56,7 @@ public class managerView {
             SwingWorker worker = new SwingWorker<Void, Void>() {
                 @Override
                 protected Void doInBackground() throws Exception {
-                     // Database interaction code (same as you have now)
+                     
                      Connection conn = null;
                     String database_name = "csce331_902_01_db";
                     String database_user = "csce331_902_01_user";
@@ -64,7 +65,6 @@ public class managerView {
                     try {
                         conn = DriverManager.getConnection(database_url, database_user, database_password);
                         String updateQuery = "UPDATE ingredient SET stock = stock + ? WHERE \"ingredientID\" = ?";
-                        // UPDATE ingredient SET stock = stock + 1 WHERE "ingredientID" = 1;
                         PreparedStatement stmt = conn.prepareStatement(updateQuery);
                         stmt.setInt(1, adjustment);
                         stmt.setInt(2, id);
@@ -81,7 +81,7 @@ public class managerView {
                 protected void done() {
                      // Update UI on the Swing EDT
                      SwingUtilities.invokeLater(() -> {
-                         updateGUI(thisOne); // Call fetchData for a full update if needed
+                         updateGUI(thisOne);
                      });
                 }
             };
@@ -149,10 +149,8 @@ public class managerView {
     }
     //checks if a given Jlabel corresponds with a given ingredient
     private boolean ingredientMatchesLabel(JLabel label, Ingredient ingredient) {
-        // Implement logic to check if the label displays the given ingredient 
         String labelText = label.getText();
         String labelIngredientId = labelText.split("-")[0].trim();
-        //System.out.println(labelIngredientId + " and "+ ingredient.getName().trim());
         return labelIngredientId.equals(ingredient.getName().trim());
         
     }
@@ -177,7 +175,6 @@ public class managerView {
     //updates labels in the managerView panel
     private void updateJLabel(JLabel label, Ingredient ingredient) {
         String displayLine = ingredient.getName() + "-" + ingredient.getStock();
-        System.out.println(displayLine);
         label.setText(displayLine);
         updateLabelColor(label, ingredient);
        
@@ -187,40 +184,31 @@ public class managerView {
         JPanel inventoryPanel = new JPanel();
         for (Ingredient ingredient : ingredientList) {
             String displayLine = ingredient.getName() + "-" + ingredient.getStock();
-            JLabel displayLabel = new JLabel(displayLine); // Create a JLabel
+            JLabel displayLabel = new JLabel(displayLine); 
 
             if (ingredient.getStock() <= lowStockThreshold) {
-                displayLabel.setForeground(Color.RED); // Set text color to red
+                displayLabel.setForeground(Color.RED); 
             } else if (ingredient.getStock() <= mediumStockThreshold) {
                 displayLabel.setForeground(Color.ORANGE);
             }
             displayLabels.add(displayLabel);
-            // Add the displayLabel to your textArea or restockPanel
-            inventoryPanel.add(displayLabel); // Or: restockPanel.add(displayLabel);
+            inventoryPanel.add(displayLabel); 
         }
-        // textArea.setEditable(false);
 
-        // inventoryPanel.add(textArea);
         inventoryPanel.setLayout(new BoxLayout(inventoryPanel, BoxLayout.Y_AXIS));
         JButton restockButton = new JButton("Restock");
         inventoryPanel.add(restockButton);
+
         // Set preferred height to limit size
         inventoryPanel.setPreferredSize(new Dimension(300, 300));
         JButton navigationButton = new JButton("Back to Main Menu");
-        // Create a JScrollPane and add the inventoryPanel to it
         JScrollPane scrollPane = new JScrollPane(inventoryPanel);
         JPanel mainPanel = new JPanel(new BorderLayout());
-
-        // Main Panel (Add the scrollPane)
         mainPanel.add(scrollPane, BorderLayout.EAST);
-
-        // Main Panel
         // Add placeholder for other potential content on the left
         mainPanel.add(new JLabel("(Placeholder)"), BorderLayout.CENTER);
         mainPanel.add(navigationButton, BorderLayout.NORTH);
-        // Add Inventory Panel to the right
         mainPanel.add(inventoryPanel, BorderLayout.EAST);
-
         JFrame f = new JFrame();
         f.setSize(1920, 1080);
         f.add(mainPanel); // Add the main panel to the frame
@@ -237,14 +225,15 @@ public class managerView {
         restockButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Create a new JDialog for ingredient adjustments
-                JDialog restockDialog = new JDialog(f, "Restock Ingredients"); // Associate with main frame 'f'
-                restockDialog.setModal(true); // Block interaction with the main window
-                // Panel to hold the list of ingredients
+               
+                JDialog restockDialog = new JDialog(f, "Restock Ingredients"); 
+                restockDialog.setModal(true); 
+                
                 JPanel restockPanel = new JPanel();
-                restockPanel.setLayout(new GridLayout(0, 4)); // Adjust rows as needed
+               
+                restockPanel.setLayout(new GridLayout(0, 4)); 
                 // Dynamically create labels and buttons
-                for (int i = 0; i < ingredientList.size(); i++) { // Assuming you have an Ingredient class
+                for (int i = 0; i < ingredientList.size(); i++) { 
                     JLabel restockLabel = new JLabel(ingredientList.get(i).getId() + " " + ingredientList.get(i).getName());
                     JButton minusButton = new JButton("-");
                     JButton plusButton = new JButton("+");
@@ -253,28 +242,28 @@ public class managerView {
                     plusButton.addActionListener(createUpdateListener(ingredientList.get(i), 1));
 
                     if (ingredientList.get(i).getStock() <= lowStockThreshold) {
-                        stockLabel.setForeground(Color.RED); // Set text color to red
+                        stockLabel.setForeground(Color.RED); 
                         restockLabel.setForeground(Color.RED);
                     } else if (ingredientList.get(i).getStock() <= mediumStockThreshold) {
                         stockLabel.setForeground(Color.ORANGE);
                         restockLabel.setForeground(Color.ORANGE);
                     }
                     stockLabels.add(stockLabel);
+                    //adding labels to parent panel
                     restockLabels.add(restockLabel);
                     restockPanel.add(restockLabel);
                     restockPanel.add(minusButton);
                     restockPanel.add(stockLabel);
                     restockPanel.add(plusButton);
                 }
-
+                restockPanel.setSize(800,800);
                 restockDialog.add(restockPanel);
-                restockDialog.pack();
-                restockDialog.setLocationRelativeTo(f); // Center relative to the main frame
+                restockDialog.setSize(800,1000);
+                restockDialog.setLocationRelativeTo(f); 
                 restockDialog.setVisible(true);
             }
         });
     }
-
     public static void main(String args[]) {
         SwingUtilities.invokeLater(() -> new managerView());
     }
