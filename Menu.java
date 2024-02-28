@@ -8,17 +8,17 @@ public class Menu {
     Vector<Vector<String>> FoodItems = new Vector<Vector<String>>(1);
     //Ingredients for specific foods sorted by food type then food
     Vector<Vector<Vector<String>>> Ingredients = new Vector<Vector<Vector<String>>>(1);
+    Connection conn = null;
+    String database_name = "csce331_902_01_db";
+    String database_user = "csce331_902_01_user";
+    String database_password = "EPICCSCEPROJECT";
+    String database_url = String.format("jdbc:postgresql://csce-315-db.engr.tamu.edu/%s", database_name);
 
     public void AddFood(String FoodName, String FoodCatagory, Double Price, Vector<String> Recipe){
         //checks if Food type already exists
         //"INSERT INTO food (\"foodID\", name, price, \"foodType\")\nVALUES ({foodID}, 'Hamburger', 11.99, 'Burger');\n"
         
         //connect to database
-        Connection conn = null;
-        String database_name = "csce331_902_01_db";
-        String database_user = "csce331_902_01_user";
-        String database_password = "EPICCSCEPROJECT";
-        String database_url = String.format("jdbc:postgresql://csce-315-db.engr.tamu.edu/%s", database_name);
         
         //trys to add the food to order
         try {
@@ -51,7 +51,7 @@ public class Menu {
             //goes through all ingredients and creates the relationship between food and the item
             for(int i =0; i < Recipe.size();i++){
                 conn = DriverManager.getConnection(database_url, database_user, database_password);
-                int ingredientId = findOrCreateIngredient(conn,Recipe.get(i));
+                int ingredientId = findOrCreateIngredient(Recipe.get(i));
                 String ingredientQuery = "INSERT INTO foodingredient (\"foodID\", \"ingredientID\", \"amount\") VALUES (?, ?, ?)";
                 PreparedStatement pstmt2 = conn.prepareStatement(ingredientQuery);
 
@@ -73,82 +73,95 @@ public class Menu {
             System.err.println(e.getClass().getName() + ": " + e.getMessage());
             System.exit(0);
         }
-        
-        
-        
-        
-        
-        
-        if(FoodTypes.indexOf(FoodCatagory) == -1){
-            FoodTypes.addElement(FoodCatagory);
-            Vector<String> blank = new Vector<String>();
-            FoodItems.addElement(blank);
-            Vector<Vector<String>> blanker = new Vector<Vector<String>>();
-            Ingredients.addElement(blanker);
-        }
-
-        //finds the location
-        int typeIndex = FoodTypes.indexOf(FoodCatagory);
-        //adds the food to the list of foods under the catagory
-        FoodItems.get(typeIndex).addElement(FoodName);
-        //adds the price to the ingredients
-        Recipe.add(0,Double.toString(Price));
-        //adds the ingredients for the food
-        Ingredients.get(typeIndex).addElement(Recipe);
     }
 
-    private static int findIngredientId(Connection conn, String ingredientName) throws SQLException {
-        String sql = "SELECT \"ingredientID\" FROM ingredient WHERE name = ?";
-        PreparedStatement pstmt = conn.prepareStatement(sql);
-        pstmt.setString(1, ingredientName);
-        ResultSet rs = pstmt.executeQuery();
+    public int findIngredientId(String ingredientName){
         int ingredientId = -1;
-        if (rs.next()) {
-            ingredientId = rs.getInt("ingredientID");
+        try {
+            conn = DriverManager.getConnection(database_url, database_user, database_password);
+            String sql = "SELECT \"ingredientID\" FROM ingredient WHERE name = ?";
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, ingredientName);
+            ResultSet rs = pstmt.executeQuery();
+            if (rs.next()) {
+                ingredientId = rs.getInt("ingredientID");
+            }
+            rs.close();
+            pstmt.close();
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
         }
-        rs.close();
-        pstmt.close();
         return ingredientId;
     }
 
-    private static int findOrCreateIngredient(Connection conn, String ingredientName) throws SQLException {
+    public int findFoodId(String foodName) {
+        int foodId = -1;
+        try {
+            conn = DriverManager.getConnection(database_url, database_user, database_password);
+            String sql = "SELECT \"foodID\" FROM food WHERE name = ? and onmenu = 1";
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, foodName);
+            ResultSet rs = pstmt.executeQuery();
+            if (rs.next()) {
+                foodId = rs.getInt("foodID");
+            }
+            rs.close();
+            pstmt.close();
+            conn.close();
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return foodId;
+    }
+
+    private int findOrCreateIngredient(String ingredientName){
         // Check if the ingredient already exists
-        int ingredientId = findIngredientId(conn, ingredientName);
-        if (ingredientId != -1) {
-            return ingredientId;
+        int ingredientId = findIngredientId(ingredientName);
+        try {
+            conn = DriverManager.getConnection(database_url, database_user, database_password);
+            
+            if (ingredientId != -1) {
+                return ingredientId;
+            }
+
+            //if not finds the highest id
+            String sql = "SELECT MAX(\"ingredientID\") AS highest_id FROM ingredient";
+            Statement stmt = conn.createStatement();
+            ResultSet rs2 = stmt.executeQuery(sql);
+
+            int highestId = 0; // Initialize with default value
+            if (rs2.next()) {
+                highestId = rs2.getInt("highest_id");
+            }
+
+            rs2.close();
+            stmt.close();
+            //gets 1 higher to avoid conflicts
+            int newId = highestId +1;
+
+            // If the ingredient doesn't exist, create it
+            String sql2 = "INSERT INTO ingredient (\"ingredientID\",name,stock) VALUES (?,?,?)";
+            PreparedStatement pstmt = conn.prepareStatement(sql2, Statement.RETURN_GENERATED_KEYS);
+            pstmt.setInt(1, newId);
+            pstmt.setString(2,ingredientName);
+            pstmt.setInt(3, 0);
+            pstmt.executeUpdate();
+
+            // Retrieve the auto-generated ID of the newly inserted ingredient
+            ResultSet rs = pstmt.getGeneratedKeys();
+            if (rs.next()) {
+                ingredientId = rs.getInt(1);
+            }
+            rs.close();
+            pstmt.close();
+            conn.close();
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
         }
-
-        //if not finds the highest id
-        String sql = "SELECT MAX(\"ingredientID\") AS highest_id FROM ingredient";
-        Statement stmt = conn.createStatement();
-        ResultSet rs2 = stmt.executeQuery(sql);
-
-        int highestId = 0; // Initialize with default value
-        if (rs2.next()) {
-            highestId = rs2.getInt("highest_id");
-        }
-
-        rs2.close();
-        stmt.close();
-        //gets 1 higher to avoid conflicts
-        int newId = highestId +1;
-
-        // If the ingredient doesn't exist, create it
-        String sql2 = "INSERT INTO ingredient (\"ingredientID\",name,stock) VALUES (?,?,?)";
-        PreparedStatement pstmt = conn.prepareStatement(sql2, Statement.RETURN_GENERATED_KEYS);
-        pstmt.setInt(1, newId);
-        pstmt.setString(2,ingredientName);
-        pstmt.setInt(3, 0);
-        pstmt.executeUpdate();
-
-        // Retrieve the auto-generated ID of the newly inserted ingredient
-        ResultSet rs = pstmt.getGeneratedKeys();
-        if (rs.next()) {
-            ingredientId = rs.getInt(1);
-        }
-        rs.close();
-        pstmt.close();
-
+        
         return ingredientId;
     }
 
@@ -186,17 +199,63 @@ public class Menu {
     
     //gives all food types
     public Vector<String> GetFoodTypes(){
-        return(FoodTypes);
+        // SQL query to retrieve distinct food types where onMenu = 1
+        String sql = "SELECT DISTINCT \"foodType\" FROM food WHERE onMenu = 1";
+
+        // Create a statement
+        Statement stmt;
+        Vector<String> tempFoodTypes = new Vector<String>(1);
+        try {
+            conn = DriverManager.getConnection(database_url, database_user, database_password);
+            stmt = conn.createStatement();
+                // Execute the query and get the result set
+            ResultSet rs = stmt.executeQuery(sql);
+
+            
+            // Process the result set and add food types to the Vector
+            while (rs.next()) {
+                String foodType = rs.getString("foodType");
+                tempFoodTypes.add(foodType);
+            }
+
+            // Close the result set, statement, and connection
+            rs.close();
+            stmt.close();
+            conn.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return(tempFoodTypes);
     }
     public Double GetPrice(String FoodName){
-        //finds the food
-        String Catagory = GetFoodCatagory(FoodName);
-        int CatIndex = FoodTypes.indexOf(Catagory);
-        int foodIndex = FoodItems.get(CatIndex).indexOf(FoodName);
-        Vector<String> Recipe = Ingredients.get(CatIndex).get(foodIndex);
-        //gets the price
-        Double Price = Double.parseDouble(Recipe.get(0));
-        return(Price);
+        // SQL query to retrieve distinct food types where onMenu = 1
+        String sql = "SELECT DISTINCT \"foodType\" FROM food WHERE onMenu = 1";
+
+        // Create a statement
+        Statement stmt;
+        Double tempPrice = 0.0;
+        Vector<String> tempFoodTypes = new Vector<String>(1);
+        try {
+            conn = DriverManager.getConnection(database_url, database_user, database_password);
+            stmt = conn.createStatement();
+                // Execute the query and get the result set
+            ResultSet rs = stmt.executeQuery(sql);
+
+            
+            // Process the result set and add food types to the Vector
+            while (rs.next()) {
+                String foodType = rs.getString("foodType");
+                tempFoodTypes.add(foodType);
+            }
+
+            // Close the result set, statement, and connection
+            rs.close();
+            stmt.close();
+            conn.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return(tempPrice);
     }
 
     //changes the price of a food
@@ -211,13 +270,8 @@ public class Menu {
 
     //removes a food
     public void RemoveFood(String FoodName){
-        //finds teh food
-        String Catagory = GetFoodCatagory(FoodName);
-        int CatIndex = FoodTypes.indexOf(Catagory);
-        int foodIndex = FoodItems.get(CatIndex).indexOf(FoodName);
-        //removes the food
-        Ingredients.get(CatIndex).remove(foodIndex);
-        FoodItems.remove(foodIndex);
+        //finds the food
+        
     }
 
     //removes a food type
@@ -229,7 +283,7 @@ public class Menu {
     }
 
     //adds a the basic rev menu
-    public void GenerateBasicMenu(){
+    public void GenerateBasicMenu() {
         // addBurgers();
         // addBaskets();
         // addSandwiches();
