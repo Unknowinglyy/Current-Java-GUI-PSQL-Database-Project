@@ -398,9 +398,11 @@ class mainMenu {
     }
 
     public void confirmOrderWithPayment() {
-        String sqlStatements = "INSERT INTO ticket(\"ticketID\", \"timeOrdered\", \"totalCost\", payment) VALUES(" + currTicketID + ", date (LOCALTIMESTAMP), ";
-        Double theCost = 0.0;
-        java.util.List<int> itemPositions = new ArrayList<>();
+        Double theCost = GetTotalPrice();
+        String paymentMethod = "yes";
+        String sqlStatements = "INSERT INTO ticket(\"ticketID\", \"timeOrdered\", \"totalCost\", payment) VALUES(" + currTicketID + ", date (LOCALTIMESTAMP), " + Double.toString(theCost) + ", " + paymentMethod + ");";
+        
+        java.util.List<Integer> itemPositions = new ArrayList<>();
         // get the item indexes
         for (int index=0; index < orderLabelList.size(); index++) {
             if (orderLabelList.get(index).charAt(0) == '#') {
@@ -411,15 +413,25 @@ class mainMenu {
             if (((index+1) != itemPositions.size())) {
                 int diffPos = itemPositions.get(index+1) - itemPositions.get(index);
                 if (diffPos == 0) {
-                    String foodItem = (orderLabelList.get(index)).split("\\s+")[1];
-                    theCost += currentMenu.GetRecipe();
                     sqlStatements += "";
                 }
             }
         }
     }
 
-
+    // calculate the total price for the order
+    public Double GetTotalPrice() {
+        Double theTotalCost = 0.0;
+        for (String iText : orderLabelList) {
+            if (iText.get(0) == '#') {
+                String foodItem = iText.split("\\s+")[1];
+                System.out.println(foodItem + "\n");
+                theTotalCost += currentMenu.GetPrice(foodItem);
+            }
+        }
+        System.out.println(theTotalCost+"\n");
+        return theTotalCost;
+    }
 
     public static void main(String a[]) {
         SwingUtilities.invokeLater(() -> new mainMenu());
