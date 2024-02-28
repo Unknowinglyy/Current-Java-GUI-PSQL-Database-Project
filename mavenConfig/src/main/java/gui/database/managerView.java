@@ -1,3 +1,4 @@
+package gui.database;
 
 import javax.swing.*;
 import java.awt.*;
@@ -8,6 +9,13 @@ import java.util.ArrayList;
 
 public class managerView {
     private ArrayList<Ingredient> ingredientList;
+    //lists of JLabels for ease of updating frontend
+    private ArrayList<JLabel> displayLabels = new ArrayList<>();
+    private ArrayList<JLabel> stockLabels = new ArrayList<>();
+    private ArrayList<JLabel> restockLabels = new ArrayList<>();
+    private final int lowStockThreshold = 20;
+    private final int mediumStockThreshold = 50;
+
     public class Ingredient {
         private final int id;
         private String name;
@@ -41,48 +49,56 @@ public class managerView {
         public void setStock(int stock) {
             this.stock = stock;
         }
-
+        //adjusts stock values based on a given adjustment value
         public void adjustStock(int adjustment) {
-            Connection conn = null;
-            String database_name = "csce331_902_01_db";
-            String database_user = "csce331_902_01_user";
-            String database_password = "EPICCSCEPROJECT";
-            String database_url = String.format("jdbc:postgresql://csce-315-db.engr.tamu.edu/%s", database_name);
-            try {
-                conn = DriverManager.getConnection(database_url, database_user, database_password);
-                String updateQuery = "UPDATE ingredient SET stock = stock + ? WHERE \"ingredientID\" = ?";
-                // UPDATE ingredient SET stock = stock + 1 WHERE "ingredientID" = 1;
-                PreparedStatement stmt = conn.prepareStatement(updateQuery);
-                stmt.setInt(1, adjustment);
-                stmt.setInt(2, this.getId());
-                stmt.executeUpdate();
-            } catch (Exception e) {
-                e.printStackTrace();
-                System.err.println(e.getClass().getName() + ": " + e.getMessage());
-                System.exit(0);
-            }
-
-            // Handle the exception appropriately (logging, error message, etc.)
-
-            this.stock = this.stock + adjustment;
+            int id = this.getId();
+            Ingredient thisOne = this;
+            SwingWorker worker = new SwingWorker<Void, Void>() {
+                @Override
+                protected Void doInBackground() throws Exception {
+                     
+                     Connection conn = null;
+                    String database_name = "csce331_902_01_db";
+                    String database_user = "csce331_902_01_user";
+                    String database_password = "EPICCSCEPROJECT";
+                    String database_url = String.format("jdbc:postgresql://csce-315-db.engr.tamu.edu/%s", database_name);
+                    try {
+                        conn = DriverManager.getConnection(database_url, database_user, database_password);
+                        String updateQuery = "UPDATE ingredient SET stock = stock + ? WHERE \"ingredientID\" = ?";
+                        PreparedStatement stmt = conn.prepareStatement(updateQuery);
+                        stmt.setInt(1, adjustment);
+                        stmt.setInt(2, id);
+                        stmt.executeUpdate();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                        System.err.println(e.getClass().getName() + ": " + e.getMessage());
+                        System.exit(0);
+                    }
+                    thisOne.setStock(thisOne.getStock() + adjustment);
+                    return null;
+                }
+                @Override
+                protected void done() {
+                     // Update UI on the Swing EDT
+                     SwingUtilities.invokeLater(() -> {
+                         updateGUI(thisOne);
+                     });
+                }
+            };
+            worker.execute();
         }
 
     }
-
+    //updates stock when + and - buttons are clicked
     private ActionListener createUpdateListener(Ingredient ingredient, int adjustment) {
         return new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Implement the logic to update the ingredient stock based on 'ingredient' and
-                // 'adjustment'
-                // Example:
                 ingredient.adjustStock(adjustment);
-                fetchData();
-
-                // ... (Update the UI, if needed)
             }
         };
     }
+    //fetches data from db when needed
     private void fetchData(){
         Connection conn = null;
         String database_name = "csce331_902_01_db";
@@ -116,74 +132,83 @@ public class managerView {
             JOptionPane.showMessageDialog(null, "Error accessing Database.");
 
         }
-           
            ingredientList=ingredientListTemp;
-            
+    }
+    private void updateGUI(Ingredient modifiedIngredient){
+        for(int i = 0; i < displayLabels.size(); i++){
+            JLabel currDisplayLabel = displayLabels.get(i);
+            JLabel currStockLabel = stockLabels.get(i);
+            JLabel currRestocklabel = restockLabels.get(i);
+            if(ingredientMatchesLabel(currDisplayLabel, modifiedIngredient)){
+                updateJLabel(currDisplayLabel, modifiedIngredient);
+                updateStockLabel(currStockLabel, modifiedIngredient);
+                updateLabelColor(currRestocklabel, modifiedIngredient);
+                break;
+            }
+        }
+    }
+    //checks if a given Jlabel corresponds with a given ingredient
+    private boolean ingredientMatchesLabel(JLabel label, Ingredient ingredient) {
+        String labelText = label.getText();
+        String labelIngredientId = labelText.split("-")[0].trim();
+        return labelIngredientId.equals(ingredient.getName().trim());
         
     }
-    // private JPanel updateInventory(){
-    //         //todo
-    // }
+    //updates colors based on thresholds
+    private void updateLabelColor(JLabel label, Ingredient ingredient){
+        if(ingredient.getStock()<=lowStockThreshold){
+            label.setForeground(Color.RED);
+        }
+        else if(ingredient.getStock()<=mediumStockThreshold){
+            label.setForeground(Color.ORANGE);
+        }
+        else{
+            label.setForeground(Color.BLACK);
+        }
+    }
+    //updates labels in the popup window
+    private void updateStockLabel(JLabel label,Ingredient ingredient){
+        label.setText(" " + ingredient.getStock() + " ");
+        updateLabelColor(label, ingredient);
+       
+    }
+    //updates labels in the managerView panel
+    private void updateJLabel(JLabel label, Ingredient ingredient) {
+        String displayLine = ingredient.getName() + "-" + ingredient.getStock();
+        label.setText(displayLine);
+        updateLabelColor(label, ingredient);
+       
+    }
     managerView() {
-        // Connection conn = null;
-        // String database_name = "csce331_902_01_db";
-        // String database_user = "csce331_902_01_user";
-        // String database_password = "EPICCSCEPROJECT";
-        // String database_url = String.format("jdbc:postgresql://csce-315-db.engr.tamu.edu/%s", database_name);
-        // try {
-        //     conn = DriverManager.getConnection(database_url, database_user, database_password);
-        // } catch (Exception e) {
-        //     e.printStackTrace();
-        //     System.err.println(e.getClass().getName() + ": " + e.getMessage());
-        //     System.exit(0);
-        // }
-        // JOptionPane.showMessageDialog(null, "Opened database successfully");
-
-        
-        // ArrayList<Ingredient> ingredientList = new ArrayList<Ingredient>(); // Create a list to hold ingredients
         fetchData();
-
-        
-        int lowStockThreshold = 15;
-        int mediumStockThreshold = 40;
         JPanel inventoryPanel = new JPanel();
-
         for (Ingredient ingredient : ingredientList) {
-            String displayLine = ingredient.getName() + " " + ingredient.getStock();
-            JLabel displayLabel = new JLabel(displayLine); // Create a JLabel
+            String displayLine = ingredient.getName() + "-" + ingredient.getStock();
+            JLabel displayLabel = new JLabel(displayLine); 
 
             if (ingredient.getStock() <= lowStockThreshold) {
-                displayLabel.setForeground(Color.RED); // Set text color to red
+                displayLabel.setForeground(Color.RED); 
             } else if (ingredient.getStock() <= mediumStockThreshold) {
                 displayLabel.setForeground(Color.ORANGE);
             }
-
-            // Add the displayLabel to your textArea or restockPanel
-            inventoryPanel.add(displayLabel); // Or: restockPanel.add(displayLabel);
+            displayLabels.add(displayLabel);
+            inventoryPanel.add(displayLabel); 
         }
-        // textArea.setEditable(false);
 
-        // inventoryPanel.add(textArea);
         inventoryPanel.setLayout(new BoxLayout(inventoryPanel, BoxLayout.Y_AXIS));
         JButton restockButton = new JButton("Restock");
         inventoryPanel.add(restockButton);
+
         // Set preferred height to limit size
         inventoryPanel.setPreferredSize(new Dimension(300, 300));
         JButton navigationButton = new JButton("Back to Main Menu");
-        // Create a JScrollPane and add the inventoryPanel to it
         JScrollPane scrollPane = new JScrollPane(inventoryPanel);
         JPanel mainPanel = new JPanel(new BorderLayout());
-
-        // Main Panel (Add the scrollPane)
         mainPanel.add(scrollPane, BorderLayout.EAST);
-
-        // Main Panel
         // Add placeholder for other potential content on the left
         mainPanel.add(new JLabel("(Placeholder)"), BorderLayout.CENTER);
         mainPanel.add(navigationButton, BorderLayout.NORTH);
-        // Add Inventory Panel to the right
         mainPanel.add(inventoryPanel, BorderLayout.EAST);
-
         JFrame f = new JFrame();
         f.setSize(1920, 1080);
         f.add(mainPanel); // Add the main panel to the frame
@@ -200,14 +225,15 @@ public class managerView {
         restockButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Create a new JDialog for ingredient adjustments
-                JDialog restockDialog = new JDialog(f, "Restock Ingredients"); // Associate with main frame 'f'
-                restockDialog.setModal(true); // Block interaction with the main window
-                // Panel to hold the list of ingredients
+               
+                JDialog restockDialog = new JDialog(f, "Restock Ingredients"); 
+                restockDialog.setModal(true); 
+                
                 JPanel restockPanel = new JPanel();
-                restockPanel.setLayout(new GridLayout(0, 4)); // Adjust rows as needed
+               
+                restockPanel.setLayout(new GridLayout(0, 4)); 
                 // Dynamically create labels and buttons
-                for (int i = 0; i < ingredientList.size(); i++) { // Assuming you have an Ingredient class
+                for (int i = 0; i < ingredientList.size(); i++) { 
                     JLabel restockLabel = new JLabel(ingredientList.get(i).getId() + " " + ingredientList.get(i).getName());
                     JButton minusButton = new JButton("-");
                     JButton plusButton = new JButton("+");
@@ -216,28 +242,28 @@ public class managerView {
                     plusButton.addActionListener(createUpdateListener(ingredientList.get(i), 1));
 
                     if (ingredientList.get(i).getStock() <= lowStockThreshold) {
-                        stockLabel.setForeground(Color.RED); // Set text color to red
+                        stockLabel.setForeground(Color.RED); 
                         restockLabel.setForeground(Color.RED);
                     } else if (ingredientList.get(i).getStock() <= mediumStockThreshold) {
                         stockLabel.setForeground(Color.ORANGE);
                         restockLabel.setForeground(Color.ORANGE);
                     }
-                    
-
+                    stockLabels.add(stockLabel);
+                    //adding labels to parent panel
+                    restockLabels.add(restockLabel);
                     restockPanel.add(restockLabel);
                     restockPanel.add(minusButton);
                     restockPanel.add(stockLabel);
                     restockPanel.add(plusButton);
                 }
-
+                restockPanel.setSize(800,800);
                 restockDialog.add(restockPanel);
-                restockDialog.pack();
-                restockDialog.setLocationRelativeTo(f); // Center relative to the main frame
+                restockDialog.setSize(800,1000);
+                restockDialog.setLocationRelativeTo(f); 
                 restockDialog.setVisible(true);
             }
         });
     }
-
     public static void main(String args[]) {
         SwingUtilities.invokeLater(() -> new managerView());
     }

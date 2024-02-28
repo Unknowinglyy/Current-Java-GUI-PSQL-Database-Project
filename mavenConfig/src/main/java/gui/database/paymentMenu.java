@@ -1,3 +1,5 @@
+package gui.database;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -37,7 +39,7 @@ public class paymentMenu extends JFrame {
 
     private void addPaymentMethodPanel() {
         JPanel paymentMethodPanel = new JPanel();
-        paymentMethodComboBox = new JComboBox<>(new String[] { "Cash", "Credit Card" });
+        paymentMethodComboBox = new JComboBox<>(new String[] { "Cash", "Card", "Meal Swipes", "Dining Dollars"});
         paymentMethodPanel.add(paymentMethodComboBox);
         add(paymentMethodPanel, BorderLayout.CENTER);
     }
