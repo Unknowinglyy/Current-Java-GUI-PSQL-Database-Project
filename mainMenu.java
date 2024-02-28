@@ -105,13 +105,13 @@ class mainMenu {
         gbc.insets = new Insets(30, 200, 0, 10);
         panel.add(drinksAndCondiments, gbc);
 
-        JButton backButton = backButton("Go Back");
+        JButton paymentView = createPaymentButton("Payment View");
         JPanel dandcItems = new JPanel(new GridLayout(1, 1, 10, 10));
         gbc.gridy = 3;
         gbc.insets = new Insets(30, 200, 30, 10);
-        dandcItems.add(backButton);
+        dandcItems.add(paymentView);
         gbc.gridy++;
-        panel.add(dandcItems, gbc);
+        panel.add(paymentView, gbc);
 
         JButton managerView = createManagerButton("Manager View");
         managerView.setPreferredSize(new Dimension(150, 40));
@@ -215,7 +215,6 @@ class mainMenu {
         });
         return button;
     }
-
     private JToggleButton createIngredientButton(String itemName){
         JToggleButton Tbutton = new JToggleButton(itemName);
         Tbutton.setBackground(Color.GREEN);
@@ -278,6 +277,20 @@ class mainMenu {
         });
         return button;
     }
+
+    private JButton createPaymentButton(String itemName) {
+        JButton button = new JButton(itemName);
+        Dimension buttonSize = new Dimension(175, 175);
+        button.setPreferredSize(buttonSize);
+        button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                paymentMenu currentPayment = new paymentMenu(50);
+            }
+        });
+        return button;
+    }
+
 
     private JButton createManagerButton(String itemName) {
         JButton button = new JButton(itemName);
@@ -423,7 +436,7 @@ class mainMenu {
     public Double GetTotalPrice() {
         Double theTotalCost = 0.0;
         for (String iText : orderLabelList) {
-            if (iText.get(0) == '#') {
+            if (iText.charAt(0) == '#') {
                 String foodItem = iText.split("\\s+")[1];
                 System.out.println(foodItem + "\n");
                 theTotalCost += currentMenu.GetPrice(foodItem);
