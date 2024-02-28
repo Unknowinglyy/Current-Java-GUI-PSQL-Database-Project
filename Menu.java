@@ -224,5 +224,8 @@ public class Menu {
         AddFood("Shake", "Beverages", 3.00, new Vector<>());
     }
 
-
+    // dummy function
+    public int findFoodId(String foodName) {
+        return 1;
+    }
 }

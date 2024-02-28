@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 import java.util.*;
+import java.sql.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
@@ -31,7 +32,8 @@ class mainMenu {
         orderLabelList = new ArrayList<>();
         String order = "";
         CreateCurrentOrderPanel(order);
-        
+        updateCurrID();
+     
         // JLabel currentOrder = new JLabel("Current Order");
         // gbc.insets = new Insets(30, 10, 0, 10);
         // panel.add(currentOrder, gbc);
@@ -413,6 +415,7 @@ class mainMenu {
             if (((index+1) != itemPositions.size())) {
                 int diffPos = itemPositions.get(index+1) - itemPositions.get(index);
                 if (diffPos == 0) {
+                    int foodID = currentMenu.findFoodId(orderLabelList.get(index).split("\\s+")[1]);
                     sqlStatements += "";
                 }
             }
@@ -423,7 +426,7 @@ class mainMenu {
     public Double GetTotalPrice() {
         Double theTotalCost = 0.0;
         for (String iText : orderLabelList) {
-            if (iText.get(0) == '#') {
+            if (iText.charAt(0) == '#') {
                 String foodItem = iText.split("\\s+")[1];
                 System.out.println(foodItem + "\n");
                 theTotalCost += currentMenu.GetPrice(foodItem);
@@ -431,6 +434,47 @@ class mainMenu {
         }
         System.out.println(theTotalCost+"\n");
         return theTotalCost;
+    }
+
+    public int getPrevTicketID() {
+        //currTicketID;
+        Connection conn = null;
+        String database_name = "csce331_902_01_db";
+        String database_user = "csce331_902_01_user";
+        String database_password = "EPICCSCEPROJECT";
+        String database_url = String.format("jdbc:postgresql://csce-315-db.engr.tamu.edu/%s", database_name);
+        try {
+        conn = DriverManager.getConnection(database_url, database_user, database_password);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.err.println(e.getClass().getName() + ": " + e.getMessage());
+            System.exit(0);
+        }
+        try {
+            Statement stmt = conn.createStatement();
+            String sqlStatement = "SELECT max(\"ticketID\") FROM ticket;";
+            // String sqlStatement = "SELECT * FROM ingredient;";
+            ResultSet result = stmt.executeQuery(sqlStatement);
+            int number = 0;
+            while (result.next()) {
+                // System.out.println(result.getInt("max"));
+                number = result.getInt("max");
+                
+            }
+            return number;
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Error accessing Database.");
+            return -1;
+        }
+        
+    }
+
+    public void updateCurrID() {
+
+
+        currTicketID = getPrevTicketID() + 1;
+        System.out.println(currTicketID);
+
     }
 
     public static void main(String a[]) {
