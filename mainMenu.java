@@ -20,7 +20,11 @@ class mainMenu {
     int currOrderIndex;
     int itemNum = 0;
     int currTicketID;
-
+    Connection conn = null;
+    String database_name = "csce331_902_01_db";
+    String database_user = "csce331_902_01_user";
+    String database_password = "EPICCSCEPROJECT";
+    String database_url = String.format("jdbc:postgresql://csce-315-db.engr.tamu.edu/%s", database_name);
     mainMenu() {
         panel.setLayout(new GridBagLayout());
         gbc.gridx = 0;
@@ -141,8 +145,9 @@ class mainMenu {
         //foodCatagories = new JPanel(new GridLayout(3, 5, 10, 10));
         gbc.gridy = 1;
         gbc.insets = new Insets(30, 200, 50, 10);
-        for(int i = 0; i < currentMenu.FoodTypes.size();i++){
-            JButton b1 = createFoodTypesButton(currentMenu.FoodTypes.get(i));
+        Vector<String> currentTypes = currentMenu.GetFoodTypes();
+        for(int i = 0; i < currentTypes.size();i++){
+            JButton b1 = createFoodTypesButton(currentTypes.get(i));
             foodCatagories.add(b1,gbc);
         }
         panel.revalidate();
@@ -415,41 +420,57 @@ class mainMenu {
 
     public void confirmOrderWithPayment(String paymentMethod) {
         Double theCost = GetTotalPrice();
-        String sqlStatements = "INSERT INTO ticket(\"ticketID\", \"timeOrdered\", \"totalCost\", payment) VALUES(" + currTicketID + ", date (LOCALTIMESTAMP), " + Double.toString(theCost) + ", " + paymentMethod + ");";
-        
-        java.util.List<Integer> itemPositions = new ArrayList<>();
-        // get the item indexes
-        for (int index=0; index < orderLabelList.size(); index++) {
-            if (orderLabelList.get(index).charAt(0) == '#') {
-                itemPositions.add(index);
-            }
-        }
-        for (int index=0; index < itemPositions.size(); index++) {
-            if (((index+1) != itemPositions.size())) {
-                int diffPos = itemPositions.get(index+1) - itemPositions.get(index);
-                // for unmodified food
-                if (diffPos == 0) {
-                    String foodName = orderLabelList.get(index).split(",")[0].substring(orderLabelList.get(index).indexOf(':') + 2);
-                    int foodID = currentMenu.findFoodId(foodName);
-                    sqlStatements += "INSERT INTO foodticket(amount, \"ticketID\", \"foodID\") VALUES(1, " + currTicketID + ", " + foodID + ");";
+        try {
+
+            String sqlStatements = "INSERT INTO ticket(\"ticketID\", \"timeOrdered\", \"totalCost\", payment) VALUES(" + currTicketID + ", date (LOCALTIMESTAMP), " + Double.toString(theCost) + ", " + paymentMethod + ");";
+            Statement stmt = conn.createStatement();
+            stmt.executeQuery(sqlStatements);
+            java.util.List<Integer> itemPositions = new ArrayList<>();
+            // get the item indexes
+            for (int index=0; index < orderLabelList.size(); index++) {
+                if (orderLabelList.get(index).charAt(0) == '#') {
+                    itemPositions.add(index);
                 }
-                // for modified
-                else {
-                    // step 1 get og id
+            }
+            for (int index=0; index < itemPositions.size(); index++) {
+                if (((index+1) != itemPositions.size())) {
+                    int diffPos = itemPositions.get(index+1) - itemPositions.get(index);
+                    // for unmodified food
                     String foodName = orderLabelList.get(index).split(",")[0].substring(orderLabelList.get(index).indexOf(':') + 2);
-                    int foodID = currentMenu.findFoodId(foodName);
-                    // step 2 get og recipe
-                    Vector<String> Recipe = new Vector<>(currentMenu.GetRecipe(foodName));
-                    // step 3 remove recipe items set by modifiers
-                    for (int jIndex = (itemPositions.get(index)+1); jIndex < itemPositions.get(index+1); jIndex++) {
-                        // String remIng = orderLabelList.get(index).
+                    if (diffPos == 0) {
+                        
+                        int foodID = currentMenu.findFoodId(foodName);
+                        sqlStatements = "INSERT INTO foodticket(amount, \"ticketID\", \"foodID\") VALUES(1, " + currTicketID + ", " + foodID + ");";
+                        Statement stmt2 = conn.createStatement();
+                        stmt2.executeQuery(sqlStatements);
                     }
-                    // step 4 add to food table with new id
-
-                    // step 5 add the now modified food id to foodticket
-
+                    // for modified
+                    else {
+                        // step 1 get og id
+                        int foodID = currentMenu.findFoodId(foodName);
+                        // step 2 get og recipe
+                        Vector<String> Recipe = new Vector<>(currentMenu.GetRecipe(foodName));
+                        Recipe.remove(0); // remove price
+                        // step 3 remove recipe items set by modifiers
+                        for (int jIndex = (itemPositions.get(index)+1); jIndex < itemPositions.get(index+1); jIndex++) {
+                            String remIng = orderLabelList.get(jIndex).split(" in")[0].substring(8);
+                            // System.out.println(remIng+"\n");
+                            Recipe.removeElement(remIng);
+                        }
+                        // step 4 add to food table with new id
+                        currentMenu.AddFood(foodName, currentMenu.GetFoodCatagory(foodName), currentMenu.GetPrice(foodName), Recipe);
+                        int newFoodID = GetNewFoodID();
+                        // step 5 add the now modified food id to foodticket
+                        sqlStatements = "INSERT INTO foodticket(amount, \"ticketID\", \"foodID\") VALUES(1, " + currTicketID + ", " + newFoodID + ");";
+                        Statement stmt3 = conn.createStatement();
+                        stmt3.executeQuery(sqlStatements);
+                    }
                 }
             }
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.err.println(e.getClass().getName() + ": " + e.getMessage());
+            System.exit(0);
         }
         // call update stock line
     }
@@ -471,11 +492,7 @@ class mainMenu {
 
     public int getPrevTicketID() {
         //currTicketID;
-        Connection conn = null;
-        String database_name = "csce331_902_01_db";
-        String database_user = "csce331_902_01_user";
-        String database_password = "EPICCSCEPROJECT";
-        String database_url = String.format("jdbc:postgresql://csce-315-db.engr.tamu.edu/%s", database_name);
+
         try {
         conn = DriverManager.getConnection(database_url, database_user, database_password);
         } catch (Exception e) {
@@ -503,6 +520,36 @@ class mainMenu {
         
     }
 
+    public int GetNewFoodID() {
+        //currTicketID;
+
+        try {
+        conn = DriverManager.getConnection(database_url, database_user, database_password);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.err.println(e.getClass().getName() + ": " + e.getMessage());
+            System.exit(0);
+        }
+
+        try {
+            Statement stmt = conn.createStatement();
+            String sqlStatement = "SELECT max(\"foodID\") FROM food;";
+            // String sqlStatement = "SELECT * FROM ingredient;";
+            ResultSet result = stmt.executeQuery(sqlStatement);
+            int number = 0;
+            while (result.next()) {
+                // System.out.println(result.getInt("max"));
+                number = result.getInt("max");
+                
+            }
+            return number;
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Error accessing Database.");
+            return -1;
+        }
+        
+    }
+
     public void updateCurrID() {
 
 
@@ -510,6 +557,69 @@ class mainMenu {
         System.out.println(currTicketID);
 
     }
+
+    
+    public void AddFood(String FoodName, String FoodCatagory, Double Price, Vector<String> Recipe){
+        //checks if Food type already exists
+        //"INSERT INTO food (\"foodID\", name, price, \"foodType\")\nVALUES ({foodID}, 'Hamburger', 11.99, 'Burger');\n"
+        
+        //connect to database
+        
+        //trys to add the food to order
+        try {
+            conn = DriverManager.getConnection(database_url, database_user, database_password);
+            String sql = "SELECT MAX(\"foodID\") AS highest_id FROM food";
+            Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery(sql);
+
+            int highestId = 0; // Initialize with default value
+            if (rs.next()) {
+                highestId = rs.getInt("highest_id");
+            }
+
+            rs.close();
+            stmt.close();
+            int newId = highestId +1;
+            String insertQuery = "INSERT INTO food (\"foodID\", name, price, \"foodType\",onmenu) VALUES (?, ?, ?, ?, ?)";
+            PreparedStatement pstmt = conn.prepareStatement(insertQuery);
+
+            pstmt.setInt(1, newId); //set id
+            pstmt.setString(2, FoodName); // Set the name
+            pstmt.setDouble(3, Price); // Set the price
+            pstmt.setString(4, FoodCatagory); //set catagory
+            pstmt.setInt(5, 1); // Set onMenu
+
+            pstmt.executeUpdate();
+            pstmt.close();
+            conn.close();
+
+            //goes through all ingredients and creates the relationship between food and the item
+            for(int i =0; i < Recipe.size();i++){
+                conn = DriverManager.getConnection(database_url, database_user, database_password);
+                int ingredientId = currentMenu.findOrCreateIngredient(Recipe.get(i));
+                String ingredientQuery = "INSERT INTO foodingredient (\"foodID\", \"ingredientID\", \"amount\") VALUES (?, ?, ?)";
+                PreparedStatement pstmt2 = conn.prepareStatement(ingredientQuery);
+
+                pstmt2.setInt(1, newId); //set the ingredient id
+                pstmt2.setInt(2, ingredientId); // Set the food id
+                pstmt2.setInt(3, 1); // Set the amount
+                
+
+                pstmt2.executeUpdate();
+                pstmt2.close();
+                conn.close();
+            }
+
+            
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.err.println(e.getClass().getName() + ": " + e.getMessage());
+            System.exit(0);
+        }
+    }
+
 
     public static void main(String a[]) {
         SwingUtilities.invokeLater(() -> new mainMenu());
