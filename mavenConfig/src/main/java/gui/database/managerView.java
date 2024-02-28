@@ -9,6 +9,12 @@ import java.util.ArrayList;
 
 public class managerView {
     private ArrayList<Ingredient> ingredientList;
+    private ArrayList<JLabel> displayLabels = new ArrayList<>();
+    private ArrayList<JLabel> stockLabels = new ArrayList<>();
+    private ArrayList<JLabel> restockLabels = new ArrayList<>();
+    private final int lowStockThreshold = 15;
+    private final int mediumStockThreshold = 40;
+
     public class Ingredient {
         private final int id;
         private String name;
@@ -42,48 +48,57 @@ public class managerView {
         public void setStock(int stock) {
             this.stock = stock;
         }
-
+        //adjusts stock values based on a given adjustment value
         public void adjustStock(int adjustment) {
-            Connection conn = null;
-            String database_name = "csce331_902_01_db";
-            String database_user = "csce331_902_01_user";
-            String database_password = "EPICCSCEPROJECT";
-            String database_url = String.format("jdbc:postgresql://csce-315-db.engr.tamu.edu/%s", database_name);
-            try {
-                conn = DriverManager.getConnection(database_url, database_user, database_password);
-                String updateQuery = "UPDATE ingredient SET stock = stock + ? WHERE \"ingredientID\" = ?";
-                // UPDATE ingredient SET stock = stock + 1 WHERE "ingredientID" = 1;
-                PreparedStatement stmt = conn.prepareStatement(updateQuery);
-                stmt.setInt(1, adjustment);
-                stmt.setInt(2, this.getId());
-                stmt.executeUpdate();
-            } catch (Exception e) {
-                e.printStackTrace();
-                System.err.println(e.getClass().getName() + ": " + e.getMessage());
-                System.exit(0);
-            }
-
-            // Handle the exception appropriately (logging, error message, etc.)
-
-            this.stock = this.stock + adjustment;
+            int id = this.getId();
+            Ingredient thisOne = this;
+            SwingWorker worker = new SwingWorker<Void, Void>() {
+                @Override
+                protected Void doInBackground() throws Exception {
+                     // Database interaction code (same as you have now)
+                     Connection conn = null;
+                    String database_name = "csce331_902_01_db";
+                    String database_user = "csce331_902_01_user";
+                    String database_password = "EPICCSCEPROJECT";
+                    String database_url = String.format("jdbc:postgresql://csce-315-db.engr.tamu.edu/%s", database_name);
+                    try {
+                        conn = DriverManager.getConnection(database_url, database_user, database_password);
+                        String updateQuery = "UPDATE ingredient SET stock = stock + ? WHERE \"ingredientID\" = ?";
+                        // UPDATE ingredient SET stock = stock + 1 WHERE "ingredientID" = 1;
+                        PreparedStatement stmt = conn.prepareStatement(updateQuery);
+                        stmt.setInt(1, adjustment);
+                        stmt.setInt(2, id);
+                        stmt.executeUpdate();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                        System.err.println(e.getClass().getName() + ": " + e.getMessage());
+                        System.exit(0);
+                    }
+                    thisOne.setStock(thisOne.getStock() + adjustment);
+                    return null;
+                }
+                @Override
+                protected void done() {
+                     // Update UI on the Swing EDT
+                     SwingUtilities.invokeLater(() -> {
+                         updateGUI(thisOne); // Call fetchData for a full update if needed
+                     });
+                }
+            };
+            worker.execute();
         }
 
     }
-
+    //updates stock when + and - buttons are clicked
     private ActionListener createUpdateListener(Ingredient ingredient, int adjustment) {
         return new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Implement the logic to update the ingredient stock based on 'ingredient' and
-                // 'adjustment'
-                // Example:
                 ingredient.adjustStock(adjustment);
-                fetchData();
-
-                // ... (Update the UI, if needed)
             }
         };
     }
+    //fetches data from db when needed
     private void fetchData(){
         Connection conn = null;
         String database_name = "csce331_902_01_db";
@@ -117,40 +132,61 @@ public class managerView {
             JOptionPane.showMessageDialog(null, "Error accessing Database.");
 
         }
-           
            ingredientList=ingredientListTemp;
-            
+    }
+    private void updateGUI(Ingredient modifiedIngredient){
+        for(int i = 0; i < displayLabels.size(); i++){
+            JLabel currDisplayLabel = displayLabels.get(i);
+            JLabel currStockLabel = stockLabels.get(i);
+            JLabel currRestocklabel = restockLabels.get(i);
+            if(ingredientMatchesLabel(currDisplayLabel, modifiedIngredient)){
+                updateJLabel(currDisplayLabel, modifiedIngredient);
+                updateStockLabel(currStockLabel, modifiedIngredient);
+                updateLabelColor(currRestocklabel, modifiedIngredient);
+                break;
+            }
+        }
+    }
+    //checks if a given Jlabel corresponds with a given ingredient
+    private boolean ingredientMatchesLabel(JLabel label, Ingredient ingredient) {
+        // Implement logic to check if the label displays the given ingredient 
+        String labelText = label.getText();
+        String labelIngredientId = labelText.split("-")[0].trim();
+        //System.out.println(labelIngredientId + " and "+ ingredient.getName().trim());
+        return labelIngredientId.equals(ingredient.getName().trim());
         
     }
-    // private JPanel updateInventory(){
-    //         //todo
-    // }
+    //updates colors based on thresholds
+    private void updateLabelColor(JLabel label, Ingredient ingredient){
+        if(ingredient.getStock()<=lowStockThreshold){
+            label.setForeground(Color.RED);
+        }
+        else if(ingredient.getStock()<=mediumStockThreshold){
+            label.setForeground(Color.ORANGE);
+        }
+        else{
+            label.setForeground(Color.BLACK);
+        }
+    }
+    //updates labels in the popup window
+    private void updateStockLabel(JLabel label,Ingredient ingredient){
+        label.setText(" " + ingredient.getStock() + " ");
+        updateLabelColor(label, ingredient);
+       
+    }
+    //updates labels in the managerView panel
+    private void updateJLabel(JLabel label, Ingredient ingredient) {
+        String displayLine = ingredient.getName() + "-" + ingredient.getStock();
+        System.out.println(displayLine);
+        label.setText(displayLine);
+        updateLabelColor(label, ingredient);
+       
+    }
     managerView() {
-        // Connection conn = null;
-        // String database_name = "csce331_902_01_db";
-        // String database_user = "csce331_902_01_user";
-        // String database_password = "EPICCSCEPROJECT";
-        // String database_url = String.format("jdbc:postgresql://csce-315-db.engr.tamu.edu/%s", database_name);
-        // try {
-        //     conn = DriverManager.getConnection(database_url, database_user, database_password);
-        // } catch (Exception e) {
-        //     e.printStackTrace();
-        //     System.err.println(e.getClass().getName() + ": " + e.getMessage());
-        //     System.exit(0);
-        // }
-        // JOptionPane.showMessageDialog(null, "Opened database successfully");
-
-        
-        // ArrayList<Ingredient> ingredientList = new ArrayList<Ingredient>(); // Create a list to hold ingredients
         fetchData();
-
-        
-        int lowStockThreshold = 15;
-        int mediumStockThreshold = 40;
         JPanel inventoryPanel = new JPanel();
-
         for (Ingredient ingredient : ingredientList) {
-            String displayLine = ingredient.getName() + " " + ingredient.getStock();
+            String displayLine = ingredient.getName() + "-" + ingredient.getStock();
             JLabel displayLabel = new JLabel(displayLine); // Create a JLabel
 
             if (ingredient.getStock() <= lowStockThreshold) {
@@ -158,7 +194,7 @@ public class managerView {
             } else if (ingredient.getStock() <= mediumStockThreshold) {
                 displayLabel.setForeground(Color.ORANGE);
             }
-
+            displayLabels.add(displayLabel);
             // Add the displayLabel to your textArea or restockPanel
             inventoryPanel.add(displayLabel); // Or: restockPanel.add(displayLabel);
         }
@@ -223,8 +259,8 @@ public class managerView {
                         stockLabel.setForeground(Color.ORANGE);
                         restockLabel.setForeground(Color.ORANGE);
                     }
-                    
-
+                    stockLabels.add(stockLabel);
+                    restockLabels.add(restockLabel);
                     restockPanel.add(restockLabel);
                     restockPanel.add(minusButton);
                     restockPanel.add(stockLabel);
