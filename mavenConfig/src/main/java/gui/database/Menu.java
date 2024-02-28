@@ -1,4 +1,4 @@
-package mavenConfig.src.main.java.gui.database;
+package gui.database;
 
 import java.util.*;
 
