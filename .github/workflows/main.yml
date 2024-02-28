@@ -27,4 +27,20 @@ jobs:
         distribution: 'oracle'
         cache: maven
     - name: Build with Maven using Github Actions
-      run: mvn -B package --file ./mavenConfig/pom.xml
+      run: | 
+        mvn -B package --file ./mavenConfig/pom.xml
+        mkdir temp && cp ./mavenConfig/target/*.jar temp
+
+    - name: Push resulting jar file
+      uses: actions/upload-artifact@v3
+      with:
+            name: Jar file
+            path: temp
+
+
+
+
+
+
+
+      
