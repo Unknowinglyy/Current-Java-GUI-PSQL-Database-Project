@@ -287,7 +287,8 @@ class mainMenu {
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new paymentMenu(50).setVisible(true);
+                double price = GetTotalPrice();
+                new paymentMenu(price).setVisible(true);
             }
         });
         return button;
@@ -445,7 +446,8 @@ class mainMenu {
         Double theTotalCost = 0.0;
         for (String iText : orderLabelList) {
             if (iText.charAt(0) == '#') {
-                String foodItem = iText.split("\\s+")[1];
+                String foodItem = iText.split(",")[0].substring(4);
+                // String foodItem = iText.split(",")[0];
                 System.out.println(foodItem + "\n");
                 theTotalCost += currentMenu.GetPrice(foodItem);
             }
