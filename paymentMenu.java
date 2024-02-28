@@ -9,6 +9,7 @@ public class paymentMenu extends JFrame {
     private JButton submitButton;
     private JButton cancelButton;
     private double totalAmount; // This could be dynamically set based on the POS system
+    String outPay = "";
 
     public paymentMenu(double totalAmount) {
         this.totalAmount = totalAmount;
@@ -37,7 +38,7 @@ public class paymentMenu extends JFrame {
 
     private void addPaymentMethodPanel() {
         JPanel paymentMethodPanel = new JPanel();
-        paymentMethodComboBox = new JComboBox<>(new String[] { "Cash", "Credit Card" });
+        paymentMethodComboBox = new JComboBox<>(new String[] { "Cash", "Credit Card", "Debit Card", "Dining Dollars", "Retail Swipe" });
         paymentMethodPanel.add(paymentMethodComboBox);
         add(paymentMethodPanel, BorderLayout.CENTER);
     }
@@ -51,6 +52,7 @@ public class paymentMenu extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // Implement payment processing logic here
+                // mainMenu.confirmOrderWithPayment(paymentMethodComboBox.getSelectedItem().toString());
                 JOptionPane.showMessageDialog(paymentMenu.this, "Payment submitted successfully!");
             }
         });
@@ -66,6 +68,7 @@ public class paymentMenu extends JFrame {
         controlPanel.add(submitButton);
         controlPanel.add(cancelButton);
         add(controlPanel, BorderLayout.SOUTH);
+        outPay = paymentMethodComboBox.getSelectedItem().toString();
     }
 
     public static void main(String[] args) {

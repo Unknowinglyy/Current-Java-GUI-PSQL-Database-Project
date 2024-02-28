@@ -294,7 +294,8 @@ class mainMenu {
             @Override
             public void actionPerformed(ActionEvent e) {
                 double price = GetTotalPrice();
-                new paymentMenu(price).setVisible(true);
+                paymentMenu newPay = new paymentMenu(price);
+                confirmOrderWithPayment(newPay.outPay);
             }
         });
         return button;
