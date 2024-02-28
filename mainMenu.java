@@ -429,17 +429,26 @@ class mainMenu {
                 int diffPos = itemPositions.get(index+1) - itemPositions.get(index);
                 // for unmodified food
                 if (diffPos == 0) {
-                    String foodName = orderLabelList.get(index).split(",")[0].substring(4);
-                    int foodID = currentMenu.findFoodId(foodName); // need to fix this split to remove first and last item
+                    String foodName = orderLabelList.get(index).split(",")[0].substring(orderLabelList.get(index).indexOf(':') + 2);
+                    int foodID = currentMenu.findFoodId(foodName);
                     sqlStatements += "INSERT INTO foodticket(amount, \"ticketID\", \"foodID\") VALUES(1, " + currTicketID + ", " + foodID + ");";
                 }
                 // for modified
-                // step 1 get og id
-                // step 2 get og recipe
-                // step 3 remove recipe items set by modifiers
-                // step 4 add to food table with new id
-                // step 5 add the now modified food id to foodticket
+                else {
+                    // step 1 get og id
+                    String foodName = orderLabelList.get(index).split(",")[0].substring(orderLabelList.get(index).indexOf(':') + 2);
+                    int foodID = currentMenu.findFoodId(foodName);
+                    // step 2 get og recipe
+                    Vector<String> Recipe = new Vector<>(currentMenu.GetRecipe(foodName));
+                    // step 3 remove recipe items set by modifiers
+                    for (int jIndex = (itemPositions.get(index)+1); jIndex < itemPositions.get(index+1); jIndex++) {
+                        // String remIng = orderLabelList.get(index).
+                    }
+                    // step 4 add to food table with new id
 
+                    // step 5 add the now modified food id to foodticket
+
+                }
             }
         }
         // call update stock line
@@ -450,7 +459,7 @@ class mainMenu {
         Double theTotalCost = 0.0;
         for (String iText : orderLabelList) {
             if (iText.charAt(0) == '#') {
-                String foodItem = iText.split(",")[0].substring(4);
+                String foodItem = iText.split(",")[0].substring(iText.indexOf(':') + 2);
                 // String foodItem = iText.split(",")[0];
                 System.out.println(foodItem + "\n");
                 theTotalCost += currentMenu.GetPrice(foodItem);
@@ -474,6 +483,7 @@ class mainMenu {
             System.err.println(e.getClass().getName() + ": " + e.getMessage());
             System.exit(0);
         }
+
         try {
             Statement stmt = conn.createStatement();
             String sqlStatement = "SELECT max(\"ticketID\") FROM ticket;";
