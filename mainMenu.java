@@ -18,6 +18,7 @@ class mainMenu {
     String currItemLabel;
     int currOrderIndex;
     int itemNum = 0;
+    int currTicketID;
 
     mainMenu() {
         panel.setLayout(new GridBagLayout());
@@ -105,13 +106,10 @@ class mainMenu {
         panel.add(drinksAndCondiments, gbc);
 
         JButton backButton = backButton("Go Back");
-       
-
         JPanel dandcItems = new JPanel(new GridLayout(1, 1, 10, 10));
         gbc.gridy = 3;
         gbc.insets = new Insets(30, 200, 30, 10);
         dandcItems.add(backButton);
-
         gbc.gridy++;
         panel.add(dandcItems, gbc);
 
@@ -368,9 +366,6 @@ class mainMenu {
             JPanel labelWithButtonPanel = new JPanel();
             labelWithButtonPanel.setLayout(new FlowLayout(FlowLayout.LEFT, 5, 0));
             
-            
-            
-
             if (text.charAt(0) == '#') {
            
                 JLabel label = new JLabel(text);
@@ -401,6 +396,30 @@ class mainMenu {
         currentOrdersList.revalidate();
         currentOrdersList.repaint();
     }
+
+    public void confirmOrderWithPayment() {
+        String sqlStatements = "INSERT INTO ticket(\"ticketID\", \"timeOrdered\", \"totalCost\", payment) VALUES(" + currTicketID + ", date (LOCALTIMESTAMP), ";
+        Double theCost = 0.0;
+        java.util.List<int> itemPositions = new ArrayList<>();
+        // get the item indexes
+        for (int index=0; index < orderLabelList.size(); index++) {
+            if (orderLabelList.get(index).charAt(0) == '#') {
+                itemPositions.add(index);
+            }
+        }
+        for (int index=0; index < itemPositions.size(); index++) {
+            if (((index+1) != itemPositions.size())) {
+                int diffPos = itemPositions.get(index+1) - itemPositions.get(index);
+                if (diffPos == 0) {
+                    String foodItem = (orderLabelList.get(index)).split("\\s+")[1];
+                    theCost += currentMenu.GetRecipe();
+                    sqlStatements += "";
+                }
+            }
+        }
+    }
+
+
 
     public static void main(String a[]) {
         SwingUtilities.invokeLater(() -> new mainMenu());
