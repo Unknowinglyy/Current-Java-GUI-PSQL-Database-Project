@@ -20,6 +20,11 @@ class mainMenu {
     int currOrderIndex;
     int itemNum = 0;
     int currTicketID;
+    Connection conn = null;
+    String database_name = "csce331_902_01_db";
+    String database_user = "csce331_902_01_user";
+    String database_password = "EPICCSCEPROJECT";
+    String database_url = String.format("jdbc:postgresql://csce-315-db.engr.tamu.edu/%s", database_name);
 
     mainMenu() {
         panel.setLayout(new GridBagLayout());
@@ -416,7 +421,13 @@ class mainMenu {
     public void confirmOrderWithPayment(String paymentMethod) {
         Double theCost = GetTotalPrice();
         String sqlStatements = "INSERT INTO ticket(\"ticketID\", \"timeOrdered\", \"totalCost\", payment) VALUES(" + currTicketID + ", date (LOCALTIMESTAMP), " + Double.toString(theCost) + ", " + paymentMethod + ");";
-        
+        try {
+            conn = DriverManager.getConnection(database_url, database_user, database_password);
+            } catch (Exception e) {
+                e.printStackTrace();
+                System.err.println(e.getClass().getName() + ": " + e.getMessage());
+                System.exit(0);
+            }
         java.util.List<Integer> itemPositions = new ArrayList<>();
         // get the item indexes
         for (int index=0; index < orderLabelList.size(); index++) {
@@ -442,7 +453,29 @@ class mainMenu {
 
             }
         }
-        // call update stock line
+        // // call update stock line
+        // // for(int i = )
+
+        // try {
+        //     // create a statement object
+        //     Statement stmt = conn.createStatement();
+        //     // create a SQL statement
+        //     // TODO Step 2 (see line 8)
+        //     String sqlStatement = "SELECT * FROM ingredient;";
+        //     // send statement to DBMS
+        //     ResultSet result = stmt.executeQuery(sqlStatement);
+        //     while (result.next()) {
+        //         ingredients += result.getString("name") + "   ";
+        //         ingredients += result.getString("stock") + "\n";
+        //         String name = result.getString("name");
+        //         int stock = result.getInt("stock"); // Assuming stock is an integer in your database
+        //         int id = result.getInt("ingredientID");
+        //         Ingredient ingredient = new Ingredient(name, stock,id); 
+        //         ingredientList.add(ingredient);
+        //     }
+        //     } catch (Exception e) {
+        //     JOptionPane.showMessageDialog(null, "Error accessing Database.");
+        //     }
     }
 
     // calculate the total price for the order
@@ -462,11 +495,6 @@ class mainMenu {
 
     public int getPrevTicketID() {
         //currTicketID;
-        Connection conn = null;
-        String database_name = "csce331_902_01_db";
-        String database_user = "csce331_902_01_user";
-        String database_password = "EPICCSCEPROJECT";
-        String database_url = String.format("jdbc:postgresql://csce-315-db.engr.tamu.edu/%s", database_name);
         try {
         conn = DriverManager.getConnection(database_url, database_user, database_password);
         } catch (Exception e) {
