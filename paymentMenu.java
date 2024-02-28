@@ -19,7 +19,7 @@ public class paymentMenu extends JFrame {
         setTitle("Payment Window");
         setSize(300, 200);
         setLayout(new BorderLayout());
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         addTotalAmountPanel();
         addPaymentMethodPanel();

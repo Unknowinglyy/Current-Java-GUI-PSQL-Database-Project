@@ -285,7 +285,7 @@ class mainMenu {
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                paymentMenu currentPayment = new paymentMenu(50);
+                new paymentMenu(50).setVisible(true);
             }
         });
         return button;
