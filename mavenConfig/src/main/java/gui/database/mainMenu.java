@@ -497,6 +497,8 @@ class mainMenu {
             System.exit(0);
         }
         orderLabelList.clear();
+        UpdateOrderLabels();
+        updateCurrID();
     }
 
     // calculate the total price for the order
