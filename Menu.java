@@ -260,26 +260,61 @@ public class Menu {
 
     //changes the price of a food
     public void ChangePrice(String FoodName, Double Price){
-        //finds the food
-        String Catagory = GetFoodCatagory(FoodName);
-        int CatIndex = FoodTypes.indexOf(Catagory);
-        int foodIndex = FoodItems.get(CatIndex).indexOf(FoodName);
-        //changes the food price to the new Price
-        Ingredients.get(CatIndex).get(foodIndex).set(0,Double.toString(Price));
+        try (Connection conn = DriverManager.getConnection(database_url, database_user, database_password)) {
+            // SQL query to update the price of the food item
+            String sql = "UPDATE food SET price = ? WHERE \"foodID\" = ?";
+            
+            // Create a PreparedStatement
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            int foodID = findFoodId(FoodName);
+            // Set the parameters
+            pstmt.setDouble(1, Price);
+            pstmt.setInt(2, foodID);
+            
+            // Execute the update
+            int rowsUpdated = pstmt.executeUpdate();
+            
+            if (rowsUpdated > 0) {
+                System.out.println("Price for food item with foodID " + foodID + " updated successfully.");
+            } else {
+                System.out.println("No food item found with foodID " + foodID + ".");
+            }
+
+            // Close the statement and connection
+            pstmt.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
+
 
     //removes a food
     public void RemoveFood(String FoodName){
-        //finds the food
-        
-    }
+        try (Connection conn = DriverManager.getConnection(database_url, database_user, database_password)) {
+            // SQL query to update the price of the food item
+            String sql = "UPDATE food SET \"onMenu\" = 0 WHERE \"foodID\" = ?";
+            
+            // Create a PreparedStatement
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            int foodID = findFoodId(FoodName);
+            // Set the parameters
+            pstmt.setInt(2, foodID);
+            
+            // Execute the update
+            int rowsUpdated = pstmt.executeUpdate();
+            
+            if (rowsUpdated > 0) {
+                System.out.println("Price for food item with foodID " + foodID + " updated successfully.");
+            } else {
+                System.out.println("No food item found with foodID " + foodID + ".");
+            }
 
-    //removes a food type
-    public void RemoveFoodType(String Catagory){
-        int CatIndex = FoodTypes.indexOf(Catagory);
-        FoodTypes.remove(CatIndex);
-        FoodItems.remove(CatIndex);
-        Ingredients.remove(CatIndex);
+            // Close the statement and connection
+            pstmt.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        
     }
 
     //adds a the basic rev menu
