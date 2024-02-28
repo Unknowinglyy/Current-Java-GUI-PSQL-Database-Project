@@ -1,7 +1,5 @@
 package gui.database;
 
-package gui.database;
-
 import java.util.*;
 import java.sql.*;
 
