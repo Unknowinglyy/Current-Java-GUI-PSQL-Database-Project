@@ -2,12 +2,7 @@ import java.util.*;
 import java.sql.*;
 
 public class Menu { 
-    //types of food used to find index for Food Items
-    Vector<String> FoodTypes = new Vector<String>(1);
-    //Specific Foods sorted by Food types Used to find index for Ingredients
-    Vector<Vector<String>> FoodItems = new Vector<Vector<String>>(1);
-    //Ingredients for specific foods sorted by food type then food
-    Vector<Vector<Vector<String>>> Ingredients = new Vector<Vector<Vector<String>>>(1);
+    
     Connection conn = null;
     String database_name = "csce331_902_01_db";
     String database_user = "csce331_902_01_user";
@@ -116,6 +111,27 @@ public class Menu {
         return foodId;
     }
 
+    public String getIngredientNameFromID(int IngredientId) {
+        String foodName = "";
+        try {
+            conn = DriverManager.getConnection(database_url, database_user, database_password);
+            String sql = "SELECT name FROM ingredient WHERE \"ingredientID\" = ?";
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            pstmt.setInt(1, IngredientId);
+            ResultSet rs = pstmt.executeQuery();
+            if (rs.next()) {
+                foodName = rs.getString("name");
+            }
+            rs.close();
+            pstmt.close();
+            conn.close();
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return foodName;
+    }
+
     private int findOrCreateIngredient(String ingredientName){
         // Check if the ingredient already exists
         int ingredientId = findIngredientId(ingredientName);
@@ -167,34 +183,89 @@ public class Menu {
 
 
     //returns the catagorie of a food
-    public String GetFoodCatagory(String FoodName){
-        //goes through each catagory and checks if the food is in it
-        for(int i = 0; i < FoodItems.size();i++){
-            //if it find the item of the name return the catagory
-            if(FoodItems.get(i).indexOf(FoodName) != -1){
-                String FoodType = FoodTypes.get(i);
-                return(FoodType);
+    public String GetFoodCatagory(String foodName){
+        String foodCatagory = "";
+        try {
+            conn = DriverManager.getConnection(database_url, database_user, database_password);
+            String sql = "SELECT \"foodType\" FROM food WHERE name = ? and onmenu = 1";
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, foodName);
+            ResultSet rs = pstmt.executeQuery();
+            if (rs.next()) {
+                foodCatagory = rs.getString("foodID");
             }
+            rs.close();
+            pstmt.close();
+            conn.close();
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
         }
-        return("");
+        return foodCatagory;
     }
 
-    public Vector<String> GetRecipe(String FoodName){
-        //finds the food in ingredients
-        String Catagory = GetFoodCatagory(FoodName);
-        int CatIndex = FoodTypes.indexOf(Catagory);
-        int foodIndex = FoodItems.get(CatIndex).indexOf(FoodName);
-        Vector<String> Recipe = Ingredients.get(CatIndex).get(foodIndex);
-        //gets rid of the price
-        Recipe.remove(0);
+    public Vector<String> GetRecipe(String foodName){
+        int FoodID = findFoodId(foodName);
+        Vector<String> Recipe = new Vector<String>(1);
+        try {
+            conn = DriverManager.getConnection(database_url, database_user, database_password);
+            String sql = "SELECT \"ingredientID\" FROM foodIngredient WHERE \"foodID\" = ?";
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            pstmt.setInt(1, FoodID);
+            ResultSet rs = pstmt.executeQuery();
+            Vector<Integer> tempIngredientsID = new Vector<Integer>(1);
+            while (rs.next()) {
+                int ingredientID = rs.getInt("ingredientID");
+                tempIngredientsID.add(ingredientID);
+            }
+            
+            //converts int ingredients to names
+            
+            for(int i = 0; i < tempIngredientsID.size();i++){
+                String ingredientName = getIngredientNameFromID(tempIngredientsID.get(i));
+                Recipe.add(ingredientName);
+            }
+            rs.close();
+            pstmt.close();
+            conn.close();
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
         return(Recipe);
     }
 
     //all foods of a food type
     public Vector<String> GetFoodFromFoodType(String Catagory){
-        //finds the food in ingredients
-        int CatIndex = FoodTypes.indexOf(Catagory);
-        return(FoodItems.get(CatIndex));
+        // SQL query to retrieve distinct food types where onMenu = 1
+        // Create a statement
+        
+        Vector<String> tempFoodNames = new Vector<String>(1);
+        try {
+            conn = DriverManager.getConnection(database_url, database_user, database_password);
+            conn = DriverManager.getConnection(database_url, database_user, database_password);
+            String sql = "SELECT \"name\" FROM food WHERE \"foodType\" = ?";
+            PreparedStatement stmt = conn.prepareStatement(sql , Statement.RETURN_GENERATED_KEYS);
+            stmt.setString(1, Catagory);
+                // Execute the query and get the result set
+            ResultSet rs = stmt.executeQuery();
+            
+
+            
+            // Process the result set and add food types to the Vector
+            while (rs.next()) {
+                String foodName = rs.getString("name");
+                tempFoodNames.add(foodName);
+            }
+
+            // Close the result set, statement, and connection
+            rs.close();
+            stmt.close();
+            conn.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return(tempFoodNames);
     }
     
     //gives all food types
