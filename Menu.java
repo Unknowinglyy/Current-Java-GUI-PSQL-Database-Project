@@ -381,7 +381,7 @@ public class Menu {
 
     //adds a the basic rev menu
     public void GenerateBasicMenu() {
-        RemoveFood("Double stack cheeseburger");
+        //RemoveFood("Double stack cheeseburger");
         // addBurgers();
         // addBaskets();
         // addSandwiches();
