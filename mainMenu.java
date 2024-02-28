@@ -25,6 +25,7 @@ class mainMenu {
     String database_user = "csce331_902_01_user";
     String database_password = "EPICCSCEPROJECT";
     String database_url = String.format("jdbc:postgresql://csce-315-db.engr.tamu.edu/%s", database_name);
+
     mainMenu() {
         panel.setLayout(new GridBagLayout());
         gbc.gridx = 0;
@@ -492,7 +493,6 @@ class mainMenu {
 
     public int getPrevTicketID() {
         //currTicketID;
-
         try {
         conn = DriverManager.getConnection(database_url, database_user, database_password);
         } catch (Exception e) {
