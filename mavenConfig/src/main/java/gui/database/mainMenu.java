@@ -135,8 +135,9 @@ class mainMenu {
         //foodCatagories = new JPanel(new GridLayout(3, 5, 10, 10));
         gbc.gridy = 1;
         gbc.insets = new Insets(30, 200, 50, 10);
-        for(int i = 0; i < currentMenu.FoodTypes.size();i++){
-            JButton b1 = createFoodTypesButton(currentMenu.FoodTypes.get(i));
+        Vector<String> currentTypes = currentMenu.GetFoodTypes();
+        for(int i = 0; i < currentTypes.size();i++){
+            JButton b1 = createFoodTypesButton(currentTypes.get(i));
             foodCatagories.add(b1,gbc);
         }
         panel.revalidate();
