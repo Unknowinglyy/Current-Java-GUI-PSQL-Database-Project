@@ -430,14 +430,17 @@ class mainMenu {
             Statement stmt = conn.createStatement();
             stmt.executeUpdate(sqlStatements);
             java.util.List<Integer> itemPositions = new ArrayList<>();
+            System.out.println("inserted new ticket");
             // get the item indexes
             for (int index=0; index < orderLabelList.size(); index++) {
                 if (orderLabelList.get(index).charAt(0) == '#') {
                     itemPositions.add(index);
                 }
             }
+            System.out.println("found order numbers");
             for (int index=0; index < itemPositions.size(); index++) {
                 if (((index+1) != itemPositions.size())) {
+
                     int diffPos = itemPositions.get(index+1) - itemPositions.get(index);
                     // for unmodified food
                     String foodName = orderLabelList.get(index).split(",")[0].substring(orderLabelList.get(index).indexOf(':') + 2);
@@ -447,6 +450,7 @@ class mainMenu {
                         sqlStatements = "INSERT INTO foodticket(amount, \"ticketID\", \"foodID\") VALUES(1, " + currTicketID + ", " + foodID + ");";
                         Statement stmt2 = conn.createStatement();
                         stmt2.executeUpdate(sqlStatements);
+                        System.out.println("inserted unmodified items into new ticket");
                     }
                     // for modified
                     else {
@@ -468,27 +472,68 @@ class mainMenu {
                         sqlStatements = "INSERT INTO foodticket(amount, \"ticketID\", \"foodID\") VALUES(1, " + currTicketID + ", " + newFoodID + ");";
                         Statement stmt3 = conn.createStatement();
                         stmt3.executeUpdate(sqlStatements);
+                         System.out.println("inserted modified items into new ticket");
                     }
                     // call update stock line
+                    // update stock
                     Vector<String> Recipe = new Vector<>(currentMenu.GetRecipe(foodName));
-                    try {
-                        // create a statement object
-                        Statement statementBegin = conn.createStatement();
-                        // create a SQL statement
-                        // TODO Step 2 (see line 8)
-                        String sqlStatement = "SELECT * FROM ingredient;";
-                        // send statement to DBMS
-                        ResultSet result = statementBegin.executeQuery(sqlStatement);
-                        while (result.next()) {
-                            if(Recipe.elementAt(index) == result.getString("name") && result.getInt("stock") != 0){
-                                Statement StatementEnd = conn.createStatement();
-                                String decreaseStock = "UPDATE ingredient SET \"stock\" = " + (result.getInt("stock") - 1) + "WHERE \"ingredientID\" = " + (result.getInt("ingredientID"));
-                                StatementEnd.executeQuery(decreaseStock);
-                            }
-                        }
-                        } catch (Exception e) {
-                        JOptionPane.showMessageDialog(null, "Error accessing Database.");
-                        }
+                    Recipe.remove(0);
+                
+                    // // create a statement object
+                    // Statement statementBegin = conn.createStatement();
+                    // // create a SQL statement
+                    // // TODO Step 2 (see line 8)
+                    // String sqlStatement = "SELECT * FROM ingredient;";
+                    // // send statement to DBMS
+                    // ResultSet result = statementBegin.executeQuery(sqlStatement);
+                    // System.out.println("got ingredient list");
+                    //while (result.next()) {
+                        //if((Recipe.get(index) == result.getString("name")) && (result.getInt("stock") != 0)){
+                    for (String ing : Recipe) {
+                        String updateQuery = "UPDATE ingredient SET stock = stock - ? WHERE \"ingredientID\" = ?";
+                        PreparedStatement stmt5 = conn.prepareStatement(updateQuery);
+                        stmt5.setInt(1, 1);
+                        stmt5.setInt(2, currentMenu.findIngredientId((ing)));
+                        stmt5.executeUpdate();
+                        System.out.println("Stock updated");
+                    }
+                        //}
+                    //}
+                } else if ((index+1) == orderLabelList.size()) {
+                    
+                    String foodName = orderLabelList.get(index).split(",")[0].substring(orderLabelList.get(index).indexOf(':') + 2);
+                        
+                    int foodID = currentMenu.findFoodId(foodName);
+                    sqlStatements = "INSERT INTO foodticket(amount, \"ticketID\", \"foodID\") VALUES(1, " + currTicketID + ", " + foodID + ");";
+                    Statement stmt2 = conn.createStatement();
+                    stmt2.executeUpdate(sqlStatements);
+                    System.out.println("inserted unmodified items into new ticket");
+
+                    // update stock
+                    Vector<String> Recipe = new Vector<>(currentMenu.GetRecipe(foodName));
+                    Recipe.remove(0);
+                
+                    // // create a statement object
+                    // Statement statementBegin = conn.createStatement();
+                    // // create a SQL statement
+                    // // TODO Step 2 (see line 8)
+                    // String sqlStatement = "SELECT * FROM ingredient;";
+                    // // send statement to DBMS
+                    // ResultSet result = statementBegin.executeQuery(sqlStatement);
+                    // System.out.println("got ingredient list");
+                    //while (result.next()) {
+                        //if((Recipe.get(index) == result.getString("name")) && (result.getInt("stock") != 0)){
+                    for (String ing : Recipe) {
+                        String updateQuery = "UPDATE ingredient SET stock = stock - ? WHERE \"ingredientID\" = ?";
+                        PreparedStatement stmt5 = conn.prepareStatement(updateQuery);
+                        stmt5.setInt(1, 1);
+                        stmt5.setInt(2, currentMenu.findIngredientId((ing)));
+                        stmt5.executeUpdate();
+                        System.out.println("Stock updated");
+                    }
+                        //}
+                    //}
+
                 }
             }
         } catch (Exception e) {
