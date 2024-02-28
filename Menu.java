@@ -9,6 +9,7 @@ public class Menu {
     String database_password = "EPICCSCEPROJECT";
     String database_url = String.format("jdbc:postgresql://csce-315-db.engr.tamu.edu/%s", database_name);
 
+    //checked
     public void AddFood(String FoodName, String FoodCatagory, Double Price, Vector<String> Recipe){
         //checks if Food type already exists
         //"INSERT INTO food (\"foodID\", name, price, \"foodType\")\nVALUES ({foodID}, 'Hamburger', 11.99, 'Burger');\n"
@@ -192,7 +193,7 @@ public class Menu {
             pstmt.setString(1, foodName);
             ResultSet rs = pstmt.executeQuery();
             if (rs.next()) {
-                foodCatagory = rs.getString("foodID");
+                foodCatagory = rs.getString("foodType");
             }
             rs.close();
             pstmt.close();
@@ -244,7 +245,7 @@ public class Menu {
         try {
             conn = DriverManager.getConnection(database_url, database_user, database_password);
             conn = DriverManager.getConnection(database_url, database_user, database_password);
-            String sql = "SELECT \"name\" FROM food WHERE \"foodType\" = ?";
+            String sql = "SELECT \"name\" FROM food WHERE \"foodType\" = ? and onmenu = 1";
             PreparedStatement stmt = conn.prepareStatement(sql , Statement.RETURN_GENERATED_KEYS);
             stmt.setString(1, Catagory);
                 // Execute the query and get the result set
@@ -298,35 +299,25 @@ public class Menu {
         }
         return(tempFoodTypes);
     }
-    public Double GetPrice(String FoodName){
-        // SQL query to retrieve distinct food types where onMenu = 1
-        String sql = "SELECT DISTINCT \"foodType\" FROM food WHERE onMenu = 1";
-
-        // Create a statement
-        Statement stmt;
-        Double tempPrice = 0.0;
-        Vector<String> tempFoodTypes = new Vector<String>(1);
+    public Double GetPrice(String foodName){
+        Double foodPrice = 0.0;
         try {
             conn = DriverManager.getConnection(database_url, database_user, database_password);
-            stmt = conn.createStatement();
-                // Execute the query and get the result set
-            ResultSet rs = stmt.executeQuery(sql);
-
-            
-            // Process the result set and add food types to the Vector
-            while (rs.next()) {
-                String foodType = rs.getString("foodType");
-                tempFoodTypes.add(foodType);
+            String sql = "SELECT \"price\" FROM food WHERE name = ? and onmenu = 1";
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, foodName);
+            ResultSet rs = pstmt.executeQuery();
+            if (rs.next()) {
+                foodPrice = rs.getDouble("price");
             }
-
-            // Close the result set, statement, and connection
             rs.close();
-            stmt.close();
+            pstmt.close();
             conn.close();
         } catch (SQLException e) {
+            // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        return(tempPrice);
+        return foodPrice;
     }
 
     //changes the price of a food
@@ -363,13 +354,13 @@ public class Menu {
     public void RemoveFood(String FoodName){
         try (Connection conn = DriverManager.getConnection(database_url, database_user, database_password)) {
             // SQL query to update the price of the food item
-            String sql = "UPDATE food SET \"onMenu\" = 0 WHERE \"foodID\" = ?";
+            String sql = "UPDATE food SET \"onmenu\" = 0 WHERE \"foodID\" = ? and onmenu = 1";
             
             // Create a PreparedStatement
             PreparedStatement pstmt = conn.prepareStatement(sql);
             int foodID = findFoodId(FoodName);
             // Set the parameters
-            pstmt.setInt(2, foodID);
+            pstmt.setInt(1, foodID);
             
             // Execute the update
             int rowsUpdated = pstmt.executeUpdate();
@@ -390,6 +381,7 @@ public class Menu {
 
     //adds a the basic rev menu
     public void GenerateBasicMenu() {
+        RemoveFood("Double stack cheeseburger");
         // addBurgers();
         // addBaskets();
         // addSandwiches();
