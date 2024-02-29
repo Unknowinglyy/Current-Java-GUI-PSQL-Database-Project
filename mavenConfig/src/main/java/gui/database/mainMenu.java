@@ -49,7 +49,7 @@ class mainMenu {
         // update the current ticket id to display with order panel
         updateCurrID();
         // create the order panel for displaying items in order
-        CreateCurrentOrderPanel(order);
+        createCurrentOrderPanel(order);
 
         // creating the food selecting section
         JLabel selectFood = new JLabel("Select Food");
@@ -60,8 +60,8 @@ class mainMenu {
         gbc.gridy = 1;
         gbc.insets = new Insets(30, 200, 50, 10);
         panel.add(foodCatagories, gbc);
-        currentMenu.GenerateBasicMenu();
-        CreateFoodCatagoriesPanel();
+        
+        createFoodCatagoriesPanel();
 
         // add payment / back button section
         JLabel paymentSection = new JLabel("Payment Option");
@@ -91,12 +91,12 @@ class mainMenu {
     }
 
     // this function creates the panel of food categories for selecting
-    private void CreateFoodCatagoriesPanel(){
+    private void createFoodCatagoriesPanel(){
 
         foodCatagories.removeAll();
         gbc.gridy = 1;
         gbc.insets = new Insets(30, 200, 50, 10);
-        Vector<String> currentTypes = currentMenu.GetFoodTypes();
+        Vector<String> currentTypes = currentMenu.getFoodTypes();
 
         for(int i = 0; i < currentTypes.size();i++){
 
@@ -111,9 +111,9 @@ class mainMenu {
     }
 
     // this function creates the food selecting panel when the cashier has cicked the food type
-    private void CreateFoodPanel(String Category){
+    private void createFoodPanel(String Category){
 
-        Vector<String> Foods = currentMenu.GetFoodFromFoodType(Category);
+        Vector<String> Foods = currentMenu.getFoodFromFoodType(Category);
         foodType = Category;
         foodCatagories.removeAll();
         gbc.gridy = 1;
@@ -121,7 +121,7 @@ class mainMenu {
 
         for(int i = 0; i < Foods.size();i++){
 
-            JButton b1 = createFoodButton(Foods.get(i), currentMenu.GetPrice(Foods.get(i)));
+            JButton b1 = createFoodButton(Foods.get(i), currentMenu.getPrice(Foods.get(i)));
             foodCatagories.add(b1,gbc);
 
         }
@@ -132,9 +132,9 @@ class mainMenu {
     }
 
     // this function creates the ingredients panel when cashier is modifying a food
-    private void CreateIngredientsPanel(String Food){
+    private void createIngredientsPanel(String Food){
 
-        Vector<String> Recipe = currentMenu.GetRecipe(Food);
+        Vector<String> Recipe = currentMenu.getRecipe(Food);
         foodCatagories.removeAll();
         gbc.gridy = 1;
         gbc.insets = new Insets(30, 200, 50, 10);
@@ -147,7 +147,7 @@ class mainMenu {
         }
 
         // update frame with panel
-        JButton b2 = AddToOrderButton();
+        JButton b2 = addToOrderButton();
         foodCatagories.add(b2,gbc);
         panel.revalidate();
         panel.repaint();
@@ -164,7 +164,7 @@ class mainMenu {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                CreateFoodPanel(itemName);
+                createFoodPanel(itemName);
                 foodCategoriesPanelOpen = false;
                 foodPanelOpen = true;
                 ingredientsPanelOpen = false;
@@ -192,7 +192,7 @@ class mainMenu {
                 
                 // add to list
                 orderLabelList.add(currItemLabel);
-                CreateIngredientsPanel(itemName);
+                createIngredientsPanel(itemName);
                 foodCategoriesPanelOpen = false;
                 foodPanelOpen = false;
                 ingredientsPanelOpen = true;
@@ -243,7 +243,7 @@ class mainMenu {
     }
 
     // creates the button for confirming item modifications and adding it to the order
-    private JButton AddToOrderButton(){
+    private JButton addToOrderButton(){
         JButton button = new JButton("Add To Order");
         Dimension buttonSize = new Dimension(175, 175);
         button.setPreferredSize(buttonSize);
@@ -252,8 +252,8 @@ class mainMenu {
             public void actionPerformed(ActionEvent e) {
 
                 // only update order side bar when the add order button is pressed
-                UpdateOrderLabels();
-                CreateFoodCatagoriesPanel();
+                updateOrderLabels();
+                createFoodCatagoriesPanel();
 
             }
         });
@@ -269,7 +269,7 @@ class mainMenu {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                double price = GetTotalPrice();
+                double price = getTotalPrice();
                 paymentMenu newPay = new paymentMenu(price);
                 newPay.setVisible(true);
                 confirmOrderWithPayment(newPay.outPay);
@@ -303,14 +303,14 @@ class mainMenu {
             public void actionPerformed(ActionEvent e) {
                 if (foodPanelOpen)
                 {
-                    CreateFoodCatagoriesPanel();
+                    createFoodCatagoriesPanel();
                     foodCategoriesPanelOpen = true;
                     foodPanelOpen = false;
                     ingredientsPanelOpen = false;
                 }
                 else if (ingredientsPanelOpen)
                 {
-                    CreateFoodPanel(foodType);
+                    createFoodPanel(foodType);
                     foodCategoriesPanelOpen = false;
                     foodPanelOpen = true;
                     ingredientsPanelOpen = false;
@@ -322,7 +322,7 @@ class mainMenu {
     }
 
     // creates the order display panel
-    private JPanel CreateCurrentOrderPanel(String theOrder) {
+    private JPanel createCurrentOrderPanel(String theOrder) {
 
         // create label
         JLabel currentOrder = new JLabel("Current Order");
@@ -345,13 +345,13 @@ class mainMenu {
         panel.add(scrollPane, gbc);
 
         // update the currentorderslist panel
-        UpdateOrderLabels();
+        updateOrderLabels();
         return panel;
     }
 
     // this function updates all of the orders in the side panel based on the order list
     // any entry starting with a '#' is the full food item, anything right after until the next '#' will be ingredients to remove from that food item
-    private void UpdateOrderLabels() {
+    private void updateOrderLabels() {
         
         // // Clear existing labels
         currentOrdersList.removeAll(); 
@@ -383,7 +383,7 @@ class mainMenu {
                     }
 
                     // give the button functionality to rebuild the panel
-                    UpdateOrderLabels();
+                    updateOrderLabels();
                 });
 
                 // add in label and its button to panel
@@ -410,7 +410,7 @@ class mainMenu {
     // order to be started
     public void confirmOrderWithPayment(String paymentMethod) {
         updateCurrID();
-        Double theCost = GetTotalPrice();
+        Double theCost = getTotalPrice();
         try {
             conn = DriverManager.getConnection(database_url, database_user, database_password);
             String sqlStatements = "INSERT INTO ticket (\"ticketID\", \"timeOrdered\", \"totalCost\", payment) VALUES (" + currTicketID + ", date (LOCALTIMESTAMP), " + Double.toString(theCost) + ", '" + paymentMethod + "');";
@@ -430,8 +430,8 @@ class mainMenu {
                 
                 // get current food item
                 String foodName = orderLabelList.get(index).split(",")[0].substring(orderLabelList.get(index).indexOf(':') + 2);
-                int foodID = currentMenu.findFoodId(foodName);
-                Vector<String> Recipe = new Vector<>(currentMenu.GetRecipe(foodName));
+                int foodID = currentMenu.getFoodID(foodName);
+                Vector<String> Recipe = new Vector<>(currentMenu.getRecipe(foodName));
 
                 if (((index+1) != itemPositions.size())) {
 
@@ -455,8 +455,8 @@ class mainMenu {
                         }
 
                         // step 4 add to food table with new id
-                        currentMenu.AddFood(foodName, currentMenu.GetFoodCatagory(foodName), currentMenu.GetPrice(foodName), Recipe);
-                        int newFoodID = GetNewFoodID();
+                        currentMenu.addFood(foodName, currentMenu.getFoodCatagory(foodName), currentMenu.getPrice(foodName), Recipe);
+                        int newFoodID = getNewFoodID();
 
                         // step 5 add the now modified food id to foodticket
                         sqlStatements = "INSERT INTO foodticket(amount, \"ticketID\", \"foodID\") VALUES(1, " + currTicketID + ", " + newFoodID + ");";
@@ -480,7 +480,7 @@ class mainMenu {
                     String updateQuery = "UPDATE ingredient SET stock = stock - ? WHERE \"ingredientID\" = ?";
                     PreparedStatement stmt5 = conn.prepareStatement(updateQuery);
                     stmt5.setInt(1, 1);
-                    stmt5.setInt(2, currentMenu.findIngredientId((ing)));
+                    stmt5.setInt(2, currentMenu.getIngredientID((ing)));
                     stmt5.executeUpdate();
 
                 }
@@ -495,19 +495,19 @@ class mainMenu {
 
         // update order dependencies to begin new order
         orderLabelList.clear();
-        UpdateOrderLabels();
+        updateOrderLabels();
         updateCurrID();
     }
 
     // calculate the total price for the order
-    public Double GetTotalPrice() {
+    public Double getTotalPrice() {
         Double theTotalCost = 0.0;
         for (String iText : orderLabelList) {
             if (iText.charAt(0) == '#') {
                 String foodItem = iText.split(",")[0].substring(iText.indexOf(':') + 2);
                 // String foodItem = iText.split(",")[0];
                 System.out.println(foodItem + "\n");
-                theTotalCost += currentMenu.GetPrice(foodItem);
+                theTotalCost += currentMenu.getPrice(foodItem);
             }
         }
         System.out.println(theTotalCost+"\n");
@@ -550,7 +550,7 @@ class mainMenu {
     }
     
     // this function finds the next id to insert a new food with
-    public int GetNewFoodID() {
+    public int getNewFoodID() {
 
         // get connection to db
         try {

@@ -191,7 +191,6 @@ public class managerView {
 
     managerView() {
         Menu currentMenu = new Menu();
-        currentMenu.GenerateBasicMenu();
         fetchData();
         JPanel inventoryPanel = new JPanel();
         for (Ingredient ingredient : ingredientList) {
@@ -247,14 +246,14 @@ public class managerView {
         viewMenuButton.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e){
-                Vector<String> foodTypes = currentMenu.GetFoodTypes();
+                Vector<String> foodTypes = currentMenu.getFoodTypes();
                 Vector<String> allFoods = new Vector<String>();
                 Vector<Double> allPrices = new Vector<Double>();
                 for(String i : foodTypes){
-                    Vector<String> foodByType = currentMenu.GetFoodFromFoodType(i);
+                    Vector<String> foodByType = currentMenu.getFoodFromFoodType(i);
                     for(String j :foodByType){
                         allFoods.add(j);
-                        allPrices.add(currentMenu.GetPrice(j));
+                        allPrices.add(currentMenu.getPrice(j));
                     }
                 }
                 StringBuilder displayText = new StringBuilder("Food Items and Prices:\n");
@@ -334,7 +333,7 @@ public class managerView {
             try {
                 double price = Double.parseDouble(priceString);
                 Vector<String> recipeVector = new Vector<>(Arrays.asList(recipe.split(",")));
-                currentMenu.AddFood(foodName, foodCategory, price, recipeVector);
+                currentMenu.addFood(foodName, foodCategory, price, recipeVector);
             } catch (NumberFormatException ex) {
                 JOptionPane.showMessageDialog(null, "Invalid price format!");
             }
@@ -350,7 +349,7 @@ public class managerView {
 
                 try {
                     double newPrice = Double.parseDouble(priceString);
-                    currentMenu.ChangePrice(foodName, newPrice); 
+                    currentMenu.changePrice(foodName, newPrice); 
                 } catch (NumberFormatException ex) {
                     JOptionPane.showMessageDialog(null, "Invalid price format!");
                 } 
@@ -367,7 +366,7 @@ public class managerView {
                                   JOptionPane.YES_NO_OPTION);
         
                 if (confirm == JOptionPane.YES_OPTION) {
-                    currentMenu.RemoveFood(foodName);
+                    currentMenu.removeFood(foodName);
                 } 
             }
         });

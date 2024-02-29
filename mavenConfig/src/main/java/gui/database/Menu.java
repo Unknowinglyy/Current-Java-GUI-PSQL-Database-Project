@@ -13,7 +13,7 @@ public class Menu {
     String database_url = String.format("jdbc:postgresql://csce-315-db.engr.tamu.edu/%s", database_name);
 
     //tgus function adds an item to the current menu
-    public void AddFood(String FoodName, String FoodCatagory, Double Price, Vector<String> Recipe){
+    public void addFood(String FoodName, String FoodCatagory, Double Price, Vector<String> Recipe){
         
         try {
             //estabilished connection to the database and finds the highest food ID so that a new ID can be created that is one higher to avoid conflict
@@ -74,7 +74,7 @@ public class Menu {
     }
 
     //finds the ingredient ID if the ingredient dosent exist returns -1
-    public int findIngredientId(String ingredientName){
+    public int getIngredientID(String ingredientName){
         int ingredientId = -1;
         try {
             //establshes connection to database and asks if their is an ID for the food name
@@ -95,7 +95,7 @@ public class Menu {
     }
 
     //returns the food ID for the food if it dosent exist returns -1
-    public int findFoodId(String foodName) {
+    public int getFoodID(String foodName) {
         int foodId = -1;
         try {
             //estabilished connection to database and asks if the food ID exists
@@ -143,7 +143,7 @@ public class Menu {
     //finds the ingredient id and if it dosent exist creates a new ingredient with the name
     private int findOrCreateIngredient(String ingredientName){
         // Check if the ingredient already exists with that name
-        int ingredientId = findIngredientId(ingredientName);
+        int ingredientId = getIngredientID(ingredientName);
         try {
             conn = DriverManager.getConnection(database_url, database_user, database_password);
             
@@ -191,7 +191,7 @@ public class Menu {
 
 
     //returns the catagory of a food based on the food name returns an empty string if the food dosent exist
-    public String GetFoodCatagory(String foodName){
+    public String getFoodCatagory(String foodName){
         String foodCatagory = "";
         try {
             //estabilishes a connection and asks what the type is of an item on the menu with the matching name
@@ -214,9 +214,9 @@ public class Menu {
     }
 
     //gives a vector of each ingredient that is a part of the food name
-    public Vector<String> GetRecipe(String foodName){
+    public Vector<String> getRecipe(String foodName){
         //finds the food ID from the food name
-        int FoodID = findFoodId(foodName);
+        int FoodID = getFoodID(foodName);
         Vector<String> Recipe = new Vector<String>(1);
         try {
             //conects to the food ingredient table and asks for all things with the foodID related to it
@@ -248,7 +248,7 @@ public class Menu {
     }
 
     //gives all foods of a specific food type
-    public Vector<String> GetFoodFromFoodType(String Catagory){
+    public Vector<String> getFoodFromFoodType(String Catagory){
         
         Vector<String> tempFoodNames = new Vector<String>(1);
         try {
@@ -278,7 +278,7 @@ public class Menu {
     }
     
     //gives all food types that are on the menu
-    public Vector<String> GetFoodTypes(){
+    public Vector<String> getFoodTypes(){
         // SQL query to retrieve distinct food types for food that are on the menu
         String sql = "SELECT DISTINCT \"foodType\" FROM food WHERE onMenu = 1";
         Statement stmt;
@@ -305,7 +305,7 @@ public class Menu {
     }
 
     //gives the price of a food returns 0.0 if the item dosent exist
-    public Double GetPrice(String foodName){
+    public Double getPrice(String foodName){
         Double foodPrice = 0.0;
         try {
             //gets the price of a food that matches the name
@@ -328,14 +328,14 @@ public class Menu {
     }
 
     //changes the price of a food
-    public void ChangePrice(String FoodName, Double Price){
+    public void changePrice(String FoodName, Double Price){
         try (Connection conn = DriverManager.getConnection(database_url, database_user, database_password)) {
             // SQL query to update the price of the food item
             String sql = "UPDATE food SET price = ? WHERE \"foodID\" = ?";
             
             // Create a PreparedStatement
             PreparedStatement pstmt = conn.prepareStatement(sql);
-            int foodID = findFoodId(FoodName);
+            int foodID = getFoodID(FoodName);
             // Set the parameters
             pstmt.setDouble(1, Price);
             pstmt.setInt(2, foodID);
@@ -359,14 +359,14 @@ public class Menu {
 
 
     //removes a food from the menu
-    public void RemoveFood(String FoodName){
+    public void removeFood(String FoodName){
         try (Connection conn = DriverManager.getConnection(database_url, database_user, database_password)) {
             // SQL query to change the on menu value to show that it is not on the menu
             String sql = "UPDATE food SET \"onmenu\" = 0 WHERE \"foodID\" = ? and onmenu = 1";
             
             // Create a PreparedStatement
             PreparedStatement pstmt = conn.prepareStatement(sql);
-            int foodID = findFoodId(FoodName);
+            int foodID = getFoodID(FoodName);
             // Set the parameters
             pstmt.setInt(1, foodID);
             
@@ -389,25 +389,25 @@ public class Menu {
     }
 
     //adds a the basic rev menu
-    public void GenerateBasicMenu() {
-        // addBurgers();
-        // addBaskets();
-        // addSandwiches();
-        // addSides();
-        // addSauces();
-        // addBeverages();
+    public void generateBasicMenu() {
+        addBurgers();
+        addBaskets();
+        addSandwiches();
+        addSides();
+        addSauces();
+        addBeverages();
     }
 
     // Helper methods to add different categories of items to the menu
     public void addBurgers() {
-        AddFood("Rev's Burger", "Burgers", 5.59, new Vector<>(Arrays.asList(
+        addFood("Rev's Burger", "Burgers", 5.59, new Vector<>(Arrays.asList(
             "Burger Patty",
             "Cheese",
             "Gig-em sauce",
             "Buns"
         )));
 
-        AddFood("Double stack cheeseburger", "Burgers", 8.79, new Vector<>(Arrays.asList(
+        addFood("Double stack cheeseburger", "Burgers", 8.79, new Vector<>(Arrays.asList(
                 "Burger Patty",
                 "Burger Patty",
                 "Cheese",
@@ -417,7 +417,7 @@ public class Menu {
                 "Buns"
         )));
 
-        AddFood("Classic Burger", "Burgers", 5.47, new Vector<>(Arrays.asList(
+        addFood("Classic Burger", "Burgers", 5.47, new Vector<>(Arrays.asList(
                 "Buns",
                 "Burger Patty",
                 "Lettuce",
@@ -426,7 +426,7 @@ public class Menu {
                 "Onions"
         )));
 
-        AddFood("Bacon Cheese Burger", "Burgers", 6.99, new Vector<>(Arrays.asList(
+        addFood("Bacon Cheese Burger", "Burgers", 6.99, new Vector<>(Arrays.asList(
                 "Burger Patty",
                 "Cheese",
                 "Bacon",
@@ -435,7 +435,7 @@ public class Menu {
     }
 
     public void addBaskets() {
-        AddFood("Three Tender Basket", "Baskets", 6.79, new Vector<>(Arrays.asList(
+        addFood("Three Tender Basket", "Baskets", 6.79, new Vector<>(Arrays.asList(
                 "Chicken tender",
                 "Chicken tender",
                 "Chicken tender",
@@ -444,7 +444,7 @@ public class Menu {
                 "Gravy"
         )));
 
-        AddFood("Four Steak Finger Basket", "Baskets", 6.99, new Vector<>(Arrays.asList(
+        addFood("Four Steak Finger Basket", "Baskets", 6.99, new Vector<>(Arrays.asList(
             "4x Steak finger",
             "French Fries",
             "Texas Toast",
@@ -453,7 +453,7 @@ public class Menu {
     }
 
     public void addSandwiches() {
-        AddFood("Gig 'Em Patty Melt", "Sandwiches", 6.29, new Vector<>(Arrays.asList(
+        addFood("Gig 'Em Patty Melt", "Sandwiches", 6.29, new Vector<>(Arrays.asList(
                 "Burger patty",
                 "Texas toast",
                 "Gigem sauce",
@@ -461,7 +461,7 @@ public class Menu {
                 "Cheese"
         )));
 
-        AddFood("Spicy ranch chicken sandwich", "Sandwiches", 6.99, new Vector<>(Arrays.asList(
+        addFood("Spicy ranch chicken sandwich", "Sandwiches", 6.99, new Vector<>(Arrays.asList(
             "Chicken tender",
             "Chicken tender",
             "Bun",
@@ -469,7 +469,7 @@ public class Menu {
             "Cheese"
         )));
 
-        AddFood("Classic Chicken Sandwich", "Sandwiches", 5.79, new Vector<>(Arrays.asList(
+        addFood("Classic Chicken Sandwich", "Sandwiches", 5.79, new Vector<>(Arrays.asList(
             "Chicken tender",
             "Chicken tender",
             "Bun",
@@ -479,30 +479,30 @@ public class Menu {
             "Onion"
         )));
 
-        AddFood("Grilled Cheese", "Sandwiches", 3.49, new Vector<>(Arrays.asList(
+        addFood("Grilled Cheese", "Sandwiches", 3.49, new Vector<>(Arrays.asList(
                 "Cheese",
                 "Texas toast"
         )));
     }
 
     public void addSides() {
-        AddFood("Tater tots", "Sides", 1.00, new Vector<>());
-        AddFood("Onion Rings", "Sides", 1.00, new Vector<>());
-        AddFood("Kettle Chips", "Sides", 1.00, new Vector<>());
-        AddFood("Fries", "Sides", 1.00, new Vector<>());
+        addFood("Tater tots", "Sides", 1.00, new Vector<>());
+        addFood("Onion Rings", "Sides", 1.00, new Vector<>());
+        addFood("Kettle Chips", "Sides", 1.00, new Vector<>());
+        addFood("Fries", "Sides", 1.00, new Vector<>());
     }
 
     public void addSauces() {
-       AddFood("Gigem sauce", "Sauces", 0.50, new Vector<>());
-        AddFood("Buffalo", "Sauces", 0.50, new Vector<>());
-        AddFood("Ranch", "Sauces", 0.50, new Vector<>());
-        AddFood("Spicy ranch", "Sauces", 0.50, new Vector<>());
-        AddFood("BBQ", "Sauces", 0.50, new Vector<>());
-        AddFood("Honey Mustard", "Sauces", 0.50, new Vector<>());
+       addFood("Gigem sauce", "Sauces", 0.50, new Vector<>());
+        addFood("Buffalo", "Sauces", 0.50, new Vector<>());
+        addFood("Ranch", "Sauces", 0.50, new Vector<>());
+        addFood("Spicy ranch", "Sauces", 0.50, new Vector<>());
+        addFood("BBQ", "Sauces", 0.50, new Vector<>());
+        addFood("Honey Mustard", "Sauces", 0.50, new Vector<>());
     }
 
     public void addBeverages() {
-        AddFood("Fountain Drink", "Beverages", 1.50, new Vector<>());
-        AddFood("Shake", "Beverages", 3.00, new Vector<>());
+        addFood("Fountain Drink", "Beverages", 1.50, new Vector<>());
+        addFood("Shake", "Beverages", 3.00, new Vector<>());
     }
 }
