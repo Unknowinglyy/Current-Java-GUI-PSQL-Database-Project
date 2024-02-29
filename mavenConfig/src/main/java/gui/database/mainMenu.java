@@ -424,6 +424,7 @@ class mainMenu {
     }
 
     public void confirmOrderWithPayment(String paymentMethod) {
+        updateCurrID();
         Double theCost = GetTotalPrice();
         try {
             conn = DriverManager.getConnection(database_url, database_user, database_password);
@@ -459,7 +460,7 @@ class mainMenu {
                         int foodID = currentMenu.findFoodId(foodName);
                         // step 2 get og recipe
                         Vector<String> Recipe = new Vector<>(currentMenu.GetRecipe(foodName));
-                        Recipe.remove(0); // remove price
+                        //Recipe.remove(0); // remove price
                         // step 3 remove recipe items set by modifiers
                         for (int jIndex = (itemPositions.get(index)+1); jIndex < itemPositions.get(index+1); jIndex++) {
                             String remIng = orderLabelList.get(jIndex).split(" in")[0].substring(8);
@@ -478,7 +479,7 @@ class mainMenu {
                     // call update stock line
                     // update stock
                     Vector<String> Recipe = new Vector<>(currentMenu.GetRecipe(foodName));
-                    Recipe.remove(0);
+                    //Recipe.remove(0);
                 
                     // // create a statement object
                     // Statement statementBegin = conn.createStatement();
