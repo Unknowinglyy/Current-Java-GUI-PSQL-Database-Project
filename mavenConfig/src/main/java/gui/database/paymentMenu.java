@@ -11,10 +11,11 @@ public class paymentMenu extends JFrame {
     private JButton submitButton;
     private JButton cancelButton;
     private double totalAmount; // This could be dynamically set based on the POS system
-    String outPay = "";
+    String outPay = ""; //this variable will be used later in the call of payment menu
 
     public paymentMenu(double totalAmount) {
         this.totalAmount = totalAmount;
+        //function that initalizes the different elements of the payment window such as title, total amount of price, etc.
         initializeUI();
     }
 
@@ -33,20 +34,26 @@ public class paymentMenu extends JFrame {
 
     private void addTotalAmountPanel() {
         JPanel totalAmountPanel = new JPanel();
+
         totalAmountLabel = new JLabel("Total Amount: $" + String.format("%.2f", totalAmount));
         totalAmountPanel.add(totalAmountLabel);
+
         add(totalAmountPanel, BorderLayout.NORTH);
     }
 
     private void addPaymentMethodPanel() {
         JPanel paymentMethodPanel = new JPanel();
+
+        //drop down menu that includes all the avaible payment options
         paymentMethodComboBox = new JComboBox<>(new String[] { "Cash", "Credit Card", "Debit Card", "Dining Dollars", "Retail Swipe" });
         paymentMethodPanel.add(paymentMethodComboBox);
+
         add(paymentMethodPanel, BorderLayout.CENTER);
     }
 
     private void addControlPanel() {
         JPanel controlPanel = new JPanel();
+
         submitButton = new JButton("Submit Payment");
         cancelButton = new JButton("Cancel");
 
@@ -62,14 +69,16 @@ public class paymentMenu extends JFrame {
         cancelButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Close the window or reset fields
-                paymentMenu.this.dispose(); // Close the window
+                // Closing the window
+                paymentMenu.this.dispose(); 
             }
         });
-
+        //setting up of the control panel with its needed buttons
         controlPanel.add(submitButton);
         controlPanel.add(cancelButton);
+
         add(controlPanel, BorderLayout.SOUTH);
+        //defining a variable that will be used later in the call to payment menu in main menu class
         outPay = paymentMethodComboBox.getSelectedItem().toString();
     }
 
@@ -77,6 +86,7 @@ public class paymentMenu extends JFrame {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
+                //used for testing the payment menu view with a given price
                 new paymentMenu(50.00).setVisible(true); // Example total amount
             }
         });
