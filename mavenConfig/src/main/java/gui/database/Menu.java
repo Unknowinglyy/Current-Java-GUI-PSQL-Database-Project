@@ -43,7 +43,7 @@ public class Menu {
 
             pstmt.executeUpdate();
             pstmt.close();
-            conn.close();
+           
 
             //goes through each ingredient in the recipe and adds the relationship between the food and the item in the database
             for(int i =0; i < Recipe.size();i++){
@@ -60,7 +60,7 @@ public class Menu {
 
                 pstmt2.executeUpdate();
                 pstmt2.close();
-                conn.close();
+                
             }
 
             
@@ -110,7 +110,30 @@ public class Menu {
             }
             rs.close();
             pstmt.close();
-            conn.close();
+            
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return foodId;
+    }
+
+    //returns the name from food ID
+    public String getFoodNameFromFoodID(int foodID) {
+        String foodId = "";
+        try {
+            //estabilished connection to database and asks if the food ID exists
+            conn = DriverManager.getConnection(database_url, database_user, database_password);
+            String sql = "SELECT name FROM food WHERE \"foodID\" = ?";
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            pstmt.setInt(1, foodID);
+            ResultSet rs = pstmt.executeQuery();
+            //parses the return statment for the food id
+            if (rs.next()) {
+                foodId = rs.getString("name");
+            }
+            rs.close();
+            pstmt.close();
+            
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -133,11 +156,57 @@ public class Menu {
             }
             rs.close();
             pstmt.close();
-            conn.close();
+            
         } catch (SQLException e) {
             e.printStackTrace();
         }
         return foodName;
+    }
+
+    //get price of an order from ticketID if it dosent exist return 0.0
+    public Double getPriceFromTicketID(int ticketID) {
+        Double ticketPrice = 0.0;
+        try {
+            //establishes a connection to the database and asks if the ingredient exists
+            conn = DriverManager.getConnection(database_url, database_user, database_password);
+            String sql = "SELECT \"totalCost\" FROM ticket WHERE \"ticketID\" = ?";
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            pstmt.setInt(1, ticketID);
+            ResultSet rs = pstmt.executeQuery();
+            //parses the return statment for the name
+            if (rs.next()) {
+                ticketPrice = rs.getDouble("totalCost");
+            }
+            rs.close();
+            pstmt.close();
+            
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return ticketPrice;
+    }
+
+    //get Time of an order from ticketID if it dosent exist return time 0
+    public Timestamp getTimeFromTicketID(int ticketID) {
+        Timestamp ticketDate = new Timestamp(0);
+        try {
+            //establishes a connection to the database and asks if the ingredient exists
+            conn = DriverManager.getConnection(database_url, database_user, database_password);
+            String sql = "SELECT \"timeOrdered\" FROM ticket WHERE \"ticketID\" = ?";
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            pstmt.setInt(1, ticketID);
+            ResultSet rs = pstmt.executeQuery();
+            //parses the return statment for the name
+            if (rs.next()) {
+                ticketDate = rs.getTimestamp("timeOrdered");
+            }
+            rs.close();
+            pstmt.close();
+            
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return ticketDate;
     }
 
     //finds the ingredient id and if it dosent exist creates a new ingredient with the name
@@ -181,7 +250,7 @@ public class Menu {
             }
             rs.close();
             pstmt.close();
-            conn.close();
+            
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -206,7 +275,7 @@ public class Menu {
             }
             rs.close();
             pstmt.close();
-            conn.close();
+            
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -240,7 +309,7 @@ public class Menu {
             }
             rs.close();
             pstmt.close();
-            conn.close();
+            
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -270,7 +339,7 @@ public class Menu {
             // Close the result set, statement, and connection
             rs.close();
             stmt.close();
-            conn.close();
+            
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -297,7 +366,7 @@ public class Menu {
             // Close the result set, statement, and connection
             rs.close();
             stmt.close();
-            conn.close();
+            
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -320,11 +389,72 @@ public class Menu {
             }
             rs.close();
             pstmt.close();
-            conn.close();
+            
         } catch (SQLException e) {
             e.printStackTrace();
         }
         return foodPrice;
+    }
+
+    //returns all orders of a specific year and month
+    public Vector<Integer> getOrdersFromYearAndMonth(int year, int month){
+        
+        Vector<Integer> tempOrderIDs = new Vector<Integer>(1);
+        try {
+            //gives all orders for the specified month in the specified year
+            conn = DriverManager.getConnection(database_url, database_user, database_password);
+            String sql = "select * from ticket where DATE_Part(\'month\',\"timeOrdered\") = ? and date_part(\'year\',\"timeOrdered\") = ?";
+            PreparedStatement stmt = conn.prepareStatement(sql , Statement.RETURN_GENERATED_KEYS);
+            stmt.setInt(1, month);
+            stmt.setInt(2, year);
+            ResultSet rs = stmt.executeQuery();
+            
+
+            
+            //adds all of the orders into a vector
+            while (rs.next()) {
+                int orderId = rs.getInt("ticketID");
+                tempOrderIDs.add(orderId);
+            }
+
+            // Close the result set, statement, and connection
+            rs.close();
+            stmt.close();
+            
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return(tempOrderIDs);
+    }
+
+    //get all foodnames of a specific ticket ID
+    public Vector<String> getFoodFromTicketID(int ticketID){
+        
+        Vector<String> foodNames = new Vector<String>(1);
+        try {
+            //gives one of each food from a specific types of food
+            conn = DriverManager.getConnection(database_url, database_user, database_password);
+            String sql = "select * from foodticket where \"ticketID\" = ?";
+            PreparedStatement stmt = conn.prepareStatement(sql , Statement.RETURN_GENERATED_KEYS);
+            stmt.setInt(1, ticketID);
+            ResultSet rs = stmt.executeQuery();
+            
+
+            
+            //adds all of the food ids and convert them to names and then add them to the vector
+            while (rs.next()) {
+                Integer tempFoodID = rs.getInt("name");
+                foodNames.add(getFoodNameFromFoodID(tempFoodID));
+            }
+
+            // Close the result set, statement, and connection
+            rs.close();
+            stmt.close();
+            
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return(foodNames);
     }
 
     //changes the price of a food
