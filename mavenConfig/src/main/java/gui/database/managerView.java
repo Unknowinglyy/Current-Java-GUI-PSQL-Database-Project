@@ -8,6 +8,11 @@ import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Vector;
+import java.time.YearMonth;
+import java.time.format.DateTimeFormatter;
+import java.time.LocalDate;
+import javax.swing.table.AbstractTableModel;
+
 
 public class managerView {
     private ArrayList<Ingredient> ingredientList;
@@ -56,7 +61,7 @@ public class managerView {
         public void adjustStock(int adjustment) {
             int id = this.getId();
             Ingredient thisOne = this;
-            if(this.stock>=0){
+            if(!(this.stock>=0 && adjustment<0)){
                 SwingWorker worker = new SwingWorker<Void, Void>() {
                     @Override
                     protected Void doInBackground() throws Exception {
@@ -218,11 +223,14 @@ public class managerView {
         JButton addFoodButton = new JButton("Add Food to Menu!");
         JButton changePriceButton = new JButton("Change Price of Menu Items");
         JButton removeFoodButton = new JButton("Remove Food from Menu");
+        JButton viewOrderButton = new JButton("View Past Orders");
         JPanel modificationPanel = new JPanel(new GridLayout(0,1));
+
         modificationPanel.add(viewMenuButton);
         modificationPanel.add(addFoodButton);
         modificationPanel.add(changePriceButton);
         modificationPanel.add(removeFoodButton);
+        modificationPanel.add(viewOrderButton);
         mainPanel.add(modificationPanel, BorderLayout.WEST);
         mainPanel.add(scrollPane, BorderLayout.EAST);
         // Add placeholder for other potential content on the left
@@ -369,6 +377,126 @@ public class managerView {
                 } 
             }
         });
+        class OrderTableModel extends AbstractTableModel {
+            private Vector<Vector<String>> data;
+            private Vector<String> columnNames;
+        
+            public OrderTableModel(Vector<Vector<String>> data, Vector<String> columnNames) {
+                this.data = data;
+                this.columnNames = columnNames;
+            }
+        
+            @Override 
+            public int getRowCount() {
+                return data.size();
+            }
+        
+            @Override 
+            public int getColumnCount() {
+                return columnNames.size();
+            }
+        
+            @Override 
+            public Object getValueAt(int rowIndex, int columnIndex) {
+                return data.get(rowIndex).get(columnIndex);
+            }
+        
+            @Override 
+            public String getColumnName(int column) {
+                return columnNames.get(column); 
+            }
+        
+            // Methods for updating the table model's data
+            public void setData(Vector<Vector<String>> newData) {
+                this.data = newData;
+            }
+            public Vector<Vector<String>> fetchFromDate(int month, int year){
+                Vector<Integer> orderIDList = currentMenu.getOrdersFromYearAndMonth(year, month);
+                
+                Vector<Vector<String>> orderItemList = new Vector<>();
+                for(int a : orderIDList){
+                    Vector<String> foodItems = currentMenu.getFoodFromTicketID(a);
+                    Vector<String> row = new Vector<>(); 
+                    row.add(String.valueOf(a)); 
+                    String foods = "";
+                    for(String i : foodItems){
+                        foods+=i + ", \n";
+                    }
+                    
+                    row.add(foods);
+                    //System.out.println(row);
+                    orderItemList.add(row);
+                }
+                this.data = orderItemList;
+                return orderItemList;
+            }
+        }
+        viewOrderButton.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e){
+                LocalDate currentDate = LocalDate.now();
+                int month = currentDate.getMonthValue();
+                int year = currentDate.getYear();
+                Integer[] months = {1,2,3,4,5,6,7,8,9,10,11,12};
+                Integer[] years = {2024,2023,2022};
+                JComboBox<Integer> monthDropdown = new JComboBox<>(months);
+                JComboBox<Integer> yearDropdown = new JComboBox<>(years);
+                Vector<Integer> orderIDList = currentMenu.getOrdersFromYearAndMonth(year, month);
+                
+                Vector<Vector<String>> orderItemList = new Vector<>();
+                for(int a : orderIDList){
+                    Vector<String> foodItems = currentMenu.getFoodFromTicketID(a);
+                    Vector<String> row = new Vector<>(); 
+                    row.add(String.valueOf(a)); 
+                    String foods = "";
+                    for(String i : foodItems){
+                        foods+=i + ", \n";
+                    }
+                    
+                    row.add(foods);
+                    //System.out.println(row);
+                    orderItemList.add(row);
+                }
+                Vector<String> columnNames = new Vector<>(Arrays.asList("Ticket ID", "Food Items")); 
+                OrderTableModel tableModel = new OrderTableModel(orderItemList, columnNames);
+                JTable orderTable = new JTable(tableModel);
+
+
+
+                monthDropdown.setSelectedIndex(2); // Set to current month
+                yearDropdown.setSelectedIndex(0);
+                JPanel panel = new JPanel();
+                panel.add(new JLabel("Month:"));
+                panel.add(monthDropdown);
+                panel.add(new JLabel("Year:"));
+                panel.add(yearDropdown);
+                JButton updateButton = new JButton("Load");
+                panel.add(updateButton);
+                updateButton.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        int selectedMonth = monthDropdown.getSelectedIndex() + 1; 
+                        int selectedYear = (Integer) yearDropdown.getSelectedItem();
+            
+                        // ... (Your logic to fetch orders based on selected month and year) ...
+                        tableModel.fetchFromDate(selectedMonth, selectedYear);
+                        // Update the table model with new orders
+                        //tableModel.setData(orderItemList); 
+                        tableModel.fireTableDataChanged(); // Notifies the table to update
+            
+                        // Update the header with the new month and year
+                        String header = "Orders for " + selectedMonth + "/" + selectedYear;
+                        JOptionPane.showMessageDialog(null, new JScrollPane(orderTable), header, JOptionPane.PLAIN_MESSAGE);
+                    }
+                });
+                // JTable orderTable = new JTable(orderItemList, columnNames);
+                String header = "Orders for " + month + "/" + year; 
+
+                JOptionPane.showMessageDialog(null, panel, header, JOptionPane.PLAIN_MESSAGE); 
+
+            }
+        });
+        
     }
 
     public static void main(String args[]) {

@@ -422,15 +422,14 @@ class mainMenu {
     // this is the function to complete each order and allow for the next
     // order to be started
     public void confirmOrderWithPayment(String paymentMethod) {
-        updateCurrID();
-        Double theCost = getTotalPrice();
-        try {
-            conn = DriverManager.getConnection(database_url, database_user, database_password);
+        try{
+            updateCurrID();
+            Double theCost = getTotalPrice();
             String sqlStatements = "INSERT INTO ticket (\"ticketID\", \"timeOrdered\", \"totalCost\", payment) VALUES (" + currTicketID + ", date (LOCALTIMESTAMP), " + Double.toString(theCost) + ", '" + paymentMethod + "');";
-            Statement stmt = conn.createStatement();
+            Statement stmt = currentMenu.conn.createStatement();
             stmt.executeUpdate(sqlStatements);
             java.util.List<Integer> itemPositions = new ArrayList<>();
-            
+                
             // get the item indexes
             for (int index=0; index < orderLabelList.size(); index++) {
                 if (orderLabelList.get(index).charAt(0) == '#') {
@@ -481,14 +480,14 @@ class mainMenu {
                 }
 
                 // update foodticket with new food item
-                Statement stmt2 = conn.createStatement();
+                Statement stmt2 = currentMenu.conn.createStatement();
                 stmt2.executeUpdate(sqlStatements);
 
                 // update stock
                 for (String ing : Recipe) {
                     //checking if the stock is 0. If it is, throw an exception.
                     String checkQuery = "SELECT stock from ingredient where \"ingredientID\" = ?";
-                    PreparedStatement checkStmt = conn.prepareStatement(checkQuery);
+                    PreparedStatement checkStmt = currentMenu.conn.prepareStatement(checkQuery);
                     checkStmt.setInt(1, currentMenu.getIngredientID((ing)));
                     ResultSet rs = checkStmt.executeQuery();
                     int stock = 0;
@@ -501,24 +500,22 @@ class mainMenu {
 
                     if(stock > 0) {
                         String updateQuery = "UPDATE ingredient SET stock = stock - ? WHERE \"ingredientID\" = ?";
-                        PreparedStatement stmt5 = conn.prepareStatement(updateQuery);
+                        PreparedStatement stmt5 = currentMenu.conn.prepareStatement(updateQuery);
                         stmt5.setInt(1, 1);
                         stmt5.setInt(2, currentMenu.getIngredientID((ing)));
                         stmt5.executeUpdate();
                         stmt5.close();
                     }
                 }
+            // update order dependencies to begin new order
+            orderLabelList.clear();
+            updateOrderLabels();
+            updateCurrID();
             }
-        } catch (Exception e) {
-
-            e.printStackTrace();
-
         }
-
-        // update order dependencies to begin new order
-        orderLabelList.clear();
-        updateOrderLabels();
-        updateCurrID();
+        catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     // calculate the total price for the order

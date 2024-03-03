@@ -350,7 +350,6 @@ public class Menu {
 
     //gives all foods of a specific food type
     public Vector<String> getFoodFromFoodType(String Catagory){
-        
         Vector<String> tempFoodNames = new Vector<String>(1);
         try {
             //gives one of each food from a specific types of food
@@ -449,7 +448,6 @@ public class Menu {
 
     //returns all orders of a specific year and month
     public Vector<Integer> getOrdersFromYearAndMonth(int year, int month){
-        
         Vector<Integer> tempOrderIDs = new Vector<Integer>(1);
         try {
             //gives all orders for the specified month in the specified year
@@ -494,7 +492,7 @@ public class Menu {
             
             //adds all of the food ids and convert them to names and then add them to the vector
             while (rs.next()) {
-                Integer tempFoodID = rs.getInt("name");
+                Integer tempFoodID = rs.getInt("foodID");
                 foodNames.add(getFoodNameFromFoodID(tempFoodID));
             }
 
