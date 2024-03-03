@@ -74,7 +74,7 @@ class mainMenu {
         panel.add(paymentView, gbc);
 
         // add manager view button
-        JButton managerView = createManagerButton("Manager View");
+        JButton managerView = createManagerButton("Manager View", f);
         managerView.setPreferredSize(new Dimension(150, 40));
         gbc.gridx++;
         gbc.gridy = 0;
@@ -280,14 +280,20 @@ class mainMenu {
     }
 
     // creates the button to navigate to managerview
-    private JButton createManagerButton(String itemName) {
+    private JButton createManagerButton(String itemName, JFrame f) {
         JButton button = new JButton(itemName);
         Dimension buttonSize = new Dimension(175, 175);
         button.setPreferredSize(buttonSize);
         button.addActionListener(new ActionListener() {
             @Override
-            public void actionPerformed(ActionEvent e) {
-                managerView currentManager = new managerView();
+            public void actionPerformed(ActionEvent e) 
+            {
+                login loginAttempt = new login(f);
+                loginAttempt.setVisible(true);
+                if (loginAttempt.isSuccessful()) 
+                {
+                    managerView currentManager = new managerView();
+                }
             }
         });
         return button;
