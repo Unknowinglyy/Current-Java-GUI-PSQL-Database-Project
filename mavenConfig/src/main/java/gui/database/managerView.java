@@ -75,8 +75,6 @@ public class managerView {
                         stmt.executeUpdate();
                     } catch (Exception e) {
                         e.printStackTrace();
-                        System.err.println(e.getClass().getName() + ": " + e.getMessage());
-                        System.exit(0);
                     }
                     thisOne.setStock(thisOne.getStock() + adjustment);
                     return null;
@@ -116,8 +114,6 @@ public class managerView {
             conn = DriverManager.getConnection(database_url, database_user, database_password);
         } catch (Exception e) {
             e.printStackTrace();
-            System.err.println(e.getClass().getName() + ": " + e.getMessage());
-            System.exit(0);
         }
         ArrayList<Ingredient> ingredientListTemp = new ArrayList<Ingredient>();
         try {

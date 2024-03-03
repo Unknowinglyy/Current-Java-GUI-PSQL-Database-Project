@@ -68,8 +68,6 @@ public class Menu {
 
         } catch (Exception e) {
             e.printStackTrace();
-            System.err.println(e.getClass().getName() + ": " + e.getMessage());
-            System.exit(0);
         }
     }
 
@@ -474,11 +472,6 @@ public class Menu {
             int rowsUpdated = pstmt.executeUpdate();
             
             //checks if changes occured
-            if (rowsUpdated > 0) {
-                System.out.println("Price for food item with foodID " + foodID + " updated successfully.");
-            } else {
-                System.out.println("No food item found with foodID " + foodID + ".");
-            }
 
             // Close the statement and connection
             pstmt.close();
@@ -504,12 +497,6 @@ public class Menu {
             int rowsUpdated = pstmt.executeUpdate();
             
             //checks if it was updated
-            if (rowsUpdated > 0) {
-                System.out.println("Price for food item with foodID " + foodID + " updated successfully.");
-            } else {
-                System.out.println("No food item found with foodID " + foodID + ".");
-            }
-
             // Close the statement and connection
             pstmt.close();
         } catch (SQLException e) {

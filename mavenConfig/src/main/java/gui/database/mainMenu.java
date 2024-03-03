@@ -417,7 +417,6 @@ class mainMenu {
             Statement stmt = conn.createStatement();
             stmt.executeUpdate(sqlStatements);
             java.util.List<Integer> itemPositions = new ArrayList<>();
-            System.out.println("inserted new ticket");
             
             // get the item indexes
             for (int index=0; index < orderLabelList.size(); index++) {
@@ -425,7 +424,6 @@ class mainMenu {
                     itemPositions.add(index);
                 }
             }
-            System.out.println("found order numbers");
             for (int index=0; index < itemPositions.size(); index++) {
                 
                 // get current food item
@@ -450,7 +448,6 @@ class mainMenu {
                         // step 3 remove recipe items set by modifiers
                         for (int jIndex = (itemPositions.get(index)+1); jIndex < itemPositions.get(index+1); jIndex++) {
                             String remIng = orderLabelList.get(jIndex).split(" in")[0].substring(8);
-                            // System.out.println(remIng+"\n");
                             Recipe.removeElement(remIng);
                         }
 
@@ -473,7 +470,6 @@ class mainMenu {
                 // update foodticket with new food item
                 Statement stmt2 = conn.createStatement();
                 stmt2.executeUpdate(sqlStatements);
-                System.out.println(sqlStatements);
 
                 // update stock
                 for (String ing : Recipe) {
@@ -488,8 +484,6 @@ class mainMenu {
         } catch (Exception e) {
 
             e.printStackTrace();
-            System.err.println(e.getClass().getName() + ": " + e.getMessage());
-            System.exit(0);
 
         }
 
@@ -506,11 +500,9 @@ class mainMenu {
             if (iText.charAt(0) == '#') {
                 String foodItem = iText.split(",")[0].substring(iText.indexOf(':') + 2);
                 // String foodItem = iText.split(",")[0];
-                System.out.println(foodItem + "\n");
                 theTotalCost += currentMenu.getPrice(foodItem);
             }
         }
-        System.out.println(theTotalCost+"\n");
         return theTotalCost;
     }
 
@@ -522,8 +514,6 @@ class mainMenu {
         conn = DriverManager.getConnection(database_url, database_user, database_password);
         } catch (Exception e) {
             e.printStackTrace();
-            System.err.println(e.getClass().getName() + ": " + e.getMessage());
-            System.exit(0);
         }
 
         try {
@@ -534,7 +524,6 @@ class mainMenu {
             ResultSet result = stmt.executeQuery(sqlStatement);
             int number = 0;
             while (result.next()) {
-                // System.out.println(result.getInt("max"));
                 number = result.getInt("max");
                 
             }
@@ -560,8 +549,6 @@ class mainMenu {
         } catch (Exception e) {
 
             e.printStackTrace();
-            System.err.println(e.getClass().getName() + ": " + e.getMessage());
-            System.exit(0);
 
         }
 
@@ -592,7 +579,6 @@ class mainMenu {
     public void updateCurrID() {
 
         currTicketID = getPrevTicketID() + 1;
-        System.out.println(currTicketID);
 
     }
 
