@@ -63,6 +63,7 @@ public class paymentMenu extends JFrame {
                 // Implement payment processing logic here
                 // mainMenu.confirmOrderWithPayment(paymentMethodComboBox.getSelectedItem().toString());
                 JOptionPane.showMessageDialog(paymentMenu.this, "Payment submitted successfully!");
+                paymentMenu.this.dispose(); 
             }
         });
 

@@ -473,12 +473,27 @@ class mainMenu {
 
                 // update stock
                 for (String ing : Recipe) {
-                    String updateQuery = "UPDATE ingredient SET stock = stock - ? WHERE \"ingredientID\" = ?";
-                    PreparedStatement stmt5 = conn.prepareStatement(updateQuery);
-                    stmt5.setInt(1, 1);
-                    stmt5.setInt(2, currentMenu.getIngredientID((ing)));
-                    stmt5.executeUpdate();
+                    //checking if the stock is 0. If it is, throw an exception.
+                    String checkQuery = "SELECT stock from ingredient where \"ingredientID\" = ?";
+                    PreparedStatement checkStmt = conn.prepareStatement(checkQuery);
+                    checkStmt.setInt(1, currentMenu.getIngredientID((ing)));
+                    ResultSet rs = checkStmt.executeQuery();
+                    int stock = 0;
 
+                    if (rs.next()) {
+                        stock = rs.getInt("stock");
+                    }
+                    rs.close();
+                    checkStmt.close();
+                    
+                    if(stock != 0) {
+                        String updateQuery = "UPDATE ingredient SET stock = stock - ? WHERE \"ingredientID\" = ?";
+                        PreparedStatement stmt5 = conn.prepareStatement(updateQuery);
+                        stmt5.setInt(1, 1);
+                        stmt5.setInt(2, currentMenu.getIngredientID((ing)));
+                        stmt5.executeUpdate();
+                        stmt5.close();
+                    }
                 }
             }
         } catch (Exception e) {

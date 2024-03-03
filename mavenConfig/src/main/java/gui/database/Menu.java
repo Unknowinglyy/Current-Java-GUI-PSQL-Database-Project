@@ -603,10 +603,11 @@ public class Menu {
     }
 
     public void addSides() {
-        addFood("Tater tots", "Sides", 1.00, new Vector<>());
-        addFood("Onion Rings", "Sides", 1.00, new Vector<>());
-        addFood("Kettle Chips", "Sides", 1.00, new Vector<>());
-        addFood("Fries", "Sides", 1.00, new Vector<>());
+        addFood("Tater tots", "Sides", 1.00, new Vector<>(Arrays.asList(
+                "Onion Rings",
+                "Kettle Chips",
+                "Fries"
+        )));
     }
 
     public void addSauces() {
