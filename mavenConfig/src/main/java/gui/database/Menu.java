@@ -92,6 +92,27 @@ public class Menu {
         return ingredientId;
     }
 
+    //finds the ingredient stock if the ingredient dosent exist returns -1
+    public int getIngredientStock(String ingredientName){
+        int ingredientId = -1;
+        try {
+            //establshes connection to database and asks if their is an ID for the food name
+            conn = DriverManager.getConnection(database_url, database_user, database_password);
+            String sql = "SELECT \"stock\" FROM ingredient WHERE name = ?";
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, ingredientName);
+            ResultSet rs = pstmt.executeQuery();
+            if (rs.next()) {
+                ingredientId = rs.getInt("stock");
+            }
+            rs.close();
+            pstmt.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return ingredientId;
+    }
+
     //returns the food ID for the food if it dosent exist returns -1
     public int getFoodID(String foodName) {
         int foodId = -1;
@@ -182,6 +203,24 @@ public class Menu {
             e.printStackTrace();
         }
         return ticketPrice;
+    }
+
+    //get price of an order from ticketID if it dosent exist return 0.0
+    public void removeTicket(int ticketID) {
+        try {
+            //establishes a connection to the database and asks if the ingredient exists
+            conn = DriverManager.getConnection(database_url, database_user, database_password);
+            String sql = "DELETE FROM foodticket WHERE \"ticketID\" = ?;DELETE FROM ticket WHERE \"ticketID\" = ?;";
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            pstmt.setInt(1, ticketID);
+            pstmt.setInt(2, ticketID);
+            pstmt.executeUpdate();
+            //parses the return statment for the name
+            
+            pstmt.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     //get Time of an order from ticketID if it dosent exist return time 0
@@ -338,6 +377,32 @@ public class Menu {
             rs.close();
             stmt.close();
             
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return(tempFoodNames);
+    }
+
+    //gives all in stock foods of a specific food type
+    public Vector<String> getInStockFoodFromFoodType(String Catagory){
+        
+        //gets a list of all the foods in a food type
+        Vector<String> tempFoodNames = getFoodFromFoodType(Catagory);
+        try {
+            conn = DriverManager.getConnection(database_url, database_user, database_password);
+
+            //goes through each item and checks if it is in stock
+            for(int index = 0; index < tempFoodNames.size(); index++){
+                Vector<String> recipe = getRecipe(tempFoodNames.get(index));
+                //goes through each ingredient check if it has stock and if not deletes the food item from the list
+                for(int ingredientIndex = 0;ingredientIndex < recipe.size();ingredientIndex++){
+                    if(getIngredientStock(recipe.get(ingredientIndex))  <= 0){
+                        tempFoodNames.remove(index);
+                        index--;
+                        break;
+                    }
+                }
+            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
