@@ -17,7 +17,7 @@ public class managerView {
     private ArrayList<JLabel> restockLabels = new ArrayList<>();
     private final int lowStockThreshold = 20;
     private final int mediumStockThreshold = 50;
-    private Menu currentMenu;
+    private Menu currentMenu = new Menu();
     public class Ingredient {
         private final int id;
         private String name;
@@ -68,7 +68,7 @@ public class managerView {
                         String database_url = String.format("jdbc:postgresql://csce-315-db.engr.tamu.edu/%s",
                                 database_name);
                         try {
-                            conn = DriverManager.getConnection(database_url, database_user, database_password);
+                            conn = currentMenu.conn;
                             String updateQuery = "UPDATE ingredient SET stock = stock + ? WHERE \"ingredientID\" = ?";
                             PreparedStatement stmt = conn.prepareStatement(updateQuery);
                             stmt.setInt(1, adjustment);
@@ -114,7 +114,7 @@ public class managerView {
         String database_password = "EPICCSCEPROJECT";
         String database_url = String.format("jdbc:postgresql://csce-315-db.engr.tamu.edu/%s", database_name);
         try {
-            conn = DriverManager.getConnection(database_url, database_user, database_password);
+            conn = currentMenu.conn;
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -189,7 +189,6 @@ public class managerView {
     }
 
     managerView() {
-        Menu currentMenu = new Menu();
         currentMenu.generateConnection();
         fetchData();
         JPanel inventoryPanel = new JPanel();
