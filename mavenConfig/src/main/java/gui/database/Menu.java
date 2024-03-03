@@ -11,13 +11,20 @@ public class Menu {
     String database_user = "csce331_902_01_user";
     String database_password = "EPICCSCEPROJECT";
     String database_url = String.format("jdbc:postgresql://csce-315-db.engr.tamu.edu/%s", database_name);
+    
+    public void generateConnection(){
+        try {
+            conn = DriverManager.getConnection(database_url, database_user, database_password);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
     //tgus function adds an item to the current menu
     public void addFood(String FoodName, String FoodCatagory, Double Price, Vector<String> Recipe){
         
         try {
             //estabilished connection to the database and finds the highest food ID so that a new ID can be created that is one higher to avoid conflict
-            conn = DriverManager.getConnection(database_url, database_user, database_password);
             String sql = "SELECT MAX(\"foodID\") AS highest_id FROM food";
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(sql);
@@ -47,7 +54,6 @@ public class Menu {
 
             //goes through each ingredient in the recipe and adds the relationship between the food and the item in the database
             for(int i =0; i < Recipe.size();i++){
-                conn = DriverManager.getConnection(database_url, database_user, database_password);
                 //checks if the ingredient exists if it does gives the id if not creates the ingredient
                 int ingredientId = findOrCreateIngredient(Recipe.get(i));
                 String ingredientQuery = "INSERT INTO foodingredient (\"foodID\", \"ingredientID\", \"amount\") VALUES (?, ?, ?)";
@@ -76,7 +82,6 @@ public class Menu {
         int ingredientId = -1;
         try {
             //establshes connection to database and asks if their is an ID for the food name
-            conn = DriverManager.getConnection(database_url, database_user, database_password);
             String sql = "SELECT \"ingredientID\" FROM ingredient WHERE name = ?";
             PreparedStatement pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, ingredientName);
@@ -97,7 +102,6 @@ public class Menu {
         int ingredientId = -1;
         try {
             //establshes connection to database and asks if their is an ID for the food name
-            conn = DriverManager.getConnection(database_url, database_user, database_password);
             String sql = "SELECT \"stock\" FROM ingredient WHERE name = ?";
             PreparedStatement pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, ingredientName);
@@ -118,7 +122,6 @@ public class Menu {
         int foodId = -1;
         try {
             //estabilished connection to database and asks if the food ID exists
-            conn = DriverManager.getConnection(database_url, database_user, database_password);
             String sql = "SELECT \"foodID\" FROM food WHERE name = ? and onmenu = 1";
             PreparedStatement pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, foodName);
@@ -141,7 +144,6 @@ public class Menu {
         String foodId = "";
         try {
             //estabilished connection to database and asks if the food ID exists
-            conn = DriverManager.getConnection(database_url, database_user, database_password);
             String sql = "SELECT name FROM food WHERE \"foodID\" = ?";
             PreparedStatement pstmt = conn.prepareStatement(sql);
             pstmt.setInt(1, foodID);
@@ -164,7 +166,6 @@ public class Menu {
         String foodName = "";
         try {
             //establishes a connection to the database and asks if the ingredient exists
-            conn = DriverManager.getConnection(database_url, database_user, database_password);
             String sql = "SELECT name FROM ingredient WHERE \"ingredientID\" = ?";
             PreparedStatement pstmt = conn.prepareStatement(sql);
             pstmt.setInt(1, IngredientId);
@@ -187,7 +188,6 @@ public class Menu {
         Double ticketPrice = 0.0;
         try {
             //establishes a connection to the database and asks if the ingredient exists
-            conn = DriverManager.getConnection(database_url, database_user, database_password);
             String sql = "SELECT \"totalCost\" FROM ticket WHERE \"ticketID\" = ?";
             PreparedStatement pstmt = conn.prepareStatement(sql);
             pstmt.setInt(1, ticketID);
@@ -209,7 +209,6 @@ public class Menu {
     public void removeTicket(int ticketID) {
         try {
             //establishes a connection to the database and asks if the ingredient exists
-            conn = DriverManager.getConnection(database_url, database_user, database_password);
             String sql = "DELETE FROM foodticket WHERE \"ticketID\" = ?;DELETE FROM ticket WHERE \"ticketID\" = ?;";
             PreparedStatement pstmt = conn.prepareStatement(sql);
             pstmt.setInt(1, ticketID);
@@ -228,7 +227,6 @@ public class Menu {
         Timestamp ticketDate = new Timestamp(0);
         try {
             //establishes a connection to the database and asks if the ingredient exists
-            conn = DriverManager.getConnection(database_url, database_user, database_password);
             String sql = "SELECT \"timeOrdered\" FROM ticket WHERE \"ticketID\" = ?";
             PreparedStatement pstmt = conn.prepareStatement(sql);
             pstmt.setInt(1, ticketID);
@@ -251,7 +249,6 @@ public class Menu {
         // Check if the ingredient already exists with that name
         int ingredientId = getIngredientID(ingredientName);
         try {
-            conn = DriverManager.getConnection(database_url, database_user, database_password);
             
             //if the ingredient already exists return the ingredient ID
             if (ingredientId != -1) {
@@ -301,7 +298,6 @@ public class Menu {
         String foodCatagory = "";
         try {
             //estabilishes a connection and asks what the type is of an item on the menu with the matching name
-            conn = DriverManager.getConnection(database_url, database_user, database_password);
             String sql = "SELECT \"foodType\" FROM food WHERE name = ? and onmenu = 1";
             PreparedStatement pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, foodName);
@@ -326,7 +322,6 @@ public class Menu {
         Vector<String> Recipe = new Vector<String>(1);
         try {
             //conects to the food ingredient table and asks for all things with the foodID related to it
-            conn = DriverManager.getConnection(database_url, database_user, database_password);
             String sql = "SELECT \"ingredientID\" FROM foodIngredient WHERE \"foodID\" = ?";
             PreparedStatement pstmt = conn.prepareStatement(sql);
             pstmt.setInt(1, FoodID);
@@ -359,7 +354,6 @@ public class Menu {
         Vector<String> tempFoodNames = new Vector<String>(1);
         try {
             //gives one of each food from a specific types of food
-            conn = DriverManager.getConnection(database_url, database_user, database_password);
             String sql = "SELECT DISTINCT \"name\" FROM food WHERE \"foodType\" = ? and onmenu = 1";
             PreparedStatement stmt = conn.prepareStatement(sql , Statement.RETURN_GENERATED_KEYS);
             stmt.setString(1, Catagory);
@@ -388,8 +382,6 @@ public class Menu {
         
         //gets a list of all the foods in a food type
         Vector<String> tempFoodNames = getFoodFromFoodType(Catagory);
-        try {
-            conn = DriverManager.getConnection(database_url, database_user, database_password);
 
             //goes through each item and checks if it is in stock
             for(int index = 0; index < tempFoodNames.size(); index++){
@@ -403,9 +395,7 @@ public class Menu {
                     }
                 }
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+    
         return(tempFoodNames);
     }
     
@@ -416,7 +406,6 @@ public class Menu {
         Statement stmt;
         Vector<String> tempFoodTypes = new Vector<String>(1);
         try {
-            conn = DriverManager.getConnection(database_url, database_user, database_password);
             stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(sql);
             
@@ -441,7 +430,6 @@ public class Menu {
         Double foodPrice = 0.0;
         try {
             //gets the price of a food that matches the name
-            conn = DriverManager.getConnection(database_url, database_user, database_password);
             String sql = "SELECT \"price\" FROM food WHERE name = ? and onmenu = 1";
             PreparedStatement pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, foodName);
@@ -465,7 +453,7 @@ public class Menu {
         Vector<Integer> tempOrderIDs = new Vector<Integer>(1);
         try {
             //gives all orders for the specified month in the specified year
-            conn = DriverManager.getConnection(database_url, database_user, database_password);
+            
             String sql = "select * from ticket where DATE_Part(\'month\',\"timeOrdered\") = ? and date_part(\'year\',\"timeOrdered\") = ?";
             PreparedStatement stmt = conn.prepareStatement(sql , Statement.RETURN_GENERATED_KEYS);
             stmt.setInt(1, month);
@@ -496,7 +484,7 @@ public class Menu {
         Vector<String> foodNames = new Vector<String>(1);
         try {
             //gives one of each food from a specific types of food
-            conn = DriverManager.getConnection(database_url, database_user, database_password);
+            
             String sql = "select * from foodticket where \"ticketID\" = ?";
             PreparedStatement stmt = conn.prepareStatement(sql , Statement.RETURN_GENERATED_KEYS);
             stmt.setInt(1, ticketID);
@@ -522,7 +510,7 @@ public class Menu {
 
     //changes the price of a food
     public void changePrice(String FoodName, Double Price){
-        try (Connection conn = DriverManager.getConnection(database_url, database_user, database_password)) {
+        try  {
             // SQL query to update the price of the food item
             String sql = "UPDATE food SET price = ? WHERE \"foodID\" = ?";
             
@@ -534,7 +522,7 @@ public class Menu {
             pstmt.setInt(2, foodID);
             
             // Execute the update
-            int rowsUpdated = pstmt.executeUpdate();
+            pstmt.executeUpdate();
             
             //checks if changes occured
 
@@ -548,7 +536,7 @@ public class Menu {
 
     //removes a food from the menu
     public void removeFood(String FoodName){
-        try (Connection conn = DriverManager.getConnection(database_url, database_user, database_password)) {
+        try {
             // SQL query to change the on menu value to show that it is not on the menu
             String sql = "UPDATE food SET \"onmenu\" = 0 WHERE \"foodID\" = ? and onmenu = 1";
             

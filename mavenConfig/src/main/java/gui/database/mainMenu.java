@@ -35,6 +35,7 @@ class mainMenu {
 
     // Define UI constructor
     mainMenu() {
+        currentMenu.generateConnection();
         // set constraints for initial layout
         panel.setLayout(new GridBagLayout());
         gbc.gridx = 0;
