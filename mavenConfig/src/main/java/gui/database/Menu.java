@@ -669,23 +669,49 @@ public class Menu {
 
     public void addSides() {
         addFood("Tater tots", "Sides", 1.00, new Vector<>(Arrays.asList(
-                "Onion Rings",
-                "Kettle Chips",
-                "Fries"
+            "Tater tots"
+        )));
+        addFood("Onion Rings", "Sides", 1.00, new Vector<>(Arrays.asList(
+                "Onion Rings"
+        )));
+        addFood("Kettle Chips", "Sides", 1.00, new Vector<>(Arrays.asList(
+            "Kettle Chips"
+        )));
+        addFood("Kettle Chips", "Sides", 1.00, new Vector<>(Arrays.asList(
+            "Kettle Chips"
+        )));
+        addFood("Fries", "Sides", 1.00, new Vector<>(Arrays.asList(
+            "Fries"
         )));
     }
 
     public void addSauces() {
-       addFood("Gigem sauce", "Sauces", 0.50, new Vector<>());
-        addFood("Buffalo", "Sauces", 0.50, new Vector<>());
-        addFood("Ranch", "Sauces", 0.50, new Vector<>());
-        addFood("Spicy ranch", "Sauces", 0.50, new Vector<>());
-        addFood("BBQ", "Sauces", 0.50, new Vector<>());
-        addFood("Honey Mustard", "Sauces", 0.50, new Vector<>());
+       addFood("Gigem sauce", "Sauces", 0.50, new Vector<>(Arrays.asList(
+        "Gigem sauce"
+        )));
+        addFood("Buffalo", "Sauces", 0.50, new Vector<>(Arrays.asList(
+        "Buffalo"
+        )));
+        addFood("Ranch", "Sauces", 0.50, new Vector<>(Arrays.asList(
+        "Ranch"
+        )));
+        addFood("Spicy ranch", "Sauces", 0.50, new Vector<>(Arrays.asList(
+        "Spicy ranch"
+        )));
+        addFood("BBQ", "Sauces", 0.50, new Vector<>(Arrays.asList(
+        "BBQ"
+        )));
+        addFood("Honey Mustard", "Sauces", 0.50, new Vector<>(Arrays.asList(
+        "Honey Mustard"
+        )));
     }
 
     public void addBeverages() {
-        addFood("Fountain Drink", "Beverages", 1.50, new Vector<>());
-        addFood("Shake", "Beverages", 3.00, new Vector<>());
+        addFood("Fountain Drink", "Beverages", 1.50,  new Vector<>(Arrays.asList(
+            "Fountain Drink"
+            )));
+        addFood("Shake", "Beverages", 1.50,  new Vector<>(Arrays.asList(
+            "Shake"
+            )));
     }
 }
