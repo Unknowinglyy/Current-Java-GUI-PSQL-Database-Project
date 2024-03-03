@@ -497,8 +497,8 @@ class mainMenu {
                     }
                     rs.close();
                     checkStmt.close();
-                    
-                    if(stock != 0) {
+
+                    if(stock > 0) {
                         String updateQuery = "UPDATE ingredient SET stock = stock - ? WHERE \"ingredientID\" = ?";
                         PreparedStatement stmt5 = conn.prepareStatement(updateQuery);
                         stmt5.setInt(1, 1);
