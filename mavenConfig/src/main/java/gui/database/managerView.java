@@ -13,7 +13,6 @@ import java.time.format.DateTimeFormatter;
 import java.time.LocalDate;
 import javax.swing.table.AbstractTableModel;
 
-
 public class managerView {
     private ArrayList<Ingredient> ingredientList;
     // lists of JLabels for ease of updating frontend
@@ -23,6 +22,7 @@ public class managerView {
     private final int lowStockThreshold = 20;
     private final int mediumStockThreshold = 50;
     private Menu currentMenu;
+
     public class Ingredient {
         private final int id;
         private String name;
@@ -61,11 +61,13 @@ public class managerView {
         public void adjustStock(int adjustment) {
             int id = this.getId();
             Ingredient thisOne = this;
-            if(!(this.stock>=0 && adjustment<0)){
+            boolean negativeSubraction = adjustment<0 && this.stock<=0;
+             
+            if (!negativeSubraction) {
                 SwingWorker worker = new SwingWorker<Void, Void>() {
                     @Override
                     protected Void doInBackground() throws Exception {
-                        
+
                         Connection conn = null;
                         String database_name = "csce331_902_01_db";
                         String database_user = "csce331_902_01_user";
@@ -85,7 +87,7 @@ public class managerView {
                         thisOne.setStock(thisOne.getStock() + adjustment);
                         return null;
                     }
-    
+
                     @Override
                     protected void done() {
                         // Update UI on the Swing EDT
@@ -96,7 +98,7 @@ public class managerView {
                 };
                 worker.execute();
             }
-            
+
         }
 
     }
@@ -225,7 +227,7 @@ public class managerView {
         JButton changePriceButton = new JButton("Change Price of Menu Items");
         JButton removeFoodButton = new JButton("Remove Food from Menu");
         JButton viewOrderButton = new JButton("View Past Orders");
-        JPanel modificationPanel = new JPanel(new GridLayout(0,1));
+        JPanel modificationPanel = new JPanel(new GridLayout(0, 1));
 
         modificationPanel.add(viewMenuButton);
         modificationPanel.add(addFoodButton);
@@ -251,15 +253,15 @@ public class managerView {
                 f.setVisible(false);
             }
         });
-        viewMenuButton.addActionListener(new ActionListener(){
+        viewMenuButton.addActionListener(new ActionListener() {
             @Override
-            public void actionPerformed(ActionEvent e){
+            public void actionPerformed(ActionEvent e) {
                 Vector<String> foodTypes = currentMenu.getFoodTypes();
                 Vector<String> allFoods = new Vector<String>();
                 Vector<Double> allPrices = new Vector<Double>();
-                for(String i : foodTypes){
+                for (String i : foodTypes) {
                     Vector<String> foodByType = currentMenu.getFoodFromFoodType(i);
-                    for(String j :foodByType){
+                    for (String j : foodByType) {
                         allFoods.add(j);
                         allPrices.add(currentMenu.getPrice(j));
                     }
@@ -268,21 +270,21 @@ public class managerView {
                 for (int i = 0; i < allFoods.size(); i++) {
                     displayText.append(allFoods.get(i))
                             .append(" - $")
-                            .append(String.format("%.2f", allPrices.get(i))) 
+                            .append(String.format("%.2f", allPrices.get(i)))
                             .append("\n");
-                     }
-                     JTextArea textArea = new JTextArea(displayText.toString());
-                     textArea.setEditable(false); // Prevent users from editing
-                     JScrollPane scrollPane = new JScrollPane(textArea);
-                     
-                     JDialog dialog = new JDialog(); 
-                     dialog.setTitle("Food Menu"); // Set a title
-                     dialog.add(scrollPane);
-                     dialog.setSize(500, 700); // Adjust dimensions as needed
-                     dialog.setLocationRelativeTo(null); // Center the dialog
-                     dialog.setVisible(true);
+                }
+                JTextArea textArea = new JTextArea(displayText.toString());
+                textArea.setEditable(false); // Prevent users from editing
+                JScrollPane scrollPane = new JScrollPane(textArea);
+
+                JDialog dialog = new JDialog();
+                dialog.setTitle("Food Menu"); // Set a title
+                dialog.add(scrollPane);
+                dialog.setSize(500, 700); // Adjust dimensions as needed
+                dialog.setLocationRelativeTo(null); // Center the dialog
+                dialog.setVisible(true);
             }
-            
+
         });
         // create the restock page
         restockButton.addActionListener(new ActionListener() {
@@ -327,29 +329,29 @@ public class managerView {
                 restockDialog.setVisible(true);
             }
         });
-        //prompt user to add a new food item
+        // prompt user to add a new food item
         addFoodButton.addActionListener(new ActionListener() {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            String foodName = JOptionPane.showInputDialog("Enter Food Name:");
-            String foodCategory = JOptionPane.showInputDialog("Enter Food Category:");
-            String priceString = JOptionPane.showInputDialog("Enter Price as a decimal:");
-            String recipe = JOptionPane.showInputDialog("Enter Recipe (Ingredients separated by commas):");
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String foodName = JOptionPane.showInputDialog("Enter Food Name:");
+                String foodCategory = JOptionPane.showInputDialog("Enter Food Category:");
+                String priceString = JOptionPane.showInputDialog("Enter Price as a decimal:");
+                String recipe = JOptionPane.showInputDialog("Enter Recipe (Ingredients separated by commas):");
 
-            // Input Validation (important - not shown here)
+                // Input Validation (important - not shown here)
 
-            try {
-                double price = Double.parseDouble(priceString);
-                Vector<String> recipeVector = new Vector<>(Arrays.asList(recipe.split(",")));
-                currentMenu.addFood(foodName, foodCategory, price, recipeVector);
-            } catch (NumberFormatException ex) {
-                JOptionPane.showMessageDialog(null, "Invalid price format!");
+                try {
+                    double price = Double.parseDouble(priceString);
+                    Vector<String> recipeVector = new Vector<>(Arrays.asList(recipe.split(",")));
+                    currentMenu.addFood(foodName, foodCategory, price, recipeVector);
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(null, "Invalid price format!");
+                }
             }
-    }
-});
-        //prompt user for a food to modify and what to change it to
+        });
+        // prompt user for a food to modify and what to change it to
         changePriceButton.addActionListener(new ActionListener() {
-            
+
             @Override
             public void actionPerformed(ActionEvent e) {
                 String foodName = JOptionPane.showInputDialog("Enter Food Name:");
@@ -357,112 +359,111 @@ public class managerView {
 
                 try {
                     double newPrice = Double.parseDouble(priceString);
-                    currentMenu.changePrice(foodName, newPrice); 
+                    currentMenu.changePrice(foodName, newPrice);
                 } catch (NumberFormatException ex) {
                     JOptionPane.showMessageDialog(null, "Invalid price format!");
-                } 
+                }
             }
         });
-        //prompt user for a food to remove and confirmation
+        // prompt user for a food to remove and confirmation
         removeFoodButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String foodName = JOptionPane.showInputDialog("Enter Food Name to Remove:");
-                int confirm = JOptionPane.showConfirmDialog(null, 
-                                  "Are you sure you want to remove " + foodName + "?", 
-                                  "Confirm Removal", 
-                                  JOptionPane.YES_NO_OPTION);
-        
+                int confirm = JOptionPane.showConfirmDialog(null,
+                        "Are you sure you want to remove " + foodName + "?",
+                        "Confirm Removal",
+                        JOptionPane.YES_NO_OPTION);
+
                 if (confirm == JOptionPane.YES_OPTION) {
                     currentMenu.removeFood(foodName);
-                } 
+                }
             }
         });
         class OrderTableModel extends AbstractTableModel {
             private Vector<Vector<String>> data;
             private Vector<String> columnNames;
-        
+
             public OrderTableModel(Vector<Vector<String>> data, Vector<String> columnNames) {
                 this.data = data;
                 this.columnNames = columnNames;
             }
-        
-            @Override 
+
+            @Override
             public int getRowCount() {
                 return data.size();
             }
-        
-            @Override 
+
+            @Override
             public int getColumnCount() {
                 return columnNames.size();
             }
-        
-            @Override 
+
+            @Override
             public Object getValueAt(int rowIndex, int columnIndex) {
                 return data.get(rowIndex).get(columnIndex);
             }
-        
-            @Override 
+
+            @Override
             public String getColumnName(int column) {
-                return columnNames.get(column); 
+                return columnNames.get(column);
             }
-        
+
             // Methods for updating the table model's data
             public void setData(Vector<Vector<String>> newData) {
                 this.data = newData;
             }
-            public Vector<Vector<String>> fetchFromDate(int month, int year){
+
+            public Vector<Vector<String>> fetchFromDate(int month, int year) {
                 Vector<Integer> orderIDList = currentMenu.getOrdersFromYearAndMonth(year, month);
-                
+
                 Vector<Vector<String>> orderItemList = new Vector<>();
-                for(int a : orderIDList){
+                for (int a : orderIDList) {
                     Vector<String> foodItems = currentMenu.getFoodFromTicketID(a);
-                    Vector<String> row = new Vector<>(); 
-                    row.add(String.valueOf(a)); 
+                    Vector<String> row = new Vector<>();
+                    row.add(String.valueOf(a));
                     String foods = "";
-                    for(String i : foodItems){
-                        foods+=i + ", \n";
+                    for (String i : foodItems) {
+                        foods += i + ", \n";
                     }
-                    
+
                     row.add(foods);
-                    //System.out.println(row);
+                    // System.out.println(row);
                     orderItemList.add(row);
                 }
                 this.data = orderItemList;
                 return orderItemList;
             }
         }
-        viewOrderButton.addActionListener(new ActionListener(){
+        viewOrderButton.addActionListener(new ActionListener() {
             @Override
-            public void actionPerformed(ActionEvent e){
+            public void actionPerformed(ActionEvent e) {
                 LocalDate currentDate = LocalDate.now();
                 int month = currentDate.getMonthValue();
                 int year = currentDate.getYear();
-                Integer[] months = {1,2,3,4,5,6,7,8,9,10,11,12};
-                Integer[] years = {2024,2023,2022};
+                Integer[] months = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
+                Integer[] years = { 2024, 2023, 2022 };
                 JComboBox<Integer> monthDropdown = new JComboBox<>(months);
                 JComboBox<Integer> yearDropdown = new JComboBox<>(years);
                 Vector<Integer> orderIDList = currentMenu.getOrdersFromYearAndMonth(year, month);
-                
+
                 Vector<Vector<String>> orderItemList = new Vector<>();
-                for(int a : orderIDList){
+                for (int a : orderIDList) {
                     Vector<String> foodItems = currentMenu.getFoodFromTicketID(a);
-                    Vector<String> row = new Vector<>(); 
-                    row.add(String.valueOf(a)); 
+                    Vector<String> row = new Vector<>();
+                    row.add(String.valueOf(a));
                     String foods = "";
-                    for(String i : foodItems){
-                        foods+=i + ", \n";
+                    for (String i : foodItems) {
+                        foods += i + ", \n";
                     }
-                    
+
                     row.add(foods);
-                    //System.out.println(row);
+                    // System.out.println(row);
                     orderItemList.add(row);
                 }
-                Vector<String> columnNames = new Vector<>(Arrays.asList("Ticket ID", "Food Items")); 
+                Vector<String> columnNames = new Vector<>(Arrays.asList("Ticket ID", "Food Items"));
                 OrderTableModel tableModel = new OrderTableModel(orderItemList, columnNames);
                 JTable orderTable = new JTable(tableModel);
-
-
 
                 monthDropdown.setSelectedIndex(2); // Set to current month
                 yearDropdown.setSelectedIndex(0);
@@ -476,28 +477,50 @@ public class managerView {
                 updateButton.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        int selectedMonth = monthDropdown.getSelectedIndex() + 1; 
+                        int selectedMonth = monthDropdown.getSelectedIndex() + 1;
                         int selectedYear = (Integer) yearDropdown.getSelectedItem();
-            
-                        // ... (Your logic to fetch orders based on selected month and year) ...
-                        tableModel.fetchFromDate(selectedMonth, selectedYear);
-                        // Update the table model with new orders
-                        //tableModel.setData(orderItemList); 
-                        tableModel.fireTableDataChanged(); // Notifies the table to update
-            
+                        JOptionPane.showMessageDialog(null, "Loading orders..."); // Placeholder, you can customize this
+
+                        new SwingWorker<Vector<Vector<String>>, Void>() {
+                            @Override
+                            protected Vector<Vector<String>> doInBackground() throws Exception {
+                                // Fetch and build data inside the background task
+                                return tableModel.fetchFromDate(selectedMonth, selectedYear);
+                            }
+
+                            @Override
+                            protected void done() {
+                                try {
+                                    Vector<Vector<String>> orderItemList = get();
+                                    tableModel.setData(orderItemList);
+                                    tableModel.fireTableDataChanged();
+
+                                    String header = "Orders for " + selectedMonth + "/" + selectedYear;
+                                    JOptionPane.showMessageDialog(null, new JScrollPane(orderTable), header,
+                                            JOptionPane.PLAIN_MESSAGE);
+                                } catch (Exception ex) {
+                                    // Handle errors gracefully
+                                    JOptionPane.showMessageDialog(null, "Error loading orders: " + ex.getMessage());
+                                } finally {
+                                    // Hide loading indicator
+                                }
+                            }
+                        }.execute(); // Start the worker thread
+
                         // Update the header with the new month and year
-                        String header = "Orders for " + selectedMonth + "/" + selectedYear;
-                        JOptionPane.showMessageDialog(null, new JScrollPane(orderTable), header, JOptionPane.PLAIN_MESSAGE);
+                        // String header = "Orders for " + selectedMonth + "/" + selectedYear;
+                        // JOptionPane.showMessageDialog(null, new JScrollPane(orderTable), header,
+                        // JOptionPane.PLAIN_MESSAGE);
                     }
                 });
                 // JTable orderTable = new JTable(orderItemList, columnNames);
-                String header = "Orders for " + month + "/" + year; 
+                String header = "Orders for " + month + "/" + year;
 
-                JOptionPane.showMessageDialog(null, panel, header, JOptionPane.PLAIN_MESSAGE); 
+                JOptionPane.showMessageDialog(null, panel, header, JOptionPane.PLAIN_MESSAGE);
 
             }
         });
-        
+
     }
 
     public static void main(String args[]) {
