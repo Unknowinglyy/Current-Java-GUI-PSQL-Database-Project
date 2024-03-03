@@ -233,7 +233,6 @@ public class managerView {
         modificationPanel.add(addFoodButton);
         modificationPanel.add(changePriceButton);
         modificationPanel.add(removeFoodButton);
-        modificationPanel.add(viewOrderButton);
         mainPanel.add(modificationPanel, BorderLayout.WEST);
         mainPanel.add(scrollPane, BorderLayout.EAST);
         // Add placeholder for other potential content on the left
