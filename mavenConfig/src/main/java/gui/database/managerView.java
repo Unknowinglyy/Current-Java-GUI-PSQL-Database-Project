@@ -190,6 +190,7 @@ public class managerView {
 
     managerView() {
         Menu currentMenu = new Menu();
+        currentMenu.generateConnection();
         fetchData();
         JPanel inventoryPanel = new JPanel();
         for (Ingredient ingredient : ingredientList) {
