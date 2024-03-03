@@ -184,6 +184,24 @@ public class Menu {
         return ticketPrice;
     }
 
+    //get price of an order from ticketID if it dosent exist return 0.0
+    public void removeTicket(int ticketID) {
+        try {
+            //establishes a connection to the database and asks if the ingredient exists
+            conn = DriverManager.getConnection(database_url, database_user, database_password);
+            String sql = "DELETE FROM foodticket WHERE \"ticketID\" = ?;DELETE FROM ticket WHERE \"ticketID\" = ?;";
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            pstmt.setInt(1, ticketID);
+            pstmt.setInt(2, ticketID);
+            pstmt.executeUpdate();
+            //parses the return statment for the name
+            
+            pstmt.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
     //get Time of an order from ticketID if it dosent exist return time 0
     public Timestamp getTimeFromTicketID(int ticketID) {
         Timestamp ticketDate = new Timestamp(0);
