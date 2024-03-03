@@ -56,41 +56,44 @@ public class managerView {
         public void adjustStock(int adjustment) {
             int id = this.getId();
             Ingredient thisOne = this;
-            SwingWorker worker = new SwingWorker<Void, Void>() {
-                @Override
-                protected Void doInBackground() throws Exception {
-
-                    Connection conn = null;
-                    String database_name = "csce331_902_01_db";
-                    String database_user = "csce331_902_01_user";
-                    String database_password = "EPICCSCEPROJECT";
-                    String database_url = String.format("jdbc:postgresql://csce-315-db.engr.tamu.edu/%s",
-                            database_name);
-                    try {
-                        conn = DriverManager.getConnection(database_url, database_user, database_password);
-                        String updateQuery = "UPDATE ingredient SET stock = stock + ? WHERE \"ingredientID\" = ?";
-                        PreparedStatement stmt = conn.prepareStatement(updateQuery);
-                        stmt.setInt(1, adjustment);
-                        stmt.setInt(2, id);
-                        stmt.executeUpdate();
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                        System.err.println(e.getClass().getName() + ": " + e.getMessage());
-                        System.exit(0);
+            if(this.stock>=0){
+                SwingWorker worker = new SwingWorker<Void, Void>() {
+                    @Override
+                    protected Void doInBackground() throws Exception {
+                        
+                        Connection conn = null;
+                        String database_name = "csce331_902_01_db";
+                        String database_user = "csce331_902_01_user";
+                        String database_password = "EPICCSCEPROJECT";
+                        String database_url = String.format("jdbc:postgresql://csce-315-db.engr.tamu.edu/%s",
+                                database_name);
+                        try {
+                            conn = DriverManager.getConnection(database_url, database_user, database_password);
+                            String updateQuery = "UPDATE ingredient SET stock = stock + ? WHERE \"ingredientID\" = ?";
+                            PreparedStatement stmt = conn.prepareStatement(updateQuery);
+                            stmt.setInt(1, adjustment);
+                            stmt.setInt(2, id);
+                            stmt.executeUpdate();
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                            System.err.println(e.getClass().getName() + ": " + e.getMessage());
+                            System.exit(0);
+                        }
+                        thisOne.setStock(thisOne.getStock() + adjustment);
+                        return null;
                     }
-                    thisOne.setStock(thisOne.getStock() + adjustment);
-                    return null;
-                }
-
-                @Override
-                protected void done() {
-                    // Update UI on the Swing EDT
-                    SwingUtilities.invokeLater(() -> {
-                        updateGUI(thisOne);
-                    });
-                }
-            };
-            worker.execute();
+    
+                    @Override
+                    protected void done() {
+                        // Update UI on the Swing EDT
+                        SwingUtilities.invokeLater(() -> {
+                            updateGUI(thisOne);
+                        });
+                    }
+                };
+                worker.execute();
+            }
+            
         }
 
     }
