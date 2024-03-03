@@ -66,12 +66,13 @@ class mainMenu {
         // add payment / back button section
         JLabel paymentSection = new JLabel("Payment Option");
         JButton paymentView = createPaymentButton("Payment View");
-        JPanel dandcItems = new JPanel(new GridLayout(1, 1, 10, 10));
+        JPanel dandcItems = new JPanel(new GridLayout(1, 1, 1, 10));
         gbc.gridy = 3;
         gbc.insets = new Insets(30, 200, 30, 10);
         dandcItems.add(paymentView);
         gbc.gridy++;
         panel.add(paymentView, gbc);
+
 
         // add manager view button
         JButton managerView = createManagerButton("Manager View");
@@ -105,6 +106,7 @@ class mainMenu {
             
         }
 
+
         // update panel
         panel.revalidate();
         panel.repaint();
@@ -113,7 +115,7 @@ class mainMenu {
     // this function creates the food selecting panel when the cashier has cicked the food type
     private void createFoodPanel(String Category){
 
-        Vector<String> Foods = currentMenu.getFoodFromFoodType(Category);
+        Vector<String> Foods = currentMenu.getInStockFoodFromFoodType(Category);
         foodType = Category;
         foodCatagories.removeAll();
         gbc.gridy = 1;
@@ -125,6 +127,8 @@ class mainMenu {
             foodCatagories.add(b1,gbc);
 
         }
+        JButton back = backButton();
+        foodCatagories.add(back,gbc);
 
         // update panel
         panel.revalidate();
@@ -145,6 +149,8 @@ class mainMenu {
             foodCatagories.add(b1,gbc);
 
         }
+        JButton back = backButton();
+        foodCatagories.add(back,gbc);
 
         // update frame with panel
         JButton b2 = addToOrderButton();
@@ -294,8 +300,8 @@ class mainMenu {
     }
 
     // adds the back button for the payment/back panel
-    private JButton backButton(String itemName) {
-        JButton button = new JButton(itemName);
+    private JButton backButton() {
+        JButton button = new JButton("Back Button");
         Dimension buttonSize = new Dimension(175, 175);
         button.setPreferredSize(buttonSize);
         button.addActionListener(new ActionListener() {
