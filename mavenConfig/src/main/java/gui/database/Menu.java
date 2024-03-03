@@ -447,14 +447,14 @@ public class Menu {
     }
 
     //returns all orders of a specific year and month
-    public Vector<Integer> getOrdersFromYearAndMonth(int year, int month){
+    public Vector<Integer> getOrdersFromYearAndMonth(int year, int week){
         Vector<Integer> tempOrderIDs = new Vector<Integer>(1);
         try {
             //gives all orders for the specified month in the specified year
             
-            String sql = "select * from ticket where DATE_Part(\'month\',\"timeOrdered\") = ? and date_part(\'year\',\"timeOrdered\") = ?";
+            String sql = "select * from ticket where DATE_Part(\'week\',\"timeOrdered\") = ? and date_part(\'year\',\"timeOrdered\") = ?";
             PreparedStatement stmt = conn.prepareStatement(sql , Statement.RETURN_GENERATED_KEYS);
-            stmt.setInt(1, month);
+            stmt.setInt(1, week);
             stmt.setInt(2, year);
             ResultSet rs = stmt.executeQuery();
             
